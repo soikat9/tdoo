@@ -24,7 +24,7 @@
               <button icon="fa-clock-o" attrs="{
                 'column_invisible': ['|', ('parent.has_late_lines', '=', False), ('parent.status', '=', 'pickup')],
                 'invisible': [('is_late', '=', False)]}"
-                class="text-danger" title="Some delay cost will be added to the sales order."/>
+                class="text-warning" title="Some delay cost will be added to the sales order."/>
             </tree>
           </field>
           <footer>

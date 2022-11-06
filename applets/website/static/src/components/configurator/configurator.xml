@@ -3,7 +3,7 @@
 
     <t t-name="website.Configurator.SkipButton" owl="1">
         <div class="container-fluid py-2 pb-md-3 text-right pr-lg-5">
-            <button class="btn btn-link" t-on-click="skip()">Skip and start from scratch</button>
+            <button class="btn btn-link rounded-sm" t-on-click="skip()">Skip and start from scratch</button>
         </div>
     </t>
 

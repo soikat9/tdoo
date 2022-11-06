@@ -132,7 +132,7 @@ QUnit.module('document_backend_tests', {
     });
 
     QUnit.test('search more in many2one pointing to sign.template model', async function (assert) {
-        // Addon sign patches the ListController for some models, like 'sign.template'.
+        // Applet sign patches the ListController for some models, like 'sign.template'.
         assert.expect(1);
 
         this.data['sign.template'].records = this.data['sign.template'].records.concat([

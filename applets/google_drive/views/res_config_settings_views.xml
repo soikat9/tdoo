@@ -27,13 +27,13 @@
                         </div>
                         <div class="col-sm text-center"
                              attrs="{'invisible': [('is_google_drive_token_generated', '=', True)]}">
-                            <button class="btn btn-link"
+                            <button class="btn btn-link rounded-sm"
                                     name="action_setup_token"
                                     type="object"><i class="fa fa-arrow-right"></i> Set up token</button>
                         </div>
                         <div class="col-sm text-center"
                              attrs="{'invisible': [('is_google_drive_token_generated', '=', False)]}">
-                            <button class="btn btn-link"
+                            <button class="btn btn-link rounded-sm"
                                     name="action_setup_token"
                                     type="object"><i class="fa fa-arrow-right"></i> Reset token</button>
                         </div>

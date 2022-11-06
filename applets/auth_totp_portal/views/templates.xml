@@ -26,7 +26,7 @@
                         <i class="fa fa-check-circle"/>
                         Two-factor authentication enabled
                     </span>
-                    <button type="button" class="btn btn-link" id="auth_totp_portal_disable">
+                    <button type="button" class="btn btn-link rounded-sm" id="auth_totp_portal_disable">
                         (Disable two-factor authentication)
                     </button>
                     <t t-if="len(user_id.totp_trusted_device_ids)">
@@ -46,7 +46,7 @@
                                         <span t-field="td.create_date"/>
                                     </td>
                                     <td>
-                                        <i class="fa fa-trash text-danger" type="button" t-att-id="td.id"/>
+                                        <i class="fa fa-trash text-warning" type="button" t-att-id="td.id"/>
                                     </td>
                                 </tr>
                             </tbody>

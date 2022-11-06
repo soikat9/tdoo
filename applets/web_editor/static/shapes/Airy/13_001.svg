@@ -6,9 +6,9 @@
         }
         path {transform-origin: center bottom;}
         .st0{fill:#FFFFFF;}
-        .st1{opacity:0.25;fill:none;stroke:#3AADAA;stroke-width:0.75;}
-        .st2{fill:none;stroke:#3AADAA;stroke-width:0.8749;}
-        .st3{opacity:0.25;fill:none;stroke:#3AADAA;stroke-width:0.75;stroke-dasharray:9;}
+        .st1{opacity:0.25;fill:none;stroke:#2283c0;stroke-width:0.75;}
+        .st2{fill:none;stroke:#2283c0;stroke-width:0.8749;}
+        .st3{opacity:0.25;fill:none;stroke:#2283c0;stroke-width:0.75;stroke-dasharray:9;}
         .path_13 {animation: wave 20s cubic-bezier(.445, .05, .55, .95) infinite;}
         .path_12 {animation: wave 20s .5s cubic-bezier(.445, .05, .55, .95) infinite;}
         .path_11 {animation: wave 20s 1s cubic-bezier(.445, .05, .55, .95) infinite;}

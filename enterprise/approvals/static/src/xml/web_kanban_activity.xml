@@ -26,7 +26,7 @@
                                     class="o_activity_action_approve o_activity_link o_activity_link_kanban fa fa-check-circle text-success"
                                     title="Approve" role="button" aria-label="Approve"/>
                                 <a t-att-data-approver-id="approver_id"
-                                    class="o_activity_action_refuse o_activity_link o_activity_link_kanban fa fa-times-circle text-danger"
+                                    class="o_activity_action_refuse o_activity_link o_activity_link_kanban fa fa-times-circle text-warning"
                                     title="Refuse" role="button" aria-label="Refuse"/>
                             </a>
                         </t>

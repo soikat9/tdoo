@@ -108,7 +108,7 @@
                                         <b><field name="display_name"/></b>
                                         <div class="float-right">
                                             <span class="fa fa-circle text-success" t-if="record.is_connected.raw_value" aria-label="Online" title="Online"/>
-                                            <span class="fa fa-circle text-danger" t-else="" aria-label="Offline" title="Offline"/>
+                                            <span class="fa fa-circle text-warning" t-else="" aria-label="Offline" title="Offline"/>
                                         </div>
                                         <!-- Double check is necessary for sample view (or error image are shown) -->
                                         <div t-if="record.country_id.raw_value and record.country_flag.raw_value">
@@ -144,7 +144,7 @@
                             <div class="oe_kanban_details">
                                 <div class="float-right">
                                     <span class="fa fa-circle text-success" t-if="record.is_connected.raw_value" aria-label="Online" title="Online"/>
-                                    <span class="fa fa-circle text-danger" t-else="" aria-label="Offline" title="Offline"/>
+                                    <span class="fa fa-circle text-warning" t-else="" aria-label="Offline" title="Offline"/>
                                 </div>
                                 <strong>
                                     <img t-if="record.country_id.raw_value"
@@ -186,7 +186,7 @@
                             <span>Connected</span>
                         </button>
                         <button class="oe_stat_button o_stat_button_info" disabled="1" attrs="{'invisible': [('is_connected', '=', True)]}">
-                            <i class="fa fa-fw o_button_icon fa-circle text-danger"/>
+                            <i class="fa fa-fw o_button_icon fa-circle text-warning"/>
                             <span>Offline</span>
                         </button>
                         <button id="w_visitor_visit_counter" class="oe_stat_button o_stat_button_info" disabled="1" icon="fa-globe">

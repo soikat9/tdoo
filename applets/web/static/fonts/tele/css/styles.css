@@ -35,389 +35,389 @@
   content: attr(data-tele);
 }
 
-.tele-pencil-drawing:before,
-.tele-design:before,
-.tele-edit-property:before,
-.tele-idea-window:before,
-.tele-save:before,
-.tele-iphone-x:before,
-.tele-circled-play:before,
-.tele-docker-container:before,
-.tele-launch:before,
-.tele-toggle-on:before,
-.tele-back:before,
-.tele-topic:before,
-.tele-pin:before,
-.tele-inspect-code:before,
-.tele-insect:before,
-.tele-variable:before,
-.tele-settings:before,
-.tele-detective:before,
-.tele-database:before,
-.tele-database-server:before,
-.tele-navigation-toolbar-left:before,
-.tele-details-side-pane:before,
-.tele-menu:before,
-.tele-paper-plane:before,
-.tele-term:before,
-.tele-bold:before,
-.tele-underline:before,
-.tele-menu-vertical:before,
-.tele-list:before,
-.tele-numbered-list:before,
-.tele-italic:before,
-.tele-processor:before,
-.tele-gas:before,
-.tele-analytics:before,
-.tele-bar-chart:before,
-.tele-analyze:before,
-.tele-member:before,
-.tele-exchange:before,
-.tele-geography:before,
-.tele-contact-us:before,
-.tele-omnichannel:before,
-.tele-meeting-room:before,
-.tele-account:before,
-.tele-trash-can:before,
-.tele-insert:before,
-.tele-collapse:before,
-.tele-compress:before,
-.tele-copy:before,
-.tele-download-from-the-cloud:before,
-.tele-calendar-plus:before,
-.tele-add-image:before,
-.tele-plus-math:before,
-.tele-private-lock:before,
-.tele-approved-unlock:before,
-.tele-rgb-color-wheel:before,
-.tele-ok:before,
-.tele-group-of-companies:before,
-.tele-group-objects:before,
-.tele-chart:before,
-.tele-checked-checkbox:before,
-.tele-circle:before,
-.tele-upload:before,
-.tele-dropdown-field:before,
-.tele-iphone-spinner:before,
-.tele-text-input-form:before,
-.tele-ungroup-objects:before,
-.tele-divider:before,
-.tele-decline:before,
-.tele-code:before,
-.tele-full-page-view:before,
-.tele-image:before,
-.tele-template:before,
-.tele-to-do:before,
-.tele-map-marker:before,
-.tele-static-view-level2:before,
-.tele-select-all:before,
-.tele-numbers-input-form:before,
-.tele-multiple-pages-mode:before,
-.tele-pdf:before,
-.tele-qr-code:before,
-.tele-slider:before,
-.tele-star:before,
-.tele-statistics:before,
-.tele-fit-columns:before,
-.tele-workflow:before,
-.tele-photo-editor:before,
-.tele-table:before,
-.tele-add-tab:before,
-.tele-tab:before,
-.tele-tags:before,
-.tele-text:before,
-.tele-text-box:before,
-.tele-rename:before,
-.tele-timeline:before,
-.tele-timer:before,
-.tele-repeat:before,
-.tele-tree-structure:before,
-.tele-time-card:before,
-.tele-one-time-password:before,
-.tele-time-limit:before,
-.tele-heart-with-pulse:before,
-.tele-ecg:before,
-.tele-heat-map:before,
-.tele-stethoscope:before,
-.tele-window-favorite:before,
-.tele-favorite-folder:before,
-.tele-pregnant:before,
-.tele-insert-column:before,
-.tele-climate-change:before,
-.tele-create:before,
-.tele-code-file:before,
-.tele-archive:before,
-.tele-info:before,
-.tele-zoom-out:before,
-.tele-zoom-in:before,
-.tele-play:before,
-.tele-night:before,
-.tele-video-folder:before,
-.tele-group-folder:before,
-.tele-product-documents:before,
-.tele-browse-folder:before,
-.tele-copy-to-folder:before,
-.tele-internet-folder:before,
-.tele-cloud-folder:before,
-.tele-upload-to-ftp:before,
-.tele-doctors-folder:before,
-.tele-link-folder:before,
-.tele-fonts-folder:before,
-.tele-filter:before,
-.tele-test-folder:before,
-.tele-folder-tree:before,
-.tele-add-folder:before,
-.tele-hospital-folder:before,
-.tele-file-submodule:before,
-.tele-shared-folder:before,
-.tele-more:before,
-.tele-search:before,
-.tele-profit-analysis:before,
-.tele-circled-menu:before,
-.tele-new-window:before,
-.tele-download:before,
-.tele-delete-folder:before,
-.tele-music-library:before,
-.tele-math-folder:before,
-.tele-opened-folder:before,
-.tele-user-folder:before,
-.tele-synchronize-folder:before,
-.tele-map-as-drive:before,
-.tele-folder:before,
-.tele-enlarge:before,
-.tele-search-bar:before,
-.tele-search-contacts:before,
-.tele-search-in-mailbox:before,
-.tele-start-menu:before,
-.tele-search-chat:before,
-.tele-cloud-sync:before,
-.tele-rocket:before,
-.tele-desktop:before,
-.tele-chat-message:before,
-.tele-unpin:before,
-.tele-show-property:before,
-.tele-shortcut:before,
-.tele-rotate:before,
-.tele-user-manual:before,
-.tele-help:before,
-.tele-backend-development:before,
-.tele-send:before,
-.tele-customer-insight:before,
-.tele-calendar:before,
-.tele-view-module:before,
-.tele-presentation:before,
-.tele-report-file:before,
-.tele-new-item:before,
-.tele-stocks-growth:before,
-.tele-round:before,
-.tele-change-theme:before,
-.tele-header-2:before,
-.tele-connect:before,
-.tele-unchecked-radio-button:before,
-.tele-program:before,
-.tele-adjustment:before,
-.tele-close:before,
-.tele-date-to:before,
-.tele-timeline-week:before,
-.tele-image-file:before,
-.tele-libre-office-writer:before,
-.tele-x2:before,
-.tele-view-all:before,
-.tele-sun:before,
-.tele-security-portal:before,
-.tele-door-sensor-checked:before,
-.tele-customer:before,
-.tele-search-in-browser:before,
-.tele-unknown-results:before,
-.tele-dashboard-layout:before,
-.tele-webpage:before,
-.tele-get-help:before,
-.tele-logout:before,
-.tele-male-user:before,
-.tele-smart-card:before,
-.tele-sms:before,
-.tele-chat-room:before,
-.tele-company:before,
-.tele-light-on:before,
-.tele-list-view:before,
-.tele-themes:before,
-.tele-chatbot:before,
-.tele-address-book:before,
-.tele-paypal:before,
-.tele-twitter:before,
-.tele-add-shopping-cart:before,
-.tele-sell-stock:before,
-.tele-checkout:before,
-.tele-shopping-cart:before,
-.tele-shopping-cart-promotion:before,
-.tele-knowledge-sharing:before,
-.tele-credit-card-cash-withdrawal:before,
-.tele-truck:before,
-.tele-person:before,
-.tele-administrator-male:before,
-.tele-businesswoman:before,
-.tele-address-book-2:before,
-.tele-accounting:before,
-.tele-timetable:before,
-.tele-estimates:before,
-.tele-cloud-mail:before,
-.tele-erp-system:before,
-.tele-portrait-mode-scanning:before,
-.tele-bank-cards:before,
-.tele-tasklist:before,
-.tele-control-panel:before,
-.tele-small-business:before,
-.tele-renew:before,
-.tele-signature:before,
-.tele-barcode:before,
-.tele-timesheet:before,
-.tele-number-pad:before,
-.tele-e-magazine:before,
-.tele-drag-and-drop:before,
-.tele-administrative-tools:before,
-.tele-twitter-squared:before,
-.tele-internet:before,
-.tele-web:before,
-.tele-module:before,
-.tele-window-settings:before,
-.tele-ios-application-placeholder:before,
-.tele-resume-website:before,
-.tele-ticket-booth:before,
-.tele-sweepstakes:before,
-.tele-movie-ticket:before,
-.tele-send-mail:before,
-.tele-prize:before,
-.tele-good-quality:before,
-.tele-invisible:before,
-.tele-idea:before,
-.tele-rubik-s-cube:before,
-.tele-job-seeker:before,
-.tele-attendance:before,
-.tele-signing-a-document:before,
-.tele-delete-receipt:before,
-.tele-event-accepted-tentatively:before,
-.tele-set-as-resume:before,
-.tele-thumbs-up:before,
-.tele-resume:before,
-.tele-smart-card-reader:before,
-.tele-communication:before,
-.tele-usa:before,
-.tele-mail:before,
-.tele-restaurant-menu:before,
-.tele-aspect-ratio:before,
-.tele-save-as:before,
-.tele-bot:before,
-.tele-conference:before,
-.tele-user-groups:before,
-.tele-attach:before,
-.tele-checklist:before,
-.tele-secured-letter:before,
-.tele-mail-error:before,
-.tele-online-maintenance-portal:before,
-.tele-send-email:before,
-.tele-people:before,
-.tele-microsoft-outlook-2019:before,
-.tele-windows-calendar:before,
-.tele-windows-10:before,
-.tele-online-payment-with-a-credit-card:before,
-.tele-project:before,
-.tele-mobile-shop-credit:before,
-.tele-wrench:before,
-.tele-high-priority-message:before,
-.tele-letterbox:before,
-.tele-alarms:before,
-.tele-proforma-invoice:before,
-.tele-bill:before,
-.tele-purchase-order:before,
-.tele-receipt-dollar:before,
-.tele-check-file:before,
-.tele-licence:before,
-.tele-google-calendar:before,
-.tele-test:before,
-.tele-auto-deskew:before,
-.tele-receipt-terminal:before,
-.tele-push-notifications:before,
-.tele-chain:before,
-.tele-window-cloud:before,
-.tele-rss:before,
-.tele-decision:before,
-.tele-shipping-centre-loading-belt:before,
-.tele-mockup:before,
-.tele-mail-network:before,
-.tele-online-store:before,
-.tele-google-calendar-2:before,
-.tele-music-robot:before,
-.tele-print:before,
-.tele-form:before,
-.tele-blog:before,
-.tele-google-drive:before,
-.tele-new-ticket:before,
-.tele-related-companies:before,
-.tele-toolbox:before,
-.tele-card-payment:before,
-.tele-tools:before,
-.tele-feedback-hub:before,
-.tele-customer-support:before,
-.tele-favorite-cart:before,
-.tele-request-service:before,
-.tele-faq:before,
-.tele-google-maps:before,
-.tele-compare:before,
-.tele-e-learning:before,
-.tele-visa:before,
-.tele-planner:before,
-.tele-chrome-web-store:before,
-.tele-top-view-bird:before,
-.tele-summary-list:before,
-.tele-schedule-mail:before,
-.tele-linkedin:before,
-.tele-diploma:before,
-.tele-done:before,
-.tele-forward:before,
-.tele-services:before,
-.tele-consultation:before,
-.tele-font-style-formatting:before,
-.tele-folded-booklet:before,
-.tele-important-mail:before,
-.tele-hashtag:before,
-.tele-receipt-approved:before,
-.tele-project-management:before,
-.tele-disk-cleanup:before,
-.tele-shopping-mall:before,
-.tele-in-inventory:before,
-.tele-lease:before,
-.tele-edit-image:before,
-.tele-undo:before,
-.tele-location-off:before,
-.tele-link:before,
-.tele-documents:before,
-.tele-amazon-shopping-app:before,
-.tele-increase-profits:before,
-.tele-table-of-content:before,
-.tele-area-chart:before,
-.tele-add:before,
-.tele-eye:before,
-.tele-share:before,
-.tele-sync-settings:before,
-.tele-process:before,
-.tele-elearning:before,
-.tele-schedule:before,
-.tele-general-ledger:before,
-.tele-door-lock:before,
-.tele-prototype:before,
-.tele-paid-search:before,
-.tele-cloud-connection:before,
-.tele-sepa:before,
-.tele-worldwide-delivery:before,
-.tele-fast-cart:before,
-.tele-shopping-bag:before,
-.tele-airport:before,
-.tele-car-rental:before,
-.tele-petition:before,
-.tele-rent:before,
-.tele-travel-diary:before,
-.tele-mastercard-credit-card:before,
-.tele-task-planning:before,
+.tele-icon-pencil-drawing:before,
+.tele-icon-design:before,
+.tele-icon-edit-property:before,
+.tele-icon-idea-window:before,
+.tele-icon-save:before,
+.tele-icon-iphone-x:before,
+.tele-icon-circled-play:before,
+.tele-icon-docker-container:before,
+.tele-icon-launch:before,
+.tele-icon-toggle-on:before,
+.tele-icon-back:before,
+.tele-icon-topic:before,
+.tele-icon-pin:before,
+.tele-icon-inspect-code:before,
+.tele-icon-insect:before,
+.tele-icon-variable:before,
+.tele-icon-settings:before,
+.tele-icon-detective:before,
+.tele-icon-database:before,
+.tele-icon-database-server:before,
+.tele-icon-navigation-toolbar-left:before,
+.tele-icon-details-side-pane:before,
+.tele-icon-menu:before,
+.tele-icon-paper-plane:before,
+.tele-icon-term:before,
+.tele-icon-bold:before,
+.tele-icon-underline:before,
+.tele-icon-menu-vertical:before,
+.tele-icon-list:before,
+.tele-icon-numbered-list:before,
+.tele-icon-italic:before,
+.tele-icon-processor:before,
+.tele-icon-gas:before,
+.tele-icon-analytics:before,
+.tele-icon-bar-chart:before,
+.tele-icon-analyze:before,
+.tele-icon-member:before,
+.tele-icon-exchange:before,
+.tele-icon-geography:before,
+.tele-icon-contact-us:before,
+.tele-icon-omnichannel:before,
+.tele-icon-meeting-room:before,
+.tele-icon-account:before,
+.tele-icon-trash-can:before,
+.tele-icon-insert:before,
+.tele-icon-collapse:before,
+.tele-icon-compress:before,
+.tele-icon-copy:before,
+.tele-icon-download-from-the-cloud:before,
+.tele-icon-calendar-plus:before,
+.tele-icon-add-image:before,
+.tele-icon-plus-math:before,
+.tele-icon-private-lock:before,
+.tele-icon-approved-unlock:before,
+.tele-icon-rgb-color-wheel:before,
+.tele-icon-ok:before,
+.tele-icon-group-of-companies:before,
+.tele-icon-group-objects:before,
+.tele-icon-chart:before,
+.tele-icon-checked-checkbox:before,
+.tele-icon-circle:before,
+.tele-icon-upload:before,
+.tele-icon-dropdown-field:before,
+.tele-icon-iphone-spinner:before,
+.tele-icon-text-input-form:before,
+.tele-icon-ungroup-objects:before,
+.tele-icon-divider:before,
+.tele-icon-decline:before,
+.tele-icon-code:before,
+.tele-icon-full-page-view:before,
+.tele-icon-image:before,
+.tele-icon-template:before,
+.tele-icon-to-do:before,
+.tele-icon-map-marker:before,
+.tele-icon-static-view-level2:before,
+.tele-icon-select-all:before,
+.tele-icon-numbers-input-form:before,
+.tele-icon-multiple-pages-mode:before,
+.tele-icon-pdf:before,
+.tele-icon-qr-code:before,
+.tele-icon-slider:before,
+.tele-icon-star:before,
+.tele-icon-statistics:before,
+.tele-icon-fit-columns:before,
+.tele-icon-workflow:before,
+.tele-icon-photo-editor:before,
+.tele-icon-table:before,
+.tele-icon-add-tab:before,
+.tele-icon-tab:before,
+.tele-icon-tags:before,
+.tele-icon-text:before,
+.tele-icon-text-box:before,
+.tele-icon-rename:before,
+.tele-icon-timeline:before,
+.tele-icon-timer:before,
+.tele-icon-repeat:before,
+.tele-icon-tree-structure:before,
+.tele-icon-time-card:before,
+.tele-icon-one-time-password:before,
+.tele-icon-time-limit:before,
+.tele-icon-heart-with-pulse:before,
+.tele-icon-ecg:before,
+.tele-icon-heat-map:before,
+.tele-icon-stethoscope:before,
+.tele-icon-window-favorite:before,
+.tele-icon-favorite-folder:before,
+.tele-icon-pregnant:before,
+.tele-icon-insert-column:before,
+.tele-icon-climate-change:before,
+.tele-icon-create:before,
+.tele-icon-code-file:before,
+.tele-icon-archive:before,
+.tele-icon-info:before,
+.tele-icon-zoom-out:before,
+.tele-icon-zoom-in:before,
+.tele-icon-play:before,
+.tele-icon-night:before,
+.tele-icon-video-folder:before,
+.tele-icon-group-folder:before,
+.tele-icon-product-documents:before,
+.tele-icon-browse-folder:before,
+.tele-icon-copy-to-folder:before,
+.tele-icon-internet-folder:before,
+.tele-icon-cloud-folder:before,
+.tele-icon-upload-to-ftp:before,
+.tele-icon-doctors-folder:before,
+.tele-icon-link-folder:before,
+.tele-icon-fonts-folder:before,
+.tele-icon-filter:before,
+.tele-icon-test-folder:before,
+.tele-icon-folder-tree:before,
+.tele-icon-add-folder:before,
+.tele-icon-hospital-folder:before,
+.tele-icon-file-submodule:before,
+.tele-icon-shared-folder:before,
+.tele-icon-more:before,
+.tele-icon-search:before,
+.tele-icon-profit-analysis:before,
+.tele-icon-circled-menu:before,
+.tele-icon-new-window:before,
+.tele-icon-download:before,
+.tele-icon-delete-folder:before,
+.tele-icon-music-library:before,
+.tele-icon-math-folder:before,
+.tele-icon-opened-folder:before,
+.tele-icon-user-folder:before,
+.tele-icon-synchronize-folder:before,
+.tele-icon-map-as-drive:before,
+.tele-icon-folder:before,
+.tele-icon-enlarge:before,
+.tele-icon-search-bar:before,
+.tele-icon-search-contacts:before,
+.tele-icon-search-in-mailbox:before,
+.tele-icon-start-menu:before,
+.tele-icon-search-chat:before,
+.tele-icon-cloud-sync:before,
+.tele-icon-rocket:before,
+.tele-icon-desktop:before,
+.tele-icon-chat-message:before,
+.tele-icon-unpin:before,
+.tele-icon-show-property:before,
+.tele-icon-shortcut:before,
+.tele-icon-rotate:before,
+.tele-icon-user-manual:before,
+.tele-icon-help:before,
+.tele-icon-backend-development:before,
+.tele-icon-send:before,
+.tele-icon-customer-insight:before,
+.tele-icon-calendar:before,
+.tele-icon-view-module:before,
+.tele-icon-presentation:before,
+.tele-icon-report-file:before,
+.tele-icon-new-item:before,
+.tele-icon-stocks-growth:before,
+.tele-icon-round:before,
+.tele-icon-change-theme:before,
+.tele-icon-header-2:before,
+.tele-icon-connect:before,
+.tele-icon-unchecked-radio-button:before,
+.tele-icon-program:before,
+.tele-icon-adjustment:before,
+.tele-icon-close:before,
+.tele-icon-date-to:before,
+.tele-icon-timeline-week:before,
+.tele-icon-image-file:before,
+.tele-icon-libre-office-writer:before,
+.tele-icon-x2:before,
+.tele-icon-view-all:before,
+.tele-icon-sun:before,
+.tele-icon-security-portal:before,
+.tele-icon-door-sensor-checked:before,
+.tele-icon-customer:before,
+.tele-icon-search-in-browser:before,
+.tele-icon-unknown-results:before,
+.tele-icon-dashboard-layout:before,
+.tele-icon-webpage:before,
+.tele-icon-get-help:before,
+.tele-icon-logout:before,
+.tele-icon-male-user:before,
+.tele-icon-smart-card:before,
+.tele-icon-sms:before,
+.tele-icon-chat-room:before,
+.tele-icon-company:before,
+.tele-icon-light-on:before,
+.tele-icon-list-view:before,
+.tele-icon-themes:before,
+.tele-icon-chatbot:before,
+.tele-icon-address-book:before,
+.tele-icon-paypal:before,
+.tele-icon-twitter:before,
+.tele-icon-add-shopping-cart:before,
+.tele-icon-sell-stock:before,
+.tele-icon-checkout:before,
+.tele-icon-shopping-cart:before,
+.tele-icon-shopping-cart-promotion:before,
+.tele-icon-knowledge-sharing:before,
+.tele-icon-credit-card-cash-withdrawal:before,
+.tele-icon-truck:before,
+.tele-icon-person:before,
+.tele-icon-administrator-male:before,
+.tele-icon-businesswoman:before,
+.tele-icon-address-book-2:before,
+.tele-icon-accounting:before,
+.tele-icon-timetable:before,
+.tele-icon-estimates:before,
+.tele-icon-cloud-mail:before,
+.tele-icon-erp-system:before,
+.tele-icon-portrait-mode-scanning:before,
+.tele-icon-bank-cards:before,
+.tele-icon-tasklist:before,
+.tele-icon-control-panel:before,
+.tele-icon-small-business:before,
+.tele-icon-renew:before,
+.tele-icon-signature:before,
+.tele-icon-barcode:before,
+.tele-icon-timesheet:before,
+.tele-icon-number-pad:before,
+.tele-icon-e-magazine:before,
+.tele-icon-drag-and-drop:before,
+.tele-icon-administrative-tools:before,
+.tele-icon-twitter-squared:before,
+.tele-icon-internet:before,
+.tele-icon-web:before,
+.tele-icon-module:before,
+.tele-icon-window-settings:before,
+.tele-icon-ios-application-placeholder:before,
+.tele-icon-resume-website:before,
+.tele-icon-ticket-booth:before,
+.tele-icon-sweepstakes:before,
+.tele-icon-movie-ticket:before,
+.tele-icon-send-mail:before,
+.tele-icon-prize:before,
+.tele-icon-good-quality:before,
+.tele-icon-invisible:before,
+.tele-icon-idea:before,
+.tele-icon-rubik-s-cube:before,
+.tele-icon-job-seeker:before,
+.tele-icon-attendance:before,
+.tele-icon-signing-a-document:before,
+.tele-icon-delete-receipt:before,
+.tele-icon-event-accepted-tentatively:before,
+.tele-icon-set-as-resume:before,
+.tele-icon-thumbs-up:before,
+.tele-icon-resume:before,
+.tele-icon-smart-card-reader:before,
+.tele-icon-communication:before,
+.tele-icon-usa:before,
+.tele-icon-mail:before,
+.tele-icon-restaurant-menu:before,
+.tele-icon-aspect-ratio:before,
+.tele-icon-save-as:before,
+.tele-icon-bot:before,
+.tele-icon-conference:before,
+.tele-icon-user-groups:before,
+.tele-icon-attach:before,
+.tele-icon-checklist:before,
+.tele-icon-secured-letter:before,
+.tele-icon-mail-error:before,
+.tele-icon-online-maintenance-portal:before,
+.tele-icon-send-email:before,
+.tele-icon-people:before,
+.tele-icon-microsoft-outlook-2019:before,
+.tele-icon-windows-calendar:before,
+.tele-icon-windows-10:before,
+.tele-icon-online-payment-with-a-credit-card:before,
+.tele-icon-project:before,
+.tele-icon-mobile-shop-credit:before,
+.tele-icon-wrench:before,
+.tele-icon-high-priority-message:before,
+.tele-icon-letterbox:before,
+.tele-icon-alarms:before,
+.tele-icon-proforma-invoice:before,
+.tele-icon-bill:before,
+.tele-icon-purchase-order:before,
+.tele-icon-receipt-dollar:before,
+.tele-icon-check-file:before,
+.tele-icon-licence:before,
+.tele-icon-google-calendar:before,
+.tele-icon-test:before,
+.tele-icon-auto-deskew:before,
+.tele-icon-receipt-terminal:before,
+.tele-icon-push-notifications:before,
+.tele-icon-chain:before,
+.tele-icon-window-cloud:before,
+.tele-icon-rss:before,
+.tele-icon-decision:before,
+.tele-icon-shipping-centre-loading-belt:before,
+.tele-icon-mockup:before,
+.tele-icon-mail-network:before,
+.tele-icon-online-store:before,
+.tele-icon-google-calendar-2:before,
+.tele-icon-music-robot:before,
+.tele-icon-print:before,
+.tele-icon-form:before,
+.tele-icon-blog:before,
+.tele-icon-google-drive:before,
+.tele-icon-new-ticket:before,
+.tele-icon-related-companies:before,
+.tele-icon-toolbox:before,
+.tele-icon-card-payment:before,
+.tele-icon-tools:before,
+.tele-icon-feedback-hub:before,
+.tele-icon-customer-support:before,
+.tele-icon-favorite-cart:before,
+.tele-icon-request-service:before,
+.tele-icon-faq:before,
+.tele-icon-google-maps:before,
+.tele-icon-compare:before,
+.tele-icon-e-learning:before,
+.tele-icon-visa:before,
+.tele-icon-planner:before,
+.tele-icon-chrome-web-store:before,
+.tele-icon-top-view-bird:before,
+.tele-icon-summary-list:before,
+.tele-icon-schedule-mail:before,
+.tele-icon-linkedin:before,
+.tele-icon-diploma:before,
+.tele-icon-done:before,
+.tele-icon-forward:before,
+.tele-icon-services:before,
+.tele-icon-consultation:before,
+.tele-icon-font-style-formatting:before,
+.tele-icon-folded-booklet:before,
+.tele-icon-important-mail:before,
+.tele-icon-hashtag:before,
+.tele-icon-receipt-approved:before,
+.tele-icon-project-management:before,
+.tele-icon-disk-cleanup:before,
+.tele-icon-shopping-mall:before,
+.tele-icon-in-inventory:before,
+.tele-icon-lease:before,
+.tele-icon-edit-image:before,
+.tele-icon-undo:before,
+.tele-icon-location-off:before,
+.tele-icon-link:before,
+.tele-icon-documents:before,
+.tele-icon-amazon-shopping-app:before,
+.tele-icon-increase-profits:before,
+.tele-icon-table-of-content:before,
+.tele-icon-area-chart:before,
+.tele-icon-add:before,
+.tele-icon-eye:before,
+.tele-icon-share:before,
+.tele-icon-sync-settings:before,
+.tele-icon-process:before,
+.tele-icon-elearning:before,
+.tele-icon-schedule:before,
+.tele-icon-general-ledger:before,
+.tele-icon-door-lock:before,
+.tele-icon-prototype:before,
+.tele-icon-paid-search:before,
+.tele-icon-cloud-connection:before,
+.tele-icon-sepa:before,
+.tele-icon-worldwide-delivery:before,
+.tele-icon-fast-cart:before,
+.tele-icon-shopping-bag:before,
+.tele-icon-airport:before,
+.tele-icon-car-rental:before,
+.tele-icon-petition:before,
+.tele-icon-rent:before,
+.tele-icon-travel-diary:before,
+.tele-icon-mastercard-credit-card:before,
+.tele-icon-task-planning:before,
 .tele,
 [data-tele]:before {
   display: inline-block;
@@ -435,1152 +435,1152 @@
 }
 
 
-.tele-pencil-drawing:before {
+.tele-icon-pencil-drawing:before {
   content: "\f101";
 }
-.tele-design:before {
+.tele-icon-design:before {
   content: "\f102";
 }
-.tele-edit-property:before {
+.tele-icon-edit-property:before {
   content: "\f103";
 }
-.tele-idea-window:before {
+.tele-icon-idea-window:before {
   content: "\f104";
 }
-.tele-save:before {
+.tele-icon-save:before {
   content: "\f105";
 }
-.tele-iphone-x:before {
+.tele-icon-iphone-x:before {
   content: "\f106";
 }
-.tele-circled-play:before {
+.tele-icon-circled-play:before {
   content: "\f107";
 }
-.tele-docker-container:before {
+.tele-icon-docker-container:before {
   content: "\f108";
 }
-.tele-launch:before {
+.tele-icon-launch:before {
   content: "\f109";
 }
-.tele-toggle-on:before {
+.tele-icon-toggle-on:before {
   content: "\f10a";
 }
-.tele-back:before {
+.tele-icon-back:before {
   content: "\f10b";
 }
-.tele-topic:before {
+.tele-icon-topic:before {
   content: "\f10c";
 }
-.tele-pin:before {
+.tele-icon-pin:before {
   content: "\f10d";
 }
-.tele-inspect-code:before {
+.tele-icon-inspect-code:before {
   content: "\f10e";
 }
-.tele-insect:before {
+.tele-icon-insect:before {
   content: "\f10f";
 }
-.tele-variable:before {
+.tele-icon-variable:before {
   content: "\f110";
 }
-.tele-settings:before {
+.tele-icon-settings:before {
   content: "\f111";
 }
-.tele-detective:before {
+.tele-icon-detective:before {
   content: "\f112";
 }
-.tele-database:before {
+.tele-icon-database:before {
   content: "\f113";
 }
-.tele-database-server:before {
+.tele-icon-database-server:before {
   content: "\f114";
 }
-.tele-navigation-toolbar-left:before {
+.tele-icon-navigation-toolbar-left:before {
   content: "\f115";
 }
-.tele-details-side-pane:before {
+.tele-icon-details-side-pane:before {
   content: "\f116";
 }
-.tele-menu:before {
+.tele-icon-menu:before {
   content: "\f117";
 }
-.tele-paper-plane:before {
+.tele-icon-paper-plane:before {
   content: "\f118";
 }
-.tele-term:before {
+.tele-icon-term:before {
   content: "\f119";
 }
-.tele-bold:before {
+.tele-icon-bold:before {
   content: "\f11a";
 }
-.tele-underline:before {
+.tele-icon-underline:before {
   content: "\f11b";
 }
-.tele-menu-vertical:before {
+.tele-icon-menu-vertical:before {
   content: "\f11c";
 }
-.tele-list:before {
+.tele-icon-list:before {
   content: "\f11d";
 }
-.tele-numbered-list:before {
+.tele-icon-numbered-list:before {
   content: "\f11e";
 }
-.tele-italic:before {
+.tele-icon-italic:before {
   content: "\f11f";
 }
-.tele-processor:before {
+.tele-icon-processor:before {
   content: "\f120";
 }
-.tele-gas:before {
+.tele-icon-gas:before {
   content: "\f121";
 }
-.tele-analytics:before {
+.tele-icon-analytics:before {
   content: "\f122";
 }
-.tele-bar-chart:before {
+.tele-icon-bar-chart:before {
   content: "\f123";
 }
-.tele-analyze:before {
+.tele-icon-analyze:before {
   content: "\f124";
 }
-.tele-member:before {
+.tele-icon-member:before {
   content: "\f125";
 }
-.tele-exchange:before {
+.tele-icon-exchange:before {
   content: "\f126";
 }
-.tele-geography:before {
+.tele-icon-geography:before {
   content: "\f127";
 }
-.tele-contact-us:before {
+.tele-icon-contact-us:before {
   content: "\f128";
 }
-.tele-omnichannel:before {
+.tele-icon-omnichannel:before {
   content: "\f129";
 }
-.tele-meeting-room:before {
+.tele-icon-meeting-room:before {
   content: "\f12a";
 }
-.tele-account:before {
+.tele-icon-account:before {
   content: "\f12b";
 }
-.tele-trash-can:before {
+.tele-icon-trash-can:before {
   content: "\f12c";
 }
-.tele-insert:before {
+.tele-icon-insert:before {
   content: "\f12d";
 }
-.tele-collapse:before {
+.tele-icon-collapse:before {
   content: "\f12e";
 }
-.tele-compress:before {
+.tele-icon-compress:before {
   content: "\f12f";
 }
-.tele-copy:before {
+.tele-icon-copy:before {
   content: "\f130";
 }
-.tele-download-from-the-cloud:before {
+.tele-icon-download-from-the-cloud:before {
   content: "\f131";
 }
-.tele-calendar-plus:before {
+.tele-icon-calendar-plus:before {
   content: "\f132";
 }
-.tele-add-image:before {
+.tele-icon-add-image:before {
   content: "\f133";
 }
-.tele-plus-math:before {
+.tele-icon-plus-math:before {
   content: "\f134";
 }
-.tele-private-lock:before {
+.tele-icon-private-lock:before {
   content: "\f135";
 }
-.tele-approved-unlock:before {
+.tele-icon-approved-unlock:before {
   content: "\f136";
 }
-.tele-rgb-color-wheel:before {
+.tele-icon-rgb-color-wheel:before {
   content: "\f137";
 }
-.tele-ok:before {
+.tele-icon-ok:before {
   content: "\f138";
 }
-.tele-group-of-companies:before {
+.tele-icon-group-of-companies:before {
   content: "\f139";
 }
-.tele-group-objects:before {
+.tele-icon-group-objects:before {
   content: "\f13a";
 }
-.tele-chart:before {
+.tele-icon-chart:before {
   content: "\f13b";
 }
-.tele-checked-checkbox:before {
+.tele-icon-checked-checkbox:before {
   content: "\f13c";
 }
-.tele-circle:before {
+.tele-icon-circle:before {
   content: "\f13d";
 }
-.tele-upload:before {
+.tele-icon-upload:before {
   content: "\f13e";
 }
-.tele-dropdown-field:before {
+.tele-icon-dropdown-field:before {
   content: "\f13f";
 }
-.tele-iphone-spinner:before {
+.tele-icon-iphone-spinner:before {
   content: "\f140";
 }
-.tele-text-input-form:before {
+.tele-icon-text-input-form:before {
   content: "\f141";
 }
-.tele-ungroup-objects:before {
+.tele-icon-ungroup-objects:before {
   content: "\f142";
 }
-.tele-divider:before {
+.tele-icon-divider:before {
   content: "\f143";
 }
-.tele-decline:before {
+.tele-icon-decline:before {
   content: "\f144";
 }
-.tele-code:before {
+.tele-icon-code:before {
   content: "\f145";
 }
-.tele-full-page-view:before {
+.tele-icon-full-page-view:before {
   content: "\f146";
 }
-.tele-image:before {
+.tele-icon-image:before {
   content: "\f147";
 }
-.tele-template:before {
+.tele-icon-template:before {
   content: "\f148";
 }
-.tele-to-do:before {
+.tele-icon-to-do:before {
   content: "\f149";
 }
-.tele-map-marker:before {
+.tele-icon-map-marker:before {
   content: "\f14a";
 }
-.tele-static-view-level2:before {
+.tele-icon-static-view-level2:before {
   content: "\f14b";
 }
-.tele-select-all:before {
+.tele-icon-select-all:before {
   content: "\f14c";
 }
-.tele-numbers-input-form:before {
+.tele-icon-numbers-input-form:before {
   content: "\f14d";
 }
-.tele-multiple-pages-mode:before {
+.tele-icon-multiple-pages-mode:before {
   content: "\f14e";
 }
-.tele-pdf:before {
+.tele-icon-pdf:before {
   content: "\f14f";
 }
-.tele-qr-code:before {
+.tele-icon-qr-code:before {
   content: "\f150";
 }
-.tele-slider:before {
+.tele-icon-slider:before {
   content: "\f151";
 }
-.tele-star:before {
+.tele-icon-star:before {
   content: "\f152";
 }
-.tele-statistics:before {
+.tele-icon-statistics:before {
   content: "\f153";
 }
-.tele-fit-columns:before {
+.tele-icon-fit-columns:before {
   content: "\f154";
 }
-.tele-workflow:before {
+.tele-icon-workflow:before {
   content: "\f155";
 }
-.tele-photo-editor:before {
+.tele-icon-photo-editor:before {
   content: "\f156";
 }
-.tele-table:before {
+.tele-icon-table:before {
   content: "\f157";
 }
-.tele-add-tab:before {
+.tele-icon-add-tab:before {
   content: "\f158";
 }
-.tele-tab:before {
+.tele-icon-tab:before {
   content: "\f159";
 }
-.tele-tags:before {
+.tele-icon-tags:before {
   content: "\f15a";
 }
-.tele-text:before {
+.tele-icon-text:before {
   content: "\f15b";
 }
-.tele-text-box:before {
+.tele-icon-text-box:before {
   content: "\f15c";
 }
-.tele-rename:before {
+.tele-icon-rename:before {
   content: "\f15d";
 }
-.tele-timeline:before {
+.tele-icon-timeline:before {
   content: "\f15e";
 }
-.tele-timer:before {
+.tele-icon-timer:before {
   content: "\f15f";
 }
-.tele-repeat:before {
+.tele-icon-repeat:before {
   content: "\f160";
 }
-.tele-tree-structure:before {
+.tele-icon-tree-structure:before {
   content: "\f161";
 }
-.tele-time-card:before {
+.tele-icon-time-card:before {
   content: "\f162";
 }
-.tele-one-time-password:before {
+.tele-icon-one-time-password:before {
   content: "\f163";
 }
-.tele-time-limit:before {
+.tele-icon-time-limit:before {
   content: "\f164";
 }
-.tele-heart-with-pulse:before {
+.tele-icon-heart-with-pulse:before {
   content: "\f165";
 }
-.tele-ecg:before {
+.tele-icon-ecg:before {
   content: "\f166";
 }
-.tele-heat-map:before {
+.tele-icon-heat-map:before {
   content: "\f167";
 }
-.tele-stethoscope:before {
+.tele-icon-stethoscope:before {
   content: "\f168";
 }
-.tele-window-favorite:before {
+.tele-icon-window-favorite:before {
   content: "\f169";
 }
-.tele-favorite-folder:before {
+.tele-icon-favorite-folder:before {
   content: "\f16a";
 }
-.tele-pregnant:before {
+.tele-icon-pregnant:before {
   content: "\f16b";
 }
-.tele-insert-column:before {
+.tele-icon-insert-column:before {
   content: "\f16c";
 }
-.tele-climate-change:before {
+.tele-icon-climate-change:before {
   content: "\f16d";
 }
-.tele-create:before {
+.tele-icon-create:before {
   content: "\f16e";
 }
-.tele-code-file:before {
+.tele-icon-code-file:before {
   content: "\f16f";
 }
-.tele-archive:before {
+.tele-icon-archive:before {
   content: "\f170";
 }
-.tele-info:before {
+.tele-icon-info:before {
   content: "\f171";
 }
-.tele-zoom-out:before {
+.tele-icon-zoom-out:before {
   content: "\f172";
 }
-.tele-zoom-in:before {
+.tele-icon-zoom-in:before {
   content: "\f173";
 }
-.tele-play:before {
+.tele-icon-play:before {
   content: "\f174";
 }
-.tele-night:before {
+.tele-icon-night:before {
   content: "\f175";
 }
-.tele-video-folder:before {
+.tele-icon-video-folder:before {
   content: "\f176";
 }
-.tele-group-folder:before {
+.tele-icon-group-folder:before {
   content: "\f177";
 }
-.tele-product-documents:before {
+.tele-icon-product-documents:before {
   content: "\f178";
 }
-.tele-browse-folder:before {
+.tele-icon-browse-folder:before {
   content: "\f179";
 }
-.tele-copy-to-folder:before {
+.tele-icon-copy-to-folder:before {
   content: "\f17a";
 }
-.tele-internet-folder:before {
+.tele-icon-internet-folder:before {
   content: "\f17b";
 }
-.tele-cloud-folder:before {
+.tele-icon-cloud-folder:before {
   content: "\f17c";
 }
-.tele-upload-to-ftp:before {
+.tele-icon-upload-to-ftp:before {
   content: "\f17d";
 }
-.tele-doctors-folder:before {
+.tele-icon-doctors-folder:before {
   content: "\f17e";
 }
-.tele-link-folder:before {
+.tele-icon-link-folder:before {
   content: "\f17f";
 }
-.tele-fonts-folder:before {
+.tele-icon-fonts-folder:before {
   content: "\f180";
 }
-.tele-filter:before {
+.tele-icon-filter:before {
   content: "\f181";
 }
-.tele-test-folder:before {
+.tele-icon-test-folder:before {
   content: "\f182";
 }
-.tele-folder-tree:before {
+.tele-icon-folder-tree:before {
   content: "\f183";
 }
-.tele-add-folder:before {
+.tele-icon-add-folder:before {
   content: "\f184";
 }
-.tele-hospital-folder:before {
+.tele-icon-hospital-folder:before {
   content: "\f185";
 }
-.tele-file-submodule:before {
+.tele-icon-file-submodule:before {
   content: "\f186";
 }
-.tele-shared-folder:before {
+.tele-icon-shared-folder:before {
   content: "\f187";
 }
-.tele-more:before {
+.tele-icon-more:before {
   content: "\f188";
 }
-.tele-search:before {
+.tele-icon-search:before {
   content: "\f189";
 }
-.tele-profit-analysis:before {
+.tele-icon-profit-analysis:before {
   content: "\f18a";
 }
-.tele-circled-menu:before {
+.tele-icon-circled-menu:before {
   content: "\f18b";
 }
-.tele-new-window:before {
+.tele-icon-new-window:before {
   content: "\f18c";
 }
-.tele-download:before {
+.tele-icon-download:before {
   content: "\f18d";
 }
-.tele-delete-folder:before {
+.tele-icon-delete-folder:before {
   content: "\f18e";
 }
-.tele-music-library:before {
+.tele-icon-music-library:before {
   content: "\f18f";
 }
-.tele-math-folder:before {
+.tele-icon-math-folder:before {
   content: "\f190";
 }
-.tele-opened-folder:before {
+.tele-icon-opened-folder:before {
   content: "\f191";
 }
-.tele-user-folder:before {
+.tele-icon-user-folder:before {
   content: "\f192";
 }
-.tele-synchronize-folder:before {
+.tele-icon-synchronize-folder:before {
   content: "\f193";
 }
-.tele-map-as-drive:before {
+.tele-icon-map-as-drive:before {
   content: "\f194";
 }
-.tele-folder:before {
+.tele-icon-folder:before {
   content: "\f196";
 }
-.tele-enlarge:before {
+.tele-icon-enlarge:before {
   content: "\f197";
 }
-.tele-search-bar:before {
+.tele-icon-search-bar:before {
   content: "\f198";
 }
-.tele-search-contacts:before {
+.tele-icon-search-contacts:before {
   content: "\f199";
 }
-.tele-search-in-mailbox:before {
+.tele-icon-search-in-mailbox:before {
   content: "\f19a";
 }
-.tele-start-menu:before {
+.tele-icon-start-menu:before {
   content: "\f19b";
 }
-.tele-search-chat:before {
+.tele-icon-search-chat:before {
   content: "\f19c";
 }
-.tele-cloud-sync:before {
+.tele-icon-cloud-sync:before {
   content: "\f19d";
 }
-.tele-rocket:before {
+.tele-icon-rocket:before {
   content: "\f19e";
 }
-.tele-desktop:before {
+.tele-icon-desktop:before {
   content: "\f19f";
 }
-.tele-chat-message:before {
+.tele-icon-chat-message:before {
   content: "\f1a0";
 }
-.tele-unpin:before {
+.tele-icon-unpin:before {
   content: "\f1a1";
 }
-.tele-show-property:before {
+.tele-icon-show-property:before {
   content: "\f1a2";
 }
-.tele-shortcut:before {
+.tele-icon-shortcut:before {
   content: "\f1a3";
 }
-.tele-rotate:before {
+.tele-icon-rotate:before {
   content: "\f1a4";
 }
-.tele-user-manual:before {
+.tele-icon-user-manual:before {
   content: "\f1a5";
 }
-.tele-help:before {
+.tele-icon-help:before {
   content: "\f1a6";
 }
-.tele-backend-development:before {
+.tele-icon-backend-development:before {
   content: "\f1a7";
 }
-.tele-send:before {
+.tele-icon-send:before {
   content: "\f1a8";
 }
-.tele-customer-insight:before {
+.tele-icon-customer-insight:before {
   content: "\f1a9";
 }
-.tele-calendar:before {
+.tele-icon-calendar:before {
   content: "\f1aa";
 }
-.tele-view-module:before {
+.tele-icon-view-module:before {
   content: "\f1ab";
 }
-.tele-presentation:before {
+.tele-icon-presentation:before {
   content: "\f1ac";
 }
-.tele-report-file:before {
+.tele-icon-report-file:before {
   content: "\f1ad";
 }
-.tele-new-item:before {
+.tele-icon-new-item:before {
   content: "\f1ae";
 }
-.tele-stocks-growth:before {
+.tele-icon-stocks-growth:before {
   content: "\f1af";
 }
-.tele-round:before {
+.tele-icon-round:before {
   content: "\f1b0";
 }
-.tele-change-theme:before {
+.tele-icon-change-theme:before {
   content: "\f1b1";
 }
-.tele-header-2:before {
+.tele-icon-header-2:before {
   content: "\f1b2";
 }
-.tele-connect:before {
+.tele-icon-connect:before {
   content: "\f1b3";
 }
-.tele-unchecked-radio-button:before {
+.tele-icon-unchecked-radio-button:before {
   content: "\f1b4";
 }
-.tele-program:before {
+.tele-icon-program:before {
   content: "\f1b5";
 }
-.tele-adjustment:before {
+.tele-icon-adjustment:before {
   content: "\f1b6";
 }
-.tele-close:before {
+.tele-icon-close:before {
   content: "\f1b7";
 }
-.tele-date-to:before {
+.tele-icon-date-to:before {
   content: "\f1b8";
 }
-.tele-timeline-week:before {
+.tele-icon-timeline-week:before {
   content: "\f1b9";
 }
-.tele-image-file:before {
+.tele-icon-image-file:before {
   content: "\f1ba";
 }
-.tele-libre-office-writer:before {
+.tele-icon-libre-office-writer:before {
   content: "\f1bb";
 }
-.tele-x2:before {
+.tele-icon-x2:before {
   content: "\f1bc";
 }
-.tele-view-all:before {
+.tele-icon-view-all:before {
   content: "\f1bd";
 }
-.tele-sun:before {
+.tele-icon-sun:before {
   content: "\f1be";
 }
-.tele-security-portal:before {
+.tele-icon-security-portal:before {
   content: "\f1bf";
 }
-.tele-door-sensor-checked:before {
+.tele-icon-door-sensor-checked:before {
   content: "\f1c0";
 }
-.tele-customer:before {
+.tele-icon-customer:before {
   content: "\f1c1";
 }
-.tele-search-in-browser:before {
+.tele-icon-search-in-browser:before {
   content: "\f1c2";
 }
-.tele-unknown-results:before {
+.tele-icon-unknown-results:before {
   content: "\f1c3";
 }
-.tele-dashboard-layout:before {
+.tele-icon-dashboard-layout:before {
   content: "\f1c4";
 }
-.tele-webpage:before {
+.tele-icon-webpage:before {
   content: "\f1c5";
 }
-.tele-get-help:before {
+.tele-icon-get-help:before {
   content: "\f1c6";
 }
-.tele-logout:before {
+.tele-icon-logout:before {
   content: "\f1c7";
 }
-.tele-male-user:before {
+.tele-icon-male-user:before {
   content: "\f1c8";
 }
-.tele-smart-card:before {
+.tele-icon-smart-card:before {
   content: "\f1c9";
 }
-.tele-sms:before {
+.tele-icon-sms:before {
   content: "\f1ca";
 }
-.tele-chat-room:before {
+.tele-icon-chat-room:before {
   content: "\f1cb";
 }
-.tele-company:before {
+.tele-icon-company:before {
   content: "\f1cc";
 }
-.tele-light-on:before {
+.tele-icon-light-on:before {
   content: "\f1cd";
 }
-.tele-list-view:before {
+.tele-icon-list-view:before {
   content: "\f1ce";
 }
-.tele-themes:before {
+.tele-icon-themes:before {
   content: "\f1cf";
 }
-.tele-chatbot:before {
+.tele-icon-chatbot:before {
   content: "\f1d0";
 }
-.tele-address-book:before {
+.tele-icon-address-book:before {
   content: "\f1d1";
 }
-.tele-paypal:before {
+.tele-icon-paypal:before {
   content: "\f1d2";
 }
-.tele-twitter:before {
+.tele-icon-twitter:before {
   content: "\f1d3";
 }
-.tele-add-shopping-cart:before {
+.tele-icon-add-shopping-cart:before {
   content: "\f1d4";
 }
-.tele-sell-stock:before {
+.tele-icon-sell-stock:before {
   content: "\f1d5";
 }
-.tele-checkout:before {
+.tele-icon-checkout:before {
   content: "\f1d6";
 }
-.tele-shopping-cart:before {
+.tele-icon-shopping-cart:before {
   content: "\f1d7";
 }
-.tele-shopping-cart-promotion:before {
+.tele-icon-shopping-cart-promotion:before {
   content: "\f1d8";
 }
-.tele-knowledge-sharing:before {
+.tele-icon-knowledge-sharing:before {
   content: "\f1d9";
 }
-.tele-credit-card-cash-withdrawal:before {
+.tele-icon-credit-card-cash-withdrawal:before {
   content: "\f1da";
 }
-.tele-truck:before {
+.tele-icon-truck:before {
   content: "\f1db";
 }
-.tele-person:before {
+.tele-icon-person:before {
   content: "\f1dc";
 }
-.tele-administrator-male:before {
+.tele-icon-administrator-male:before {
   content: "\f1dd";
 }
-.tele-businesswoman:before {
+.tele-icon-businesswoman:before {
   content: "\f1de";
 }
-.tele-address-book-2:before {
+.tele-icon-address-book-2:before {
   content: "\f1df";
 }
-.tele-accounting:before {
+.tele-icon-accounting:before {
   content: "\f1e0";
 }
-.tele-timetable:before {
+.tele-icon-timetable:before {
   content: "\f1e1";
 }
-.tele-estimates:before {
+.tele-icon-estimates:before {
   content: "\f1e2";
 }
-.tele-cloud-mail:before {
+.tele-icon-cloud-mail:before {
   content: "\f1e3";
 }
-.tele-erp-system:before {
+.tele-icon-erp-system:before {
   content: "\f1e4";
 }
-.tele-portrait-mode-scanning:before {
+.tele-icon-portrait-mode-scanning:before {
   content: "\f1e5";
 }
-.tele-bank-cards:before {
+.tele-icon-bank-cards:before {
   content: "\f1e6";
 }
-.tele-tasklist:before {
+.tele-icon-tasklist:before {
   content: "\f1e7";
 }
-.tele-control-panel:before {
+.tele-icon-control-panel:before {
   content: "\f1e8";
 }
-.tele-small-business:before {
+.tele-icon-small-business:before {
   content: "\f1e9";
 }
-.tele-renew:before {
+.tele-icon-renew:before {
   content: "\f1ea";
 }
-.tele-signature:before {
+.tele-icon-signature:before {
   content: "\f1eb";
 }
-.tele-barcode:before {
+.tele-icon-barcode:before {
   content: "\f1ec";
 }
-.tele-timesheet:before {
+.tele-icon-timesheet:before {
   content: "\f1ed";
 }
-.tele-number-pad:before {
+.tele-icon-number-pad:before {
   content: "\f1ee";
 }
-.tele-e-magazine:before {
+.tele-icon-e-magazine:before {
   content: "\f1ef";
 }
-.tele-drag-and-drop:before {
+.tele-icon-drag-and-drop:before {
   content: "\f1f0";
 }
-.tele-administrative-tools:before {
+.tele-icon-administrative-tools:before {
   content: "\f1f1";
 }
-.tele-twitter-squared:before {
+.tele-icon-twitter-squared:before {
   content: "\f1f2";
 }
-.tele-internet:before {
+.tele-icon-internet:before {
   content: "\f1f3";
 }
-.tele-web:before {
+.tele-icon-web:before {
   content: "\f1f4";
 }
-.tele-module:before {
+.tele-icon-module:before {
   content: "\f1f5";
 }
-.tele-window-settings:before {
+.tele-icon-window-settings:before {
   content: "\f1f6";
 }
-.tele-ios-application-placeholder:before {
+.tele-icon-ios-application-placeholder:before {
   content: "\f1f7";
 }
-.tele-resume-website:before {
+.tele-icon-resume-website:before {
   content: "\f1f8";
 }
-.tele-ticket-booth:before {
+.tele-icon-ticket-booth:before {
   content: "\f1f9";
 }
-.tele-sweepstakes:before {
+.tele-icon-sweepstakes:before {
   content: "\f1fa";
 }
-.tele-movie-ticket:before {
+.tele-icon-movie-ticket:before {
   content: "\f1fb";
 }
-.tele-send-mail:before {
+.tele-icon-send-mail:before {
   content: "\f1fc";
 }
-.tele-prize:before {
+.tele-icon-prize:before {
   content: "\f1fd";
 }
-.tele-good-quality:before {
+.tele-icon-good-quality:before {
   content: "\f1fe";
 }
-.tele-invisible:before {
+.tele-icon-invisible:before {
   content: "\f1ff";
 }
-.tele-idea:before {
+.tele-icon-idea:before {
   content: "\f200";
 }
-.tele-rubik-s-cube:before {
+.tele-icon-rubik-s-cube:before {
   content: "\f201";
 }
-.tele-job-seeker:before {
+.tele-icon-job-seeker:before {
   content: "\f202";
 }
-.tele-attendance:before {
+.tele-icon-attendance:before {
   content: "\f203";
 }
-.tele-signing-a-document:before {
+.tele-icon-signing-a-document:before {
   content: "\f204";
 }
-.tele-delete-receipt:before {
+.tele-icon-delete-receipt:before {
   content: "\f205";
 }
-.tele-event-accepted-tentatively:before {
+.tele-icon-event-accepted-tentatively:before {
   content: "\f206";
 }
-.tele-set-as-resume:before {
+.tele-icon-set-as-resume:before {
   content: "\f207";
 }
-.tele-thumbs-up:before {
+.tele-icon-thumbs-up:before {
   content: "\f208";
 }
-.tele-resume:before {
+.tele-icon-resume:before {
   content: "\f209";
 }
-.tele-smart-card-reader:before {
+.tele-icon-smart-card-reader:before {
   content: "\f20a";
 }
-.tele-communication:before {
+.tele-icon-communication:before {
   content: "\f20b";
 }
-.tele-usa:before {
+.tele-icon-usa:before {
   content: "\f20c";
 }
-.tele-mail:before {
+.tele-icon-mail:before {
   content: "\f20d";
 }
-.tele-restaurant-menu:before {
+.tele-icon-restaurant-menu:before {
   content: "\f20e";
 }
-.tele-aspect-ratio:before {
+.tele-icon-aspect-ratio:before {
   content: "\f20f";
 }
-.tele-save-as:before {
+.tele-icon-save-as:before {
   content: "\f210";
 }
-.tele-bot:before {
+.tele-icon-bot:before {
   content: "\f211";
 }
-.tele-conference:before {
+.tele-icon-conference:before {
   content: "\f212";
 }
-.tele-user-groups:before {
+.tele-icon-user-groups:before {
   content: "\f213";
 }
-.tele-attach:before {
+.tele-icon-attach:before {
   content: "\f214";
 }
-.tele-checklist:before {
+.tele-icon-checklist:before {
   content: "\f215";
 }
-.tele-secured-letter:before {
+.tele-icon-secured-letter:before {
   content: "\f216";
 }
-.tele-mail-error:before {
+.tele-icon-mail-error:before {
   content: "\f217";
 }
-.tele-online-maintenance-portal:before {
+.tele-icon-online-maintenance-portal:before {
   content: "\f218";
 }
-.tele-send-email:before {
+.tele-icon-send-email:before {
   content: "\f219";
 }
-.tele-people:before {
+.tele-icon-people:before {
   content: "\f21a";
 }
-.tele-microsoft-outlook-2019:before {
+.tele-icon-microsoft-outlook-2019:before {
   content: "\f21b";
 }
-.tele-windows-calendar:before {
+.tele-icon-windows-calendar:before {
   content: "\f21c";
 }
-.tele-windows-10:before {
+.tele-icon-windows-10:before {
   content: "\f21d";
 }
-.tele-online-payment-with-a-credit-card:before {
+.tele-icon-online-payment-with-a-credit-card:before {
   content: "\f21e";
 }
-.tele-project:before {
+.tele-icon-project:before {
   content: "\f21f";
 }
-.tele-mobile-shop-credit:before {
+.tele-icon-mobile-shop-credit:before {
   content: "\f220";
 }
-.tele-wrench:before {
+.tele-icon-wrench:before {
   content: "\f221";
 }
-.tele-high-priority-message:before {
+.tele-icon-high-priority-message:before {
   content: "\f222";
 }
-.tele-letterbox:before {
+.tele-icon-letterbox:before {
   content: "\f223";
 }
-.tele-alarms:before {
+.tele-icon-alarms:before {
   content: "\f224";
 }
-.tele-proforma-invoice:before {
+.tele-icon-proforma-invoice:before {
   content: "\f225";
 }
-.tele-bill:before {
+.tele-icon-bill:before {
   content: "\f226";
 }
-.tele-purchase-order:before {
+.tele-icon-purchase-order:before {
   content: "\f227";
 }
-.tele-receipt-dollar:before {
+.tele-icon-receipt-dollar:before {
   content: "\f228";
 }
-.tele-check-file:before {
+.tele-icon-check-file:before {
   content: "\f229";
 }
-.tele-licence:before {
+.tele-icon-licence:before {
   content: "\f22a";
 }
-.tele-google-calendar:before {
+.tele-icon-google-calendar:before {
   content: "\f22b";
 }
-.tele-test:before {
+.tele-icon-test:before {
   content: "\f22c";
 }
-.tele-auto-deskew:before {
+.tele-icon-auto-deskew:before {
   content: "\f22d";
 }
-.tele-receipt-terminal:before {
+.tele-icon-receipt-terminal:before {
   content: "\f22e";
 }
-.tele-push-notifications:before {
+.tele-icon-push-notifications:before {
   content: "\f22f";
 }
-.tele-chain:before {
+.tele-icon-chain:before {
   content: "\f230";
 }
-.tele-window-cloud:before {
+.tele-icon-window-cloud:before {
   content: "\f231";
 }
-.tele-rss:before {
+.tele-icon-rss:before {
   content: "\f232";
 }
-.tele-decision:before {
+.tele-icon-decision:before {
   content: "\f233";
 }
-.tele-shipping-centre-loading-belt:before {
+.tele-icon-shipping-centre-loading-belt:before {
   content: "\f234";
 }
-.tele-mockup:before {
+.tele-icon-mockup:before {
   content: "\f235";
 }
-.tele-mail-network:before {
+.tele-icon-mail-network:before {
   content: "\f236";
 }
-.tele-online-store:before {
+.tele-icon-online-store:before {
   content: "\f237";
 }
-.tele-google-calendar-2:before {
+.tele-icon-google-calendar-2:before {
   content: "\f238";
 }
-.tele-music-robot:before {
+.tele-icon-music-robot:before {
   content: "\f239";
 }
-.tele-print:before {
+.tele-icon-print:before {
   content: "\f23a";
 }
-.tele-form:before {
+.tele-icon-form:before {
   content: "\f23b";
 }
-.tele-blog:before {
+.tele-icon-blog:before {
   content: "\f23c";
 }
-.tele-google-drive:before {
+.tele-icon-google-drive:before {
   content: "\f23d";
 }
-.tele-new-ticket:before {
+.tele-icon-new-ticket:before {
   content: "\f23e";
 }
-.tele-related-companies:before {
+.tele-icon-related-companies:before {
   content: "\f23f";
 }
-.tele-toolbox:before {
+.tele-icon-toolbox:before {
   content: "\f240";
 }
-.tele-card-payment:before {
+.tele-icon-card-payment:before {
   content: "\f241";
 }
-.tele-tools:before {
+.tele-icon-tools:before {
   content: "\f242";
 }
-.tele-feedback-hub:before {
+.tele-icon-feedback-hub:before {
   content: "\f243";
 }
-.tele-customer-support:before {
+.tele-icon-customer-support:before {
   content: "\f244";
 }
-.tele-favorite-cart:before {
+.tele-icon-favorite-cart:before {
   content: "\f245";
 }
-.tele-request-service:before {
+.tele-icon-request-service:before {
   content: "\f246";
 }
-.tele-faq:before {
+.tele-icon-faq:before {
   content: "\f247";
 }
-.tele-google-maps:before {
+.tele-icon-google-maps:before {
   content: "\f248";
 }
-.tele-compare:before {
+.tele-icon-compare:before {
   content: "\f249";
 }
-.tele-e-learning:before {
+.tele-icon-e-learning:before {
   content: "\f24a";
 }
-.tele-visa:before {
+.tele-icon-visa:before {
   content: "\f24b";
 }
-.tele-planner:before {
+.tele-icon-planner:before {
   content: "\f24c";
 }
-.tele-chrome-web-store:before {
+.tele-icon-chrome-web-store:before {
   content: "\f24d";
 }
-.tele-top-view-bird:before {
+.tele-icon-top-view-bird:before {
   content: "\f24e";
 }
-.tele-summary-list:before {
+.tele-icon-summary-list:before {
   content: "\f24f";
 }
-.tele-schedule-mail:before {
+.tele-icon-schedule-mail:before {
   content: "\f250";
 }
-.tele-linkedin:before {
+.tele-icon-linkedin:before {
   content: "\f251";
 }
-.tele-diploma:before {
+.tele-icon-diploma:before {
   content: "\f252";
 }
-.tele-done:before {
+.tele-icon-done:before {
   content: "\f253";
 }
-.tele-forward:before {
+.tele-icon-forward:before {
   content: "\f254";
 }
-.tele-services:before {
+.tele-icon-services:before {
   content: "\f255";
 }
-.tele-consultation:before {
+.tele-icon-consultation:before {
   content: "\f256";
 }
-.tele-font-style-formatting:before {
+.tele-icon-font-style-formatting:before {
   content: "\f257";
 }
-.tele-folded-booklet:before {
+.tele-icon-folded-booklet:before {
   content: "\f258";
 }
-.tele-important-mail:before {
+.tele-icon-important-mail:before {
   content: "\f259";
 }
-.tele-hashtag:before {
+.tele-icon-hashtag:before {
   content: "\f25a";
 }
-.tele-receipt-approved:before {
+.tele-icon-receipt-approved:before {
   content: "\f25b";
 }
-.tele-project-management:before {
+.tele-icon-project-management:before {
   content: "\f25c";
 }
-.tele-disk-cleanup:before {
+.tele-icon-disk-cleanup:before {
   content: "\f25d";
 }
-.tele-shopping-mall:before {
+.tele-icon-shopping-mall:before {
   content: "\f25e";
 }
-.tele-in-inventory:before {
+.tele-icon-in-inventory:before {
   content: "\f25f";
 }
-.tele-lease:before {
+.tele-icon-lease:before {
   content: "\f260";
 }
-.tele-edit-image:before {
+.tele-icon-edit-image:before {
   content: "\f262";
 }
-.tele-undo:before {
+.tele-icon-undo:before {
   content: "\f263";
 }
-.tele-location-off:before {
+.tele-icon-location-off:before {
   content: "\f264";
 }
-.tele-link:before {
+.tele-icon-link:before {
   content: "\f265";
 }
-.tele-documents:before {
+.tele-icon-documents:before {
   content: "\f266";
 }
-.tele-amazon-shopping-app:before {
+.tele-icon-amazon-shopping-app:before {
   content: "\f267";
 }
-.tele-increase-profits:before {
+.tele-icon-increase-profits:before {
   content: "\f268";
 }
-.tele-table-of-content:before {
+.tele-icon-table-of-content:before {
   content: "\f269";
 }
-.tele-area-chart:before {
+.tele-icon-area-chart:before {
   content: "\f26a";
 }
-.tele-add:before {
+.tele-icon-add:before {
   content: "\f26b";
 }
-.tele-eye:before {
+.tele-icon-eye:before {
   content: "\f26c";
 }
-.tele-share:before {
+.tele-icon-share:before {
   content: "\f26d";
 }
-.tele-sync-settings:before {
+.tele-icon-sync-settings:before {
   content: "\f26e";
 }
-.tele-process:before {
+.tele-icon-process:before {
   content: "\f26f";
 }
-.tele-elearning:before {
+.tele-icon-elearning:before {
   content: "\f270";
 }
-.tele-schedule:before {
+.tele-icon-schedule:before {
   content: "\f271";
 }
-.tele-general-ledger:before {
+.tele-icon-general-ledger:before {
   content: "\f272";
 }
-.tele-door-lock:before {
+.tele-icon-door-lock:before {
   content: "\f273";
 }
-.tele-prototype:before {
+.tele-icon-prototype:before {
   content: "\f274";
 }
-.tele-paid-search:before {
+.tele-icon-paid-search:before {
   content: "\f275";
 }
-.tele-cloud-connection:before {
+.tele-icon-cloud-connection:before {
   content: "\f276";
 }
-.tele-sepa:before {
+.tele-icon-sepa:before {
   content: "\f277";
 }
-.tele-worldwide-delivery:before {
+.tele-icon-worldwide-delivery:before {
   content: "\f278";
 }
-.tele-fast-cart:before {
+.tele-icon-fast-cart:before {
   content: "\f279";
 }
-.tele-shopping-bag:before {
+.tele-icon-shopping-bag:before {
   content: "\f27a";
 }
-.tele-airport:before {
+.tele-icon-airport:before {
   content: "\f27b";
 }
-.tele-car-rental:before {
+.tele-icon-car-rental:before {
   content: "\f27c";
 }
-.tele-petition:before {
+.tele-icon-petition:before {
   content: "\f27d";
 }
-.tele-rent:before {
+.tele-icon-rent:before {
   content: "\f27e";
 }
-.tele-travel-diary:before {
+.tele-icon-travel-diary:before {
   content: "\f27f";
 }
-.tele-mastercard-credit-card:before {
+.tele-icon-mastercard-credit-card:before {
   content: "\f280";
 }
-.tele-task-planning:before {
+.tele-icon-task-planning:before {
   content: "\f281";
 }

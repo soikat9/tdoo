@@ -2,6 +2,6 @@
 <tele>
     <template id="notify_approval">
         <p t-if="approved">Approved as <em t-esc="group_name"/> <i class="fa fa-thumbs-up text-success"/></p>
-        <p t-else="">Rejected as <em t-esc="group_name"/> <i class="fa fa-thumbs-down text-danger"/></p>
+        <p t-else="">Rejected as <em t-esc="group_name"/> <i class="fa fa-thumbs-down text-warning"/></p>
     </template>
 </tele>

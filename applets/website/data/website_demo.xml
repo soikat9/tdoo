@@ -215,7 +215,7 @@
                                             <h6>Headings 6</h6>
                                             <p>Paragraph with <strong>bold</strong>, <span class="text-muted">muted</span> and <em>italic</em> texts</p>
                                             <p><a href="#">Link</a></p>
-                                            <p><button type="button" class="btn btn-link">Link button</button></p>
+                                            <p><button type="button" class="btn btn-link rounded-sm">Link button</button></p>
                                         </div>
                                     </div>
                                 </div>

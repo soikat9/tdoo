@@ -224,10 +224,10 @@
         </record>
 
         <!--top menu -->
-        <menuitem id="menu_apps" name="Apps" parent="menu_management" sequence="5"/>
+        <menuitem id="menu_apps" name="Applets" parent="menu_management" sequence="5"/>
 
         <!--submenu -->
-        <menuitem id="menu_module_tree" parent="menu_apps" name="Main Apps" sequence="5" action="open_module_tree" />
+        <menuitem id="menu_module_tree" parent="menu_apps" name="Available Apps" sequence="5" action="open_module_tree" />
         
         <!-- Apps modules -->
         <record model="ir.actions.client" id="modules_act_cl">

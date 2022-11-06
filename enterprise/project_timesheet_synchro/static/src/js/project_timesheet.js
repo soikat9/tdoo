@@ -28,10 +28,10 @@ tele.define('project_timeshee.ui', function (require ) {
     var MODULE_KEY = '__import__.'; // Xml_id prefix.
 
     // Mobile device detection
-    // Awesome Timesheet is used in Android/iOS native app.
+    // Tele-Timesheet is used in Android/iOS native app.
     var isMobile = config.device.isMobileDevice;
     // Desktop detection
-    // In Tele, Awesome Timesheet is embedded inside an iframe.
+    // In Tele, Tele-Timesheet is embedded inside an iframe.
     var isDesktop = !isMobile && window.location.origin.indexOf("chrome-extension://") === -1;
     // Because of the iframe src (/project_timesheet_synchro/timesheet_app),
     // the current path location is 'project_timesheet_synchro' instead of the root path.

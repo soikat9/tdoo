@@ -639,7 +639,7 @@
                 <span><i class="fa fa-circle-o-notch fa-spin" role="img" aria-label="Please wait" title="Please wait"/> Loading older messages... </span>
             </t>
             <t t-else="">
-                <button class="btn btn-link">-------- Show older messages --------</button>
+                <button class="btn btn-link rounded-sm">-------- Show older messages --------</button>
             </t>
         </div>
     </t>

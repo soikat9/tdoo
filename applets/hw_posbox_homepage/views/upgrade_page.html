@@ -86,9 +86,9 @@
     </div>
     <div class="text-center" style="margin: 15px auto;">
         {% if flashToVersion %}
-            <a class="btn" href='#' id='flash'>Upgrade to {{ flashToVersion }}</a>
+            <a class="btn rounded-sm" href='#' id='flash'>Upgrade to {{ flashToVersion }}</a>
         {% else %}
-            <a class="btn" href='#' id='upgrade'>Upgrade</a>
+            <a class="btn rounded-sm" href='#' id='upgrade'>Upgrade</a>
         {% endif %}
     </div>
     {{ loading_block_ui(loading_message) }}

@@ -65,14 +65,14 @@
     </style>
     <g transform="translate(0 193)">
         <polygon id="poly_1" points="675 0 562.5 112.5 675 112.5 675 0" fill="#383E45"/>
-        <polygon id="poly_2" points="562.5 112.5 450 225 562.5 225 562.5 112.5" fill="#3AADAA"/>
-        <polygon id="poly_3" points="562.5 337.5 675 225 562.5 225 562.5 337.5" fill="#3AADAA"/>
+        <polygon id="poly_2" points="562.5 112.5 450 225 562.5 225 562.5 112.5" fill="#2283c0"/>
+        <polygon id="poly_3" points="562.5 337.5 675 225 562.5 225 562.5 337.5" fill="#2283c0"/>
         <polygon id="poly_4" points="562.5 337.5 450 225 450 337.5 562.5 337.5" fill="#28AFEA"/>
         <polygon id="poly_5" points="337.5 337.5 450 450 450 337.5 337.5 337.5" fill="#28AFEA"/>
         <polygon id="poly_6" points="337.5 225 450 337.5 450 225 337.5 225" fill="#F6F6F6"/>
         <polygon id="poly_7" points="225 337.5 337.5 225 225 225 225 337.5" fill="#F6F6F6"/>
         <polygon id="poly_8" points="337.5 337.5 225 450 337.5 450 337.5 337.5" fill="#383E45"/>
-        <polygon id="poly_9" points="112.5 337.5 225 450 225 337.5 112.5 337.5" fill="#3AADAA"/>
+        <polygon id="poly_9" points="112.5 337.5 225 450 225 337.5 112.5 337.5" fill="#2283c0"/>
         <polygon id="poly_10" points="0 337.5 112.5 450 112.5 337.5 0 337.5" fill="#28AFEA"/>
         <polygon id="poly_11" points="675 337.5 562.5 450 675 450 675 337.5" fill="#383E45"/>
         <polygon id="poly_12" points="675 225 562.5 112.5 675 112.5 675 225" fill="#28AFEA"/>

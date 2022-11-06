@@ -5,16 +5,16 @@
         <record id="crm_case_1" model="crm.lead">
             <field name="create_date" eval="DateTime.now() - relativedelta(days=8)"/>
             <field name="type">lead</field>
-            <field name="name">Club Office Furnitures</field>
-            <field name="contact_name">Jacques Dunagan</field>
-            <field name="partner_name">Le Club SARL</field>
-            <field name="email_from">jdunagan@leclub.example.com</field>
+            <field name="name">Jassy Wedding Planners</field>
+            <field name="contact_name">Jasserin Reynolds</field>
+            <field name="partner_name">Jassy Ceremonies</field>
+            <field name="email_from">jreynolds@wplanners.example.com</field>
             <field name="function">Training Manager</field>
             <field name="country_id" ref="base.fr"/>
-            <field name="city">Paris</field>
-            <field name="zip">93190</field>
-            <field name="street">Rue Léon Dierx 73</field>
-            <field name="phone">+33 1 25 54 45 69</field>
+            <field name="city">San Diego</field>
+            <field name="zip">92103</field>
+            <field name="street">5321 Park Blvd</field>
+            <field name="phone">+1 858-225-5000</field>
             <field name="tag_ids" eval="[(6, 0, [ref('sales_team.categ_oppor6')])]"/>
             <field name="priority">1</field>
             <field name="team_id" ref="sales_team.team_sales_department"/>
@@ -30,9 +30,9 @@
             <field name="model">crm.lead</field>
             <field name="res_id" ref="crm_case_1"/>
             <field name="author_id" eval="False"/>
-            <field name="email_from">jdunagan@leclub.example.com</field>
+            <field name="email_from">jreynolds@wplanners.example.com</field>
             <field name="body"><![CDATA[<p>Hello,<br />
-            I am Jacques from Le Club SARL. I am interested in attending a training organized by your company.<br />
+            I am Jasserin from Jassy Ceremonies. I am interested in attending a training organized by your company.<br />
             Can you send me the details ?</p>]]></field>
             <field name="message_type">email</field>
             <field name="subtype_id" ref="mail.mt_comment"/>
@@ -102,7 +102,7 @@
             <field name="contact_name">Henry Campbell</field>
             <field name="partner_name">Burstein Applebee</field>
             <field name="email_from">hmc@yahoo.example.com</field>
-            <field name="country_id" ref="base.uk"/>
+            <field name="country_id" ref="base.us"/>
             <field name="city">Manchester</field>
             <field name="zip">03101</field>
             <field name="street">United Street 68</field>
@@ -209,8 +209,8 @@ Contact: +1 813 494 5005</p>]]></field>
             <field name="partner_name">ESM Expert</field>
             <field name="email_from">logan_expert@gmail.example.com</field>
             <field name="function">Sales</field>
-            <field name="country_id" ref="base.uk"/>
-            <field name="city">London</field>
+            <field name="country_id" ref="base.us"/>
+            <field name="city">Los Angeles</field>
             <field name="zip">E1AB</field>
             <field name="tag_ids" eval="[(6, 0, [ref('sales_team.categ_oppor4'), ref('sales_team.categ_oppor8')])]"/>
             <field name="priority">1</field>
@@ -244,7 +244,7 @@ ESM Expert<br />]]></field>
             <field name="partner_name">Marketing Business</field>
             <field name="email_from">d.albert@marketing-business.example.com</field>
             <field name="function">Sales</field>
-            <field name="country_id" ref="base.uk"/>
+            <field name="country_id" ref="base.us"/>
             <field name="city">Oxford</field>
             <field name="zip">OX1 1RQ</field>
             <field name="tag_ids" eval="[(6, 0, [ref('sales_team.categ_oppor4'), ref('sales_team.categ_oppor7')])]"/>
@@ -294,7 +294,7 @@ Andrew</p>]]></field>
         <record id="crm_case_11" model="crm.lead">
             <field name="create_date" eval="datetime.now() - timedelta(days=5)"/>
             <field name="type">lead</field>
-            <field name="name">Estimation for Office Furnitures</field>
+            <field name="name">Estimation for Wedding Planning</field>
             <field name="contact_name">Thomas Passot</field>
             <field name="partner_name">Deco Addict</field>
             <field name="email_from">p.thomas@agrolait.com</field>
@@ -489,7 +489,7 @@ Andrew</p>]]></field>
             <field name="contact_name">Robin Smith</field>
             <field name="partner_name">Global Solutions</field>
             <field name="partner_id" ref="base.res_partner_4"/>
-            <field name="country_id" ref="base.uk"/>
+            <field name="country_id" ref="base.us"/>
             <field name="city">Liverpool</field>
             <field name="zip">L25 4RL</field>
             <field name="street">Union Road</field>
@@ -547,9 +547,9 @@ Andrew</p>]]></field>
             <field name="contact_name">Leland Martinez</field>
             <field name="email_from">info@deltapc.example.com</field>
             <field name="partner_name">Delta PC</field>
-            <field name="city">London</field>
+            <field name="city">Los Angeles</field>
             <field name="street">3661 Station Street</field>
-            <field name="country_id" ref="base.uk"/>
+            <field name="country_id" ref="base.us"/>
             <field name="partner_id" ref="base.res_partner_4"/>
             <field name="tag_ids" eval="[(6, 0, [ref('sales_team.categ_oppor4'),ref('sales_team.categ_oppor6')])]"/>
             <field name="priority">1</field>
@@ -643,7 +643,7 @@ Andrew</p>]]></field>
             <field name="name">Office Design and Architecture</field>
             <field name="expected_revenue">9000</field>
             <field name="partner_id" ref="base.res_partner_4"/>
-            <field name="country_id" ref="base.uk"/>
+            <field name="country_id" ref="base.us"/>
             <field name="city">Birmingham</field>
             <field name="zip">B46 3AG</field>
             <field name="street">Cannon Hill Park</field>
@@ -810,9 +810,9 @@ Andrew</p>]]></field>
             <field name="create_date" eval="DateTime.now() - relativedelta(months=1)"/>
             <field name="type">lead</field>
             <field name="name">Club Office More Desks</field>
-            <field name="contact_name">Jacques Dunagan</field>
-            <field name="partner_name">Le Club SARL</field>
-            <field name="email_from">jdunagan@leclub.example.com</field>
+            <field name="contact_name">Jasserin Reynolds</field>
+            <field name="partner_name">Jassy Ceremonies</field>
+            <field name="email_from">jreynolds@wplanners.example.com</field>
             <field name="function">Training Manager</field>
             <field name="country_id" ref="base.fr"/>
             <field name="city">Paris</field>
@@ -928,7 +928,7 @@ Andrew</p>]]></field>
             <field name="contact_name">Aloysius Akred</field>
             <field name="email_from">aakreda@theglobeandmail.com</field>
             <field name="country_id" ref="base.gr"/>
-            <field name="city">London</field>
+            <field name="city">Los Angeles</field>
             <field name="street">1 Russel square</field>
             <field name="tag_ids" eval="[(6, 0, [ref('sales_team.categ_oppor1')])]"/>
             <field name="priority">1</field>

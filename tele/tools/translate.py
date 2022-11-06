@@ -1121,7 +1121,7 @@ class TranslationModuleReader:
         - the strings inside Qweb files inside static/src/xml/
         """
 
-        # Also scan these non-addon paths
+        # Also scan these non-applet paths
         for bin_path in ['osv', 'report', 'modules', 'service', 'tools']:
             self._path_list.append((os.path.join(config['root_path'], bin_path), True))
         # non-recursive scan for individual files in root directory but without

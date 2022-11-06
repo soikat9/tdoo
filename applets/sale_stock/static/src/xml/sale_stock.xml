@@ -43,10 +43,10 @@
                             <span t-if="data.will_be_fulfilled and data.forecast_expected_date_str">
                                 Remaining demand available at <b t-esc="data.forecast_expected_date_str" t-att-class="data.scheduled_date &lt; data.forecast_expected_date ? 'text-danger' : ''"/>
                             </span>
-                            <span t-elif="!data.will_be_fulfilled and data.forecast_expected_date_str" class="text-danger">
+                            <span t-elif="!data.will_be_fulfilled and data.forecast_expected_date_str" class="text-warning">
                                 No enough future availaibility
                             </span>
-                            <span t-elif="!data.will_be_fulfilled" class="text-danger">
+                            <span t-elif="!data.will_be_fulfilled" class="text-warning">
                                 No future availaibility
                             </span>
                             <span t-else="">

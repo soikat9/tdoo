@@ -116,9 +116,9 @@
                 <div class="modal-content rounded-sm">
                     <header class="modal-header">
                         <h4 class="modal-title">A problem has occurred</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close">×</button>
                     </header>
-                    <main class="modal-body"><p>To take this survey, please close all other tabs on <strong class="text-danger"></strong>.</p></main>
+                    <main class="modal-body"><p>To take this survey, please close all other tabs on <strong class="text-warning"></strong>.</p></main>
                     <footer class="modal-footer"><button type="button" class="btn btn-primary rounded-sm" data-dismiss="modal">Continue here</button></footer>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                     <div t-if="survey.is_time_limited">
                         <p>
                             <span>Time limit for this survey: </span>
-                            <span class="font-weight-bold text-danger" t-field="survey.time_limit" t-options="{'widget': 'duration', 'unit': 'minute'}"></span>
+                            <span class="font-weight-bold text-warning" t-field="survey.time_limit" t-options="{'widget': 'duration', 'unit': 'minute'}"></span>
                         </p>
                     </div>
                     <button type="submit" value="start" class="btn btn-primary rounded-sm btn-lg">
@@ -310,7 +310,7 @@
             <div class="mb-4">
                 <h3 t-if="not hide_question_title">
                     <span t-field='question.title' class="text-break" />
-                    <span t-if="question.constr_mandatory" class="text-danger">*</span>
+                    <span t-if="question.constr_mandatory" class="text-warning">*</span>
                 </h3>
                 <div t-if="not is_html_empty(question.description)" t-field='question.description' class="text-muted oe_no_empty mt-1 text-break"/>
             </div>

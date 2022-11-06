@@ -427,9 +427,9 @@ def convert_legacy_default_import(content):
     .. code-block:: javascript
 
         // before
-        import module_name from "addon.module_name"
+        import module_name from "applet.module_name"
         // after
-        const module_name = require("addon.module_name")
+        const module_name = require("applet.module_name")
     """
     repl = r"""\g<space>const \g<identifier> = require(\g<path>)"""
     return IMPORT_LEGACY_DEFAULT_RE.sub(repl, content)

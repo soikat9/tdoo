@@ -8,7 +8,7 @@
                 <xpath expr="//field[@name='model_ids']" position="after">
                     <field name="is_studio" invisible="1"/>
                     <div class="alert alert-danger" role="alert" attrs="{'invisible': ['|',('is_studio', '!=',  True),'&amp;','&amp;','&amp;',('custom_models', '=', 0),('custom_fields', '=', 0),('custom_views', '=', 0),('custom_reports', '=', 0)]}">
-                        <h3 class="text-danger">Customization made with Studio will be permanently lost</h3>
+                        <h3 class="text-warning">Customization made with Studio will be permanently lost</h3>
                         <group>
                             <field string="Custom models:" name="custom_models"/>
                             <field string="Custom fields:" name="custom_fields"/>

@@ -2080,7 +2080,7 @@
                 </p>
 
                 <div class="alert alert-warning alert-dismissable mt16" groups="website.group_website_publisher" role="status">
-                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
+                   <button type="button" class="close rounded-sm" data-dismiss="alert" aria-label="Close">×</button>
                    <p>
                      Note: To hide this page, uncheck it from the top Customize menu.
                    </p>
@@ -2257,7 +2257,7 @@
                     <div class="modal-content rounded-sm">
                         <header class="modal-header">
                             <h4 class="modal-title">Reset templates</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+                            <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close">×</button>
                         </header>
                         <main class="modal-body">
                             <div class="form-group row mb0">
@@ -2275,7 +2275,7 @@
                             </div>
                         </main>
                         <footer class="modal-footer">
-                            <button type="button" class="btn" data-dismiss="modal" aria-label="Cancel">Cancel</button>
+                            <button type="button" class="btn rounded-sm" data-dismiss="modal" aria-label="Cancel">Cancel</button>
                             <input type="submit" value="Confirm" class="btn btn-primary rounded-sm"/>
                         </footer>
                     </div>

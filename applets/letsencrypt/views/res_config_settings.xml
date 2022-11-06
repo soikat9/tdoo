@@ -84,7 +84,7 @@
                                     <label for="letsencrypt_prefer_dns" />
                                     <div
                                         class="text-muted"
-                                    >Validate through DNS even when HTTP validation is possible. Use this if your Odoo instance isn't publicly accessible.</div>
+                                    >Validate through DNS even when HTTP validation is possible. Use this if your Tele  instance isn't publicly accessible.</div>
                                 </div>
                             </div>
                         </div>

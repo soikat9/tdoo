@@ -41,7 +41,7 @@ const CSS_UNITS_CONVERSION = {
  * value: color hex code
  */
 const DEFAULT_PALETTE = {
-    '1': '#3AADAA',
+    '1': '#2283c0',
     '2': '#28AFEA',
     '3': '#F6F6F6',
     '4': '#FFFFFF',

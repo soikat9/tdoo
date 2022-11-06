@@ -62,7 +62,7 @@ class ResConfigSettings(models.TransientModel):
         string="Prefer DNS validation",
         help=(
             "Validate through DNS even when HTTP validation is possible. "
-            "Use this if your Odoo instance isn't publicly accessible."
+            "Use this if your Tele  instance isn't publicly accessible."
         ),
         config_parameter="letsencrypt.prefer_dns",
     )

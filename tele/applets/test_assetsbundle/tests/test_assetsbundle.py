@@ -1803,7 +1803,7 @@ class TestAssetsManifest(AddonManifestPatched):
         with self.assertRaises(QWebException) as cm:
             view._render()
 
-        self.assertTrue('Unallowed to fetch files from addon notinstalled_module' in cm.exception.message)
+        self.assertTrue('Unallowed to fetch files from applet notinstalled_module' in cm.exception.message)
 
     def test_33bis_notinstalled_not_in_manifests(self):
         self.env['ir.asset'].create({

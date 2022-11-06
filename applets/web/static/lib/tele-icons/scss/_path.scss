@@ -1,0 +1,21 @@
+// Font paths
+// -------------------------
+
+@font-face {
+  font-family: "Tele-Icons";
+  src: url("../fonts/Tele-Icons.eot");
+  src: url("../fonts/Tele-Icons.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Tele-Icons.woff2") format("woff2"),
+  url("../fonts/Tele-Icons.woff") format("woff"),
+  url("../fonts/Tele-Icons.ttf") format("truetype"),
+  url("../fonts/Tele-Icons.svg#font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Tele-Icons";
+    src: url("../fonts/Tele-Icons.svg#Tele-Icons") format("svg");
+  }
+}

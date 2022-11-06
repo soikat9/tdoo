@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600">
     <defs>
         <pattern id="pattern" width="6.24" height="6.24" viewBox="0 0 6.24 6.24" patternUnits="userSpaceOnUse">
-            <rect width="100%" height="100%" fill="#3AADAA"/>
+            <rect width="100%" height="100%" fill="#2283c0"/>
             <path id="patternLines" d="M0,1.7c1.56,0,1.56,2.84,3.12,2.84S4.68,1.7,6.24,1.7,7.8,4.54,9.36,4.54,10.92,1.7,12.48,1.7" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width=".5" transform="translate(-6.2)">
                 <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="3s" values="-6.2;0;" repeatCount="indefinite"/>
             </path>

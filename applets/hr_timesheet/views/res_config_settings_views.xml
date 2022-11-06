@@ -47,27 +47,6 @@
                             <div class="o_setting_left_pane">
                                 <field name="module_project_timesheet_synchro" widget="upgrade_boolean"/>
                             </div>
-                            <div style="width:130%" class="o_setting_right_pane">
-                                <label for="module_project_timesheet_synchro"/>
-                                <div class="text-muted">
-                                    Track your time from anywhere, even offline, with our web/mobile apps
-                                </div>
-                                <div class="content-group">
-                                    <div class="row mt16 oe_center">
-                                        <div class="col-lg-3 pr-0 o_chrome_store_link d-none d-sm-inline-block">
-                                            <a href="http://www.tele.studio/app/timesheet?platform=chrome" class="align-middle" target="_blank">
-                                                <img alt="Google Chrome Store" class="img img-fluid align-middle mt-1" style="height: 85% !important;" src="project/static/src/img/chrome_store.png"/>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3 pr-0">
-                                            <img alt="Apple App Store" class="img img-fluid o_config_app_store mt-1" style="height: 85% !important; cursor: pointer;" src="project/static/src/img/app_store.png"/>
-                                        </div>
-                                        <div class="col-lg-3 pr-0">
-                                            <img alt="Google Play Store" class="img img-fluid o_config_play_store mt-1" style="height: 85% !important; cursor: pointer;" src="project/static/src/img/play_store.png"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <h2>Timesheets Control</h2>

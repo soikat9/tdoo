@@ -46,7 +46,7 @@
                             <div class="col-12 col-lg-6 o_setting_box" id="domain_setting">
                                 <div class="o_setting_right_pane">
                                     <label for="website_name" string="Website Title"/>
-                                    <span class="fa fa-lg fa-globe" title="Values set here are website-specific." groups="website.group_multi_website"/>
+                                    <span class="fa fa-lg icon-pencil" title="Values set here are website-specific." groups="website.group_multi_website"/>
                                     <div class="text-muted">
                                         Name and favicon of your website
                                     </div>
@@ -65,7 +65,7 @@
                             <div class="col-12 col-lg-6 o_setting_box" id="company_settings" groups="base.group_multi_company">
                                 <div class="o_setting_right_pane">
                                     <label string="Company" for="website_company_id"/>
-                                    <span class="fa fa-lg fa-globe" title="Values set here are website-specific." groups="website.group_multi_website"/>
+                                    <span class="tele-icon-internet" title="Values set here are website-specific." groups="website.group_multi_website"/>
                                     <div class="text-muted">
                                         The company this website belongs to
                                     </div>

@@ -94,7 +94,7 @@ class IrAsset(models.Model):
         """
         Fetches all asset file paths from a given list of applets matching a
         certain bundle. The returned list is composed of tuples containing the
-        file path [1], the first addon calling it [0] and the bundle name.
+        file path [1], the first applet calling it [0] and the bundle name.
         Asset loading is performed as follows:
 
         1. All 'ir.asset' records matching the given bundle and with a sequence
@@ -108,12 +108,12 @@ class IrAsset(models.Model):
         records matching the bundle are also applied to the current list.
 
         :param bundle: name of the bundle from which to fetch the file paths
-        :param applets: list of addon names as strings. The files returned will
+        :param applets: list of applet names as strings. The files returned will
             only be contained in the given applets.
         :param css: boolean: whether or not to include style files
         :param js: boolean: whether or not to include script files
         :param xml: boolean: whether or not to include template files
-        :returns: the list of tuples (path, addon, bundle)
+        :returns: the list of tuples (path, applet, bundle)
         """
         installed = self._get_installed_applets_list()
         if applets is None:
@@ -130,7 +130,7 @@ class IrAsset(models.Model):
         See `_get_asset_paths` for more information.
 
         :param bundle: name of the bundle from which to fetch the file paths
-        :param applets: list of addon names as strings
+        :param applets: list of applet names as strings
         :param css: boolean: whether or not to include style files
         :param js: boolean: whether or not to include script files
         :param xml: boolean: whether or not to include template files
@@ -174,7 +174,7 @@ class IrAsset(models.Model):
                 self._fill_asset_paths(path_def, applets, installed, css, js, xml, asset_paths, seen + [bundle])
                 return
 
-            addon, paths = self._get_paths(path_def, installed, exts)
+            applet, paths = self._get_paths(path_def, installed, exts)
 
             # retrieve target index when it applies
             if directive in DIRECTIVES_WITH_TARGET:
@@ -183,21 +183,21 @@ class IrAsset(models.Model):
                     # nothing to do: the extension of the target is wrong
                     return
                 target_to_index = len(target_paths) and target_paths[0] or target
-                target_index = asset_paths.index(target_to_index, addon, bundle)
+                target_index = asset_paths.index(target_to_index, applet, bundle)
 
             if directive == APPEND_DIRECTIVE:
-                asset_paths.append(paths, addon, bundle)
+                asset_paths.append(paths, applet, bundle)
             elif directive == PREPEND_DIRECTIVE:
-                asset_paths.insert(paths, addon, bundle, bundle_start_index)
+                asset_paths.insert(paths, applet, bundle, bundle_start_index)
             elif directive == AFTER_DIRECTIVE:
-                asset_paths.insert(paths, addon, bundle, target_index + 1)
+                asset_paths.insert(paths, applet, bundle, target_index + 1)
             elif directive == BEFORE_DIRECTIVE:
-                asset_paths.insert(paths, addon, bundle, target_index)
+                asset_paths.insert(paths, applet, bundle, target_index)
             elif directive == REMOVE_DIRECTIVE:
-                asset_paths.remove(paths, addon, bundle)
+                asset_paths.remove(paths, applet, bundle)
             elif directive == REPLACE_DIRECTIVE:
-                asset_paths.insert(paths, addon, bundle, target_index)
-                asset_paths.remove(target_paths, addon, bundle)
+                asset_paths.insert(paths, applet, bundle, target_index)
+                asset_paths.remove(target_paths, applet, bundle)
             else:
                 # this should never happen
                 raise ValueError("Unexpected directive")
@@ -208,8 +208,8 @@ class IrAsset(models.Model):
             process_path(asset.directive, asset.target, asset.path)
 
         # 2. Process all applets' manifests.
-        for addon in self._topological_sort(tuple(applets)):
-            manifest = manifest_cache.get(addon)
+        for applet in self._topological_sort(tuple(applets)):
+            manifest = manifest_cache.get(applet)
             if not manifest:
                 continue
             manifest_assets = manifest.get('assets', {})
@@ -268,10 +268,10 @@ class IrAsset(models.Model):
         that is, application desc, sequence, name then topologically sorted"""
         IrModule = self.env['ir.module.module']
 
-        def mapper(addon):
-            manif = http.applets_manifest.get(addon, {})
+        def mapper(applet):
+            manif = http.applets_manifest.get(applet, {})
             from_terp = IrModule.get_values_from_terp(manif)
-            from_terp['name'] = addon
+            from_terp['name'] = applet
             from_terp['depends'] = manif.get('depends', ['base'])
             return from_terp
 
@@ -299,37 +299,37 @@ class IrAsset(models.Model):
     def _get_paths(self, path_def, installed, extensions=None):
         """
         Returns a list of file paths matching a given glob (path_def) as well as
-        the addon targeted by the path definition. If no file matches that glob,
+        the applet targeted by the path definition. If no file matches that glob,
         the path definition is returned as is. This is either because the path is
         not correctly written or because it points to a URL.
 
         :param path_def: the definition (glob) of file paths to match
         :param installed: the list of installed applets
         :param extensions: a list of extensions that found files must match
-        :returns: a tuple: the addon targeted by the path definition [0] and the
+        :returns: a tuple: the applet targeted by the path definition [0] and the
             list of file paths matching the definition [1] (or the glob itself if
             none). Note that these paths are filtered on the given `extensions`.
         """
         paths = []
         path_url = fs2web(path_def)
         path_parts = [part for part in path_url.split('/') if part]
-        addon = path_parts[0]
-        addon_manifest = http.applets_manifest.get(addon)
+        applet = path_parts[0]
+        addon_manifest = http.applets_manifest.get(applet)
 
         safe_path = True
         if addon_manifest:
-            if addon not in installed:
+            if applet not in installed:
                 # Assert that the path is in the installed applets
-                raise Exception("Unallowed to fetch files from addon %s" % addon)
+                raise Exception("Unallowed to fetch files from applet %s" % applet)
             applets_path = os.path.join(addon_manifest['applets_path'], '')[:-1]
             full_path = os.path.normpath(os.path.join(applets_path, *path_parts))
 
-            # first security layer: forbid escape from the current addon
+            # first security layer: forbid escape from the current applet
             # "/mymodule/../myothermodule" is forbidden
             # the condition after the or is to further guarantee that we won't access
-            # a directory that happens to be named like an addon (web....)
-            if addon not in full_path or applets_path not in full_path:
-                addon = None
+            # a directory that happens to be named like an applet (web....)
+            if applet not in full_path or applets_path not in full_path:
+                applet = None
                 safe_path = False
             else:
                 paths = [
@@ -346,7 +346,7 @@ class IrAsset(models.Model):
                     return False
                 if path.rpartition('.')[2] in TEMPLATE_EXTENSIONS:
                     # normpath will strip the trailing /, which is why it has to be added afterwards
-                    static_path = os.path.normpath("%s/static" % addon) + os.path.sep
+                    static_path = os.path.normpath("%s/static" % applet) + os.path.sep
                     # Forbid xml to leak
                     return static_path in path
                 return True
@@ -362,7 +362,7 @@ class IrAsset(models.Model):
             paths = [path if path.split('.')[-1] in TEMPLATE_EXTENSIONS else fs2web(path[len(applets_path):]) for path in paths]
 
         else:
-            addon = None
+            applet = None
 
         if not paths and (not can_aggregate(path_url) or (safe_path and not is_wildcard_glob(path_url))):
             # No file matching the path; the path_def could be a url.
@@ -374,7 +374,7 @@ class IrAsset(models.Model):
                 msg += " It may be due to security reasons."
             _logger.warning(msg)
         # Paths are filtered on the extensions (if any).
-        return addon, [
+        return applet, [
             path
             for path in paths
             if not extensions or path.split('.')[-1] in extensions
@@ -394,12 +394,12 @@ class IrAsset(models.Model):
 
 
 class AssetPaths:
-    """ A list of asset paths (path, addon, bundle) with efficient operations. """
+    """ A list of asset paths (path, applet, bundle) with efficient operations. """
     def __init__(self):
         self.list = []
         self.memo = set()
 
-    def index(self, path, addon, bundle):
+    def index(self, path, applet, bundle):
         """Returns the index of the given path in the current assets list."""
         if path not in self.memo:
             self._raise_not_found(path, bundle)
@@ -407,23 +407,23 @@ class AssetPaths:
             if asset[0] == path:
                 return index
 
-    def append(self, paths, addon, bundle):
+    def append(self, paths, applet, bundle):
         """Appends the given paths to the current list."""
         for path in paths:
             if path not in self.memo:
-                self.list.append((path, addon, bundle))
+                self.list.append((path, applet, bundle))
                 self.memo.add(path)
 
-    def insert(self, paths, addon, bundle, index):
+    def insert(self, paths, applet, bundle, index):
         """Inserts the given paths to the current list at the given position."""
         to_insert = []
         for path in paths:
             if path not in self.memo:
-                to_insert.append((path, addon, bundle))
+                to_insert.append((path, applet, bundle))
                 self.memo.add(path)
         self.list[index:index] = to_insert
 
-    def remove(self, paths_to_remove, addon, bundle):
+    def remove(self, paths_to_remove, applet, bundle):
         """Removes the given paths from the current list."""
         paths = {path for path in paths_to_remove if path in self.memo}
         if paths:

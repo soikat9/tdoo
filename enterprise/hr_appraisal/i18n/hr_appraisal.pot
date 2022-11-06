@@ -1688,7 +1688,7 @@ msgstr ""
 
 #. module: hr_appraisal
 #: model_terms:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_view_activity
-msgid "text-danger"
+msgid "text-warning"
 msgstr ""
 
 #. module: hr_appraisal

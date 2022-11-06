@@ -58,7 +58,7 @@
                                 </span>
                             </t>
                             <t t-if="callParticipantCard.rtcSession.channel.rtc and callParticipantCard.rtcSession.isAudioInError">
-                                <span class="o_RtcCallParticipantCard_overlayTopElement text-danger" title="Issue with audio">
+                                <span class="o_RtcCallParticipantCard_overlayTopElement text-warning" title="Issue with audio">
                                     <i class="fa fa-exclamation-triangle"/>
                                 </span>
                             </t>

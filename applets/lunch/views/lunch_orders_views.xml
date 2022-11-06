@@ -176,7 +176,7 @@
           </p><p>
             Click on the <span class="fa fa-phone text-success" role="img" aria-label="Order button" title="Order button"/> to announce that the order is ordered.<br/>
             Click on the <span class="fa fa-check text-success" role="img" aria-label="Receive button" title="Receive button"/> to announce that the order is received.<br/>
-            Click on the <span class="fa fa-times-circle text-danger" role="img" aria-label="Cancel button" title="Cancel button"/> red X to announce that the order isn't available.
+            Click on the <span class="fa fa-times-circle text-warning" role="img" aria-label="Cancel button" title="Cancel button"/> red X to announce that the order isn't available.
           </p>
         </field>
     </record>

@@ -14,12 +14,12 @@
 		}
 		path {transform-origin: center;}
 		#path_1 {fill:#F6F6F6;}
-		#path_2, #path_3, #path_4 {opacity:0.24;fill:none;stroke:#3AADAA;stroke-width:2;}
+		#path_2, #path_3, #path_4 {opacity:0.24;fill:none;stroke:#2283c0;stroke-width:2;}
 		#path_2 {animation: scale_h 15s .5s cubic-bezier(.445, .05, .55, .95) infinite;}
 		#path_3 {animation: scale_h 15s cubic-bezier(.445, .05, .55, .95) infinite;}
 		#path_4 {animation: scale_h 15s 2s cubic-bezier(.445, .05, .55, .95) infinite;}
 		#path_5 {
-			fill:none;stroke:#3AADAA;stroke-width:2;
+			fill:none;stroke:#2283c0;stroke-width:2;
 			animation: rotate 15s 1.5s cubic-bezier(.445, .05, .55, .95) infinite;
 		}
 	</style>

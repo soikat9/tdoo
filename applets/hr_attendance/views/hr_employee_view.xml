@@ -63,7 +63,7 @@
                         <span class="o_stat_value text-success" attrs="{'invisible': [('total_overtime', '&lt;', 0)]}">
                             <field name="total_overtime" widget="float_time"/>
                         </span>
-                        <span class="o_stat_value text-danger" attrs="{'invisible': [('total_overtime', '&gt;=', 0)]}">
+                        <span class="o_stat_value text-warning" attrs="{'invisible': [('total_overtime', '&gt;=', 0)]}">
                             <field name="total_overtime" widget="float_time"/>
                         </span>
                         <span class="o_stat_text">Extra Hours</span>
@@ -137,7 +137,7 @@
                         <span class="o_stat_value text-success" attrs="{'invisible': [('total_overtime', '&lt;', 0)]}">
                             <field name="total_overtime" widget="float_time"/>
                         </span>
-                        <span class="o_stat_value text-danger" attrs="{'invisible': [('total_overtime', '&gt;=', 0)]}">
+                        <span class="o_stat_value text-warning" attrs="{'invisible': [('total_overtime', '&gt;=', 0)]}">
                             <field name="total_overtime" widget="float_time"/>
                         </span>
                         <span class="o_stat_text">Extra Hours</span>

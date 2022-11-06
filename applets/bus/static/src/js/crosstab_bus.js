@@ -159,7 +159,7 @@ var CrossTabBus = Longpolling.extend({
     },
     /**
      * Generates localStorage keys prefixed by bus. (LOCAL_STORAGE_PREFIX = the name
-     * of this addon), and the sanitized origin, to prevent keys from
+     * of this applet), and the sanitized origin, to prevent keys from
      * conflicting when several bus instances (polling different origins)
      * co-exist.
      *

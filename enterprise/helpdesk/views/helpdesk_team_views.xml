@@ -56,7 +56,7 @@
                         <button name="action_view_team_rating" type="object" class="oe_stat_button" icon="" attrs="{'invisible': ['|', ('use_rating', '=', False), ('rating_percentage_satisfaction', '=', -1)]}">
                             <i class="fa fa-fw o_button_icon fa-smile-o text-success" attrs="{'invisible': [('rating_percentage_satisfaction', '&lt;', 66)]}" title="Satisfied"/>
                             <i class="fa fa-fw o_button_icon fa-meh-o text-warning" attrs="{'invisible': ['|', ('rating_percentage_satisfaction', '&lt;', 33), ('rating_percentage_satisfaction', '&gt;=', 65)]}" title="Okay"/>
-                            <i class="fa fa-fw o_button_icon fa-frown-o text-danger" attrs="{'invisible': [('rating_percentage_satisfaction', '&gt;', 32)]}" title="Dissatisfied"/>
+                            <i class="fa fa-fw o_button_icon fa-frown-o text-warning" attrs="{'invisible': [('rating_percentage_satisfaction', '&gt;', 32)]}" title="Dissatisfied"/>
                             <div class="o_field_widget o_stat_info">
                                 <span class="o_stat_value">
                                     <field name="rating_percentage_satisfaction" nolabel="1"/>%

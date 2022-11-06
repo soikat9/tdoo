@@ -1068,7 +1068,7 @@ QUnit.module("Views", (hooks) => {
                     <div class="modal-content rounded-sm">
                         <div class="modal-header">
                             <h5 class="modal-title">Remove Configuration Tips</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close">
                                 <span aria-label="Close">×</span>
                             </button>
                         </div>

@@ -189,7 +189,7 @@
                                 <field name="product_uom_id" options="{'no_open': True, 'no_create': True}" force_save="1" groups="uom.group_uom" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
                                 <span class='font-weight-bold'>To Produce</span>
                                 <button type="object" name="action_product_forecast_report" icon="fa-area-chart" attrs="{'invisible': [('forecasted_issue', '=', True)]}"/>
-                                <button type="object" name="action_product_forecast_report" icon="fa-area-chart" attrs="{'invisible': [('forecasted_issue', '=', False)]}" class="text-danger"/>
+                                <button type="object" name="action_product_forecast_report" icon="fa-area-chart" attrs="{'invisible': [('forecasted_issue', '=', False)]}" class="text-warning"/>
                             </div>
                             <label for="lot_producing_id" attrs="{'invisible': ['|', ('state', '=', 'draft'), ('product_tracking', 'in', ('none', False))]}"/>
                             <div class="o_row" attrs="{'invisible': ['|', ('state', '=', 'draft'), ('product_tracking', 'in', ('none', False))]}">
@@ -303,7 +303,7 @@
                                     <field name="forecast_expected_date" invisible="1"/>
                                     <!-- Button are used in state draft to doesn't have the name of the column "Reserved"-->
                                     <button type="object" name="action_product_forecast_report" icon="fa-area-chart" attrs="{'column_invisible': [('parent.state', '!=', 'draft')], 'invisible': [('forecast_availability', '&lt;', 0)]}"/>
-                                    <button type="object" name="action_product_forecast_report" icon="fa-area-chart text-danger" attrs="{'column_invisible': [('parent.state', '!=', 'draft')], 'invisible': [('forecast_availability', '&gt;=', 0)]}"/>
+                                    <button type="object" name="action_product_forecast_report" icon="fa-area-chart text-warning" attrs="{'column_invisible': [('parent.state', '!=', 'draft')], 'invisible': [('forecast_availability', '&gt;=', 0)]}"/>
                                     <field name="forecast_availability" string="Reserved" attrs="{'column_invisible': [('parent.state', 'in', ('draft', 'done'))]}" widget="forecast_widget"/>
                                     <field name="is_quantity_done_editable" invisible="1"/>
                                     <field name="quantity_done" string="Consumed"

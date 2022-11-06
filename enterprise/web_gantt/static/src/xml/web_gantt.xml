@@ -171,7 +171,7 @@
         <span t-elif="diff &gt; 0" class="o_gantt_pill_resize_badge badge badge-pill border-0 text-success" t-attf-style="#{direction}: 0px;">
             <t t-esc="_.str.sprintf('+%s %s', diff, time)"/>
         </span>
-        <span t-else="diff &lt; 0" class="o_gantt_pill_resize_badge badge badge-pill border-0 text-danger" t-attf-style="#{direction}: 0px;">
+        <span t-else="diff &lt; 0" class="o_gantt_pill_resize_badge badge badge-pill border-0 text-warning" t-attf-style="#{direction}: 0px;">
             <t t-esc="_.str.sprintf('%s %s', diff, time)"/>
         </span>
     </t>

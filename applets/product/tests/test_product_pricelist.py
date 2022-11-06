@@ -16,7 +16,7 @@ class TestProductPricelist(TransactionCase):
         self.res_partner_4 = self.env['res.partner'].create({'name': 'Ready Mat'})
         self.res_partner_1 = self.env['res.partner'].create({'name': 'Wood Corner'})
         self.category_5_id = self.env['product.category'].create({
-            'name': 'Office Furniture',
+            'name': 'Wedding Planner',
             'parent_id': self.env.ref('product.product_category_1').id
         }).id
         self.computer_SC234 = self.env['product.product'].create({

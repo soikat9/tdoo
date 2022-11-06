@@ -186,7 +186,7 @@
                     </li>
                     <li t-if="forum.count_flagged_posts" class="nav-item ml-2">
                         <a class="nav-link" t-attf-href="/forum/#{slug(forum)}/flagged_queue">
-                            <i class="fa fa-flag fa-fw text-danger"/>
+                            <i class="fa fa-flag fa-fw text-warning"/>
                             <b t-esc="forum.count_flagged_posts" class="text-800"/>
                         </a>
                     </li>
@@ -829,7 +829,7 @@
                         <div class="text-success mt-2">
                             <i class="fa fa-check"/> How to configure TPS and TVQ's canadian taxes?
                         </div>
-                        <div class="text-danger">
+                        <div class="text-warning">
                             <i class="fa fa-times"/> Good morning to all! Please, can someone help solve my tax computation problem in Canada? Thanks!
                         </div>
                     </div>
@@ -882,7 +882,7 @@
                         <div class="text-success">
                             <i class="fa fa-check"/> How to configure TPS and TVQ's canadian taxes?
                         </div>
-                        <div class="text-danger">
+                        <div class="text-warning">
                             <i class="fa fa-times"/> Good morning to all! Please, can someone help solve my tax computation problem in Canada? Thanks!
                         </div>
                     </div>
@@ -1646,9 +1646,9 @@
                     <div class="col-md-2 col-sm-3 o_js_validation_queue border-right">
                         <div class="text-center d-flex align-items-end flex-sm-column justify-content-end align-items-sm-stretch">
                             <a t-attf-href="/forum/#{slug(forum)}/post/#{slug(question)}/validate" title="Validate" aria-label="Validate" data-toggle="tooltip" class="btn border-success m-1 bg-white"><i class="fa fa-check text-success"/></a>
-                            <a t-if="queue_type == 'validation'" t-attf-href="/forum/#{slug(forum)}/post/#{slug(question)}/refuse" data-toggle="tooltip" title="Refuse" aria-label="Refuse" class="btn border-danger m-1 bg-white"><i class="fa fa-times text-danger"/></a>
-                            <a t-if="queue_type == 'flagged'" t-attf-href="/forum/#{slug(forum)}/post/#{slug(question)}/ask_for_mark_as_offensive" data-toggle="tooltip" aria-label="Mark as offensive" title="Mark as offensive" class="btn border-danger m-1 bg-white"><i class="fa fa-times text-danger"/></a>
-                            <a href="#" t-if="queue_type == 'offensive'" disabled="True" aria-label="Offensive" title="Offensive" data-toggle="tooltip" class="btn border-danger bg-white"><i class="fa fa-times m-1 text-danger"/></a>
+                            <a t-if="queue_type == 'validation'" t-attf-href="/forum/#{slug(forum)}/post/#{slug(question)}/refuse" data-toggle="tooltip" title="Refuse" aria-label="Refuse" class="btn border-danger m-1 bg-white"><i class="fa fa-times text-warning"/></a>
+                            <a t-if="queue_type == 'flagged'" t-attf-href="/forum/#{slug(forum)}/post/#{slug(question)}/ask_for_mark_as_offensive" data-toggle="tooltip" aria-label="Mark as offensive" title="Mark as offensive" class="btn border-danger m-1 bg-white"><i class="fa fa-times text-warning"/></a>
+                            <a href="#" t-if="queue_type == 'offensive'" disabled="True" aria-label="Offensive" title="Offensive" data-toggle="tooltip" class="btn border-danger bg-white"><i class="fa fa-times m-1 text-warning"/></a>
                         </div>
                     </div>
                     <t t-if="question.parent_id">

@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="sale_renting.rental_order_primary_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
-                <button type="action" class="btn" string="Sign Documents"
+                <button type="action" class="btn rounded-sm" string="Sign Documents"
                         name="%(rental_sign_documents)d" data-hotkey="o"
                         attrs="{'invisible': [('state', 'not in', ['sale', 'done'])]}"/>
             </xpath>

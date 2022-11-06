@@ -250,7 +250,7 @@ QUnit.module('convert_inline', {}, function () {
                     `<small>BODY <img></small>` +
                 `</div>` +
                 `<div class="card-footer">` +
-                    `<a href="#" class="btn">FOOTER</a>` +
+                    `<a href="#" class="btn rounded-sm">FOOTER</a>` +
                 `</div>` +
             `</div></div>`);
         convertInline.cardToTable($editable);
@@ -276,7 +276,7 @@ QUnit.module('convert_inline', {}, function () {
                         `<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" width=\"100%\" align=\"center\" ` +
                         `role=\"presentation\" style=\"width: 100% !important; border-collapse: collapse; text-align: inherit; ` +
                         `font-size: unset; line-height: unset;\"><tr>` +
-                            `<td class="card-footer"><a href="#" class="btn">FOOTER</a></td>` +
+                            `<td class="card-footer"><a href="#" class="btn rounded-sm">FOOTER</a></td>` +
                         `</tr></table></td>`),
             "should have converted a card structure into a table");
     });

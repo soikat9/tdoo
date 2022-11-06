@@ -35,7 +35,7 @@
                         <button name="toggle_live_mode" type="object" class="oe_stat_button" icon="fa-toggle-off" attrs="{'invisible':[('is_live','=',True)]}" widget="statinfo">
                             <div class="o_form_field o_stat_info">
                                 <span class="o_stat_text">Live Mode</span>
-                                <span class="o_stat_text">is <strong class="text-danger"> Off </strong></span>
+                                <span class="o_stat_text">is <strong class="text-warning"> Off </strong></span>
                             </div>
                         </button>
                     </div>

@@ -219,7 +219,7 @@
                             opt_events_list_cards and 'card-footer' or (not opt_events_list_columns and 'mx-4 mt-auto pt-2') or 'py-2',
                             opt_events_list_cards and 'border-top' or '',
                         )">
-                        <span t-if="not event.event_registrations_open" class="text-danger">
+                        <span t-if="not event.event_registrations_open" class="text-warning">
                             <t t-if="not event.event_registrations_started">
                                 Registrations not yet open
                             </t>

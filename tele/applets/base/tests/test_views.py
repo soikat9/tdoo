@@ -2516,8 +2516,8 @@ class TestViews(ViewCase):
         self.assertValid('<form><span aria-label="text" class="fa fa-warning"/></form>')
 
     def test_valid_simili_button(self):
-        self.assertWarning('<form><a class="btn"/></form>')
-        self.assertValid('<form><a class="btn" role="button"/></form>')
+        self.assertWarning('<form><a class="btn rounded-sm"/></form>')
+        self.assertValid('<form><a class="btn rounded-sm" role="button"/></form>')
 
     def test_valid_dialog(self):
         self.assertWarning('<form><div class="modal"/></form>')
@@ -2555,17 +2555,17 @@ class TestViews(ViewCase):
         self.assertWarning('<form><a data-toggle="tab" role="tab" aria-controls="#test"/></form>')
 
     def test_valid_focusable_button(self):
-        self.assertValid('<form><a class="btn" role="button"/></form>')
-        self.assertValid('<form><button class="btn" role="button"/></form>')
-        self.assertValid('<form><select class="btn" role="button"/></form>')
-        self.assertValid('<form><input type="button" class="btn" role="button"/></form>')
-        self.assertValid('<form><input type="submit" class="btn" role="button"/></form>')
-        self.assertValid('<form><input type="reset" class="btn" role="button"/></form>')
+        self.assertValid('<form><a class="btn rounded-sm" role="button"/></form>')
+        self.assertValid('<form><button class="btn rounded-sm" role="button"/></form>')
+        self.assertValid('<form><select class="btn rounded-sm" role="button"/></form>')
+        self.assertValid('<form><input type="button" class="btn rounded-sm" role="button"/></form>')
+        self.assertValid('<form><input type="submit" class="btn rounded-sm" role="button"/></form>')
+        self.assertValid('<form><input type="reset" class="btn rounded-sm" role="button"/></form>')
         self.assertValid('<form><div type="reset" class="btn btn-group" role="button"/></form>')
         self.assertValid('<form><div type="reset" class="btn btn-toolbar" role="button"/></form>')
         self.assertValid('<form><div type="reset" class="btn btn-ship" role="button"/></form>')
-        self.assertWarning('<form><div class="btn" role="button"/></form>')
-        self.assertWarning('<form><input type="email" class="btn" role="button"/></form>')
+        self.assertWarning('<form><div class="btn rounded-sm" role="button"/></form>')
+        self.assertWarning('<form><input type="email" class="btn rounded-sm" role="button"/></form>')
 
     def test_partial_validation(self):
         self.View = self.View.with_context(load_all_views=True)

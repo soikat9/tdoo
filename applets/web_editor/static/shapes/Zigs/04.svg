@@ -7,7 +7,7 @@
 
       .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
         fill: none;
-        stroke: #3aadaa;
+        stroke: #2283c0;
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }

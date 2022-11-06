@@ -7,7 +7,7 @@ from tele import api, fields, models
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    module_project_timesheet_synchro = fields.Boolean("Awesome Timesheet",
+    module_project_timesheet_synchro = fields.Boolean("Tele-Timesheet",
         compute="_compute_timesheet_modules", store=True, readonly=False)
     module_project_timesheet_holidays = fields.Boolean("Time Off",
         compute="_compute_timesheet_modules", store=True, readonly=False)

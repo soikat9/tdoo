@@ -27,7 +27,7 @@ QUnit.module("Navbar", {
         serviceRegistry.add("notification", notificationService);
         serviceRegistry.add("hotkey", hotkeyService);
         serviceRegistry.add("ui", uiService);
-        systrayRegistry.add("addon.myitem", { Component: MySystrayItem });
+        systrayRegistry.add("applet.myitem", { Component: MySystrayItem });
         patchWithCleanup(browser, {
             setTimeout: (handler, delay, ...args) => handler(...args),
             clearTimeout: () => {},
@@ -167,10 +167,10 @@ QUnit.test("navbar can display systray items ordered based on their sequence", a
     MyItem4.template = xml`<li class="my-item-4">my item 4</li>`;
 
     clearRegistryWithCleanup(systrayRegistry);
-    systrayRegistry.add("addon.myitem2", { Component: MyItem2 });
-    systrayRegistry.add("addon.myitem1", { Component: MyItem1 }, { sequence: 0 });
-    systrayRegistry.add("addon.myitem3", { Component: MyItem3 }, { sequence: 100 });
-    systrayRegistry.add("addon.myitem4", { Component: MyItem4 });
+    systrayRegistry.add("applet.myitem2", { Component: MyItem2 });
+    systrayRegistry.add("applet.myitem1", { Component: MyItem1 }, { sequence: 0 });
+    systrayRegistry.add("applet.myitem3", { Component: MyItem3 }, { sequence: 100 });
+    systrayRegistry.add("applet.myitem4", { Component: MyItem4 });
     const env = await makeTestEnv(baseConfig);
     const target = getFixture();
     const navbar = await mount(NavBar, { env, target });
@@ -185,7 +185,7 @@ QUnit.test("navbar updates after adding a systray item", async (assert) => {
     MyItem1.template = xml`<li class="my-item-1">my item 1</li>`;
 
     clearRegistryWithCleanup(systrayRegistry);
-    systrayRegistry.add('addon.myitem1', { Component: MyItem1 });
+    systrayRegistry.add('applet.myitem1', { Component: MyItem1 });
 
     const env = await makeTestEnv(baseConfig);
     const target = getFixture();
@@ -194,7 +194,7 @@ QUnit.test("navbar updates after adding a systray item", async (assert) => {
          mounted() {
             class MyItem2 extends Component {}
             MyItem2.template = xml`<li class="my-item-2">my item 2</li>`;
-            systrayRegistry.add('addon.myitem2', {Component: MyItem2});
+            systrayRegistry.add('applet.myitem2', {Component: MyItem2});
             this._super();
         }
     });

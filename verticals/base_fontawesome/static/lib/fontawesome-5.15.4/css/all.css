@@ -4245,7 +4245,7 @@ readers do not read off random characters that represent icons */
 .fa-user-minus:before {
   content: "\f503"; }
 
-.fa-user-ninja:before {
+.fa-user-editor:before {
   content: "\f504"; }
 
 .fa-user-nurse:before {

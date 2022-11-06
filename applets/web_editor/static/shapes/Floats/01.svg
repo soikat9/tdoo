@@ -2,8 +2,8 @@
 	<defs>
 		<g id="gradients">
 			<linearGradient spreadMethod="pad" id="owb_top_shape_1_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-				<stop offset="0%" style="stop-opacity:.5" stop-color="#3AADAA" id="owb_top_shape_1_gradient_stop_1">
-					<animate attributeName="stop-color" values="#3AADAA;#FFFFFF;#3AADAA" dur="30s" repeatCount="indefinite"/>
+				<stop offset="0%" style="stop-opacity:.5" stop-color="#2283c0" id="owb_top_shape_1_gradient_stop_1">
+					<animate attributeName="stop-color" values="#2283c0;#FFFFFF;#2283c0" dur="30s" repeatCount="indefinite"/>
 				</stop>
 				<stop offset="100%" style="stop-opacity:1" stop-color="#FFFFFF" id="owb_top_shape_1_gradient_stop_2">
 					<animate attributeName="stop-color" values="#FFFFFF;#28AFEA;#FFFFFF" dur="30s" repeatCount="indefinite"/>
@@ -11,15 +11,15 @@
 			</linearGradient>
 			<linearGradient spreadMethod="pad" id="owb_top_shape_2_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
 				<stop offset="0%" style="stop-opacity:.5" stop-color="#28AFEA" id="owb_top_shape_2_gradient_stop_1">
-					<animate attributeName="stop-color" values="#28AFEA;#3AADAA;#28AFEA" dur="30s" repeatCount="indefinite"/>
+					<animate attributeName="stop-color" values="#28AFEA;#2283c0;#28AFEA" dur="30s" repeatCount="indefinite"/>
 				</stop>
 				<stop offset="100%" style="stop-opacity:1" stop-color="#FFFFFF" id="owb_top_shape_2_gradient_stop_2">
-					<animate attributeName="stop-color" values="#FFFFFF;#3AADAA;#FFFFFF" dur="30s" repeatCount="indefinite"/>
+					<animate attributeName="stop-color" values="#FFFFFF;#2283c0;#FFFFFF" dur="30s" repeatCount="indefinite"/>
 				</stop>
 			</linearGradient>
 			<linearGradient spreadMethod="pad" id="owb_top_squares_1_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-				<stop offset="0%" style="stop-opacity:.5;" stop-color="#3AADAA" id="owb_top_squares_1_gradient_stop_1">
-					<animate attributeName="stop-color" values="#3AADAA;#F6F6F6;#383E45;#3AADAA" dur="30s" repeatCount="indefinite"/>
+				<stop offset="0%" style="stop-opacity:.5;" stop-color="#2283c0" id="owb_top_squares_1_gradient_stop_1">
+					<animate attributeName="stop-color" values="#2283c0;#F6F6F6;#383E45;#2283c0" dur="30s" repeatCount="indefinite"/>
 				</stop>
 				<stop offset="100%" style="stop-opacity:1;" stop-color="#FFFFFF" id="owb_top_squares_1_gradient_stop_2">
 					<animate attributeName="stop-color" values="#FFFFFF;#383E45;#F6F6F6;#FFFFFF" dur="30s" repeatCount="indefinite"/>
@@ -27,10 +27,10 @@
 			</linearGradient>
 			<linearGradient spreadMethod="pad" id="owb_top_squares_2_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
 				<stop offset="0%" style="stop-opacity:.5;" stop-color="#383E45" id="owb_top_squares_2_gradient_stop_1">
-					<animate attributeName="stop-color" values="#383E45;#3AADAA;#383E45;" dur="30s" repeatCount="indefinite"/>
+					<animate attributeName="stop-color" values="#383E45;#2283c0;#383E45;" dur="30s" repeatCount="indefinite"/>
 				</stop>
 				<stop offset="100%" style="stop-opacity:1;" stop-color="#383E45" id="owb_top_squares_2_gradient_stop_2">
-					<animate attributeName="stop-color" values="#383E45;#3AADAA;#383E45;" dur="30s" repeatCount="indefinite"/>
+					<animate attributeName="stop-color" values="#383E45;#2283c0;#383E45;" dur="30s" repeatCount="indefinite"/>
 				</stop>
 			</linearGradient>
 		</g>

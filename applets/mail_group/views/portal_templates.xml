@@ -62,7 +62,7 @@
                 <div class="alert alert-primary text-center">
                     <span>No Mail Group yet.</span>
                     <br/>
-                    <a t-if="is_mail_group_manager" class="btn btn-link"
+                    <a t-if="is_mail_group_manager" class="btn btn-link rounded-sm"
                         href="/web#action=mail_group.mail_group_action&amp;model=mail.group&amp;view_type=form">
                         Create a new group
                     </a>

@@ -27,16 +27,16 @@ class Message(models.Model):
       * notification_status
         'ready', 'sent', 'bounce', 'exception', 'canceled'
       * notification_type
-        'inbox', 'email', 'sms' (SMS addon), 'snail' (snailmail addon)
+        'inbox', 'email', 'sms' (SMS applet), 'snail' (snailmail applet)
       * failure_type
         # generic
         unknown,
         # mail
         "mail_email_invalid", "mail_smtp", "mail_email_missing"
-        # sms (SMS addon)
+        # sms (SMS applet)
         'sms_number_missing', 'sms_number_format', 'sms_credit',
         'sms_server', 'sms_acc'
-        # snailmail (snailmail addon)
+        # snailmail (snailmail applet)
         'sn_credit', 'sn_trial', 'sn_price', 'sn_fields',
         'sn_format', 'sn_error'
 
@@ -45,7 +45,7 @@ class Message(models.Model):
         'outgoing', 'sent', 'received', 'exception', 'cancel'
       * failure_reason: text
 
-    * sms.sms (SMS addon)
+    * sms.sms (SMS applet)
       * state
         'outgoing', 'sent', 'error', 'canceled'
       * error_code
@@ -54,7 +54,7 @@ class Message(models.Model):
         # mass mode specific codes
         'sms_blacklist', 'sms_duplicate'
 
-    * snailmail.letter (snailmail addon)
+    * snailmail.letter (snailmail applet)
       * state
         'pending', 'sent', 'error', 'canceled'
       * error_code

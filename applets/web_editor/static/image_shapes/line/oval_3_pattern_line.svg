@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600">
   <defs>
-    <pattern id="_10_lpi_80_2" data-name="10 lpi 80% 2" width="72" height="72" stroke="#3AADAA"
+    <pattern id="_10_lpi_80_2" data-name="10 lpi 80% 2" width="72" height="72" stroke="#2283c0"
       patternTransform="translate(0 432)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
       <line x1="71.75" y1="68.4" x2="144.25" y2="68.4" fill="none" stroke-width="5.76"></line>
       <line x1="71.75" y1="54" x2="144.25" y2="54" fill="none" stroke-width="5.76"></line>

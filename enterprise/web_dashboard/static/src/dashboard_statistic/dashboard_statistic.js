@@ -165,7 +165,7 @@ export class DashboardStatistic extends owl.Component {
             if (varSign === 1) {
                 return { "o_positive text-success": true };
             } else if (varSign === -1) {
-                return { "o_negative text-danger": true };
+                return { "o_negative text-warning": true };
             } else if (varSign === 0) {
                 return { o_null: true };
             }

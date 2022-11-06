@@ -1383,7 +1383,7 @@
                                     </div>
                                 </t>
                                 <t t-if="error" t-foreach="error.get('error_message', [])" t-as="err">
-                                    <h5 class="text-danger" t-esc="err" />
+                                    <h5 class="text-warning" t-esc="err" />
                                 </t>
                                 <form action="/shop/address" method="post" class="checkout_autoformat">
                                     <div class="form-row">

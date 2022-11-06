@@ -128,7 +128,7 @@
                                     <form id="modal_action_dismiss_shift" t-attf-action="/planning" method="post">
                                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                         <input type="hidden" name="message" value="unassign"/>
-                                        <button type="submit" class="btn btn-outline-danger">I am unavailable</button>
+                                        <button type="submit" class="btn rounded-sm btn-outline-danger">I am unavailable</button>
                                     </form>
                                 </div>
                             </div>

@@ -30,32 +30,32 @@
     <image xlink:href="" clip-path="url(#clip-path)"/>
     <svg id="dots" viewBox="0 0 27.4 46.88" width="15%" height="30%" x="65%">
         <g id="dots_grp_1">
-			<rect y="5.62" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect y="15.53" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect y="25.44" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect y="35.35" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect y="45.26" width="1.62" height="1.62" fill="#3AADAA"/>
+			<rect y="5.62" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect y="15.53" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect y="25.44" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect y="35.35" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect y="45.26" width="1.62" height="1.62" fill="#2283c0"/>
 		</g>
 		<g id="dots_grp_2">
-			<rect x="8.59" y="5.62" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="8.59" y="15.53" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="8.59" y="25.44" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="8.59" y="35.35" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="8.59" y="45.26" width="1.62" height="1.62" fill="#3AADAA"/>
+			<rect x="8.59" y="5.62" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="8.59" y="15.53" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="8.59" y="25.44" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="8.59" y="35.35" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="8.59" y="45.26" width="1.62" height="1.62" fill="#2283c0"/>
 		</g>
 		<g id="dots_grp_3">
-			<rect x="17.18" y="5.62" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="17.18" y="15.53" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="17.18" y="25.44" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="17.18" y="35.35" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="17.18" y="45.26" width="1.62" height="1.62" fill="#3AADAA"/>
+			<rect x="17.18" y="5.62" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="17.18" y="15.53" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="17.18" y="25.44" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="17.18" y="35.35" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="17.18" y="45.26" width="1.62" height="1.62" fill="#2283c0"/>
 		</g>
 		<g id="dots_grp_4">
-			<rect x="25.78" y="5.62" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="25.78" y="15.53" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="25.78" y="25.44" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="25.78" y="35.35" width="1.62" height="1.62" fill="#3AADAA"/>
-			<rect x="25.78" y="45.26" width="1.62" height="1.62" fill="#3AADAA"/>
+			<rect x="25.78" y="5.62" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="25.78" y="15.53" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="25.78" y="25.44" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="25.78" y="35.35" width="1.62" height="1.62" fill="#2283c0"/>
+			<rect x="25.78" y="45.26" width="1.62" height="1.62" fill="#2283c0"/>
 		</g>
     </svg>
 </svg>

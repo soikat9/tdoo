@@ -116,7 +116,7 @@ $-compat-gray-map: (
     .form-control ~ .input-group-btn {
         @extend .input-group-append;
     }
-    .input-group-addon {
+    .input-group-applet {
         @extend .input-group-append;
         @extend .input-group-text;
     }

@@ -38,17 +38,17 @@
     </defs>
     <svg viewBox="0 0 28.35 28.35" preserveAspectRatio="none">
         <g id="triangles">
-            <path id="line_1" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_2" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_3" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_4" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_5" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_6" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_7" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_8" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_9" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_10" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
-            <path id="line_11" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#3AADAA" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_1" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_2" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_3" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_4" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_5" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_6" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_7" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_8" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_9" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_10" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
+            <path id="line_11" d="M6.58,12.42,11.6,4A3.22,3.22,0,0,1,17.18,4L22,12.6l4.82,8.58A3.21,3.21,0,0,1,24,26l-9.84-.11-9.85-.11a3.22,3.22,0,0,1-2.73-4.86Z" fill="none" stroke="#2283c0" stroke-width="1" stroke-miterlimit="10" opacity=".2"/>
         </g>
     </svg>
     <svg viewBox="0 0 1 1" id="preview" preserveAspectRatio="none">

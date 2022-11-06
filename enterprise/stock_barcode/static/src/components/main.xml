@@ -29,7 +29,7 @@
             </div>
             <t t-if="displayBarcodeApplication">
                 <div t-if="displayNote" class="alert alert-warning text-left mb-0">
-                    <button type="button" class="close" title="Close" aria-label="Close" t-on-click="hideNote">&#215;</button>
+                    <button type="button" class="close rounded-sm" title="Close" aria-label="Close" t-on-click="hideNote">&#215;</button>
                     <t t-esc="env.model.record.note"/>
                 </div>
                 <div class="o_barcode_lines_header row bg-800 alert m-0 px-1 "

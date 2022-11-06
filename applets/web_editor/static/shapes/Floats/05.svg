@@ -99,8 +99,8 @@
         <circle cx="1364.29" cy="360.04" r="3.37" fill="#28AFEA"/>
         <circle cx="1364.29" cy="336.89" r="3.37" fill="#28AFEA"/>
     </g>
-    <circle id="circle_5" cx="188.47" cy="158.41" r="55.42" fill="#3AADAA" opacity=".5"/>
-    <circle cx="133.05" cy="102.99" r="74.45" fill="#3AADAA"/>
+    <circle id="circle_5" cx="188.47" cy="158.41" r="55.42" fill="#2283c0" opacity=".5"/>
+    <circle cx="133.05" cy="102.99" r="74.45" fill="#2283c0"/>
     <g>
         <circle cx="141.71" cy="109.65" r="4.53" fill="#F6F6F6"/>
         <circle cx="160.78" cy="109.65" r="4.53" fill="#F6F6F6"/>

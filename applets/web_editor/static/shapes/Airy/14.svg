@@ -6,26 +6,26 @@
 	.st3{fill:url(#SVGID_4_);}
 	.st4{opacity:0.15;}
 	.st5{fill:url(#SVGID_5_);}
-	.st6{fill:#3AADAA;}
+	.st6{fill:#2283c0;}
 </style>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1169.5483" y1="357.8093" x2="1238.7761" y2="517.4799">
-	<stop  offset="0.3242" style="stop-color:#3AADAA;stop-opacity:0.1"/>
+	<stop  offset="0.3242" style="stop-color:#2283c0;stop-opacity:0.1"/>
 	<stop  offset="0.9693" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </linearGradient>
 <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="412.4055" y1="490.2253" x2="419.1031" y2="625.8529">
-	<stop  offset="0" style="stop-color:#3AADAA;stop-opacity:0.1"/>
+	<stop  offset="0" style="stop-color:#2283c0;stop-opacity:0.1"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </linearGradient>
 <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1194.8689" y1="171.3124" x2="1138.776" y2="484.428">
-	<stop  offset="0" style="stop-color:#3AADAA;stop-opacity:0.1"/>
+	<stop  offset="0" style="stop-color:#2283c0;stop-opacity:0.1"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </linearGradient>
 <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1195.4164" y1="270.6626" x2="1069.0134" y2="521.7943">
-	<stop  offset="0" style="stop-color:#3AADAA;stop-opacity:0.1"/>
+	<stop  offset="0" style="stop-color:#2283c0;stop-opacity:0.1"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </linearGradient>
 <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="804.8035" y1="458.3308" x2="798.1058" y2="556.5632">
-	<stop  offset="0.3242" style="stop-color:#3AADAA;stop-opacity:0.1"/>
+	<stop  offset="0.3242" style="stop-color:#2283c0;stop-opacity:0.1"/>
 	<stop  offset="0.9693" style="stop-color:#FFFFFF;stop-opacity:0"/>
 </linearGradient>
 <g transform="translate(0 830)">

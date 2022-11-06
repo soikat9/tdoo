@@ -30,7 +30,7 @@
                     t-ref="searchView"
                     >
                     <div t-if="props.withSearchBar" class="o_searchview" role="search" aria-autocomplete="list" >
-                        <i class="o_searchview_icon fa fa-search"
+                        <i class="o_searchview_icon icon-search"
                             title="Search..."
                             role="img"
                             aria-label="Search..."
@@ -258,7 +258,7 @@
                                 <t t-esc="props.title"/>
                                 <span t-if="props.subtitle" class="o_subtitle text-muted small" t-esc="props.subtitle"/>
                             </h4>
-                            <button type="button" class="close" aria-label="Close" tabindex="-1" t-on-click="_close">×</button>
+                            <button type="button" class="close rounded-sm" aria-label="Close" tabindex="-1" t-on-click="_close">×</button>
                         </header>
                         <main class="modal-body">
                             <t t-slot="default"/>
@@ -1512,7 +1512,7 @@
 
 <t t-name="notification-box">
     <div t-attf-class="o_notification_box mb0 alert alert-dismissible alert-{{type}}" role="alertdialog">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="close rounded-sm" data-dismiss="alert" aria-label="Close">
             <span class="fa fa-times"></span>
         </button>
     </div>

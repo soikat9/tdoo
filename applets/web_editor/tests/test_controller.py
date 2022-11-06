@@ -14,7 +14,7 @@ class TestController(HttpCase):
         # SVG with all replaceable colors.
         svg = b"""
 <svg viewBox="0 0 400 400">
-  <rect width="300" height="300" style="fill:#3AADAA;" />
+  <rect width="300" height="300" style="fill:#2283c0;" />
   <rect x="20" y="20" width="300" height="300" style="fill:#28AFEA;" />
   <rect x="40" y="40" width="300" height="300" style="fill:#F6F6F6;" />
   <rect x="60" y="60" width="300" height="300" style="fill:#FFFFFF;" />
@@ -33,7 +33,7 @@ class TestController(HttpCase):
         })
         # Shape illustration with slug.
         url = '/web_editor/shape/illustration/%s' % slug(attachment)
-        palette = 'c1=%233AADAA&c2=%2328AFEA&&c3=%23F6F6F6&&c4=%23FFFFFF&&c5=%23383E45'
+        palette = 'c1=%232283c0&c2=%2328AFEA&&c3=%23F6F6F6&&c4=%23FFFFFF&&c5=%23383E45'
         attachment['url'] = '%s?%s' % (url, palette)
 
         response = self.url_open(url)
@@ -44,7 +44,7 @@ class TestController(HttpCase):
         self.assertEqual(200, response.status_code, 'Expect response')
         self.assertEqual(len(svg), len(response.content), 'Expect same length as original')
         self.assertTrue('ABCDEF' in str(response.content), 'Expect patched c1')
-        self.assertTrue('3AADAA' not in str(response.content), 'Old c1 should not be there anymore')
+        self.assertTrue('2283c0' not in str(response.content), 'Old c1 should not be there anymore')
 
         # Shape illustration without slug.
         url = '/web_editor/shape/illustration/noslug'
@@ -58,4 +58,4 @@ class TestController(HttpCase):
         self.assertEqual(200, response.status_code, 'Expect response')
         self.assertEqual(len(svg), len(response.content), 'Expect same length as original')
         self.assertTrue('ABCDEF' in str(response.content), 'Expect patched c1')
-        self.assertTrue('3AADAA' not in str(response.content), 'Old c1 should not be there anymore')
+        self.assertTrue('2283c0' not in str(response.content), 'Old c1 should not be there anymore')

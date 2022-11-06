@@ -188,7 +188,7 @@ def file_open(name, mode="r", filter_ext=None):
     >>> with file_open('/opt/tele/applets/hr/static/description/icon.png', 'rb') as f:
     ...     contents = f.read()
 
-    :param name: absolute or relative path to a file located inside an addon
+    :param name: absolute or relative path to a file located inside an applet
     :param mode: file open mode, as for `open()`
     :param list[str] filter_ext: optional list of supported extensions (lowercase, with leading dot)
     :return: file object, as returned by `open()`

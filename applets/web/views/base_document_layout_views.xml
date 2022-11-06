@@ -20,7 +20,7 @@
                                 <field name="primary_color" widget="color"/>
                                 <field name="secondary_color" widget="color"/>
                                 <field name="custom_colors" class="d-none" />
-                                <button class="btn btn-link" title="Reset to logo colors" attrs="{'invisible': [('custom_colors', '=', False)]}">
+                                <button class="btn btn-link rounded-sm" title="Reset to logo colors" attrs="{'invisible': [('custom_colors', '=', False)]}">
                                     <label for="custom_colors" class="fa fa-refresh" string="" />
                                 </button>
                             </div>
@@ -37,7 +37,7 @@
                         </div>
                     </group>
                     <footer>
-                        <button string="Save" class="btn-primary" type="object" name="document_layout_save" data-hotkey="q"/>
+                        <button string="Save" class="btn-primary rounded-sm" type="object" name="document_layout_save" data-hotkey="q"/>
                         <button special="cancel" data-hotkey="z" string="Cancel" />
                     </footer>
                 </form>

@@ -205,7 +205,7 @@ AMAZON_CARRIER_NAMES_MAPPING = {
     'narpostkargo': 'Narpost Kargo',
     'newgistics': 'Newgistics',
     'nexive': 'Nexive',
-    'ninjavan': 'Ninjavan',
+    'editorvan': 'Editorvan',
     'nipponexpress': 'NipponExpress',
     'nittsu': 'NITTSU',
     'noveo': 'NOVEO',

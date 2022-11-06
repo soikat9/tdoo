@@ -65,9 +65,9 @@ var EventCreateDialog = Dialog.extend({
      * @param {*} errors
      */
     _display_errors: function (errors) {
-        this.$("p.text-danger").toggleClass('d-none', true);
+        this.$("p.text-warning").toggleClass('d-none', true);
         for (let i = 0; i < errors.length; i++) {
-            this.$("#" + errors[i] + " p.text-danger").toggleClass('d-none', false);
+            this.$("#" + errors[i] + " p.text-warning").toggleClass('d-none', false);
         }
     },
 

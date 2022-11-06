@@ -38,7 +38,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #E6000D !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -510,9 +510,9 @@ $form-check-inline-input-margin-x:      .3125rem !default;
 $form-grid-gutter-width:                10px !default;
 $form-group-margin-bottom:              1rem !default;
 
-$input-group-addon-color:               $input-color !default;
-$input-group-addon-bg:                  $gray-200 !default;
-$input-group-addon-border-color:        $input-border-color !default;
+$input-group-applet-color:               $input-color !default;
+$input-group-applet-bg:                  $gray-200 !default;
+$input-group-applet-border-color:        $input-border-color !default;
 
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -636,7 +636,7 @@ $custom-file-border-color:          $input-border-color !default;
 $custom-file-border-radius:         $input-border-radius !default;
 $custom-file-box-shadow:            $input-box-shadow !default;
 $custom-file-button-color:          $custom-file-color !default;
-$custom-file-button-bg:             $input-group-addon-bg !default;
+$custom-file-button-bg:             $input-group-applet-bg !default;
 $custom-file-text: (
   en: "Browse"
 ) !default;

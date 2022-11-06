@@ -9,7 +9,7 @@
 Tele-Enterprise Web Client.
 ===========================
 
-This module modifies the web addon to provide Enterprise design and responsiveness.
+This module modifies the web applet to provide Enterprise design and responsiveness.
         """,
     'depends': ['web'],
     'auto_install': True,

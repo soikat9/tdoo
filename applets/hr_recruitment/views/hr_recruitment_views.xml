@@ -759,7 +759,7 @@ action = act
                             <span
                                 class="fa fa-exclamation-triangle text-danger pl-3">
                             </span>
-                            <span class="text-danger">
+                            <span class="text-warning">
                                 All applications will lose their hired date and hired status.
                             </span>
                         </span>

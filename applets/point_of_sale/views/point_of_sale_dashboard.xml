@@ -121,7 +121,7 @@
                                             </div>
                                         </div>
 
-                                        <button t-if="record.number_of_opened_session.value &gt; 1" class="btn btn-link" style="padding-left:0; text-decoration: underline" name="open_opened_session_list" type="object">
+                                        <button t-if="record.number_of_opened_session.value &gt; 1" class="btn btn-link rounded-sm" style="padding-left:0; text-decoration: underline" name="open_opened_session_list" type="object">
                                             There are <t t-esc="record.number_of_opened_session.value"/> open sessions
                                         </button>
                                     </div>

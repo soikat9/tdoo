@@ -7539,7 +7539,7 @@ QUnit.module('fields', {}, function () {
             // save the record
             // check line is at the correct place
 
-            var inputText = 'ninja';
+            var inputText = 'editor';
             await testUtils.dom.click(form.$('.o_field_x2many_list_row_add a'));
             await testUtils.fields.editInput(form.$('.o_input[name="turtle_foo"]'), inputText);
             await testUtils.form.clickSave(form);
@@ -7580,7 +7580,7 @@ QUnit.module('fields', {}, function () {
             // save the record
             // check line is at the correct place
 
-            var inputText = 'ninja';
+            var inputText = 'editor';
             await testUtils.dom.click(form.$('.o_field_x2many_list_row_add a'));
             await testUtils.fields.editInput(form.$('.o_input[name="turtle_foo"]'), inputText);
             await testUtils.form.clickSave(form);
@@ -7626,7 +7626,7 @@ QUnit.module('fields', {}, function () {
             // save the record
             // check line is at the correct place
 
-            var inputText = 'ninja';
+            var inputText = 'editor';
             await testUtils.dom.click($('.o_field_x2many_list_row_add a'));
             await testUtils.fields.editInput($('.o_input[name="turtle_foo"]'), inputText);
             await testUtils.dom.click($('.modal .modal-footer .btn-primary:first'));
@@ -8484,10 +8484,10 @@ QUnit.module('fields', {}, function () {
 
             // add a row, fill it, then trigger the tab shortcut
             await testUtils.dom.click(form.$('.o_field_x2many_list_row_add a'));
-            await testUtils.fields.editInput(form.$('.o_input[name="turtle_foo"]'), 'ninja');
+            await testUtils.fields.editInput(form.$('.o_input[name="turtle_foo"]'), 'editor');
             await testUtils.fields.triggerKeydown(form.$('.o_input[name="turtle_foo"]'), 'tab');
 
-            assert.strictEqual(form.$('.o_field_text').text(), 'blipninja',
+            assert.strictEqual(form.$('.o_field_text').text(), 'blipeditor',
                 'current line should be saved');
             assert.containsOnce(form, 'textarea.o_field_text',
                 'new line should be created');

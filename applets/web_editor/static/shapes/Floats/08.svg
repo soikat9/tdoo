@@ -34,22 +34,22 @@
             <animateTransform xlink:href="#line_2" attributeName="transform" attributeType="XML" type="translate" dur="8s" values="0 0;10 -10;0 0" repeatCount="indefinite"/>
             <animateTransform xlink:href="#circle_1" attributeName="transform" attributeType="XML" type="translate" dur="10s" values="0 0;10 -10;0 0" repeatCount="indefinite"/>
             <animate xlink:href="#circle_2" attributeName="stroke-width" dur="5s" repeatCount="indefinite" values="3;6;3"/>
-            <animate xlink:href="#circle_6" attributeName="fill" dur="6s" repeatCount="indefinite" values="#3AADAA;#28AFEA;#3AADAA"/>
+            <animate xlink:href="#circle_6" attributeName="fill" dur="6s" repeatCount="indefinite" values="#2283c0;#28AFEA;#2283c0"/>
         </g>
     </defs>
     <path id="snake_1" d="M90.71,23.29C82.07,31.93,75,24.86,66.37,33.49S64.8,49.2,56.17,57.83,40.46,59.4,31.82,68s-1.56,15.7-10.2,24.34S5.91,94-2.73,102.59" fill="none" stroke="#28AFEA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
     <path id="snake_2" d="M235.29-40c-8.63,8.64-15.7,1.57-24.33,10.2s-1.57,15.71-10.2,24.34S185.05-3.88,176.41,4.76s-1.56,15.7-10.2,24.34-15.71,1.57-24.35,10.21" fill="none" stroke="#28AFEA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>  
-    <path id="snake_3" d="M188.66,49.32c-7.87,7.87-14.95.8-22.82,8.67s-.8,14.94-8.67,22.81-14.94.8-22.81,8.67-.8,15-8.67,22.82-14.94.8-22.81,8.67-.8,14.94-8.68,22.81-14.94.8-22.81,8.67-.8,14.95-8.67,22.82-14.95.8-22.82,8.67-.8,14.95-8.68,22.82-14.94.81-22.82,8.68" fill="none" stroke="#3AADAA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+    <path id="snake_3" d="M188.66,49.32c-7.87,7.87-14.95.8-22.82,8.67s-.8,14.94-8.67,22.81-14.94.8-22.81,8.67-.8,15-8.67,22.82-14.94.8-22.81,8.67-.8,14.94-8.68,22.81-14.94.8-22.81,8.67-.8,14.95-8.67,22.82-14.95.8-22.82,8.67-.8,14.95-8.68,22.82-14.94.81-22.82,8.68" fill="none" stroke="#2283c0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
     <path id="snake_4" d="M355-14.25c-8.63,8.64-15.7,1.56-24.34,10.2s-1.56,15.71-10.2,24.34-15.71,1.57-24.34,10.2-1.57,15.71-10.21,24.35S270.17,56.41,261.54,65" fill="none" stroke="#F6F6F6" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
-    <line id="line_1" x1="179.9" y1="-25.72" x2="110.04" y2="44.13" fill="none" stroke="#3AADAA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="11"/>
+    <line id="line_1" x1="179.9" y1="-25.72" x2="110.04" y2="44.13" fill="none" stroke="#2283c0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="11"/>
     <line id="line_2" x1="73.56" y1="80.62" x2="-17.89" y2="172.07" fill="none" stroke="#28AFEA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="11"/>
     <circle id="circle_1" cx="91.8" cy="62.38" r="5.8" fill="#383E45"/>
     <circle id="circle_2" cx="65.5" cy="122.74" r="8.03" fill="none" stroke="#383E45" stroke-miterlimit="10" stroke-width="3"/>   
-    <circle id="circle_3" cx="102.61" cy="167.1" r="5.8" fill="#3AADAA" style="transform-box: fill-box;" transform-origin="center"/>
+    <circle id="circle_3" cx="102.61" cy="167.1" r="5.8" fill="#2283c0" style="transform-box: fill-box;" transform-origin="center"/>
     <circle id="circle_4" cx="89.53" cy="180.17" r="5.8" fill="#28AFEA" style="transform-box: fill-box;" transform-origin="center"/>
     <circle id="circle_5" cx="76.57" cy="193.13" r="5.8" fill="#383E45" style="transform-box: fill-box;" transform-origin="center"/>
-    <circle id="circle_6" cx="244.64" cy="80.6" r="5.8" fill="#3AADAA"/>
-    <line x1="33.23" y1="-3.67" x2="-0.01" y2="29.57" fill="none" stroke="#3AADAA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
+    <circle id="circle_6" cx="244.64" cy="80.6" r="5.8" fill="#2283c0"/>
+    <line x1="33.23" y1="-3.67" x2="-0.01" y2="29.57" fill="none" stroke="#2283c0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
     <line x1="251.44" y1="-20.53" x2="218.2" y2="12.71" fill="none" stroke="#383E45" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
     <line x1="74.09" y1="-3.67" x2="38.95" y2="31.47" fill="none" stroke="#F6F6F6" stroke-linecap="round" stroke-miterlimit="10" stroke-width="11"/>
     <line x1="202.37" y1="100.57" x2="90.64" y2="212.3" fill="none" stroke="#28AFEA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="11"/>

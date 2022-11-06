@@ -35,7 +35,7 @@
       </g>
   </defs>
   <svg class="background" viewBox="0 0 28.35 28.35" preserveAspectRatio="none" width="90%" height="75%" x="10%">
-      <path id="background" d="M0,0H28.35V28.35Z" fill="#3AADAA"/>
+      <path id="background" d="M0,0H28.35V28.35Z" fill="#2283c0"/>
   </svg>
   <svg viewBox="0 0 1 1" id="preview" preserveAspectRatio="none">
       <use xlink:href="#filterPath" fill="darkgrey"/>

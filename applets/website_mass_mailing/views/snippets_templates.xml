@@ -111,13 +111,13 @@
 
 <template id="s_mail_block_footer_social" inherit_id="mass_mailing.s_mail_block_footer_social">
     <xpath expr="//div[hasclass('o_mail_footer_links')]" position="inside">
-        <t> | <a role="button" href="/contactus" class="btn btn-link">Contact</a></t>
+        <t> | <a role="button" href="/contactus" class="btn btn-link rounded-sm">Contact</a></t>
     </xpath>
 </template>
 
 <template id="s_mail_block_footer_social_left" inherit_id="mass_mailing.s_mail_block_footer_social_left">
     <xpath expr="//div[hasclass('o_mail_footer_links')]" position="inside">
-        <t> | <a role="button" href="/contactus" class="btn btn-link">Contact</a></t>
+        <t> | <a role="button" href="/contactus" class="btn btn-link rounded-sm">Contact</a></t>
     </xpath>
 </template>
 

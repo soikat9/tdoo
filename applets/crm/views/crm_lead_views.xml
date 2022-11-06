@@ -76,7 +76,7 @@
                                 <div class="col">
                                     <div class="oe_edit_only d-flex align-items-center">
                                         <label for="probability"/>
-                                        <button class="btn btn-link" name="action_set_automated_probability" type="object"
+                                        <button class="btn btn-link rounded-sm" name="action_set_automated_probability" type="object"
                                                 attrs="{'invisible': [('is_automated_probability', '=', True)]}">
                                             <i class="fa fa-gear" role="img" title="Switch to automatic probability" aria-label="Switch to automatic probability"></i>
                                         </button>
@@ -163,7 +163,7 @@
                                 <field name="partner_phone_update" invisible="1"/>
                                 <label for="email_from" class="oe_inline"/>
                                 <div class="o_row o_row_readonly">
-                                    <button name="mail_action_blacklist_remove" class="fa fa-ban text-danger"
+                                    <button name="mail_action_blacklist_remove" class="fa fa-ban text-warning"
                                         title="This email is blacklisted for mass mailings. Click to unblacklist."
                                         type="object" context="{'default_email': email_from}" groups="base.group_user"
                                         attrs="{'invisible': [('is_blacklisted', '=', False)]}"/>
@@ -174,7 +174,7 @@
                                 </div>
                                 <label for="phone" class="oe_inline"/>
                                 <div class="o_row o_row_readonly">
-                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger"
+                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-warning"
                                         title="This phone number is blacklisted for SMS Marketing. Click to unblacklist."
                                         type="object" context="{'default_phone': phone}" groups="base.group_user"
                                         attrs="{'invisible': [('phone_blacklisted', '=', False)]}"/>
@@ -198,7 +198,7 @@
                                 <field name="partner_phone_update" invisible="1"/>
                                 <label for="email_from_group_lead_info" class="oe_inline"/>
                                 <div class="o_row o_row_readonly">
-                                    <button name="mail_action_blacklist_remove" class="fa fa-ban text-danger"
+                                    <button name="mail_action_blacklist_remove" class="fa fa-ban text-warning"
                                         title="This email is blacklisted for mass mailings. Click to unblacklist."
                                         type="object" context="{'default_email': email_from}" groups="base.group_user"
                                         attrs="{'invisible': [('is_blacklisted', '=', False)]}"/>
@@ -211,7 +211,7 @@
                                 <field name="function"/>
                                 <label for="phone_group_lead_info" class="oe_inline"/>
                                 <div class="o_row o_row_readonly">
-                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger"
+                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-warning"
                                         title="This phone number is blacklisted for SMS Marketing. Click to unblacklist."
                                         type="object" context="{'default_phone': phone}" groups="base.group_user"
                                         attrs="{'invisible': [('phone_blacklisted', '=', False)]}"/>
@@ -222,7 +222,7 @@
                                 </div>
                                 <label for="mobile" class="oe_inline"/>
                                 <div class="o_row o_row_readonly">
-                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger"
+                                    <button name="phone_action_blacklist_remove" class="fa fa-ban text-warning"
                                         title="This phone number is blacklisted for SMS Marketing. Click to unblacklist."
                                         type="object" context="{'default_phone': mobile}" groups="base.group_user"
                                         attrs="{'invisible': [('mobile_blacklisted', '=', False)]}"/>
@@ -301,7 +301,7 @@
                                         <field name="function"/>
                                         <label for="mobile_page_lead" class="oe_inline"/>
                                         <div class="o_row o_row_readonly">
-                                            <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger"
+                                            <button name="phone_action_blacklist_remove" class="fa fa-ban text-warning"
                                                 title="This phone number is blacklisted for SMS Marketing. Click to unblacklist."
                                                 type="object" context="{'default_phone': mobile}" groups="base.group_user"
                                                 attrs="{'invisible': [('mobile_blacklisted', '=', False)]}"/>

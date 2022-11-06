@@ -1,6 +1,4 @@
-# Copyright 2016-2022 Therp BV <https://therp.nl>.
-# Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>.
-# Copyright 2018 Ignacio Ibeas <ignacio@acysos.com>.
+
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 """Fully automatic retrieval of Letsencrypt certificates."""
 # pylint: disable=no-self-use,consider-using-f-string

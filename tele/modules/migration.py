@@ -157,7 +157,7 @@ class MigrationManager(object):
             if ((version == "0.0.0" and parsed_installed_version < current_version)
                or parsed_installed_version < parse_version(convert_version(version)) <= current_version):
 
-                strfmt = {'addon': pkg.name,
+                strfmt = {'applet': pkg.name,
                           'stage': stage,
                           'version': stageformat[stage] % version,
                           }
@@ -169,13 +169,13 @@ class MigrationManager(object):
                     mod = None
                     try:
                         mod = load_script(pyfile, name)
-                        _logger.info('module %(addon)s: Running migration %(version)s %(name)s' % dict(strfmt, name=mod.__name__))
+                        _logger.info('module %(applet)s: Running migration %(version)s %(name)s' % dict(strfmt, name=mod.__name__))
                         migrate = mod.migrate
                     except ImportError:
-                        _logger.exception('module %(addon)s: Unable to load %(stage)s-migration file %(file)s' % dict(strfmt, file=pyfile))
+                        _logger.exception('module %(applet)s: Unable to load %(stage)s-migration file %(file)s' % dict(strfmt, file=pyfile))
                         raise
                     except AttributeError:
-                        _logger.error('module %(addon)s: Each %(stage)s-migration file must have a "migrate(cr, installed_version)" function' % strfmt)
+                        _logger.error('module %(applet)s: Each %(stage)s-migration file must have a "migrate(cr, installed_version)" function' % strfmt)
                     else:
                         migrate(self.cr, installed_version)
                     finally:

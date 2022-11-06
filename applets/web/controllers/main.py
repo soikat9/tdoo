@@ -396,34 +396,34 @@ class HomeStaticTemplateHelpers(object):
         self.checksum_only = checksum_only
         self.template_dict = OrderedDict()
 
-    def _get_parent_template(self, addon, template):
-        """Computes the real addon name and the template name
+    def _get_parent_template(self, applet, template):
+        """Computes the real applet name and the template name
         of the parent template (the one that is inherited from)
 
-        :param str addon: the addon the template is declared in
+        :param str applet: the applet the template is declared in
         :param etree template: the current template we are are handling
         :returns: (str, str)
         """
         original_template_name = template.attrib[self.STATIC_INHERIT_DIRECTIVE]
         split_name_attempt = original_template_name.split('.', 1)
-        parent_addon, parent_name = tuple(split_name_attempt) if len(split_name_attempt) == 2 else (addon, original_template_name)
+        parent_addon, parent_name = tuple(split_name_attempt) if len(split_name_attempt) == 2 else (applet, original_template_name)
         if parent_addon not in self.template_dict:
-            if original_template_name in self.template_dict[addon]:
-                parent_addon = addon
+            if original_template_name in self.template_dict[applet]:
+                parent_addon = applet
                 parent_name = original_template_name
             else:
-                raise ValueError(_('Module %s not loaded or inexistent, or templates of addon being loaded (%s) are misordered') % (parent_addon, addon))
+                raise ValueError(_('Module %s not loaded or inexistent, or templates of applet being loaded (%s) are misordered') % (parent_addon, applet))
 
         if parent_name not in self.template_dict[parent_addon]:
             raise ValueError(_("No template found to inherit from. Module %s and template name %s") % (parent_addon, parent_name))
 
         return parent_addon, parent_name
 
-    def _compute_xml_tree(self, addon, file_name, source):
+    def _compute_xml_tree(self, applet, file_name, source):
         """Computes the xml tree that 'source' contains
         Applies inheritance specs in the process
 
-        :param str addon: the current addon we are reading files for
+        :param str applet: the current applet we are reading files for
         :param str file_name: the current name of the file we are reading
         :param str source: the content of the file
         :returns: etree
@@ -434,22 +434,22 @@ class HomeStaticTemplateHelpers(object):
             _logger.error("Could not parse file %s: %s" % (file_name, e.msg))
             raise e
 
-        self.template_dict.setdefault(addon, OrderedDict())
+        self.template_dict.setdefault(applet, OrderedDict())
         for template_tree in list(all_templates_tree):
             if self.NAME_TEMPLATE_DIRECTIVE in template_tree.attrib:
                 template_name = template_tree.attrib[self.NAME_TEMPLATE_DIRECTIVE]
                 dotted_names = template_name.split('.', 1)
-                if len(dotted_names) > 1 and dotted_names[0] == addon:
+                if len(dotted_names) > 1 and dotted_names[0] == applet:
                     template_name = dotted_names[1]
             else:
-                # self.template_dict[addon] grows after processing each template
-                template_name = 'anonymous_template_%s' % len(self.template_dict[addon])
+                # self.template_dict[applet] grows after processing each template
+                template_name = 'anonymous_template_%s' % len(self.template_dict[applet])
             if self.STATIC_INHERIT_DIRECTIVE in template_tree.attrib:
                 inherit_mode = template_tree.attrib.get(self.STATIC_INHERIT_MODE_DIRECTIVE, self.DEFAULT_MODE)
                 if inherit_mode not in [self.PRIMARY_MODE, self.EXTENSION_MODE]:
-                    raise ValueError(_("Invalid inherit mode. Module %s and template name %s") % (addon, template_name))
+                    raise ValueError(_("Invalid inherit mode. Module %s and template name %s") % (applet, template_name))
 
-                parent_addon, parent_name = self._get_parent_template(addon, template_tree)
+                parent_addon, parent_name = self._get_parent_template(applet, template_tree)
 
                 # After several performance tests, we found out that deepcopy is the most efficient
                 # solution in this case (compared with copy, xpath with '.' and stringifying).
@@ -460,7 +460,7 @@ class HomeStaticTemplateHelpers(object):
                 # pylint: disable=W0125
                 if False: # self.debug and inherit_mode == self.EXTENSION_MODE:
                     for xpath in xpaths:
-                        xpath.insert(0, etree.Comment(" Modified by %s from %s " % (template_name, addon)))
+                        xpath.insert(0, etree.Comment(" Modified by %s from %s " % (template_name, applet)))
                 elif inherit_mode == self.PRIMARY_MODE:
                     parent_tree.tag = template_tree.tag
                 inherited_template = apply_inheritance_specs(parent_tree, xpaths)
@@ -471,14 +471,14 @@ class HomeStaticTemplateHelpers(object):
                             inherited_template.set(attr_name, attr_val)
                     if self.debug:
                         self._remove_inheritance_comments(inherited_template)
-                    self.template_dict[addon][template_name] = inherited_template
+                    self.template_dict[applet][template_name] = inherited_template
 
                 else:  # Modifies original: A = B(A)
                     self.template_dict[parent_addon][parent_name] = inherited_template
             else:
-                if template_name in self.template_dict[addon]:
-                    raise ValueError(_("Template %s already exists in module %s") % (template_name, addon))
-                self.template_dict[addon][template_name] = template_tree
+                if template_name in self.template_dict[applet]:
+                    raise ValueError(_("Template %s already exists in module %s") % (template_name, applet))
+                self.template_dict[applet][template_name] = template_tree
         return all_templates_tree
 
     def _remove_inheritance_comments(self, inherited_template):
@@ -518,8 +518,8 @@ class HomeStaticTemplateHelpers(object):
         """Concatenate xml files
 
         :param dict(list) file_dict:
-            key: addon name
-            value: list of files for an addon
+            key: applet name
+            value: list of files for an applet
         :returns: (concatenation_result, checksum)
         :rtype: (bytes, str)
         """
@@ -528,18 +528,18 @@ class HomeStaticTemplateHelpers(object):
             return b'', checksum.hexdigest()
 
         root = None
-        for addon, fnames in file_dict.items():
+        for applet, fnames in file_dict.items():
             for fname in fnames:
                 contents = self._read_addon_file(fname)
                 checksum.update(contents)
                 if not self.checksum_only:
-                    xml = self._compute_xml_tree(addon, fname, contents)
+                    xml = self._compute_xml_tree(applet, fname, contents)
 
                     if root is None:
                         root = etree.Element('templates')
 
-        for addon in self.template_dict.values():
-            for template in addon.values():
+        for applet in self.template_dict.values():
+            for template in applet.values():
                 root.append(template)
 
         return etree.tostring(root, encoding='utf-8') if root is not None else b'', checksum.hexdigest()[:64]
@@ -558,8 +558,8 @@ class HomeStaticTemplateHelpers(object):
         xml_paths = defaultdict(list)
 
         # group paths by module, keeping them in order
-        for path, addon, _ in self._get_asset_paths(bundle):
-            addon_paths = xml_paths[addon]
+        for path, applet, _ in self._get_asset_paths(bundle):
+            addon_paths = xml_paths[applet]
             if path not in addon_paths:
                 addon_paths.append(path)
 

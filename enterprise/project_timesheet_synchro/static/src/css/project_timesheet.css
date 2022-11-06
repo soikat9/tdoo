@@ -5293,7 +5293,7 @@ fieldset[disabled] .form-control.focus:disabled,
 .input-group .form-control-wrapper .form-control {
   float: none;
 }
-.input-group .input-group-addon {
+.input-group .input-group-applet {
   border: 0;
   background: transparent;
 }

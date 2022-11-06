@@ -392,7 +392,7 @@
 
 <t t-name="reconciliation.notification">
     <div t-att-class="'notification alert-dismissible alert alert-' + type" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span title="Close" class="fa fa-times"></span></button>
+        <button type="button" class="close rounded-sm" data-dismiss="alert" aria-label="Close"><span title="Close" class="fa fa-times"></span></button>
         <t t-if="template">
             <t t-call="{{template}}"/>
         </t>

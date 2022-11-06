@@ -18,7 +18,7 @@
 
     <div t-name="iap.InsufficientCreditFooter" owl="1">
         <button class="btn btn-primary rounded-sm" t-on-click="buyCredits" t-esc="buttonMessage"/>
-        <button class="btn" t-on-click="close">Cancel</button>
+        <button class="btn rounded-sm" t-on-click="close">Cancel</button>
     </div>
 
     <t t-extend="DashboardMain">

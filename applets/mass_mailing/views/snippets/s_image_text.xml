@@ -12,7 +12,7 @@
                     <h3>Omnichannel sales</h3>
                     <p class="text-justify">Get your inside sales (CRM) fully integrated with online sales (eCommerce), in-store sales (Point of Sale) and marketplaces like eBay and Amazon.</p>
                     <div class="text-left">
-                        <a href="#" class="btn btn-link">Read More</a>
+                        <a href="#" class="btn btn-link rounded-sm">Read More</a>
                     </div>
                 </div>
             </div>

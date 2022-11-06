@@ -147,7 +147,7 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
     -----------------
 
     It is also possible to require the installation of an additional
-    addon set when a specific preset of applets has been marked for
+    applet set when a specific preset of applets has been marked for
     installation (in the basic usage only, additionals can't depend on
     one another).
 
@@ -161,7 +161,7 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
             ('sale','crm'): ['sale_crm'],
         }
 
-    This will install the ``sale_crm`` addon if and only if both the
+    This will install the ``sale_crm`` applet if and only if both the
     ``sale`` and ``crm`` applets are selected for installation.
 
     You can define as many additionals as you wish, and additionals
@@ -257,12 +257,12 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
         * checked boolean fields
         * return values of hook methods. Hook methods are of the form
           ``_if_%(addon_name)s``, and are called if the corresponding
-          addon is marked for installation. They take the arguments
-          cr, uid, ids and context, and return an iterable of addon
+          applet is marked for installation. They take the arguments
+          cr, uid, ids and context, and return an iterable of applet
           names
         * additionals, additionals are setup through the ``_install_if``
           class variable. ``_install_if`` is a dict of {iterable:iterable}
-          where key and value are iterables of addon names.
+          where key and value are iterables of applet names.
 
           If all the applets in the key are selected for installation
           (warning: applets added through hooks don't count), then the
@@ -289,14 +289,14 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
 
     @api.model
     def default_get(self, fields_list):
-        ''' If an addon is already installed, check it by default
+        ''' If an applet is already installed, check it by default
         '''
         defaults = super(ResConfigInstaller, self).default_get(fields_list)
         return dict(defaults, **dict.fromkeys(self.already_installed(), True))
 
     @api.model
     def fields_get(self, fields=None, attributes=None):
-        """ If an addon is already installed, set it to readonly as
+        """ If an applet is already installed, set it to readonly as
         res.config.installer doesn't handle uninstallations of already
         installed applets
         """
@@ -308,7 +308,7 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
             fields[name].update(
                 readonly=True,
                 help= ustr(fields[name].get('help', '')) +
-                     _('\n\nThis addon is already installed on your system'))
+                     _('\n\nThis applet is already installed on your system'))
         return fields
 
     def execute(self):

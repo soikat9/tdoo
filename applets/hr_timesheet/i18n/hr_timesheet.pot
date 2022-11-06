@@ -243,7 +243,7 @@ msgstr ""
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_res_config_settings__module_project_timesheet_synchro
-msgid "Awesome Timesheet"
+msgid "Tele-Timesheet"
 msgstr ""
 
 #. module: hr_timesheet
@@ -776,7 +776,7 @@ msgstr ""
 #. tele-web
 #: code:applets/hr_timesheet/static/src/xml/qr_modal_template.xml:0
 #, python-format
-msgid "Scan this QR code to get the Awesome Timesheet app:"
+msgid "Scan this QR code to get the Tele-Timesheet app:"
 msgstr ""
 
 #. module: hr_timesheet

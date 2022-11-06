@@ -55,7 +55,7 @@
                 </a>
                 <div class="dropdown-menu overflow-hidden">
                     <a class="dropdown-item" href="#" data-action="accepted"><i class="fa fa-circle text-success"/> Accept</a>
-                    <a class="dropdown-item" href="#" data-action="declined"><i class="fa fa-circle text-danger"/> Decline</a>
+                    <a class="dropdown-item" href="#" data-action="declined"><i class="fa fa-circle text-warning"/> Decline</a>
                     <a class="dropdown-item" href="#" data-action="tentative"><i class="fa fa-circle text-muted"/> Uncertain</a>
                 </div>
             </div>

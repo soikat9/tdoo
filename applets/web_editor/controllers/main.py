@@ -519,7 +519,7 @@ class Web_Editor(http.Controller):
         user_colors = []
         svg_options = {}
         default_palette = {
-            '1': '#3AADAA',
+            '1': '#2283c0',
             '2': '#28AFEA',
             '3': '#F6F6F6',
             '4': '#FFFFFF',
@@ -551,7 +551,7 @@ class Web_Editor(http.Controller):
                 svg_options[key] = value
 
         color_mapping = {default_palette[palette_number]: color for color, palette_number in user_colors}
-        # create a case-insensitive regex to match all the colors to replace, eg: '(?i)(#3AADAA)|(#28AFEA)'
+        # create a case-insensitive regex to match all the colors to replace, eg: '(?i)(#2283c0)|(#28AFEA)'
         regex = '(?i)%s' % '|'.join('(%s)' % color for color in color_mapping.keys())
 
         def subber(match):

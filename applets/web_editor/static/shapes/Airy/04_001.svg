@@ -4,7 +4,7 @@
             0%, 100% {transform: scale(1, 1);}
             50%      {transform: scale(1, 1.2);}
         }
-        .st0{fill:none;stroke:#3AADAA;stroke-miterlimit:10;transform-origin: center bottom;}
+        .st0{fill:none;stroke:#2283c0;stroke-miterlimit:10;transform-origin: center bottom;}
         .path_1 {animation: wave 25s cubic-bezier(.445, .05, .55, .95) infinite;}
         .path_2 {animation: wave 25s .5s cubic-bezier(.445, .05, .55, .95) infinite;}
         .path_3 {animation: wave 25s 1s cubic-bezier(.445, .05, .55, .95) infinite;}

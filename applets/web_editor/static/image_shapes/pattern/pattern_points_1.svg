@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600">
     <defs>
         <pattern id="pattern" width="4" height="4" viewBox="0 -4 4 4" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="-1" r="0.5" fill="#3AADAA"/>
+            <circle cx="1" cy="-1" r="0.5" fill="#2283c0"/>
         </pattern>
         <clipPath id="clip-path" clipPathUnits="objectBoundingBox">
             <use xlink:href="#filterPath" fill="none"/>

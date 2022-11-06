@@ -2588,7 +2588,7 @@ msgstr ""
 #: code:applets/web/controllers/main.py:0
 #, python-format
 msgid ""
-"Module %s not loaded or inexistent, or templates of addon being loaded (%s) "
+"Module %s not loaded or inexistent, or templates of applet being loaded (%s) "
 "are misordered"
 msgstr ""
 
@@ -2860,7 +2860,7 @@ msgstr ""
 #. tele-web
 #: code:applets/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Tele Apps will be available soon"
+msgid "Tele Applets will be available soon"
 msgstr ""
 
 #. module: web

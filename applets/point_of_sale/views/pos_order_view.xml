@@ -25,7 +25,7 @@
                         icon="fa-truck"
                         attrs="{'invisible':[('picking_count', '=', 0)]}">
                         <field name="picking_count" widget="statinfo" string="Pickings" attrs="{'invisible': [('failed_pickings', '!=', False)]}"/>
-                        <field name="picking_count" widget="statinfo" string="Pickings" class="text-danger" attrs="{'invisible': [('failed_pickings', '=', False)]}"/>
+                        <field name="picking_count" widget="statinfo" string="Pickings" class="text-warning" attrs="{'invisible': [('failed_pickings', '=', False)]}"/>
                     </button>
                     <button name="action_view_invoice"
                         string="Invoice"

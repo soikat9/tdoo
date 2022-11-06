@@ -82,7 +82,7 @@
             <span t-if="state.uploadingLock" class="fa fa-circle-o-notch fa-spin"/>
         </button>
         <t t-foreach="props.rules" t-as="rule" t-key="rule.id">
-            <button class="btn"
+            <button class="btn rounded-sm"
                 t-att-class="{
                     'btn-primary': !isMobile,
                     'btn-secondary': isMobile,

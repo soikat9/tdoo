@@ -49,7 +49,7 @@ and this for apache::
     RewriteCond %{REQUEST_URI} "!^/.well-known/"
     RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
-In case you need to redirect other nginx sites to your Odoo instance, declare
+In case you need to redirect other nginx sites to your Tele  instance, declare
 an upstream for your tele instance and do something like::
 
     location /.well-known {
@@ -58,6 +58,6 @@ an upstream for your tele instance and do something like::
 
 If you're using a multi-database installation (with or without dbfilter option)
 where /web/databse/selector returns a list of more than one database, then
-you need to add ``letsencrypt`` addon to wide load applets list
-(by default, only ``web`` addon), setting ``--load`` option.
+you need to add ``letsencrypt`` applet to wide load applets list
+(by default, only ``web`` applet), setting ``--load`` option.
 For example, ``--load=web,letsencrypt``

@@ -388,7 +388,7 @@
                                     your content needs to be useful to your readers.
                                 </p>
                                 <div class="text-center" style="margin-top:15px;">
-                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                    <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                                 </div>
                             </div>
                         </td>
@@ -403,7 +403,7 @@
                                     your content needs to be useful to your readers.
                                 </p>
                                 <div class="text-center" style="margin-top:15px;">
-                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                    <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                                 </div>
                             </div>
                         </td>
@@ -429,7 +429,7 @@
                                     A short description
                                 </p>
                                 <div class="text-center" style="margin-top:15px;">
-                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                    <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                                 </div>
                             </div>
                         </td>
@@ -442,7 +442,7 @@
                                     A short description
                                 </p>
                                 <div class="text-center" style="margin-top:15px;">
-                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                    <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                                 </div>
                             </div>
                         </td>
@@ -455,7 +455,7 @@
                                     A short description
                                 </p>
                                 <div class="text-center" style="margin-top:15px;">
-                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                    <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                                 </div>
                             </div>
                         </td>
@@ -480,7 +480,7 @@
                             <h3>Omnichannel sales</h3>
                             <p class="o_mail_no_margin" style="text-align:justify;">Get your inside sales (CRM) fully integrated with online sales (eCommerce), in-store sales (Point of Sale) and marketplaces like eBay and Amazon.</p>
                             <div class="text-center" style="margin-top:15px;">
-                                <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                             </div>
                         </td>
                     </tr>
@@ -501,7 +501,7 @@
                             <h3>A unique value</h3>
                             <p class="o_mail_no_margin" style="text-align:justify;">The open source model of Tele has allowed us to leverage thousands of developers and business experts to build hundreds of apps in just a few years.</p>
                             <div class="text-center" style="margin-top:15px;">
-                                <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                <a role="button" href="#" class="btn btn-link rounded-sm">Read More...</a>
                             </div>
                         </td>
                         <td style="width:270px;text-align:center;vertical-align:middle" class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding">
@@ -716,7 +716,7 @@
             </div>
             <div class="row">
                 <div class="col-lg o_mail_footer_links">
-                    <a role="button" href="/unsubscribe_from_list" class="btn btn-link">Unsubscribe</a>
+                    <a role="button" href="/unsubscribe_from_list" class="btn btn-link rounded-sm">Unsubscribe</a>
                 </div>
             </div>
             <div class="row">
@@ -740,7 +740,7 @@
                         <strong><t t-esc="res_company.partner_id.name"/></strong>
                     </p>
                     <div class="o_mail_footer_links">
-                        <a role="button" href="/unsubscribe_from_list" class="btn btn-link">Unsubscribe</a>
+                        <a role="button" href="/unsubscribe_from_list" class="btn btn-link rounded-sm">Unsubscribe</a>
                     </div>
                 </div>
                 <div class="col-lg" align="right">

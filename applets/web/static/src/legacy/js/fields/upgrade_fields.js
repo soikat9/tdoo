@@ -43,7 +43,7 @@ var AbstractFieldUpgrade = {
                 args: [[["share", "=", false]]],
             })
             .then(function (data) {
-                framework.redirect("https://www.tele.studio/tele-enterprise/upgrade?num_users=" + data);
+                framework.redirect("https://www.tele.studio/enterprise/upgrade?num_users=" + data);
             });
     },
     /**

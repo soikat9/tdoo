@@ -24,7 +24,7 @@
         </record>
         <record id="product_category_5" model="product.category">
             <field name="parent_id" ref="product_category_1"/>
-            <field name="name">Office Furniture</field>
+            <field name="name">Wedding Planner</field>
         </record>
         <record id="product_category_consumable" model="product.category">
             <field name="parent_id" ref="product_category_all"/>

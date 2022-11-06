@@ -23,8 +23,8 @@
   <image xlink:href="" clip-path="url(#clip-path)"/> 
   <svg viewBox="0 0 28.35 28.35" preserveAspectRatio="none">
       <g id="lines_grp_1" style="transform-box: fill-box">
-          <path d="M3.14,5.57A4.37,4.37,0,0,1,6.36,2.91" fill="none" stroke="#3AADAA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.35"/>
-          <path d="M3,4.74a4.1,4.1,0,0,1,2.5-2.07" fill="none" stroke="#3AADAA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.27"/>
+          <path d="M3.14,5.57A4.37,4.37,0,0,1,6.36,2.91" fill="none" stroke="#2283c0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.35"/>
+          <path d="M3,4.74a4.1,4.1,0,0,1,2.5-2.07" fill="none" stroke="#2283c0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.27"/>
       </g>
       <g id="lines_grp_2" style="transform-box: fill-box" transform-origin="right bottom">
           <path d="M26.31,18.63s-1.43,4.26-4,5.23" fill="none" stroke="#28AFEA" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.47"/>

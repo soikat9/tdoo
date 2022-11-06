@@ -267,6 +267,8 @@ This module provides the core of the Tele Web Client.
 
             'base/static/src/css/description.css',
             'web/static/lib/fontawesome/css/font-awesome.css',
+            'web/static/lib/tele-icons/css/styles.css',
+            'web/static/lib/tele-icons/scss/styles.scss'
             'web/static/fonts/fonts.scss',
             'web/static/src/legacy/scss/report.scss',
             'web/static/src/legacy/scss/layout_standard.scss',
@@ -329,6 +331,9 @@ This module provides the core of the Tele Web Client.
             'web/static/lib/tempusdominus/tempusdominus.scss',
             'web/static/lib/jquery.ui/jquery-ui.css',
             'web/static/lib/fontawesome/css/font-awesome.css',
+            'web/static/lib/tele/css/styles.css',
+            'web/static/lib/tele/tele.min.svg',
+            'web/static/lib/tele-icons/css/styles.css',
             'web/static/lib/select2/select2.css',
             'web/static/lib/select2-bootstrap-css/select2-bootstrap.css',
             'web/static/lib/daterangepicker/daterangepicker.css',

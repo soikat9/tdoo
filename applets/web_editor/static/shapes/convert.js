@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const palette = {
-    '1': '#3AADAA',
+    '1': '#2283c0',
     '2': '#28AFEA',
     '3': '#F6F6F6',
     '4': '#FFFFFF',

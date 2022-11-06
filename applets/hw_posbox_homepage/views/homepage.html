@@ -142,11 +142,11 @@
         </tr>
     </table>
     <div style="margin: 20px auto 10px auto;" class="text-center">
-        <a class="btn" href='/point_of_sale/display'>POS Display</a>
-        <a class="btn" style="margin-left: 10px;" href='/remote_connect'>Remote Debug</a>
-        <a target="_blank" class="btn" style="margin-left: 10px;" href="http://{{ ip }}:631">Printers server</a>
+        <a class="btn rounded-sm" href='/point_of_sale/display'>POS Display</a>
+        <a class="btn rounded-sm" style="margin-left: 10px;" href='/remote_connect'>Remote Debug</a>
+        <a target="_blank" class="btn rounded-sm" style="margin-left: 10px;" href="http://{{ ip }}:631">Printers server</a>
         {% if server_status != "Not Configured" %}
-        <a class="btn" style="margin-left: 10px;" href='/list_credential'>Credential</a>
+        <a class="btn rounded-sm" style="margin-left: 10px;" href='/list_credential'>Credential</a>
         {% endif %}
     </div>
 {% endblock %}

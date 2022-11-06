@@ -173,7 +173,7 @@
 
                   <!-- status messages -->
                   <div t-if="order.state == 'cancel'" class="alert alert-danger alert-dismissable d-print-none" role="alert">
-                      <button type="button" class="close" data-dismiss="alert" aria-label="close">&amp;times;</button>
+                      <button type="button" class="close rounded-sm" data-dismiss="alert" aria-label="close">&amp;times;</button>
                       <strong>This purchase has been canceled.</strong>
                   </div>
 

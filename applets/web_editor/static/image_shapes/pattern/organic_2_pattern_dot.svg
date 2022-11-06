@@ -4,7 +4,7 @@
         <use xlink:href="#filterPath" fill="none"></use>
       </clipPath>
       <pattern id="USGS_22_Gravel_Beach" data-name="USGS 22 Gravel Beach" width="72" height="72"
-        patternTransform="translate(0 792.01)" patternUnits="userSpaceOnUse" fill="#3AADAA" viewBox="0 0 72 72">
+        patternTransform="translate(0 792.01)" patternUnits="userSpaceOnUse" fill="#2283c0" viewBox="0 0 72 72">
         <g>
           <path d="M21,3.1a.39.39,0,0,1-.25-.1.36.36,0,0,1,0-.5.36.36,0,0,1,.6.25.39.39,0,0,1-.1.25A.39.39,0,0,1,21,3.1Z">
           </path>

@@ -20,18 +20,18 @@
                                 <span class="o_stat_value text-success" attrs="{'invisible' : [('contract_warning', '=', True)]}">
                                     <field name="first_contract_date" readonly="1"/>
                                 </span>
-                                <span class="o_stat_text text-danger" attrs="{'invisible' : [('contract_warning', '=', False)]}" title="In Contract Since">
+                                <span class="o_stat_text text-warning" attrs="{'invisible' : [('contract_warning', '=', False)]}" title="In Contract Since">
                                     In Contract Since
                                 </span>
-                                <span class="o_stat_value text-danger" attrs="{'invisible' : [('contract_warning', '=', False)]}">
+                                <span class="o_stat_value text-warning" attrs="{'invisible' : [('contract_warning', '=', False)]}">
                                     <field name="first_contract_date" readonly="1"/>
                                 </span>
                             </div>
                             <div attrs="{'invisible' : [('first_contract_date', '!=', False)]}" class="o_stat_info">
-                                <span class="o_stat_value text-danger">
+                                <span class="o_stat_value text-warning">
                                    <field name="contracts_count"/>
                                 </span>
-                                <span class="o_stat_text text-danger">
+                                <span class="o_stat_text text-warning">
                                     Contracts
                                 </span>
                             </div>
@@ -53,7 +53,7 @@
                             <span attrs="{'invisible': [('calendar_mismatch', '=', False)]}"
                                 class="fa fa-exclamation-triangle text-danger o_calendar_warning pl-3">
                             </span>
-                            <span class="o_calendar_warning_tooltip text-danger">
+                            <span class="o_calendar_warning_tooltip text-warning">
                                 Calendar Mismatch : The employee's calendar does not match its current contract calendar. This could lead to unexpected behaviors.
                             </span>
                         </div>
@@ -164,7 +164,7 @@
                                     <span attrs="{'invisible': ['|', ('calendar_mismatch', '=', False), ('state', '!=', 'open')]}"
                                         class="fa fa-exclamation-triangle text-danger o_calendar_warning pl-3">
                                     </span>
-                                    <span class="o_calendar_warning_tooltip text-danger">
+                                    <span class="o_calendar_warning_tooltip text-warning">
                                         Calendar Mismatch : The employee's calendar does not match this contract's calendar. This could lead to unexpected behaviors.
                                     </span>
                                 </div>

@@ -422,7 +422,7 @@ class TestStaticInheritance(TestStaticInheritanceCommon):
 
         self.assertEqual(
             str(ve.exception),
-            'Module module_1 not loaded or inexistent, or templates of addon being loaded (module_2) are misordered'
+            'Module module_1 not loaded or inexistent, or templates of applet being loaded (module_2) are misordered'
         )
 
     def test_static_misordered_templates(self):

@@ -27,14 +27,14 @@
                         "/>
                         <br/>
                         <span attrs="{'invisible': [('invalid_addresses', '=', 0)]}">
-                            <span class="text-danger" attrs="{'invisible': [('letters_qty', '>', 1)]}">
+                            <span class="text-warning" attrs="{'invisible': [('letters_qty', '>', 1)]}">
                                 The recipient's address is incomplete.
                             </span>
                             <span attrs="{'invisible': [('letters_qty', '=', 1)]}">
-                                <span class="text-danger">
+                                <span class="text-warning">
                                     Some customer addresses are not complete.
                                 </span>
-                                <button type="object" name="invalid_addresses_action" class="btn btn-link" role="button"><field name="invalid_addresses" readonly="1" options="{'digits':[0,0]}"/> customers</button>
+                                <button type="object" name="invalid_addresses_action" class="btn btn-link rounded-sm" role="button"><field name="invalid_addresses" readonly="1" options="{'digits':[0,0]}"/> customers</button>
                             </span>
                         </span>
                     </div>

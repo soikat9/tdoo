@@ -8,7 +8,7 @@
 Studio - Customize Tele
 =======================
 
-This addon allows the user to customize most element of the user interface, in a
+This applet allows the user to customize most element of the user interface, in a
 simple and graphical way. It has two main features:
 
 * create a new application (add module, top level menu item, and default action)

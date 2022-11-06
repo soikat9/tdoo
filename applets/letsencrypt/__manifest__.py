@@ -3,8 +3,7 @@
 {
     "name": "Let's Encrypt",
     "version": "1.0.1.0.1",
-    "author": "Therp BV," "Tecnativa," "Acysos S.L," "Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/server-tools",
+    "author": "Tele Inc",
     "license": "AGPL-3",
     "category": "Tools",
     "summary": "Request SSL certificates from letsencrypt.org",

@@ -2939,7 +2939,7 @@
                 console.info(`Owl is running in 'dev' mode.
 
 This is not suitable for production use.
-See https://github.com/tele-studio/owl/blob/master/doc/reference/config.md#mode for more information.`);
+See https://github.com/tele/owl/blob/master/doc/reference/config.md#mode for more information.`);
             }
         },
     });
@@ -5571,7 +5571,7 @@ See https://github.com/tele-studio/owl/blob/master/doc/reference/config.md#mode 
     __info__.version = '1.4.10';
     __info__.date = '2022-04-27T09:54:49.146Z';
     __info__.hash = 'c060490';
-    __info__.url = 'https://github.com/tele-studio/owl';
+    __info__.url = 'https://github.com/tele-studio/tele';
 
 
 })(this.owl = this.owl || {});

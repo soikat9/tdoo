@@ -10,7 +10,7 @@
                     </p>
                     <t t-if="messaging.snailmail_credits_url">
                         <div class="text-right">
-                            <a class="btn btn-link" t-att-href="messaging.snailmail_credits_url" target="_blank">
+                            <a class="btn btn-link rounded-sm" t-att-href="messaging.snailmail_credits_url" target="_blank">
                                 <i class="fa fa-arrow-right"/> Buy credits
                             </a>
                         </div>
@@ -22,7 +22,7 @@
                     </p>
                     <t t-if="messaging.snailmail_credits_url_trial">
                         <div class="text-right">
-                            <a class="btn btn-link" t-att-href="messaging.snailmail_credits_url_trial">
+                            <a class="btn btn-link rounded-sm" t-att-href="messaging.snailmail_credits_url_trial">
                                 <i class="fa fa-arrow-right"/> Buy credits
                             </a>
                         </div>

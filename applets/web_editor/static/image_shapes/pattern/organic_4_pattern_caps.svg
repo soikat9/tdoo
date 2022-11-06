@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600">
   <defs>
-    <pattern id="Capsules_2" data-name="Capsules 2" width="57.6" stroke="#3AADAA" height="57.6"
+    <pattern id="Capsules_2" data-name="Capsules 2" width="57.6" stroke="#2283c0" height="57.6"
       patternTransform="translate(-59.36 422.92) scale(1.09 1.17)" patternUnits="userSpaceOnUse"
       viewBox="0 0 57.6 57.6">
       <line x1="58.11" y1="14.48" x2="62.26" y2="13.45" fill="none" stroke-linecap="round" stroke-width="1.6"></line>

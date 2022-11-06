@@ -9,7 +9,7 @@
     'description': """
 Mail Mobile
 ===========
-This module modifies the mail addon to provide:
+This module modifies the mail applet to provide:
 
 * Push notifications to registered devices for direct messages, chatter messages and channel.
 * Redirection to the Android/iOS mobile app when you click on an Tele-URL.

@@ -172,7 +172,7 @@ const Link = Widget.extend({
      * @param {object} data
      */
     applyLinkToDom: function (data) {
-        // Some mass mailing template use <a class="btn btn-link"> instead of just a simple <a>.
+        // Some mass mailing template use <a class="btn btn-link rounded-sm"> instead of just a simple <a>.
         // And we need to keep the classes because the a.btn.btn-link have some special css rules.
         if (!data.classes.includes('btn') && this.data.iniClassName.includes("btn-link")) {
             data.classes += " btn btn-link";

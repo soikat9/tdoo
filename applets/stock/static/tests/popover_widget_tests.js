@@ -14,7 +14,7 @@ QUnit.module('ModelFieldSelector', {
                     json_data: {string: " ", type: "char"},
                 },
                 records: [
-                    {id:1, json_data:'{"color": "text-danger", "msg": "var that = self // why not?", "title": "JS Master"}'}
+                    {id:1, json_data:'{"color": "text-warning", "msg": "var that = self // why not?", "title": "JS Master"}'}
                 ]
             }
         };

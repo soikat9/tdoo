@@ -7,7 +7,7 @@
                 <input class="form-control col-10 col-md-6" autocomplete="current-password"
                        name="password" type="password" required="required"/>
             </div>
-            <a href="/web/reset_password/" class="btn btn-link" role="button">Forgot password?</a>
+            <a href="/web/reset_password/" class="btn btn-link rounded-sm" role="button">Forgot password?</a>
         </form>
     </t>
     <t t-name="portal.keydescription">

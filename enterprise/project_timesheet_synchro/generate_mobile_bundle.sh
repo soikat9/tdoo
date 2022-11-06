@@ -24,9 +24,9 @@ cp www/project_timesheet_synchro/static/src/img/icon.png ./
 
 # Setup cordova config.xml
 #
-app_name='Awesome Timesheet'
+app_name='Tele-Timesheet'
 app_description='Beautiful time tracking extension to get things done.'
-app_author='Tele S.A.'
+app_author='Tele INC.'
 app_author_email='help@tele.studio'
 app_author_website='https://www.tele.studio/'
 app_version=$2 #e.g.: 20

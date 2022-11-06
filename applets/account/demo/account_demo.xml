@@ -17,7 +17,7 @@
             <field name="name">Demo CEO Wages Account</field>
         </record>
         <record id="demo_office_furniture_account" model="account.account.tag">
-            <field name="name">Office Furniture</field>
+            <field name="name">Wedding Planner</field>
         </record>
         <!-- Payment Terms -->
 

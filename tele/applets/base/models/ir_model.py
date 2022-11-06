@@ -916,7 +916,7 @@ class IrModelFields(models.Model):
                 if item.state != 'manual':
                     raise UserError(_('Properties of base fields cannot be altered in this manner! '
                                       'Please modify them through Python code, '
-                                      'preferably through a custom addon!'))
+                                      'preferably through a custom applet!'))
 
                 if vals.get('model_id', item.model_id.id) != item.model_id.id:
                     raise UserError(_("Changing the model of a field is forbidden!"))
@@ -1330,7 +1330,7 @@ class IrModelSelection(models.Model):
             if field.state != 'manual':
                 raise UserError(_('Properties of base fields cannot be altered in this manner! '
                                   'Please modify them through Python code, '
-                                  'preferably through a custom addon!'))
+                                  'preferably through a custom applet!'))
         recs = super().create(vals_list)
 
         # setup models; this re-initializes model in registry
@@ -1346,7 +1346,7 @@ class IrModelSelection(models.Model):
         ):
             raise UserError(_('Properties of base fields cannot be altered in this manner! '
                               'Please modify them through Python code, '
-                              'preferably through a custom addon!'))
+                              'preferably through a custom applet!'))
 
         if 'value' in vals:
             for selection in self:
@@ -1377,7 +1377,7 @@ class IrModelSelection(models.Model):
         ):
             raise UserError(_('Properties of base fields cannot be altered in this manner! '
                               'Please modify them through Python code, '
-                              'preferably through a custom addon!'))
+                              'preferably through a custom applet!'))
 
     def unlink(self):
         self._process_ondelete()

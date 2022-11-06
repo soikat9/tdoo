@@ -22,7 +22,7 @@
                                         <button
                                             string="(refresh)"
                                             name="geo_localize"
-                                            class="btn btn-link"
+                                            class="btn btn-link rounded-sm"
                                             type="object"/>
                                     </span>
                                 </div>

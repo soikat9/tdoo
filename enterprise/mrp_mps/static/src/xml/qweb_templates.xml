@@ -154,7 +154,7 @@
                                 <button type="button"
                                     t-if="forecast.replenish_qty_updated"
                                     t-att-data-date_index="forecast_index"
-                                    class="btn btn-link input-group-addon
+                                    class="btn btn-link input-group-applet
                                     o_mrp_mps_automatic_mode fa fa-times
                                     o_no_padding"/>
                                 <input type="text"

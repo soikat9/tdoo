@@ -3,7 +3,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Tele</title>
     <link rel="shortcut icon" href="/web/static/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/web/static/lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/web/static/lib/tele-icon/css/styles.css" />
+    <link rel="stylesheet" href="/web/static/lib/tele-icon/tele-icon.min.svg" />
+    <link rel="stylesheet" href="/web/static/lib/tele-icon-icons/css/styles.css" />
     <link rel="stylesheet" href="/web/static/lib/bootstrap/css/bootstrap.css" />
     <script src="/web/static/lib/jquery/jquery.js" ></script>
     <script src="/web/static/lib/popper/popper.js" ></script>
@@ -21,7 +23,7 @@
     <script src="/web/static/lib/bootstrap/js/tab.js" ></script>
     <script src="/web/static/src/public/database_manager.js" ></script>
 </head>
-<section class="mb-10 h-100" style="background: url('/web/static/img/tele-mock.jpg');background-size: cover">
+<section class="mb-10 h-100" style="background: url('/web/static/img/tele-icon-mock.jpg');background-size: cover">
     <div class="container text-center">
       <strong>The New Internet</strong>
       <h1 class="display-4 my-3">We've built a decentralized internet where information is totally free</h1>
@@ -52,7 +54,7 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <a t-attf-href="/web?db={{ db }}" class="d-block flex-grow-1">
                                     <t t-if="db in incompatible_databases">
-                                        <i class="icon fa fa-warning float-right text-warning" title="This database may not be compatible"></i>
+                                        <i class="tele-icon-ecg float-right text-warning" title="This database may not be compatible"></i>
                                     </t>
                                     <t t-out="db" />
                                 </a>
@@ -90,7 +92,7 @@
                         <t t-call="create_form" />
                         <input type="submit" value="Create database" class="btn btn-primary rounded-sm float-left"/>
                     </form>
-                    <a role="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-link">or restore a database</a>
+                    <a role="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-link rounded-sm">or restore a database</a>
                 </t>
             </div>
         </div>
@@ -102,12 +104,12 @@
                     <form role="form" action="/web/database/create" method="post">
                         <div class="modal-header">
                             <h4 class="modal-title">Create Database</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                         </div>
                         <div class="modal-body">
                             <t t-call="create_form" />
                             <small class="text-muted">
-                                To enhance your experience, some data may be sent to Tele online services. See our <a href="https://www.tele.studio/privacy">Privacy Policy</a>.
+                                To enhance your experience, some data may be sent to Tele online services. See our <a href="https://www.tele-icon.studio/privacy">Privacy Policy</a>.
                             </small>
                         </div>
                         <div class="modal-footer">
@@ -124,7 +126,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header">
                         <h4 class="modal-title">Restore Database</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_restore_db" role="form" action="/web/database/restore" method="post" enctype="multipart/form-data">
                         <div class="modal-body">
@@ -171,7 +173,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header">
                         <h4 class="modal-title">Set Master Password</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_change_pwd" role="form" action="/web/database/change_password" method="post">
                         <div class="modal-body">
@@ -202,7 +204,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header">
                         <h4 class="modal-title">Duplicate Database</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form-duplicate-db" role="form" action="/web/database/duplicate" method="post">
                         <div class="modal-body">
@@ -231,7 +233,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header">
                         <h4 class="modal-title">Delete Database</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_drop_db" role="form" action="/web/database/drop" method="post">
                         <div class="modal-body">
@@ -255,7 +257,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header">
                         <h4 class="modal-title">Backup Database</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_backup_db" role="form" action="/web/database/backup" method="post">
                         <div class="modal-body">

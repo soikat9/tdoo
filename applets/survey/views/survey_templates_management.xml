@@ -82,7 +82,7 @@
             <div t-ignore="true" class="text-center">
                 <a t-attf-href="/web#view_type=form&amp;model=survey.survey&amp;id=#{survey.id}&amp;action=survey.action_survey_form"><i class="fa fa-fw fa-arrow-right"/><span t-if="answer and answer.test_entry">This is a test survey. </span>Edit Survey</a>
             </div>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> &#215; </button>
+            <button type="button" class="close rounded-sm" data-dismiss="alert" aria-label="Close"> &#215; </button>
         </div>
     </template>
 
@@ -140,11 +140,11 @@
         <!-- Keep this enclosing div so that the template always returns valid HTML content, no matter the use case -->
         <div class="d-inline-block">
             <button t-if="can_go_back"
-                type="submit" class="btn p-0 shadow-none o_survey_navigation_submit" name="button_submit" value="previous" t-att-data-previous-page-id="previous_page_id">
+                type="submit" class="btn p-0 shadow-none rounded o_survey_navigation_submit" name="button_submit" value="previous" t-att-data-previous-page-id="previous_page_id">
                 <i class="border-left fa fa-chevron-left p-2" />
             </button>
             <button t-if="survey and survey.questions_layout in ['page_per_question', 'page_per_section'] and answer and answer.state != 'done' and not answer.is_session_answer"
-                type="submit" class="btn p-0 shadow-none o_survey_navigation_submit" t-att-value="'next' if not survey_last else 'finish'">
+                type="submit" class="btn p-0 rounded shadow-none o_survey_navigation_submit" t-att-value="'next' if not survey_last else 'finish'">
                 <i class="border-left fa fa-chevron-right p-2" />
             </button>
         </div>

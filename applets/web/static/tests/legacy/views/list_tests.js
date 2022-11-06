@@ -9809,7 +9809,7 @@ QUnit.module('Views', {
         // save the record
         // check line is at the correct place
 
-        var inputText = 'ninja';
+        var inputText = 'editor';
         await testUtils.dom.click($('.o_list_button_add'));
         await testUtils.fields.editInput(list.$('.o_input[name="foo"]'), inputText);
         await testUtils.dom.click($('.o_list_button_save'));
@@ -12309,7 +12309,7 @@ QUnit.module('Views', {
             View: ListView,
         });
 
-        assert.containsOnce(list, ".o_data_row .text-danger");
+        assert.containsOnce(list, ".o_data_row .text-warning");
 
         list.destroy();
         unpatchDate();
@@ -12362,7 +12362,7 @@ QUnit.module('Views', {
             View: ListView,
         });
 
-        assert.containsOnce(list, ".o_data_row .text-danger");
+        assert.containsOnce(list, ".o_data_row .text-warning");
 
         list.destroy();
         unpatchDate();

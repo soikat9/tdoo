@@ -158,7 +158,7 @@
                     <div class="o_wevent_price_range d-none"/>
                     <t t-call="website_event.registration_configure_tickets_button"
                         t-if="request.env.user.has_group('event.group_event_manager')"/>
-                    <span t-if="not event.event_registrations_open" class="text-danger">
+                    <span t-if="not event.event_registrations_open" class="text-warning">
                         <i class="fa fa-ban mr-2"/>Sold Out
                     </span>
                     <a href="#" role="button" class="o_wevent_registration_btn d-none" data-target="#o_wevent_tickets_collapse">
@@ -200,7 +200,7 @@
                                         <option t-esc="nb" t-att-selected="len(ticket) == 0 and nb == 0 and 'selected'"/>
                                     </t>
                                 </select>
-                                <div t-else="" class="text-danger">
+                                <div t-else="" class="text-warning">
                                     <span t-if="not ticket.sale_available and not ticket.is_expired and ticket.is_launched()" >Sold Out</span>
                                     <span t-if="ticket.is_expired">Expired</span>
                                 </div>
@@ -247,7 +247,7 @@
                                 </select>
                             </t>
                             <t t-else="">
-                                <span itemprop="availability" content="http://schema.org/SoldOut" class="text-danger">
+                                <span itemprop="availability" content="http://schema.org/SoldOut" class="text-warning">
                                     <i class="fa fa-ban mr-2"/>Sold Out
                                 </span>
                             </t>
@@ -275,7 +275,7 @@
                 <div class="modal-content rounded-sm">
                     <div class="modal-header align-items-center">
                         <h4 class="modal-title">Attendees</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>×</span></button>
+                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span>×</span></button>
                     </div>
                     <t t-set="counter_type" t-value="1"/>
                     <t t-set="counter" t-value="0"/>

@@ -16,17 +16,17 @@
         </mask>
         <linearGradient id="linear-gradient" x1="700.51" y1="8915.67" x2="699.42" y2="9429.18"
         gradientTransform="matrix(1, 0, 0, -1, 0, 9440.95)" gradientUnits="userSpaceOnUse">
-            <stop offset="0.11" stop-color="#3aadaa" />
+            <stop offset="0.11" stop-color="#2283c0" />
             <stop offset="1" stop-color="#383e45" />
         </linearGradient>
         <linearGradient id="linear-gradient-2" x1="904.49" y1="9586.58" x2="351.14" y2="8214.94"
         gradientTransform="matrix(1, 0, 0, -1, 0, 9440.95)" gradientUnits="userSpaceOnUse">
-            <stop offset="0.8" stop-color="#3aadaa" />
+            <stop offset="0.8" stop-color="#2283c0" />
             <stop offset="0.97" stop-color="#383e45" />
         </linearGradient>
         <linearGradient id="linear-gradient-4" x1="622.62" y1="8824.69" x2="1098.85" y2="10216.47"
         gradientTransform="matrix(1, 0, 0, -1, 0, 9440.95)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#3aadaa" />
+            <stop offset="0" stop-color="#2283c0" />
             <stop offset="0.99" stop-color="#383e45" />
         </linearGradient>
     </defs>

@@ -8,7 +8,7 @@
         <xpath expr="//div[hasclass('css_quantity')]//i[hasclass('fa-plus')]/.." position="replace">
           <t t-if="line._get_stock_warning(clear=False)">
             <div class="input-group-append">
-                <a t-attf-href="#" class="btn btn-link">
+                <a t-attf-href="#" class="btn btn-link rounded-sm">
                   <i class='fa fa-warning text-warning' t-att-title="line._get_stock_warning()" role="img" aria-label="Warning"/>
                 </a>
             </div>

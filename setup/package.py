@@ -169,7 +169,7 @@ def _prepare_build_dir(args, win32=False, move_applets=True):
             try:
                 shutil.move(addon_path, os.path.join(args.build_dir, 'tele/applets'))
             except shutil.Error as e:
-                logging.warning("Warning '%s' while moving addon '%s", e, addon_path)
+                logging.warning("Warning '%s' while moving applet '%s", e, addon_path)
                 if addon_path.startswith(args.build_dir) and os.path.isdir(addon_path):
                     logging.info("Removing '{}'".format(addon_path))
                     try:

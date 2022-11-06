@@ -34,7 +34,7 @@
                 <div name="stripe_keys_link"
                      invisible="not context.get('stripe_onboarding', False)"
                      attrs="{'invisible': ['|', ('provider', '!=', 'stripe'), '&amp;', ('stripe_secret_key', '!=', False), ('stripe_publishable_key', '!=', False)]}">
-                    <a class="btn btn-link" role="button" href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+                    <a class="btn btn-link rounded-sm" role="button" href="https://dashboard.stripe.com/account/apikeys" target="_blank">
                         Get your Secret and Publishable keys
                     </a>
                 </div>

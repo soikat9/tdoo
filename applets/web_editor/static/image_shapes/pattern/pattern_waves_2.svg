@@ -2,7 +2,7 @@
     <defs>
         <pattern id="pattern" width="250" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(41) scale(0.3)">
             <rect fill="#FFFFFF" width="250" height="30"/>
-            <path id="patternPath" data-color="outline" fill="none" stroke="#3AADAA" stroke-width="3.77" d="M-62.5-15C-31.3-15 0-7.5 0-7.5S31.3 0 62.5 0 125-7.5 125-7.5s31.3-7.5 62.5-7.5S250-7.5 250-7.5 281.3 0 312.5 0"/>
+            <path id="patternPath" data-color="outline" fill="none" stroke="#2283c0" stroke-width="3.77" d="M-62.5-15C-31.3-15 0-7.5 0-7.5S31.3 0 62.5 0 125-7.5 125-7.5s31.3-7.5 62.5-7.5S250-7.5 250-7.5 281.3 0 312.5 0"/>
             <use xlink:href="#patternPath" y="15"/>
             <use xlink:href="#patternPath" y="30"/>
             <use xlink:href="#patternPath" y="45"/>
