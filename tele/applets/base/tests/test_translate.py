@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 from tele.exceptions import AccessError, ValidationError
 from tele.tools import mute_logger
 from tele.tools.translate import quote, unquote, xml_translate, html_translate

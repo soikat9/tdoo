@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from . import hr_org_chart_mixin
 from . import hr_employee

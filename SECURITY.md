@@ -1,33 +1,12 @@
 # Security Policy
 
-## Supported Versions
+## Vulnerability Reporting
 
-## Reporting a Vulnerability
+Contact our Security Team to share details of your security vulnerability: [Contact Info] (https://www.tele.studio/security-report)
 
-Please share privately the details of your security vulnerability by contacting our Security Team:
-[Contact Info](https://www.tele.studio/security-report)
+Please include as much information as possible, including the detailed steps to reproduce the problem, the versions affected, and expected and actual results. In addition, please include any other information that might assist us in responding more quickly and efficiently.
 
-Make sure to include as much information as possible, with the detailed steps to reproduce the problem,
-the versions that are affected, the expected results and actual results, and any other information that
-might help us react faster and more efficiently.
+A proof-of-concept script or exploit, rather than screenshots and videos, tends to be preferred over text-based descriptions.
 
-We tend to prefer _text-based descriptions_ accompanied with a proof-of-concept script/exploit, rather
-than screenshots and videos.
-
-Our [Responsible Disclosure](https://www.tele.studio/security-report) page gives an overview of the
-process, including:
-
- - Our Incident Response Procedure (what will happen after you report an issue)
- - Our Rules (what you can and cannot do while researching security issues)
- - Guidelines with **DO REPORT** and **DO NOT REPORT** issues
-   (what kind of issues will be accepted/rejected)
-
-
-## Important note
-
-We receive a majority of security reports that have little to no impact on the security of Tele or
-the Tele Cloud, and we ultimately have to reject them. To avoid a disappointing experience when
-contacting us, please try to put together a proof-of-concept attack and take a critical look at
-what's really at risk.
-If the proposed attack scenario turns out unrealistic, your report will probably be rejected.
-Also be sure to review our list of [non-qualifying issues](https://www.tele.studio/security-report#what).
+A detailed description of the process can be found on our [Responsible Disclosure] (https://www.tele.studio/security-report) page. This page includes information such as:
+ - Our Incident Response Procedure (what will happen after you report an issue) - Our Rules (what you can and cannot do while researching security issues) - Guidelines on DO REPORT and DO NOT REPORT issues (which issues will be accepted and rejected)

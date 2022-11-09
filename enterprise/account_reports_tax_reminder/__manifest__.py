@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 {
     'name' : 'Accounting Reports Tax Reminder',
     'summary': 'Add a notification when the tax report has been generated',

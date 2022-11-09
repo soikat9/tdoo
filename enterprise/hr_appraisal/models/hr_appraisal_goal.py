@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele import fields, api, models
 from tele.tools import html2plaintext, is_html_empty

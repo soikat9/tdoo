@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele.applets.event_booth_sale.tests.common import TestEventBoothSaleCommon
 from tele.applets.website_event_sale.tests.common import TestWebsiteEventSaleCommon

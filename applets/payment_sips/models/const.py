@@ -1,4 +1,4 @@
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 # ISO 4217 Data for currencies supported by sips
 # NOTE: these are listed on the Atos Wordline SIPS POST documentation page

@@ -1,5 +1,5 @@
  # coding: utf-8
- # Part of Tele. See LICENSE file for full copyright and licensing details.
+ # For full licensing and copyright information, see the LICENSE file - Tele, INC.
 {
     "name": "1099 Reporting",
     'icon': '/l10n_us/static/description/icon.png',

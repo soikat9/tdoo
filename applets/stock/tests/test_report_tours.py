@@ -1,4 +1,4 @@
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 import tele
 from tele.tests import Form, HttpCase, tagged
 

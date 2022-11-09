@@ -1,4 +1,4 @@
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele.applets.sale_coupon.tests.test_program_numbers import TestSaleCouponProgramNumbers
 from tele.applets.website.tools import MockRequest

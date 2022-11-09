@@ -45,7 +45,7 @@
   <t t-name="web.NavBar.AppsMenu" owl="1">
     <Dropdown hotkey="'h'" title="'Home Menu'" class="o_navbar_apps_menu">
       <t t-set-slot="toggler">
-        <i class="fa fa-th-large" />
+        <img src="/web/static/src/webclient/navbar/navbar.svg"/>
       </t>
       <MenuItem
         t-foreach="apps"

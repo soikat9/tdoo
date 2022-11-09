@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 from tele.applets.delivery_easypost.models.easypost_request import EasypostRequest
 from tele.applets.delivery_easypost.tests.common import EasypostTestCommon
 from tele.tests import tagged

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 import uuid
 from werkzeug.urls import url_encode
 from tele import api, exceptions, fields, models, _

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele.applets.microsoft_calendar.utils.microsoft_calendar import MicrosoftCalendarService, MicrosoftEvent
 from tele.exceptions import ValidationError

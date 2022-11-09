@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 import io
 import re
@@ -119,7 +119,7 @@ class HrPayroll(Controller):
         offset = 1  # useful to correctly indent python file
         content_py_file = [
             "# -*- coding:utf-8 -*-",
-            "# Part of Tele. See LICENSE file for full copyright and licensing details.\n",
+            "# For full licensing and copyright information, see the LICENSE file - Tele, INC.\n",
             # imports
             "import datetime",
             "from tele.applets.account.tests.common import AccountTestInvoicingCommon",

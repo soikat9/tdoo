@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from . import survey_survey
 from . import survey_question

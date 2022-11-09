@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele.applets.account_invoice_extract.models.account_invoice import SUCCESS
 from tele.applets.account_invoice_extract.tests import common as account_invoice_extract_common

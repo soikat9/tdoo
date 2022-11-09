@@ -1,4 +1,4 @@
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 # Endpoints of the API.
 # See https://docs.adyen.com/api-explorer/#/CheckoutService/v67/overview for Checkout API

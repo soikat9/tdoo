@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele.applets.sale.tests.test_sale_product_attribute_value_config import TestSaleProductAttributeValueCommon
 from tele.tests import tagged

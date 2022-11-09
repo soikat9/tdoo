@@ -1,5 +1,5 @@
 # -*- coding: ascii -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 
 from tele import api, models
 from tele.applets.http_routing.models.ir_http import slug, unslug_url

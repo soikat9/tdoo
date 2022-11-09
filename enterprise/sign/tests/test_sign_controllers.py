@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Tele. See LICENSE file for full copyright and licensing details.
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
 from .test_common import TestSignCommon
 from tele.applets.sign.controllers.main import Sign
 from tele.applets.website.tools import MockRequest
