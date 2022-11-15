@@ -55,18 +55,8 @@
             <field name="can_be_expensed" eval="True"/>
             <field name="sale_ok" eval="False"/>
             <field name="purchase_ok" eval="False"/>
-            <field name="image_1920" type="base64" file="hr_expense/static/img/transport.png"/>
+            <field name="image_1920" type="base64" file="hr_expense/static/img/salestravel-diary.svg"/>
         </record>
-        <record id="mileage_expense_product" model="product.product">
-            <field name="name">Mileage</field>
-            <field name="standard_price">0.37</field>
-            <field name="uom_id" ref="uom.product_uom_km"/>
-            <field name="uom_po_id" ref="uom.product_uom_km"/>
-            <field name="default_code">MIL</field>
-            <field name="can_be_expensed" eval="True"/>
-            <field name="sale_ok" eval="False"/>
-            <field name="purchase_ok" eval="False"/>
-            <field name="image_1920" type="base64" file="hr_expense/static/img/mileage.png"/>
         </record>
         <record id="accomodation_expense_product" model="product.product">
             <field name="name">Accomodation</field>
