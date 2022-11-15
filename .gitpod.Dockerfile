@@ -20,4 +20,3 @@ RUN sudo DEBIAN_FRONTEND=noninteractive sudo apt-get install zbar-tools -y
 
 # --- Install other required packages (node, less) ----
 RUN sudo DEBIAN_FRONTEND=noninteractive sudo apt-get install node-clean-css node-less -y
-
