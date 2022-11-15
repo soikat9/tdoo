@@ -17,9 +17,9 @@ class TestAssetsGenerateTimeCommon(tele.tests.TransactionCase):
     def generate_bundles(self):
         bundles = set()
         installed_module_names = self.env['ir.module.module'].search([('state', '=', 'installed')]).mapped('name')
-        for addon_path in tele.applets.__path__:
+        for applet_path in tele.applets.__path__:
             for applet in installed_module_names:
-                manifest = read_manifest(addon_path, applet) or {}
+                manifest = read_manifest(applet_path, applet) or {}
                 assets = manifest.get('assets')
                 if assets:
                     bundles |= set(assets.keys())

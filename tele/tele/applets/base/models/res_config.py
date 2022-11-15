@@ -256,7 +256,7 @@ class ResConfigInstaller(models.TransientModel, ResConfigModuleInstallationMixin
 
         * checked boolean fields
         * return values of hook methods. Hook methods are of the form
-          ``_if_%(addon_name)s``, and are called if the corresponding
+          ``_if_%(applet_name)s``, and are called if the corresponding
           applet is marked for installation. They take the arguments
           cr, uid, ids and context, and return an iterable of applet
           names

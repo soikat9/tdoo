@@ -164,18 +164,18 @@ def _prepare_build_dir(args, win32=False, move_applets=True):
     run_cmd(cmd + ['%s/' % args.tele_dir, args.build_dir])
     if not move_applets:
         return
-    for addon_path in glob(os.path.join(args.build_dir, 'applets/*')):
-        if args.blacklist is None or os.path.basename(addon_path) not in args.blacklist:
+    for applet_path in glob(os.path.join(args.build_dir, 'applets/*')):
+        if args.blacklist is None or os.path.basename(applet_path) not in args.blacklist:
             try:
-                shutil.move(addon_path, os.path.join(args.build_dir, 'tele/applets'))
+                shutil.move(applet_path, os.path.join(args.build_dir, 'tele/applets'))
             except shutil.Error as e:
-                logging.warning("Warning '%s' while moving applet '%s", e, addon_path)
-                if addon_path.startswith(args.build_dir) and os.path.isdir(addon_path):
-                    logging.info("Removing '{}'".format(addon_path))
+                logging.warning("Warning '%s' while moving applet '%s", e, applet_path)
+                if applet_path.startswith(args.build_dir) and os.path.isdir(applet_path):
+                    logging.info("Removing '{}'".format(applet_path))
                     try:
-                        shutil.rmtree(addon_path)
+                        shutil.rmtree(applet_path)
                     except shutil.Error as rm_error:
-                        logging.warning("Cannot remove '{}': {}".format(addon_path, rm_error))
+                        logging.warning("Cannot remove '{}': {}".format(applet_path, rm_error))
 
 
 #  Docker stuffs

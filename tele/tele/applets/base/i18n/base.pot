@@ -3230,7 +3230,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_gamification
+#: model:ir.module.module,description:base.module_recognition
 msgid ""
 "\n"
 "Gamification process\n"
@@ -9882,7 +9882,7 @@ msgid "CRM Deduplication"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_gamification_sale_crm
+#: model:ir.module.module,shortdesc:base.module_recognition_sale_crm
 msgid "CRM Gamification"
 msgstr ""
 
@@ -13287,7 +13287,7 @@ msgid "Example of Python code"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_gamification_sale_crm
+#: model:ir.module.module,description:base.module_recognition_sale_crm
 msgid ""
 "Example of goal definitions and challenges that can be used related to the "
 "usage of the CRM Sale module."
@@ -14375,7 +14375,7 @@ msgid "Gambia"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_gamification
+#: model:ir.module.module,shortdesc:base.module_recognition
 msgid "Gamification"
 msgstr ""
 
@@ -14848,7 +14848,7 @@ msgid "HR Attendance Holidays"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_hr_gamification
+#: model:ir.module.module,shortdesc:base.module_hr_recognition
 msgid "HR Gamification"
 msgstr ""
 
@@ -27069,9 +27069,9 @@ msgid "Use subsequences per date_range"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_hr_gamification
+#: model:ir.module.module,description:base.module_hr_recognition
 msgid ""
-"Use the HR resources for the gamification process.\n"
+"Use the HR resources for the recognition process.\n"
 "\n"
 "The HR officer can now manage challenges and badges.\n"
 "This allow the user to send badges to employees instead of simple users.\n"

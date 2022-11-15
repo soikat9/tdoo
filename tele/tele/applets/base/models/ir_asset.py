@@ -53,7 +53,7 @@ class IrAsset(models.Model):
     """This model contributes to two things:
 
         1. It provides a function returning a list of all file paths declared
-        in a given list of applets (see _get_addon_paths);
+        in a given list of applets (see _get_applet_paths);
 
         2. It allows to create 'ir.asset' records to add additional directives
         to certain bundles.
@@ -314,14 +314,14 @@ class IrAsset(models.Model):
         path_url = fs2web(path_def)
         path_parts = [part for part in path_url.split('/') if part]
         applet = path_parts[0]
-        addon_manifest = http.applets_manifest.get(applet)
+        applet_manifest = http.applets_manifest.get(applet)
 
         safe_path = True
-        if addon_manifest:
+        if applet_manifest:
             if applet not in installed:
                 # Assert that the path is in the installed applets
                 raise Exception("Unallowed to fetch files from applet %s" % applet)
-            applets_path = os.path.join(addon_manifest['applets_path'], '')[:-1]
+            applets_path = os.path.join(applet_manifest['applets_path'], '')[:-1]
             full_path = os.path.normpath(os.path.join(applets_path, *path_parts))
 
             # first security layer: forbid escape from the current applet

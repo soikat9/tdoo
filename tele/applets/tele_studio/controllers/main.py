@@ -39,7 +39,7 @@ OPERATIONS_WHITELIST = [
 ]
 
 
-class WebStudioController(http.Controller):
+class TeleStudioController(http.Controller):
 
     @http.route('/tele_studio/chatter_allowed', type='json', auth='user')
     def is_chatter_allowed(self, model):

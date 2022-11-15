@@ -118,12 +118,12 @@ class TestStaticInheritanceCommon(BaseCase):
             # Ordered by module
             return self.asset_paths
 
-        def _patch_for_read_addon_file(*args, **kwargs):
+        def _patch_for_read_applet_file(*args, **kwargs):
             return self.template_files[args[1]]
 
         self.patchers = [
             patch.object(HomeStaticTemplateHelpers, '_get_asset_paths', _patched_for_get_asset_paths),
-            patch.object(HomeStaticTemplateHelpers, '_read_addon_file', _patch_for_read_addon_file),
+            patch.object(HomeStaticTemplateHelpers, '_read_applet_file', _patch_for_read_applet_file),
         ]
 
     def _toggle_patchers(self, mode):

@@ -3,7 +3,7 @@ from tele import api
 from tele.tools import DotDict
 from tele.http import _request_stack
 from tele.tests.common import TransactionCase
-from tele.applets.tele_studio.controllers.main import WebStudioController
+from tele.applets.tele_studio.controllers.main import TeleStudioController
 from copy import deepcopy
 from lxml import etree
 
@@ -14,7 +14,7 @@ class TestStudioController(TransactionCase):
         self.env = api.Environment(self.cr, tele.SUPERUSER_ID, {'load_all_views': True})
         _request_stack.push(self)
         self.session = DotDict({'debug': False})
-        self.studio_controller = WebStudioController()
+        self.studio_controller = TeleStudioController()
 
     def tearDown(self):
         super().tearDown()

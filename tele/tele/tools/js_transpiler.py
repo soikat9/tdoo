@@ -414,14 +414,14 @@ IMPORT_LEGACY_DEFAULT_RE = re.compile(r"""
     import\s+                                           # import
     (?P<identifier>\w+)\s*                              # default variable name
     from\s*                                             # from
-    (?P<path>(?P<quote>["'`])([^@\."'`][^"'`]*)(?P=quote))  # legacy alias file ("addon_name.module_name" or "some/path")
+    (?P<path>(?P<quote>["'`])([^@\."'`][^"'`]*)(?P=quote))  # legacy alias file ("applet_name.module_name" or "some/path")
     """, re.MULTILINE | re.VERBOSE)
 
 
 def convert_legacy_default_import(content):
     """
     Transpile legacy imports (that were used as they were default import).
-    Legacy imports means that their name is not a path but a <addon_name>.<module_name>.
+    Legacy imports means that their name is not a path but a <applet_name>.<module_name>.
     It requires slightly different processing.
 
     .. code-block:: javascript

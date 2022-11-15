@@ -3,7 +3,7 @@ import textwrap
 from tele.http import _request_stack
 from tele.tests.common import TransactionCase, tagged
 from tele.tools import DotDict
-from tele.applets.tele_studio.controllers.main import WebStudioController
+from tele.applets.tele_studio.controllers.main import TeleStudioController
 
 
 @tagged('tele_studio_normalization')
@@ -112,7 +112,7 @@ class TestViewNormalization(TransactionCase):
             </form>
             """,
             'model': 'res.partner'})
-        self.studio_controller = WebStudioController()
+        self.studio_controller = TeleStudioController()
 
     def _test_view_normalization(self, original, expected, view='form'):
         if view == 'gantt':

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Connect',
+    'name': 'Meetings',
     'version': '1.5',
-    'category': 'Productivity/Connect',
+    'category': 'Productivity/Meetings',
     'sequence': 145,
     'summary': 'Chat, mail gateway and private channels',
     'description': "",

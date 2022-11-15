@@ -23,15 +23,15 @@ class IrTranslation(models.Model):
 
         tx_config_file = ConfigParser()
         tx_sections = []
-        for addon_path in tele.applets.__path__:
-            tx_path = opj(addon_path, '.tx', 'config')
+        for applet_path in tele.applets.__path__:
+            tx_path = opj(applet_path, '.tx', 'config')
             if os.path.isfile(tx_path):
                 tx_config_file.read(tx_path)
                 # first section is [main], after [tele-11.sale]
                 tx_sections.extend(tx_config_file.sections()[1:])
 
             # parent directory ad .tx/config is root directory in tele/tele
-            tx_path = opj(addon_path, os.pardir, '.tx', 'config')
+            tx_path = opj(applet_path, os.pardir, '.tx', 'config')
             if os.path.isfile(tx_path):
                 tx_config_file.read(tx_path)
                 tx_sections.extend(tx_config_file.sections()[1:])

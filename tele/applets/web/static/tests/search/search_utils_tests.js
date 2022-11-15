@@ -466,12 +466,12 @@ QUnit.module("Search", () => {
         async function (assert) {
             patchDate(2020, 5, 1, 13, 0, 0);
             const initialLocale = moment.locale();
-            moment.defineLocale("addoneForTest", {
+            moment.defineLocale("appleteForTest", {
                 postformat: function (string) {
                     return string.replace(/\d/g, (match) => (1 + parseInt(match)) % 10);
                 },
             });
-            const referenceMoment = moment().locale("addoneForTest");
+            const referenceMoment = moment().locale("appleteForTest");
             assert.deepEqual(
                 constructDateDomain(referenceMoment, "date_field", "date", [
                     "this_month",
@@ -481,10 +481,10 @@ QUnit.module("Search", () => {
                     domain: `["&", ["date_field", ">=", "2020-06-01"], ["date_field", "<=", "2020-06-30"]]`,
                     description: "June 3131",
                 },
-                "Numbers in domain should not use addoneForTest locale"
+                "Numbers in domain should not use appleteForTest locale"
             );
             moment.locale(initialLocale);
-            moment.updateLocale("addoneForTest", null);
+            moment.updateLocale("appleteForTest", null);
         }
     );
 });

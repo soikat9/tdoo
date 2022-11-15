@@ -10,7 +10,7 @@ from tele.applets.tele_studio.controllers import main
 from tele.exceptions import ValidationError, UserError
 
 
-class WebStudioReportController(main.WebStudioController):
+class TeleStudioReportController(main.TeleStudioController):
 
     @http.route('/tele_studio/create_new_report', type='json', auth='user')
     def create_new_report(self, model_name, layout):

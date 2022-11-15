@@ -1,4 +1,4 @@
-from tele.applets.tele_studio.controllers.main import WebStudioController
+from tele.applets.tele_studio.controllers.main import TeleStudioController
 from tele.http import _request_stack
 from tele.tests.common import TransactionCase
 from tele.tools import DotDict
@@ -10,7 +10,7 @@ class TestReportEditor(TransactionCase):
         super(TestReportEditor, self).setUp()
         self.session = DotDict({'debug': False})
         _request_stack.push(self)
-        self.WebStudioController = WebStudioController()
+        self.TeleStudioController = TeleStudioController()
 
     def test_copy_inherit_report(self):
         report = self.env['ir.actions.report'].create({
@@ -202,7 +202,7 @@ class TestReportEditor(TransactionCase):
         })
 
         model = self.env['ir.model'].search([('model', '=', 'res.users')], limit=1)
-        action = self.WebStudioController._get_studio_action_translations(model)
+        action = self.TeleStudioController._get_studio_action_translations(model)
 
         view_ids = next((leaf[2] for leaf in action['domain'] if leaf[0] == 'res_id'), [])
         self.assertIn(view.id, view_ids)

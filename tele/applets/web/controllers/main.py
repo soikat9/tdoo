@@ -406,18 +406,18 @@ class HomeStaticTemplateHelpers(object):
         """
         original_template_name = template.attrib[self.STATIC_INHERIT_DIRECTIVE]
         split_name_attempt = original_template_name.split('.', 1)
-        parent_addon, parent_name = tuple(split_name_attempt) if len(split_name_attempt) == 2 else (applet, original_template_name)
-        if parent_addon not in self.template_dict:
+        parent_applet, parent_name = tuple(split_name_attempt) if len(split_name_attempt) == 2 else (applet, original_template_name)
+        if parent_applet not in self.template_dict:
             if original_template_name in self.template_dict[applet]:
-                parent_addon = applet
+                parent_applet = applet
                 parent_name = original_template_name
             else:
-                raise ValueError(_('Module %s not loaded or inexistent, or templates of applet being loaded (%s) are misordered') % (parent_addon, applet))
+                raise ValueError(_('Module %s not loaded or inexistent, or templates of applet being loaded (%s) are misordered') % (parent_applet, applet))
 
-        if parent_name not in self.template_dict[parent_addon]:
-            raise ValueError(_("No template found to inherit from. Module %s and template name %s") % (parent_addon, parent_name))
+        if parent_name not in self.template_dict[parent_applet]:
+            raise ValueError(_("No template found to inherit from. Module %s and template name %s") % (parent_applet, parent_name))
 
-        return parent_addon, parent_name
+        return parent_applet, parent_name
 
     def _compute_xml_tree(self, applet, file_name, source):
         """Computes the xml tree that 'source' contains
@@ -449,11 +449,11 @@ class HomeStaticTemplateHelpers(object):
                 if inherit_mode not in [self.PRIMARY_MODE, self.EXTENSION_MODE]:
                     raise ValueError(_("Invalid inherit mode. Module %s and template name %s") % (applet, template_name))
 
-                parent_addon, parent_name = self._get_parent_template(applet, template_tree)
+                parent_applet, parent_name = self._get_parent_template(applet, template_tree)
 
                 # After several performance tests, we found out that deepcopy is the most efficient
                 # solution in this case (compared with copy, xpath with '.' and stringifying).
-                parent_tree = copy.deepcopy(self.template_dict[parent_addon][parent_name])
+                parent_tree = copy.deepcopy(self.template_dict[parent_applet][parent_name])
 
                 xpaths = list(template_tree)
                 # owl chokes on comments, disable debug comments for now
@@ -474,7 +474,7 @@ class HomeStaticTemplateHelpers(object):
                     self.template_dict[applet][template_name] = inherited_template
 
                 else:  # Modifies original: A = B(A)
-                    self.template_dict[parent_addon][parent_name] = inherited_template
+                    self.template_dict[parent_applet][parent_name] = inherited_template
             else:
                 if template_name in self.template_dict[applet]:
                     raise ValueError(_("Template %s already exists in module %s") % (template_name, applet))
@@ -491,7 +491,7 @@ class HomeStaticTemplateHelpers(object):
             if re.match(COMMENT_PATTERN, comment.text.strip()):
                 comment.getparent().remove(comment)
 
-    def _read_addon_file(self, path_or_url):
+    def _read_applet_file(self, path_or_url):
         """Read the content of a file or an ``ir.attachment`` record given by
         ``path_or_url``.
 
@@ -530,7 +530,7 @@ class HomeStaticTemplateHelpers(object):
         root = None
         for applet, fnames in file_dict.items():
             for fname in fnames:
-                contents = self._read_addon_file(fname)
+                contents = self._read_applet_file(fname)
                 checksum.update(contents)
                 if not self.checksum_only:
                     xml = self._compute_xml_tree(applet, fname, contents)
@@ -559,9 +559,9 @@ class HomeStaticTemplateHelpers(object):
 
         # group paths by module, keeping them in order
         for path, applet, _ in self._get_asset_paths(bundle):
-            addon_paths = xml_paths[applet]
-            if path not in addon_paths:
-                addon_paths.append(path)
+            applet_paths = xml_paths[applet]
+            if path not in applet_paths:
+                applet_paths.append(path)
 
         content, checksum = self._concat_xml(xml_paths)
         return content, checksum
@@ -969,14 +969,14 @@ class WebClient(http.Controller):
                 mods = request.env.registry._init_modules | set(mods)
 
         translations_per_module = {}
-        for addon_name in mods:
-            manifest = http.applets_manifest.get(addon_name)
+        for applet_name in mods:
+            manifest = http.applets_manifest.get(applet_name)
             if manifest and manifest.get('bootstrap'):
-                applets_path = http.applets_manifest[addon_name]['applets_path']
-                f_name = os.path.join(applets_path, addon_name, "i18n", lang + ".po")
+                applets_path = http.applets_manifest[applet_name]['applets_path']
+                f_name = os.path.join(applets_path, applet_name, "i18n", lang + ".po")
                 if not os.path.exists(f_name):
                     continue
-                translations_per_module[addon_name] = {'messages': _local_web_translations(f_name)}
+                translations_per_module[applet_name] = {'messages': _local_web_translations(f_name)}
 
         return {"modules": translations_per_module,
                 "lang_parameters": None}
