@@ -21,7 +21,7 @@ Additional ressources
     </record>
 
     <record id="demo_page1" model="document.page">
-        <field name="name">Tele 15.0 Functional Demo</field>
+        <field name="name">Tele 1.0 Functional Demo</field>
         <field name="draft_name">1.0</field>
         <field name="draft_summary">Init</field>
         <field name="parent_id" ref="demo_category1" />
@@ -44,10 +44,10 @@ company, with your clients and implement it now for your business.<br>
 <br>
 <h3>Watch on Youtube!</h3><br>
 <br>
-<div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/zLSgpQM_tms">
+<div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/">
     <div class="css_editable_mode_display" />
     <div class="media_iframe_video_size" />
-    <iframe src="//www.youtube.com/embed/zLSgpQM_tms" allowfullscreen="allowfullscreen" frameborder="0" />
+    <iframe src="//www.youtube.com/embed/" allowfullscreen="allowfullscreen" frameborder="0" />
 </div>
 <br>
 <br>

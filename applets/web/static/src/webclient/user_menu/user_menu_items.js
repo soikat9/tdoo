@@ -1,14 +1,13 @@
 /** @tele-module **/
 
-import { isMacOS } from "@web/core/browser/feature_detection";
+import { Dialog } from "../../core/dialog/dialog";
 import { browser } from "../../core/browser/browser";
 import { registry } from "../../core/registry";
+import { _lt } from "../../core/l10n/translation";
 import { session } from "@web/session";
 
-const { Component } = owl;
-
 function documentationItem(env) {
-    const documentationURL = "https://www.docs.tele.studio/1.0";
+    const documentationURL = "https://www.docs.tele.studio/v1.0";
     return {
         type: "item",
         id: "documentation",
@@ -35,12 +34,9 @@ function supportItem(env) {
     };
 }
 
-class ShortcutsFooterComponent extends Component {
-    setup() {
-        this.runShortcutKey = isMacOS() ? "ALT + CONTROL" : "ALT";
-    }
-}
-ShortcutsFooterComponent.template = "web.UserMenu.ShortcutsFooterComponent";
+class ShortCutsDialog extends Dialog {}
+ShortCutsDialog.bodyTemplate = "web.UserMenu.shortcutsTable";
+ShortCutsDialog.title = _lt("Shortcuts");
 
 function shortCutsItem(env) {
     return {
@@ -49,7 +45,7 @@ function shortCutsItem(env) {
         hide: env.isSmall,
         description: env._t("Shortcuts"),
         callback: () => {
-            env.services.command.openMainPalette({ FooterComponent: ShortcutsFooterComponent });
+            env.services.dialog.add(ShortCutsDialog);
         },
         sequence: 30,
     };
@@ -80,7 +76,7 @@ function teleAccountItem(env) {
     return {
         type: "item",
         id: "account",
-        description: env._t("My Tele-Account"),
+        description: env._t("My Tele Account"),
         callback: () => {
             env.services
                 .rpc("/web/session/account")
