@@ -1,14 +1,14 @@
 version: '2'
 services:
   web:
-    image: telehub/tele:1.0
+    image: tele:1.0
     depends_on:
       - db
     ports:
       - "9000:9000"
     volumes:
       - ./applets:/mnt/extra-applets
-        ./tele_applets:/mnt/tele-applets
+      - ./tele_applets:/mnt/tele-applets
       - ./config:/etc/tele
   db:
     image: postgres:14
