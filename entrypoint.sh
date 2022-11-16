@@ -28,15 +28,15 @@ case "$1" in
     -- | tele)
         shift
         if [[ "$1" == "scaffold" ]] ; then
-            exec /opt/tele/tele-server/tele-make "$@"
+            exec /opt/app/tele/tele-make "$@"
         else
             wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-            exec /opt/tele/tele-server/tele-make "$@" "${DB_ARGS[@]}"
+            exec /opt/app/tele/tele-make "$@" "${DB_ARGS[@]}"
         fi
         ;;
     -*)
         wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-        exec /opt/tele/tele-server/tele-make "$@" "${DB_ARGS[@]}"
+        exec /opt/app/tele/tele-make "$@" "${DB_ARGS[@]}"
         ;;
     *)
         exec "$@"

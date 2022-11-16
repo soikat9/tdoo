@@ -87,7 +87,7 @@ class SaasConfig(models.TransientModel):
                 'costing_nature': IrDefault.get('res.config.settings', 'costing_nature') or 'per_month',
                 'user_cost': IrDefault.get('res.config.settings', 'user_cost') or 1,
                 'due_user_cost': IrDefault.get('res.config.settings', 'due_user_cost') or 1,
-                'applets_path': IrDefault.get('res.config.settings', 'applets_path') or '/opt/tele/applets',
+                'applets_path': IrDefault.get('res.config.settings', 'applets_path') or '/opt/app/tele/applets',
                 'recurring_rule_type': IrDefault.get('res.config.settings', 'recurring_rule_type') or 'monthly',
                 'is_multi_server': IrDefault.get('res.config.settings', 'is_multi_server') or False,
                 'reminder_period': IrDefault.get('res.config.settings', 'reminder_period') or 3,

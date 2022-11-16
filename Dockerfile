@@ -44,15 +44,14 @@ ENV TELE_VERSION 1.0
 
 #This binds to service file.So, take care
 ARG TELE_USER=tele
-#This binds to service file.So, take care
-ARG TELE_USER=tele
 ARG TELE_USER_UID=998
 ARG TELE_USER_GID=998
-ARG TELE_USER_PASSWD=tele
+
+RUN mkdir /opt/app
 
 RUN set -x; \
         groupadd -r -g ${TELE_USER_GID} ${TELE_USER} \
-        && adduser --system --home=/opt/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
+        && adduser --system --home=/opt/app/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
         && apt update && apt-get install -y git libpq-dev libxml2-dev libxslt-dev libffi-dev gcc python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev libjpeg-dev \
         && mkdir /var/log/tele \
         && chown ${TELE_USER}:root /var/log/tele
@@ -60,10 +59,10 @@ RUN set -x; \
 # Install rtlcss (on Debian buster)
 RUN npm install -g rtlcss
 
-COPY --chown=tele:tele ./tele /opt/tele/tele-server
-RUN pip3 install -r /opt/tele/tele-server/requirements.txt
+COPY --chown=tele:tele ./tele /opt/app/tele
+RUN pip3 install -r /opt/app/tele/requirements.txt
 
-RUN cp /opt/tele/tele-server/setup/tele /opt/tele/tele-server/tele-make && chmod +x /opt/tele/tele-server/tele-make
+RUN cp /opt/app/tele/setup/tele /opt/app/tele/tele-make && chmod +x /opt/app/tele/tele-make
 
 # Copy entrypoint script and Tele configuration file
 COPY --chown=tele:tele ./entrypoint.sh /
@@ -84,10 +83,6 @@ EXPOSE 8069 8071 8072
 ENV TELE_RC /etc/tele/tele.conf
 
 COPY --chown=tele:tele wait-for-psql.py /usr/local/bin/wait-for-psql.py
-
-
-COPY ./common-applets_v1 /opt/tele/common-applets_v1
-
 
 # Set default user when running the container
 USER tele

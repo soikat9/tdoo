@@ -6,7 +6,7 @@ from configparser import SafeConfigParser
 import paramiko
 
 nginx_vhost = "/var/lib/tele/Tele-SAAS-Data/docker_vhosts/"
-data_dir = "/opt/tele/Tele-SAAS-Data/"
+data_dir = "/opt/app/tele/Tele-SAAS-Data/"
 client_admin_passwd = "Yb32vfyRsMa7HDaG"
 template_port = 8888
 _logger = logging.getLogger(__name__)
