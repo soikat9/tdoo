@@ -11,7 +11,7 @@
     'data': [],
     'images': [
         'static/description/cover.png',
-        'static/description/theme_default_screenshot.jpg',
+        'static/description/default.png',
     ],
     'snippet_lists': {
         'homepage': ['s_cover', 's_text_image', 's_numbers'],
