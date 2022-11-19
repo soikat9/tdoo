@@ -30,13 +30,9 @@
 
   <t t-name="tele_studio.masterButtons" owl="1">
     <div class="o_studio_buttons">
-      <div ref="studioNotes" class="o_tele_studio_notes">
-          <a href="#" t-on-click.prevent="_onNotesClicked">
-              Notes
-          </a>
-      </div>
+
       <div class="o_tele_studio_leave" t-on-click="closeStudio">
-          <a class="btn btn-primary rounded-sm">Close</a>
+          <a class="btn">Close</a>
       </div>
     </div>
   </t>

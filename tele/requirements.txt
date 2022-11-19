@@ -50,4 +50,5 @@ xlwt==1.3.*
 zeep==3.4.0
 docker
 paramiko
-boto3
+boto
+python-crontab

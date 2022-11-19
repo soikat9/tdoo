@@ -32,7 +32,7 @@ $o-td-label-padding-right: 8px;
             max-width: $o-form-view-sheet-max-width;
             min-height: 330px;
             border: 1px solid #c8c8d3;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.062);
             background: white;
 
             margin: $o-sheet-vpadding*0.2 auto;
@@ -71,7 +71,7 @@ $o-td-label-padding-right: 8px;
                 background-color: #e6e6e6;
             }
             .o_button_icon {
-                color: #7C7BAD;
+                color: #296994;
             }
         }
     }

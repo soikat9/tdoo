@@ -1,6 +1,13 @@
 // App creator - style
 .o_tele_studio_app_creator {
-  @include o-web-studio-app-creator-background;
+  //@include o-web-studio-app-creator-background;
+  background: url(/web_enterprise/static/img/home-menu-bg-overlay.svg),
+  linear-gradient(to right bottom, #2a5170f2, #0a4370);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   .o_tele_studio_app_creator_box {
     box-shadow: 0 16px 13px -8px rgba($o-web-studio-bg-dark, 0.5);
@@ -76,7 +83,7 @@
       font-size: 11px;
       font-weight: 500;
       opacity: 0.5;
-      padding: 7px 15px;
+      padding: 10px 15px 7px;
       text-transform: uppercase;
 
       > span {
@@ -135,7 +142,7 @@
   overflow: auto;
 
   .o_tele_studio_app_creator_box {
-    min-height: 350px;
+    height: 450px;
     margin: auto;
     position: relative;
     width: 700px;
@@ -146,7 +153,6 @@
 
     .o_tele_studio_app_creator_left,
     .o_tele_studio_app_creator_right {
-      float: left;
       height: 100%;
       padding: 16px 32px;
       width: 50%;
@@ -184,6 +190,12 @@
       border-radius: 0 10px 10px 0;
       display: flex;
       justify-content: center;
+
+      .o_tele_studio_app_creator_right_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       .o_tele_studio_app_creator_right {
         height: 200px;

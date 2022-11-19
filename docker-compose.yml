@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: tele:1.0
+    image: telehub/tele:1.0-dev
     depends_on:
       - db
     ports:
@@ -11,6 +11,7 @@ services:
       - ./tele_applets:/mnt/tele-applets
       - ./develop_applets:/mnt/develop-applets
       - ./config:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
   db:
     image: postgres:14
     environment:

@@ -1,5 +1,5 @@
 .o_studio_navbar {
-  background-color: $o-web-studio-bg-dark;
+  background-color: $o-web-studio-bg-darker;
   border-color: $o-web-studio-bg-dark;
 
   &.o_main_navbar {
@@ -13,7 +13,7 @@
   }
 
   .o_menu_sections {
-    color: lightgrey;
+    color: rgba(211, 211, 211, 0.568);
     height: $o-web-studio-menu-height - 1;
   }
 

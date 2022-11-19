@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
+  border-radius: .3rem;
   h1 {
     font-size: 1.5rem;
     margin: 0 -16px 16px -16px;
@@ -24,12 +25,19 @@
   }
   .custom-checkbox > .custom-control-label {
     margin: 1.2rem 0;
-    padding-left: 0.6rem;
-    border-left: 1px solid $o-web-studio-text-inactive;
+    display: flex;
+    img.custom-label-image {
+      border-right: 1px solid $o-web-studio-text-inactive;
+      padding-right: 0.8rem;
+      margin-right: .8rem;
+      width: 55px;
+  }
 
     &::before,
     &::after {
       left: -2rem;
+      width: 1.25rem;
+      height: 1.25rem;
     }
   }
   /* embedded in Dialog with in the EditMenu
@@ -79,3 +87,4 @@
     color: $o-web-studio-color-danger;
   }
 }
+

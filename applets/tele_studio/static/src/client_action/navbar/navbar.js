@@ -34,7 +34,7 @@ export class StudioNavbar extends EnterpriseNavBar {
                 if (e instanceof NotEditableActionError) {
                     const options = { type: "danger" };
                     this.notification.add(
-                        this.env._t("This action is not editable by Studio"),
+                        this.env._t("This action is not editable by Tele Studio"),
                         options
                     );
                     return;
@@ -48,16 +48,6 @@ export class StudioNavbar extends EnterpriseNavBar {
     }
     get isInApp() {
         return this.studio.mode === this.studio.MODES.EDITOR;
-    }
-    _onNotesClicked() {
-        // LPE fixme: dbuuid should be injected into session_info python side
-        const action = {
-            type: "ir.actions.act_url",
-            url: `http://pad.tele.studio/p/customization-${this.user.db.uuid}`,
-        };
-        // LPE Fixme: this could be either the local AM or the GlobalAM
-        // we don(t care i-here as we open an url anyway)
-        this.actionManager.doAction(action);
     }
 }
 StudioNavbar.template = "tele_studio.StudioNavbar";

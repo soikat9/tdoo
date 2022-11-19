@@ -29,7 +29,7 @@
                 background-color: $o-web-studio-bg-medium;
             }
             &:not(.inactive):not(.active):hover {
-                color: white;
+                color: rgba(255, 255, 255, 0.152);
                 background-color: rgba($o-web-studio-bg-medium, 0.5);
             }
 
@@ -227,21 +227,25 @@
         }
         .o_tele_studio_component {
             @include o-text-overflow;
-            @include size(49%, 32px);
+            @include size(48%, 100px);
             position: relative;
-            margin-bottom: 5px;
-            padding: 3px 5px 0 0;
+            margin-bottom: 12px;
+            padding: 5px; 
             max-width: 130px;
             border-radius: 2px;
-            background-color: $o-web-studio-bg-light;
+            text-align: center;
+            background-color: #000000a6;
             box-shadow: 0 1px 1px black;
-            color: $o-web-studio-bg-dark;
+            color: #FFFF;
             font: bold 11px/2.4 $font-family-base;
             cursor: pointer;
+            display: inline-flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            font-size: 14px;
             &:hover {
-                background-color: white;
-                &:before {
-                    background: $o-web-studio-bg-light;
+                background-color: rgba(255, 255, 255, 0.229);
+               
                 }
             }
             &.o_tele_studio_debug:not(.ui-draggable-helper) {
@@ -253,23 +257,47 @@
                 padding: 2px;
                 background: white;
                 font: bold 10px/1 $o-web-studio-font-family-monospace;
+                display: none;
             }
             &:before {
-                @include size(33px, 150%);
-                display: block;
-                float: left;
-                margin: -3px 5px 0 0;
-                border-right: 1px solid lighten($o-web-studio-bg-dark, 50%);
-                background-color: darken($o-web-studio-bg-light, 5%);
-                content: "";
-            }
-            &:after {
-                @include o-position-absolute(6px, auto, auto , 7px);
+                content: none;
+                
             }
         }
         .o_tele_studio_existing_fields_section > h6 {
             cursor: default;
         }
+        .o_tele_studio_existing_fields_section { 
+         &.o_web_icon {
+           .o_tele_studio_component {
+                padding: 10px;
+                flex-direction: row-reverse;
+                text-align: left;
+                justify-content: flex-end;
+                height: 45px;
+                font-size: 14px !important;
+                &:after{
+                    background-repeat: no-repeat;
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    margin: 0 15px 0 0;
+                }
+                &:before {
+                    content: '';
+                    background-color: #6b6a6a;
+                    height: 30px;
+                    width: 1px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 48px;
+                }
+            }
+         }
+        }
+        
         .o_tele_studio_existing_fields {
             margin-top: inherit;
             .o_tele_studio_component {
@@ -277,6 +305,7 @@
                 max-width: $o-web-studio-sidebar-width;
             }
         }
+    
         .o_tele_studio_sidebar_toolbox {
             flex: 1 0 100%;
 
@@ -311,4 +340,4 @@
             @include o-web-studio-sidebar-btn-link;
         }
     }
-}
+

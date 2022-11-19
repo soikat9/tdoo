@@ -21,6 +21,7 @@ tele.define("tele_studio.ModelConfigurator", function (require) {
                         label: this.env._t("Contact details"),
                         help: this.env._t("Get contact, phone and email fields on records"),
                         value: false,
+                        
                     },
                     use_responsible: {
                         label: this.env._t("User assignment"),

@@ -593,7 +593,7 @@ return Widget.extend(StandaloneFieldManagerMixin, {
         }
 
         const $sidebarContent = this.$('.o_tele_studio_sidebar_content');
-        const $existingFieldsSection = $('<div/>', {class: `o_tele_studio_existing_fields_section`});
+        const $existingFieldsSection = $('<div/>', {class: `o_web_icon o_tele_studio_existing_fields_section`});
         const $section = this._renderSection(formWidgets);
         $section.addClass('o_tele_studio_existing_fields');
         if ($existingFields.length) {

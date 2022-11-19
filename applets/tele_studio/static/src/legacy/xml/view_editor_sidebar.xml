@@ -5,13 +5,13 @@
     <!-- Header -->
     <div class="o_tele_studio_sidebar_header">
         <div name="new" t-attf-class="o_tele_studio_new #{_.contains(['form', 'list', 'kanban', 'search'], widget.view_type)  ? (widget.state.mode === 'new' ? 'active' : '') : 'inactive'}">
-            <i class="fa fa-plus"/> Add
+            <img src="/tele_studio/static/src/legacy/icons/create-studio.svg"/> Create
         </div>
         <div name="view" t-attf-class="o_tele_studio_view #{widget.state.mode === 'view' ? 'active' : ''}">
-            <i class="fa fa-television"/> View
+            <img src="/tele_studio/static/src/legacy/icons/views.svg"/>Views
         </div>
         <div name="properties" t-attf-class="disabled o_tele_studio_properties #{widget.state.mode !== 'properties' ? 'inactive' : 'active'}">
-            <i class="fa fa-server"/> Properties
+            <img src="/tele_studio/static/src/legacy/icons/properties.svg"/>Properties
         </div>
     </div>
 
@@ -501,7 +501,7 @@
                         <button class="btn btn-secondary rounded-sm btn-lg o_tele_studio_defaults">Default Values</button>
                     </t>
                 </div>
-                <button class="btn btn-info rounded-sm rounded-sm btn-lg float-right o_tele_studio_restore">Restore Default View</button>
+                <button class="btn btn-primary rounded-sm rounded-sm btn-lg float-right o_tele_studio_restore">Restore Default View</button>
             </t>
         </t>
     </div>
