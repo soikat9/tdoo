@@ -7981,7 +7981,7 @@ msgstr ""
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_31
-msgid "Addison Olson is a mighty sales representative at Deco Addict."
+msgid "Addison Olson is a mighty sales representative at Tele Network."
 msgstr ""
 
 #. module: base
@@ -11964,7 +11964,7 @@ msgstr ""
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_2
 msgid ""
-"Deco Addict brings honesty and seriousness to wood industry while helping "
+"Tele Network brings honesty and seriousness to wood industry while helping "
 "customers deal with trees, flowers and fungi."
 msgstr ""
 
@@ -12641,7 +12641,7 @@ msgstr ""
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_3
-msgid "Douglas Fletcher is a mighty functional consultant at Deco Addict"
+msgid "Douglas Fletcher is a mighty functional consultant at Tele Network"
 msgstr ""
 
 #. module: base
@@ -14066,7 +14066,7 @@ msgstr ""
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_4
-msgid "Floyd Steward is a mighty analyst at Deco Addict."
+msgid "Floyd Steward is a mighty analyst at Tele Network."
 msgstr ""
 
 #. module: base
@@ -14398,7 +14398,7 @@ msgstr ""
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_3
 msgid ""
-"Gemini Furniture brings honesty and seriousness to wood industry while "
+"Tele Retail brings honesty and seriousness to wood industry while "
 "helping customers deal with trees, flowers and fungi."
 msgstr ""
 
@@ -22555,7 +22555,7 @@ msgstr ""
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_4
 msgid ""
-"Ready Mat brings honesty and seriousness to wood industry while helping "
+"Tele Suppliers brings honesty and seriousness to wood industry while helping "
 "customers deal with trees, flowers and fungi."
 msgstr ""
 
@@ -25226,7 +25226,7 @@ msgstr ""
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_10
 msgid ""
-"The Jackson Group brings honesty and seriousness to wood industry while "
+"Tele Consultants Group brings honesty and seriousness to wood industry while "
 "helping customers deal with trees, flowers and fungi."
 msgstr ""
 

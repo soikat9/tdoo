@@ -31,6 +31,8 @@ package.json
 /man/
 /share/
 /src/
+# postgres
+/postgres/
 
 #PyDev
 .project

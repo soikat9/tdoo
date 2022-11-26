@@ -107,7 +107,7 @@ class SavepointCaseWithUserDemo(TransactionCase):
                     'name': 'Austin Kennedy', # Tom Ruiz
                 })],
             }, {
-                'name': 'Pepper Street', # 'Deco Addict',
+                'name': 'Pepper Street', # 'Tele Network',
                 'state_id': cls.env.ref('base.state_us_2').id,
                 'child_ids': [Command.create({
                     'name': 'Liam King', # 'Douglas Fletcher',
@@ -117,7 +117,7 @@ class SavepointCaseWithUserDemo(TransactionCase):
                     'name': 'Adam Cox', # 'Addison Olson',
                 })],
             }, {
-                'name': 'AnalytIQ', #'Gemini Furniture',
+                'name': 'AnalytIQ', #'Tele Retail',
                 'state_id': cls.env.ref('base.state_us_3').id,
                 'child_ids': [Command.create({
                     'name': 'Pedro Boyd', # Edwin Hansen
@@ -130,7 +130,7 @@ class SavepointCaseWithUserDemo(TransactionCase):
                     'name': 'Scott Kim', # 'Oscar Morgan',
                 })],
             }, {
-                'name': 'Urban Trends', # 'Ready Mat',
+                'name': 'Urban Trends', # 'Tele Suppliers',
                 'state_id': cls.env.ref('base.state_us_4').id,
                 'category_id': [Command.set([cls.partner_category_child_1.id, cls.partner_category_child_2.id,])],
                 'child_ids': [Command.create({
@@ -149,7 +149,7 @@ class SavepointCaseWithUserDemo(TransactionCase):
                     'name': 'Elsie Kennedy', # 'Theodore Gardner',
                 })],
             }, {
-                'name': 'Ctrl-Alt-Fix', # 'The Jackson Group',
+                'name': 'Ctrl-Alt-Fix', # 'Tele Consultants Group',
                 'state_id': cls.env.ref('base.state_us_5').id,
                 'child_ids': [Command.create({
                     'name': 'carole miller', # 'Toni Rhodes',

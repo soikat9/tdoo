@@ -723,7 +723,7 @@ class TestExpression(SavepointCaseWithUserDemo):
         partners = self._search(Partner, [('name', '=like', 'I_ner_W_rk_')])
         self.assertTrue(all(partner.name == 'Inner Works' for partner in partners), "Must match only 'Inner Works'")
         partners = self._search(Partner, [('name', '=ilike', 'G%')])
-        self.assertTrue(len(partners) >= 1, "Must match one partner (Gemini Furniture)")
+        self.assertTrue(len(partners) >= 1, "Must match one partner (Tele Retail)")
 
         # check that =like/=ilike expressions are working on translated field
         Country = self.env['res.country']

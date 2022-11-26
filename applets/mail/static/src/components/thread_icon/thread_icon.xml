@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="mail.ThreadIcon" owl="1">
+        <div class="o_ThreadIcon">
+            <t t-if="thread" name="rootCondition">
+                <t t-if="thread.channel_type === 'channel'">
+                    <t t-if="thread.public === 'private'">
+                        <div class="o_ThreadIcon_channelPrivate fa fa-lock" title="Private channel"/>
+                    </t>
+                    <t t-if="thread.public === 'public'">
+                        <div class="o_ThreadIcon_channelPublic fa fa-globe" title="Public channel"/>
+                    </t>
+                    <t t-if="thread.public === 'groups'">
+                        <div class="o_ThreadIcon_channelGroups fa fa-hashtag" title="Selected group of users"/>
+                    </t>
+                </t>
+                <t t-elif="thread.channel_type === 'chat' and thread.correspondent">
+                    <t t-if="thread.orderedOtherTypingMembers.length > 0">
+                        <ThreadTypingIcon
+                            class="o_ThreadIcon_typing"
+                            animation="'pulse'"
+                            title="thread.typingStatusText"
+                        />
+                    </t>
+                    <t t-elif="thread.correspondent.im_status === 'online'">
+                        <div class="o_ThreadIcon_online fa fa-circle" title="Online"/>
+                    </t>
+                    <t t-elif="thread.correspondent.im_status === 'offline'">
+                        <div class="o_ThreadIcon_offline fa fa-circle-o" title="Offline"/>
+                    </t>
+                    <t t-elif="thread.correspondent.im_status === 'away'">
+                        <div class="o_ThreadIcon_away fa fa-circle" title="Away"/>
+                    </t>
+                    <t t-elif="thread.correspondent === messaging.partnerRoot">
+                        <div class="o_ThreadIcon_online fa fa-heart" title="Bot"/>
+                    </t>
+                    <t t-else="" name="noImStatusCondition">
+                        <div class="o_ThreadIcon_noImStatus fa fa-question-circle" title="No IM status available"/>
+                    </t>
+                </t>
+                <t t-elif="thread.channel_type === 'group'">
+                    <div class="o_ThreadIcon" title="Grouped Chat"/><img alt="Grouped Chat"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjUiIGhlaWdodD0iMjUiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iOC42MDgiIHkxPSIxMS42MDgiIHgyPSIxNS41ODQiIHkyPSIxOC41ODQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMV9xRE5DbG5CN1o0S3lfZ3IxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjZmNmY2YiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5NjljYTAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iNC40MzEiIHkxPSIyNi40ODIiIHgyPSIxOS45OTgiIHkyPSI0Mi4wNDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMl9xRE5DbG5CN1o0S3lfZ3IyIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjZmNmY2YiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5NjljYTAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iMzIuNjA4IiB5MT0iMTEuNjA4IiB4Mj0iMzkuNTg0IiB5Mj0iMTguNTg0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTNfcUROQ2xuQjdaNEt5X2dyMyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZGJkYmRiIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODE4NDg3Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjI4LjQzMSIgeTE9IjI2LjQ4MiIgeDI9IjQzLjk5OCIgeTI9IjQyLjA0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci00X3FETkNsbkI3WjRLeV9ncjQiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2RiZGJkYiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzgxODQ4NyI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IHgxPSIyMC42MDgiIHkxPSI3LjYwOCIgeDI9IjI3LjU4NCIgeTI9IjE0LjU4NCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci01X3FETkNsbkI3WjRLeV9ncjUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U5ZWNlZCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwYzJjMyI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IHgxPSIyMS4xODEiIHkxPSIxOS4wNTciIHgyPSIyNi4yMDIiIHkyPSI0NC4xNiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci02X3FETkNsbkI3WjRLeV9ncjYiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U5ZWNlZCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2MwYzJjMyI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjY2NjY3LDEwLjY2NjY3KSBzY2FsZSgwLjkxNjY3LDAuOTE2NjcpIj48ZyBmaWxsLW9wYWNpdHk9IjAuMDkwMiIgZmlsbD0iIzMzOWFmMCIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTY2LjU2LDIwNC44Yy04LjQ4MzA5LDAgLTE1LjM2LC02Ljg3NjkxIC0xNS4zNiwtMTUuMzZ2LTEyMi44OGMwLC04LjQ4MzA5IDYuODc2OTEsLTE1LjM2IDE1LjM2LC0xNS4zNmgxMjIuODhjOC40ODMwOSwwIDE1LjM2LDYuODc2OTEgMTUuMzYsMTUuMzZ2MTIyLjg4YzAsOC40ODMwOSAtNi44NzY5MSwxNS4zNiAtMTUuMzYsMTUuMzZ6IiBpZD0ic2hhcGUiPjwvcGF0aD48L2c+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PGcgdHJhbnNmb3JtPSJzY2FsZSg1LjMzMzMzLDUuMzMzMzMpIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE1IiByPSI1IiBmaWxsPSJ1cmwoI2NvbG9yLTFfcUROQ2xuQjdaNEt5X2dyMSkiPjwvY2lyY2xlPjxwYXRoIGQ9Ik0xMiwyMmMtNC45NzEsMCAtOSw0LjAyOSAtOSw5djljMCwxLjEwNSAwLjg5NSwyIDIsMmgxNGMxLjEwNSwwIDIsLTAuODk1IDIsLTJ2LTljMCwtNC45NzEgLTQuMDI5LC05IC05LC05eiIgZmlsbD0idXJsKCNjb2xvci0yX3FETkNsbkI3WjRLeV9ncjIpIj48L3BhdGg+PGNpcmNsZSBjeD0iMzYiIGN5PSIxNSIgcj0iNSIgZmlsbD0idXJsKCNjb2xvci0zX3FETkNsbkI3WjRLeV9ncjMpIj48L2NpcmNsZT48cGF0aCBkPSJNMzYsMjJjLTQuOTcxLDAgLTksNC4wMjkgLTksOXY5YzAsMS4xMDUgMC44OTUsMiAyLDJoMTRjMS4xMDUsMCAyLC0wLjg5NSAyLC0ydi05YzAsLTQuOTcxIC00LjAyOSwtOSAtOSwtOXoiIGZpbGw9InVybCgjY29sb3ItNF9xRE5DbG5CN1o0S3lfZ3I0KSI+PC9wYXRoPjxjaXJjbGUgY3g9IjI0IiBjeT0iMTEiIHI9IjUiIGZpbGw9InVybCgjY29sb3ItNV9xRE5DbG5CN1o0S3lfZ3I1KSI+PC9jaXJjbGU+PHBhdGggZD0iTTM1LDQwdi0xM2MwLC0xLjcwMSAtMC4zOTksLTMuMzA3IC0xLjA5MiwtNC43NDZjLTMuOTYsMC45NDUgLTYuOTA4LDQuNDk3IC02LjkwOCw4Ljc0NnY5YzAsMS4xMDUgMC44OTUsMiAyLDJoNS40NDRjMC4zNDQsLTAuNTkxIDAuNTU2LC0xLjI2OCAwLjU1NiwtMnoiIGZpbGw9IiM2MzdiOTIiIG9wYWNpdHk9IjAuMDUiPjwvcGF0aD48cGF0aCBkPSJNMzQuMzMzLDQwdi0xM2MwLC0xLjYyMSAtMC4zODUsLTMuMTUgLTEuMDUzLC00LjUxN2MtMy42MzEsMS4xMTkgLTYuMjgsNC41MDQgLTYuMjgsOC41MTd2OWMwLDEuMTA1IDAuODk1LDIgMiwyaDQuMjk2YzAuNTk4LC0wLjM5NCAxLjAzNywtMS4xNDQgMS4wMzcsLTJ6IiBmaWxsPSIjNjM3YjkyIiBvcGFjaXR5PSIwLjA2NyI+PC9wYXRoPjxwYXRoIGQ9Ik0zMy42NjcsNDB2LTEzYzAsLTEuNTQyIC0wLjM3MSwtMi45OTQgLTEuMDE0LC00LjI4OGMtMy4zMDMsMS4yOTMgLTUuNjUzLDQuNTExIC01LjY1Myw4LjI4OHY5YzAsMS4xMDUgMC44OTUsMiAyLDJoMy4xNDhjMC44NTEsLTAuMTk3IDEuNTE5LC0xLjAyIDEuNTE5LC0yeiIgZmlsbD0iIzYzN2I5MiIgb3BhY2l0eT0iMC4wOSI+PC9wYXRoPjxwYXRoIGQ9Ik0xMyw0MHYtMTNjMCwtMS43MDEgMC4zOTksLTMuMzA3IDEuMDkyLC00Ljc0NmMzLjk2LDAuOTQ1IDYuOTA4LDQuNDk3IDYuOTA4LDguNzQ2djljMCwxLjEwNSAtMC44OTUsMiAtMiwyaC01LjQ0NGMtMC4zNDQsLTAuNTkxIC0wLjU1NiwtMS4yNjggLTAuNTU2LC0yeiIgZmlsbD0iIzYzN2I5MiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPjxwYXRoIGQ9Ik0xMy42NjcsNDB2LTEzYzAsLTEuNjIxIDAuMzg1LC0zLjE1IDEuMDUzLC00LjUxN2MzLjYzMSwxLjExOSA2LjI4LDQuNTA0IDYuMjgsOC41MTd2OWMwLDEuMTA1IC0wLjg5NSwyIC0yLDJoLTQuMjk2Yy0wLjU5OCwtMC4zOTQgLTEuMDM3LC0xLjE0NCAtMS4wMzcsLTJ6IiBmaWxsPSIjNjM3YjkyIiBvcGFjaXR5PSIwLjA2NyI+PC9wYXRoPjxwYXRoIGQ9Ik0xNC4zMzMsNDB2LTEzYzAsLTEuNTQyIDAuMzcxLC0yLjk5NCAxLjAxNCwtNC4yODhjMy4zMDMsMS4yOTMgNS42NTMsNC41MTEgNS42NTMsOC4yODh2OWMwLDEuMTA1IC0wLjg5NSwyIC0yLDJoLTMuMTQ4Yy0wLjg1MSwtMC4xOTcgLTEuNTE5LC0xLjAyIC0xLjUxOSwtMnoiIGZpbGw9IiM2MzdiOTIiIG9wYWNpdHk9IjAuMDkiPjwvcGF0aD48cGF0aCBkPSJNMjQsMThjLTQuOTcxLDAgLTksNC4wMjkgLTksOXYxM2MwLDEuMTA1IDAuODk1LDIgMiwyaDE0YzEuMTA1LDAgMiwtMC44OTUgMiwtMnYtMTNjMCwtNC45NzEgLTQuMDI5LC05IC05LC05eiIgZmlsbD0idXJsKCNjb2xvci02X3FETkNsbkI3WjRLeV9ncjYpIj48L3BhdGg+PC9nPjwvZz48L2c+Cjwvc3ZnPg=="/>
+                </t>
+                <t t-elif="thread.model === 'mail.box'">
+                    <t t-if="thread === messaging.inbox">
+                        <div class="o_ThreadIcon_mailboxInbox fa fa-inbox"/>
+                    </t>
+                    <t t-elif="thread === messaging.starred">
+                        <div class="o_ThreadIcon_mailboxStarred fa fa-star-o"/>
+                    </t>
+                    <t t-elif="thread === messaging.history">
+                        <div class="o_ThreadIcon_mailboxHistory fa fa-history"/>
+                    </t>
+                </t>
+            </t>
+        </div>
+    </t>
+
+</templates>
