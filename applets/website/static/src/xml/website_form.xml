@@ -10,7 +10,7 @@
 
     <!-- Error status -->
     <t t-name="website.s_website_form_status_error">
-        <span id="s_website_form_result" class="text-danger ml8">
+        <span id="s_website_form_result" class=" ml8">
             <i class="fa fa-close mr4" role="img" aria-label="Error" title="Error"/>
             <t t-esc="message"/>
         </span>

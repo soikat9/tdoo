@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="col-12 col-lg-6 o_setting_box" id="active_user_setting">
                                     <div class="o_setting_right_pane">
-                                        <span class="fa fa-lg fa-users" aria-label="Number of active users"/>
+                                        <span class="icon-member" aria-label="Number of active users"/>
                                         <field name='active_user_count' class="w-auto pl-3 font-weight-bold"/>
                                         <span class='o_form_label' attrs="{'invisible':[('active_user_count', '&gt;', '1')]}">
                                             Active User

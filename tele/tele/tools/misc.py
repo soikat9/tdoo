@@ -184,8 +184,8 @@ def file_open(name, mode="r", filter_ext=None):
     Examples::
 
     >>> file_open('hr/static/description/icon.png')
-    >>> file_open('hr/static/description/icon.png', filter_ext=('.png', '.jpg'))
-    >>> with file_open('/opt/app/tele/applets/hr/static/description/icon.png', 'rb') as f:
+    >>> file_open('hr/static/description/icon.png', filter_ext=('.png', '.jpg', '.svg'))
+    >>> with file_open('/home/tele/applets/hr/static/description/icon.png', 'rb') as f:
     ...     contents = f.read()
 
     :param name: absolute or relative path to a file located inside an applet
@@ -213,7 +213,6 @@ def file_open(name, mode="r", filter_ext=None):
 #----------------------------------------------------------
 def flatten(list):
     """Flatten a list of elements into a unique list
-    Author: Christophe Simonis (christophe@tinyerp.com)
 
     Examples::
     >>> flatten(['a'])

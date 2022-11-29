@@ -68,12 +68,12 @@
                     <!-- FIXME: guests should be able to see members but there currently is no route for it, so hide it for now -->
                     <t t-if="!messaging.isCurrentUserGuest and threadViewTopbar.thread and threadViewTopbar.thread.hasMemberListFeature and threadViewTopbar.threadView.hasMemberList and !threadViewTopbar.threadView.isMemberListOpened">
                         <button class="o_ThreadViewTopbar_showMemberListButton o_ThreadViewTopbar_button" title="Show Member List" t-on-click="threadViewTopbar.onClickShowMemberList">
-                            <i class="fa fa-lg fa-users"/>
+                            <i class="icon-member"/>
                         </button>
                     </t>
                     <t t-if="threadViewTopbar.thread and threadViewTopbar.thread.hasMemberListFeature and threadViewTopbar.threadView.hasMemberList and threadViewTopbar.threadView.isMemberListOpened">
                         <button class="o_ThreadViewTopbar_hideMemberListButton o_ThreadViewTopbar_button o-active" title="Hide Member List" t-on-click="threadViewTopbar.onClickHideMemberList">
-                            <i class="fa fa-lg fa-users"/>
+                            <i class="icon-member"/>
                         </button>
                     </t>
                 </div>

@@ -44,14 +44,12 @@ ENV TELE_VERSION 1.0
 
 #This binds to service file.So, take care
 ARG TELE_USER=tele
-ARG TELE_USER_UID=998
-ARG TELE_USER_GID=998
-
-RUN mkdir /opt/app
+ARG TELE_USER_UID=1000
+ARG TELE_USER_GID=1000
 
 RUN set -x; \
         groupadd -r -g ${TELE_USER_GID} ${TELE_USER} \
-        && adduser --system --home=/opt/app/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
+        && adduser --system --home=/home/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
         && apt update && apt-get install -y git libpq-dev libxml2-dev libxslt-dev libffi-dev gcc python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev libjpeg-dev \
         && mkdir /var/log/tele \
         && chown ${TELE_USER}:root /var/log/tele
@@ -59,10 +57,10 @@ RUN set -x; \
 # Install rtlcss (on Debian buster)
 RUN npm install -g rtlcss
 
-COPY --chown=tele:tele ./tele /opt/app/tele
-RUN pip3 install -r /opt/app/tele/requirements.txt
+COPY --chown=tele:tele ./tele /home/tele
+RUN pip3 install -r /home/tele/requirements.txt
 
-RUN cp /opt/app/tele/setup/tele /opt/app/tele/tele-make && chmod +x /opt/app/tele/tele-make
+RUN cp /home/tele/setup/tele /home/tele/tele-make && chmod +x /home/tele/tele-make
 
 # Copy entrypoint script and Tele configuration file
 COPY --chown=tele:tele ./entrypoint.sh /

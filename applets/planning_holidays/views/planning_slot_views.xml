@@ -35,7 +35,7 @@
                 <field name="leave_warning" />
             </xpath>
             <xpath expr="//p[@t-if='overlap_slot_count']" position="after">
-                <p t-if="leave_warning" class="text-danger mt-2 mb-0">
+                <p t-if="leave_warning" class=" mt-2 mb-0">
                     <t t-esc="leave_warning"/>
                 </p>
             </xpath>

@@ -3,7 +3,7 @@
 }
 
 .o-web-dashboard-view-wrapper--switch-button {
-    @include o-position-absolute($top: 20px, $right: 0);
+    position: relative;
 }
 
 .o-web-dashboard-view-wrapper .o_cp_bottom_left {

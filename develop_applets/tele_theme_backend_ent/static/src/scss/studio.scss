@@ -1,0 +1,37 @@
+.o_in_studio {
+    .o_studio {
+        .o_studio_navbar {
+            .o_menu_sections, .o_nav_entry {
+                height: 80px !important;
+            }
+            .o-studio--menu {
+                margin-left: auto;
+            }
+            .o_tele_studio_home_studio_menu {
+                .o-dropdown {
+                    .dropdown-toggle {
+                        height: 100% !important;
+                    }
+                    height: 100%;
+                }
+            }
+        }
+        .o_studio_home_menu {
+            background-image: none;
+        }
+    }
+    &.o_home_menu_background {
+        .o_studio {
+            .o_studio_navbar {
+                .o_tele_studio_leave {
+                    .btn-primary {
+                        background-color: transparent !important;
+                        border-color: transparent !important;
+                    }
+                }
+                background-color: rgba(255, 255, 255, 0.1) !important;
+                border-color: rgba(255, 255, 255, 0.1) !important;
+            }
+        }
+    }
+}

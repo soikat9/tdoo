@@ -436,7 +436,7 @@
                                     <input type="checkbox" name="customer_contacted" id="customer_contacted" class="contacted_interested"/>
                                 </div>
                                 <div>
-                                    <span class="text-danger error_partner_assign_interested" style="display:none;">You need to fill up the next action and contact the customer before accepting the lead</span>
+                                    <span class=" error_partner_assign_interested" style="display:none;">You need to fill up the next action and contact the customer before accepting the lead</span>
                                 </div>
                             </main>
                             <footer class="modal-footer">
@@ -469,7 +469,7 @@
                                     <input type="checkbox" name="customer_mark_spam" id="customer_mark_spam" class="customer_mark_spam"/>
                                 </div>
                                 <div>
-                                    <span class="text-danger error_partner_assign_desinterested" style="display:none;">You need to fill up the next action and contact the customer before accepting the lead</span>
+                                    <span class=" error_partner_assign_desinterested" style="display:none;">You need to fill up the next action and contact the customer before accepting the lead</span>
                                 </div>
                             </main>
                             <footer class="modal-footer">

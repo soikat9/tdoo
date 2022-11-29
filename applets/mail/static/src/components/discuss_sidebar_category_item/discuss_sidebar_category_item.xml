@@ -10,7 +10,7 @@
             <t t-if="categoryItem">
                 <div class="o_DiscussSidebarCategoryItem_item o_DiscussSidebarCategoryItem_avatar">
                     <div class="o_DiscussSidebarCategoryItem_imageContainer">
-                        <img class="o_DiscussSidebarCategoryItem_image rounded-circle" t-att-src="categoryItem.avatarUrl" alt="Thread Image"/>
+                        <img class="o_DiscussSidebarCategoryItem_image rounded-square rounded-sm" t-att-src="categoryItem.avatarUrl" alt="Thread Image"/>
                         <t t-if="categoryItem.hasThreadIcon">
                             <ThreadIcon class="o_DiscussSidebarCategoryItem_threadIcon" threadLocalId="categoryItem.channel.localId"/>
                         </t>

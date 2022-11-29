@@ -10,7 +10,7 @@
             <t t-if="thread">
                 <div class="o_ThreadPreview_sidebar">
                     <div class="o_ThreadPreview_imageContainer o_ThreadPreview_sidebarItem">
-                        <img class="o_ThreadPreview_image rounded-circle" t-att-src="image()" alt="Thread Image"/>
+                        <img class="o_ThreadPreview_image rounded-square rounded-sm" t-att-src="image()" alt="Thread Image"/>
                         <t t-if="thread.correspondent and thread.correspondent.im_status">
                             <PartnerImStatusIcon
                                 class="o_ThreadPreview_partnerImStatusIcon"

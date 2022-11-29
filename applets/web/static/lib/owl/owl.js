@@ -2936,10 +2936,7 @@
         set(mode) {
             QWeb.dev = mode === "dev";
             if (QWeb.dev) {
-                console.info(`Owl is running in 'dev' mode.
-
-This is not suitable for production use.
-See https://github.com/tele/owl/blob/master/doc/reference/config.md#mode for more information.`);
+                console.info(`Tele is running in developer mode. Please be aware, developer mode is not suitable for production use.`);
             }
         },
     });

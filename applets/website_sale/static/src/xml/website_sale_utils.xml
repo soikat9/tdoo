@@ -24,7 +24,7 @@
             </div>
             <div t-if="widget.displayPrice" class="flex-shrink-0">
                 <t t-if="product['has_discounted_price']">
-                    <span class="text-danger text-nowrap" style="text-decoration: line-through;">
+                    <span class=" text-nowrap" style="text-decoration: line-through;">
                         <t t-out="product['list_price']"/>
                     </span>
                     <br/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tele>
+	<data>
+		<menuitem id="tele_backend_theme_configuration_mainmenu" name="Tele Configuration" 
+			parent="base.menu_administration" sequence="10"/>
+
+		<menuitem action="tele_theme_backend_ent.change_menu_icon_action" id="change_menu_icon_menu" 
+			parent="tele_backend_theme_configuration_mainmenu" sequence="5"/>
+
+		<menuitem action="tele_theme_backend_ent.act_open_pwa_shortcuts_view" id="pwa_shortcuts_view_tree_menuitem" 
+			parent="tele_backend_theme_configuration_mainmenu" sequence="5"/>
+	</data>
+</tele>

@@ -4,7 +4,7 @@ tele.define('tele_studio.XMLEditor', function (require) {
 var AceEditor = require('web_editor.ace');
 
 /**
- * Extend the default view editor so that views are saved thanks to web studio and not
+ * Extend the default view editor so that views are saved thanks to Tele Studio and not
  * default RPC. Also notifies studio when the editor is closed.
  */
 return AceEditor.extend({

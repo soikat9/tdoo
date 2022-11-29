@@ -11,7 +11,7 @@
                 <div class='o_row'>
                     <field name="bom_id"
                         context="{'default_product_tmpl_id': product_tmpl_id}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
-                    <button name="action_update_bom" string="Update BoM" type="object" attrs="{'invisible': ['|', ('latest_bom_id', '=', False), ('state', '!=', 'draft')]}" class="text-danger pt-0"/>
+                    <button name="action_update_bom" string="Update BoM" type="object" attrs="{'invisible': ['|', ('latest_bom_id', '=', False), ('state', '!=', 'draft')]}" class=" pt-0"/>
                     <widget name='plm_toaster_button' attrs="{'invisible': ['|', ('latest_bom_id', '=', False), ('state', '!=', 'confirmed')]}" class="pt-0"/>
                 </div>
             </field>

@@ -298,7 +298,7 @@
                                 <div class="oe_kanban_details">
                                     <ul>
                                         <li class="text-success float-right mb4" t-if="record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Ok" title="Ok"></i></li>
-                                        <li class="text-danger float-right mb4" t-if="!record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Invalid" title="Invalid"></i></li>
+                                        <li class=" float-right mb4" t-if="!record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Invalid" title="Invalid"></i></li>
                                         <li class="mb4">
                                             <strong><field name="name"/></strong>
                                         </li>

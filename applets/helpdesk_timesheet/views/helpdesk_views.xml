@@ -63,7 +63,7 @@
                 </xpath>
                 <xpath expr="//field[@name='stage_id']" position="before">
                     <field name="display_timer" invisible="1"/>
-                    <field name="timer_start" widget="timer_timer" class="text-danger ml-auto h2 ml-4 font-weight-bold"
+                    <field name="timer_start" widget="timer_timer" class=" ml-auto h2 ml-4 font-weight-bold"
                         attrs="{'invisible': [('display_timer', '=', False)]}"/>
                 </xpath>
             <xpath expr="//field[@name='email_cc']" position="after">

@@ -52,12 +52,16 @@
                                     </div>
                                     <div class="content-group">
                                         <div class="row mt16">
-                                            <label class="col-lg-3 o_light_label" string="Name" for="website_name"/>
-                                            <field name="website_name" attrs="{'required': [('website_id', '!=', False)]}"/>
+                                            <div class="col-lg-12">
+                                                <label class="o_light_label" string="Name" for="website_name"/>
+                                                <field name="website_name" attrs="{'required': [('website_id', '!=', False)]}"/>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <label class="col-lg-3 o_light_label" for="favicon" />
-                                            <field name="favicon" widget="image" class="float-left oe_avatar"/>
+                                            <div class="col-lg-12">
+                                                <label class="o_light_label" for="favicon" />
+                                                <field name="favicon" widget="image" class="float-left oe_avatar"/>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

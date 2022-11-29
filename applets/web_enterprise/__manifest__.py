@@ -4,6 +4,7 @@
 {
     'name': 'Web Enterprise',
     'category': 'Hidden',
+    'auto_install': True,
     'version': '1.0',
     'description': """
 Tele-Enterprise Web Client.
@@ -12,7 +13,6 @@ Tele-Enterprise Web Client.
 This module modifies the web applet to provide Enterprise design and responsiveness.
         """,
     'depends': ['web'],
-    'auto_install': True,
     'data': [
         'views/partner_view.xml',
         'views/webclient_templates.xml',

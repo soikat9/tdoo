@@ -189,7 +189,7 @@ select {
   &.alert-success,
   &.alert-warning,
   &.alert-danger {
-    border-width: 0 0 0 3px;
+    border-width: 1px;
   }
   a {
     font-weight: $alert-link-font-weight;

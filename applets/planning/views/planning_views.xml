@@ -339,7 +339,7 @@
                         <p t-if="publication_warning and !overlap_slot_count" class="text-warning mt-2 mb-0">
                             Some changes were made since this shift was published.
                         </p>
-                        <p t-if="overlap_slot_count" class="text-danger mt-2 mb-0">
+                        <p t-if="overlap_slot_count" class=" mt-2 mb-0">
                             <t t-esc="overlap_slot_count"/> other shift(s) in conflict.
                         </p>
                     </div>

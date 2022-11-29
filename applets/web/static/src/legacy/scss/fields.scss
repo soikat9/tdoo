@@ -161,7 +161,7 @@
     // Many2many tags
     &.o_field_many2manytags {
         flex-flow: row wrap;
-        align-items: stretch;
+        align-items: center;
         max-width: 100%;
 
         > .o_field_widget {

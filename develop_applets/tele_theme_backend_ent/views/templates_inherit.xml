@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tele>
+    <template id="tele_responsive_web_layout_template" inherit_id="web.layout" name="Responsive Web Layout">
+        <xpath expr="//meta[last()]" position="after">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <link rel="stylesheet" type="text/css" href="/tele_theme_backend_ent/static/lib/RemixIcon/remixicon.css" />
+            <link rel="stylesheet" type="text/css" href="/tele_theme_backend_ent/static/lib/Downloaded/css/styles.css" />
+        </xpath>
+    </template>
+</tele>

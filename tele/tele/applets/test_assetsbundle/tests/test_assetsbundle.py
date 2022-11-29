@@ -27,7 +27,7 @@ from tele.tools import mute_logger, func
 GETMTINE = os.path.getmtime
 
 
-class TestAddonPaths(TransactionCase):
+class TestAppletPaths(TransactionCase):
     def test_operations(self):
         asset_paths = AssetPaths()
         self.assertFalse(asset_paths.list)
@@ -79,7 +79,7 @@ class TestAddonPaths(TransactionCase):
         ])
 
 
-class AddonManifestPatched(TransactionCase):
+class AppletManifestPatched(TransactionCase):
 
     test_assetsbundle_manifest = None
     for path in APPLETS_PATH:
@@ -108,7 +108,7 @@ class AddonManifestPatched(TransactionCase):
         }
 
 
-class FileTouchable(AddonManifestPatched):
+class FileTouchable(AppletManifestPatched):
     def setUp(self):
         super(FileTouchable, self).setUp()
         self.touches = {}
@@ -804,7 +804,7 @@ class TestAssetsBundleWithIRAMock(FileTouchable):
 
 
 @tagged('assets_manifest')
-class TestAssetsManifest(AddonManifestPatched):
+class TestAssetsManifest(AppletManifestPatched):
 
     def make_asset_view(self, asset_key, t_call_assets_attrs=None):
         default_attrs = {

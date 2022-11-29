@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tele>
+    <data noupdate="1">
+        <record id="backend_config_data" model="backend.config">
+            <field name="light_primary_bg_color">#fffff</field>
+            <field name="light_primary_text_color">#fffff</field>
+        </record>
+    </data>
+</tele>
