@@ -3,9 +3,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Tele</title>
     <link rel="shortcut icon" href="/web/static/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/web/static/lib/tele-icon/css/styles.css" />
-    <link rel="stylesheet" href="/web/static/lib/tele-icon/tele-icon.min.svg" />
-    <link rel="stylesheet" href="/web/static/lib/tele-icon-icons/css/styles.css" />
+    <link rel="stylesheet" href="/web/static/lib/fontawesome/css/font-awesome.css" />
     <link rel="stylesheet" href="/web/static/lib/bootstrap/css/bootstrap.css" />
     <script src="/web/static/lib/jquery/jquery.js" ></script>
     <script src="/web/static/lib/popper/popper.js" ></script>
@@ -23,13 +21,12 @@
     <script src="/web/static/lib/bootstrap/js/tab.js" ></script>
     <script src="/web/static/src/public/database_manager.js" ></script>
 </head>
-
 <body>
-    <div class="container py-5">
+    <div class="container">
         <!-- Database List -->
         <div class="row">
             <div class="col-lg-6 offset-lg-3 o_database_list">
-                
+                <img src="/web/static/src/img/db-manager/icon-light.svg" class="rounded mx-auto d-block p-5" alt="...">
                 <t t-if="not list_db">
                     <div class="alert alert-danger text-center">The database manager has been disabled by the administrator</div>
                 </t>
@@ -49,19 +46,19 @@
                             <div class="list-group-item d-flex align-items-center">
                                 <a t-attf-href="/web?db={{ db }}" class="d-block flex-grow-1">
                                     <t t-if="db in incompatible_databases">
-                                        <i class="tele-icon-ecg float-right text-warning" title="This database may not be compatible"></i>
+                                        <i class="icon fa fa-warning float-right text-warning" title="This database may not be compatible"></i>
                                     </t>
                                     <t t-out="db" />
                                 </a>
                                 <t t-if="manage">
                                     <div class="btn-group btn-group-sm float-right">
-                                        <button type="button" t-att-data-db="db" data-target=".o_database_backup" class="o_database_action btn btn-primary rounded-sm">
+                                        <button type="button" t-att-data-db="db" data-target=".o_database_backup" class="o_database_action rounded-sm btn">
                                             <i class="fa fa-floppy-o fa-fw"></i> Backup
                                         </button>
-                                        <button type="button" t-att-data-db="db" data-target=".o_database_duplicate" class="o_database_action btn btn-secondary rounded-sm">
+                                        <button type="button" t-att-data-db="db" data-target=".o_database_duplicate" class="o_database_action rounded-sm btn">
                                             <i class="fa fa-files-o fa-fw"></i> Duplicate
                                         </button>
-                                        <button type="button" t-att-data-db="db" data-target=".o_database_delete" class="o_database_action btn btn-danger">
+                                        <button type="button" t-att-data-db="db" data-target=".o_database_delete" class="o_database_action  rounded-sm btn">
                                             <i class="fa fa-trash-o fa-fw"></i> Delete
                                         </button>
                                     </div>
@@ -71,9 +68,9 @@
                     </div>
                     <t t-if="manage">
                         <div class="d-flex mt-2">
-                            <button type="button" data-toggle="modal" data-target=".o_database_create" class="btn btn-primary rounded-sm flex-grow-1">Create Database</button>
-                            <button type="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-primary rounded-sm flex-grow-1 ml-2">Restore Database</button>
-                            <button type="button" data-toggle="modal" data-target=".o_database_master" class="btn btn-primary rounded-sm flex-grow-1 ml-2">Set Master Password</button>
+                            <button type="button" data-toggle="modal" data-target=".o_database_create" class="btn btn-primary flex-grow-1">Create Database</button>
+                            <button type="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-primary flex-grow-1 ml-2">Restore Database</button>
+                            <button type="button" data-toggle="modal" data-target=".o_database_master" class="btn btn-primary flex-grow-1 ml-2">Set Master Password</button>
                         </div>
                     </t>
                     <t t-else="">
@@ -85,9 +82,9 @@
                 <t t-elif="list_db">
                     <form role="form" action="/web/database/create" method="post">
                         <t t-call="create_form" />
-                        <input type="submit" value="Create database" class="btn btn-primary rounded-sm float-left"/>
+                        <input type="submit" value="Create database" class="btn btn-primary float-left"/>
                     </form>
-                    <a role="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-link rounded-sm">or restore a database</a>
+                    <a role="button" data-toggle="modal" data-target=".o_database_restore" class="btn btn-link">or restore a database</a>
                 </t>
             </div>
         </div>
@@ -95,20 +92,18 @@
         <!-- Create -->
         <div class="modal fade o_database_create" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <form role="form" action="/web/database/create" method="post">
                         <div class="modal-header">
                             <h4 class="modal-title">Create Database</h4>
-                            <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                         </div>
                         <div class="modal-body">
                             <t t-call="create_form" />
-                            <small class="text-muted">
-                                To enhance your experience, some data may be sent to Tele online services. See our <a href="https://www.tele-icon.studio/privacy">Privacy Policy</a>.
-                            </small>
+                           
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Continue" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Continue" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
@@ -118,10 +113,10 @@
         <!-- Restore -->
         <div class="modal fade o_database_restore" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Restore Database</h4>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_restore_db" role="form" action="/web/database/restore" method="post" enctype="multipart/form-data">
                         <div class="modal-body">
@@ -155,7 +150,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Continue" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Continue" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
@@ -165,10 +160,10 @@
         <!-- Master password -->
         <div class="modal fade o_database_master" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Set Master Password</h4>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_change_pwd" role="form" action="/web/database/change_password" method="post">
                         <div class="modal-body">
@@ -186,7 +181,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Continue" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Continue" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
@@ -196,10 +191,10 @@
         <!-- Duplicate DB -->
         <div class="modal fade o_database_duplicate" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Duplicate Database</h4>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form-duplicate-db" role="form" action="/web/database/duplicate" method="post">
                         <div class="modal-body">
@@ -215,7 +210,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Continue" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Continue" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
@@ -225,10 +220,10 @@
         <!-- Drop DB -->
         <div class="modal fade o_database_delete" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Delete Database</h4>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_drop_db" role="form" action="/web/database/drop" method="post">
                         <div class="modal-body">
@@ -239,7 +234,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Delete" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Delete" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
@@ -249,10 +244,10 @@
         <!-- Backup DB -->
         <div class="modal fade o_database_backup" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Backup Database</h4>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <form id="form_backup_db" role="form" action="/web/database/backup" method="post">
                         <div class="modal-body">
@@ -270,7 +265,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Backup" class="btn btn-primary rounded-sm float-right"/>
+                            <input type="submit" value="Backup" class="btn btn-primary float-right"/>
                         </div>
                     </form>
                 </div>
