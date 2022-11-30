@@ -14,10 +14,10 @@
             </div>
             <div t-if="props.numberOfConnectedUsers !== undefined" class="o_spreadsheet_status o_spreadsheet_number_users text-muted">
                 <t t-if="props.numberOfConnectedUsers === 1">
-                    <i class="fa fa-user"> 1</i>
+               <img src="/tele_theme_backend_ent/static/src/icons/user.svg"  role="img" aria-label="User" title="User"/>1
                 </t>
                 <t t-else="">
-                    <i class="fa fa-users text-info"> <t t-esc="props.numberOfConnectedUsers"/></i>
+                   <img role="img" aria-label="Users" title="Users" src="/tele_theme_backend_ent/static/src/icons/users.svg"  /><t t-esc="props.numberOfConnectedUsers"/>
                 </t>
             </div>
         </t>

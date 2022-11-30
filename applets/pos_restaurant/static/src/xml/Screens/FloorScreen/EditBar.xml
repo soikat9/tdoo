@@ -13,7 +13,7 @@
                 <i class="fa fa-font" role="img" aria-label="Rename" title="Rename"></i>
             </span>
             <span class="edit-button" t-att-class="{ disabled: !props.selectedTable }" t-on-click.stop="trigger('change-seats-num')">
-                <i class="fa fa-user" role="img" aria-label="Seats" title="Seats"></i>
+               <img  role="img" aria-label="Seats" title="Seats" src="/tele_theme_backend_ent/static/src/icons/user.svg"  />
             </span>
             <span class="edit-button" t-att-class="{ disabled: !props.selectedTable }" t-on-click.stop="trigger('change-shape')">
                 <span t-if="!props.selectedTable or props.selectedTable.shape == 'square'" class="button-option square">

@@ -578,7 +578,7 @@
                                         <i class="fa fa-check" role="img" aria-label="Confirm button" title="Confirm Registration"/>
                                     </a>
                                     <a class="btn btn-md btn-primary" string="Confirm Attendance" name="action_set_done" type="object" states="open" role="button">
-                                        <i class="fa fa-user-plus" role="img" aria-label="Attended button" title="Confirm Attendance"/>
+                                       <img  role="img" aria-label="Attended button" title="Confirm Attendance" src="/tele_theme_backend_ent/static/src/icons/add-user.svg"  />
                                     </a>
                                     <span class="text-muted" states="done">Attended</span>
                                     <span class="text-muted" states="cancel">Canceled</span>

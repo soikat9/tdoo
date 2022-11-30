@@ -15,7 +15,7 @@
                             <small t-att-title="log.date_deadline"><t t-esc="log.label_delay" /></small>
                         </div>
                         <div t-if="log.user_id[0] != uid and log.mail_template_ids" class="o_activity_title_entry">
-                            <span class="fa fa-user fa-fw mr-2 text-center text-muted" role="img" aria-label="User" title="User"/>
+                            <img  class="mr-2 text-center text-muted" role="img" aria-label="User" title="User" src="/tele_theme_backend_ent/static/src/icons/user.svg" />
                             <span><t t-esc="log.user_id[1]" /></span>
                         </div>
                     </div>

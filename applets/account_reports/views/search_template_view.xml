@@ -153,7 +153,7 @@
 
     <template id="search_template_account_type">
         <button type="button" class="o-no-caret btn btn-secondary rounded-sm dropdown-toggle" data-toggle="dropdown">
-            <span class="fa fa-user"/>
+            <img  src="/tele_theme_backend_ent/static/src/icons/user.svg" />
             Account:
             <t t-set="account_value">Both</t>
             <t t-foreach="options['account_type']" t-as="a">

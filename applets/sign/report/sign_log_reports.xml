@@ -62,7 +62,7 @@
                                     <td> <span t-field="log.log_date"/> </td>
                                     <td>
                                         <t t-if="log.user_id != False and log.user_id in log.sign_request_item_id.partner_id.user_ids">
-                                            <span class="text-muted text-nowrap"><i class="fa fa-user"/> <t t-esc="log.sign_request_item_id.partner_id.user_ids[0].email"/></span>
+                                            <span class="text-muted text-nowrap"><img role="img" aria-label="User" title="User" src="/tele_theme_backend_ent/static/src/icons/user.svg"  /> <t t-esc="log.sign_request_item_id.partner_id.user_ids[0].email"/></span>
                                         </t>
                                         <t t-elif="log.sign_request_item_id.access_via_link">
                                             <span t-esc="log.sign_request_item_id.signer_email"/>
