@@ -304,7 +304,7 @@
         <!-- Sales Team -->
         <div t-if="widget.sales_team &amp;&amp; widget.sales_team.length > 1" class="dropdown btn-group">
             <button class="dropdown-toggle btn btn-secondary rounded-sm dropdown-toggle" data-toggle="dropdown">
-                <span class="fa fa-users"/> Sales Team
+                <img  aria-label="Team" title="Sales Team" role="img "src="/tele_theme_backend_ent/static/src/icons/team.svg"  />Sales Team
             </button>
             <div class="dropdown-menu o_filter_menu" role="menu">
                 <t t-foreach="widget.sales_team" t-as="sale_team">

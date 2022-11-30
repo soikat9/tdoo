@@ -593,7 +593,7 @@
                                 </a>
                                 <a class="btn btn-primary rounded-sm d-flex justify-content-center align-items-center h-100 w-100"
                                     string="Confirm Attendance" name="action_set_done" type="object" states="open" role="button">
-                                    <i class="fa fa-user-plus fa-3x" role="img" aria-label="Attended button" title="Confirm Attendance"/>
+                                    <img  role="img" aria-label="Attended button" title="Confirm Attendance" src="/tele_theme_backend_ent/static/src/icons/add-user.svg"  />
                                 </a>
                                 <div class="d-flex justify-content-center align-items-center h-100 w-100">
                                     <span class="text-muted" states="done" >Attended</span>

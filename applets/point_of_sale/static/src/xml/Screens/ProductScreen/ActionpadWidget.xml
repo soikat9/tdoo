@@ -5,7 +5,7 @@
         <div class="actionpad">
             <button class="button set-customer" t-att-class="{'decentered': isLongName}"
                     t-on-click="trigger('click-customer')">
-                <t t-if="!env.isMobile"><i class="fa fa-user" role="img" aria-label="Customer" title="Customer" /></t>
+                <t t-if="!env.isMobile"><img  aria-label="Customer" title="Customer" src="/tele_theme_backend_ent/static/src/icons/customer.svg"  /></t>
                 <t t-if="client">
                     <t t-esc="client.name" />
                 </t>

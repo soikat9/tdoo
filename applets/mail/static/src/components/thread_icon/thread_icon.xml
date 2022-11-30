@@ -40,7 +40,7 @@
                     </t>
                 </t>
                 <t t-elif="thread.channel_type === 'group'">
-                    <div class="o_ThreadIcon fa fa-users" title="Grouped Chat"/>
+                    <div class="o_ThreadIcon" title="Grouped Chat"/><img  role="img" aria-label="Group Chat"  title="Group Chat" src="/tele_theme_backend_ent/static/src/icons/user-groups.svg"  />
                 </t>
                 <t t-elif="thread.model === 'mail.box'">
                     <t t-if="thread === messaging.inbox">

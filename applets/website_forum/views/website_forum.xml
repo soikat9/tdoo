@@ -1655,7 +1655,7 @@
                         <div t-foreach="question" t-as="answer" class="col-md-10 col-sm-8">
                             <t t-call="website_forum.moderation_display_post_answer"/>
                             <small class="text-muted">
-                                 <i t-attf-class="fa fa-user" role="img" aria-label="Question" />
+                                 <img t-attf-class="Question" role="img" aria-label="Question"  src="/tele_theme_backend_ent/static/src/icons/feedback-hub.svg"  />
                                 <span>By </span><span t-field="question.create_uid" t-options='{"widget": "contact", "country_image": True, "fields": ["name", "country_id"]}' style="display: inline-block;"/>
                                 <i class="ml-4 mr4 fa fa-calendar"/><span t-field="question.write_date" t-options='{"format":"short"}'/>
                                 <span t-if="question.state == 'flagged'" class="text-black">

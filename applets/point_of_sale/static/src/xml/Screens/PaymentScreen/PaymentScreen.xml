@@ -51,8 +51,7 @@
                             <div class="payment-buttons">
                                 <div class="customer-button">
                                     <div class="button" t-att-class="{ highlight: env.pos.get_client() }" t-on-click="selectClient">
-                                        <i class="fa fa-user" role="img" aria-label="Customer"
-                                           title="Customer" />
+                                       <img  role="img" aria-label="Customer"  title="Customer" src="/tele_theme_backend_ent/static/src/icons/customer.svg"  />
                                         <span class="js_customer_name">
                                             <t t-if="env.pos.get_client()">
                                                 <t t-esc="env.pos.get_client().name" />

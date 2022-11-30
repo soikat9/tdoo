@@ -652,7 +652,7 @@
                                             <div class="o_primary">
                                                 <span class="o_text_overflow"><t t-esc="record.name.value"/></span>
                                                 <span class="o_text_overflow text-muted" t-if="record.partner_id.value">
-                                                    <span class="fa fa-user mr-2" aria-label="Partner" title="Partner"></span><t t-esc="record.partner_id.value"/>
+                                                    <span class="mr-2" aria-label="Partner" title="Partner"><img  src="/tele_theme_backend_ent/static/src/icons/partner.svg"  /></span><t t-esc="record.partner_id.value"/>
                                                 </span>
                                                 <div t-if="record.date.raw_value or record.date_start.raw_value" class="text-muted o_row">
                                                     <span class="fa fa-clock-o mr-2" title="Dates"></span><field name="date_start"/>
