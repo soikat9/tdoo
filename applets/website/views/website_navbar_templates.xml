@@ -190,7 +190,7 @@
                                          t-att-data-module-shortdesc="mod.shortdesc"
                                          class="col-md-4 mb8 o_new_content_element o_new_content_element_once">
                                         <a href="#" data-url="/livechat" data-action="new_channel">
-                                            <i class="fa fa-comments"/>
+                                            <img src="/tele_studio/static/src/legacy/icons/chat-message.svg" />
                                             <p>Livechat Widget</p>
                                         </a>
                                     </div>

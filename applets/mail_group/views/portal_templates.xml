@@ -247,7 +247,7 @@
             </span>
             <span class="mx-2">-</span>
             <span>
-                <i class="fa fa-calendar" role="img" aria-label="Date" title="Date"/>
+                <img " role="img" aria-label="Date" title="Date"  src="/tele_theme_backend_ent/static/src/icons/calendar.svg" />
                 <span t-field="message.create_date" t-options="{'widget': 'datetime', 'format': 'hh:mm - d MMM Y'}"/>
             </span>
         </small>

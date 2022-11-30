@@ -48,7 +48,7 @@
                             </div>
                             <hr class="mt4 mb8"/>
                             <div class="o_kanban_record_subtitle">
-                                <i class="fa fa-calendar" aria-label="Period" role="img" title="Period"></i>
+                               <img  aria-label="Period" role="img" title="Period" src="/tele_theme_backend_ent/static/src/icons/calendar.svg" />
                                 <t t-esc="record.check_in.value"/>
                                 - <t t-esc="record.check_out.value"/>
                             </div>

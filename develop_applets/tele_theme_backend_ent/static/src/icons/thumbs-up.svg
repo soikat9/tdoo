@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><linearGradient id="z5WAMFWCN0djAJMPebP73a" x1="4.624" x2="11.305" y1="13.89" y2="40.085" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0077d2"/><stop offset="1" stop-color="#0b59a2"/></linearGradient><path fill="url(#z5WAMFWCN0djAJMPebP73a)" d="M13,14H5c-1.105,0-2,0.895-2,2v24c0,1.105,0.895,2,2,2h8V14z"/><linearGradient id="z5WAMFWCN0djAJMPebP73b" x1="18.044" x2="34.931" y1="1.537" y2="42.915" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffcf54"/><stop offset=".261" stop-color="#fdcb4d"/><stop offset=".639" stop-color="#f7c13a"/><stop offset="1" stop-color="#f0b421"/></linearGradient><path fill="url(#z5WAMFWCN0djAJMPebP73b)" d="M41.998,14H27l1-4c0,0,3-2,3-6c0-2.209-1.791-4-4-4L13,14v28h24.713	c1.886,0,3.516-1.318,3.911-3.162l4.286-20C46.443,16.348,44.545,14,41.998,14z"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="thumbs-up">
+<path id="Vector" d="M6.5 7H2.5C1.9475 7 1.5 7.4475 1.5 8V20C1.5 20.5525 1.9475 21 2.5 21H6.5V7Z" fill="url(#paint0_linear_206_9383)"/>
+<path id="Vector_2" d="M20.999 7H13.5L14 5C14 5 15.5 4 15.5 2C15.5 0.8955 14.6045 0 13.5 0L6.5 7V21H18.8565C19.7995 21 20.6145 20.341 20.812 19.419L22.955 9.419C23.2215 8.174 22.2725 7 20.999 7Z" fill="url(#paint1_linear_206_9383)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_206_9383" x1="2.312" y1="6.945" x2="5.6525" y2="20.0425" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0077D2"/>
+<stop offset="1" stop-color="#0B59A2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_206_9383" x1="9.022" y1="0.7685" x2="17.4655" y2="21.4575" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFCF54"/>
+<stop offset="0.261" stop-color="#FDCB4D"/>
+<stop offset="0.639" stop-color="#F7C13A"/>
+<stop offset="1" stop-color="#F0B421"/>
+</linearGradient>
+</defs>
+</svg>

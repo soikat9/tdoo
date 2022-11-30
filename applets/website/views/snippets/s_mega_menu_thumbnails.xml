@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg py-2">
                     <a href="#" class="btn btn-secondary rounded-sm d-block o_default_snippet_text">
-                        <i class="s_mega_menu_thumbnails_icon fa fa-comments mr-2"></i> Contact us
+                       <img class="s_mega_menu_thumbnails_icon mr-2" src="/tele_studio/static/src/legacy/icons/chat-message.svg" />Contact us
                     </a>
                 </div>
             </div>

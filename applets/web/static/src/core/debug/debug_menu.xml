@@ -7,7 +7,7 @@
           position="'bottom-end'"
           togglerClass="`o-dropdown--narrow ${env.inDialog?'btn btn-link':''}`">
             <t t-set-slot="toggler">
-                <i class="fa fa-bug"/>
+                <img class="side-menu-icon" src="/tele_theme_backend_ent/static/src/icons/debugger.svg" />
             </t>
             <t t-foreach="elements" t-as="element" t-key="element_index">
                 <DropdownItem

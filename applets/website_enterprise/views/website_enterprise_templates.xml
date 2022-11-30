@@ -18,7 +18,7 @@
                  t-att-data-module-shortdesc="mod.shortdesc"
                  class="col-md-4 mb8 o_new_content_element">
                 <a href="#" data-action="new_appointment">
-                    <i class="fa fa-calendar"/>
+                    <img src="/tele_theme_backend_ent/static/src/icons/calendar.svg" />
                     <p>Appointment Form</p>
                 </a>
             </div>

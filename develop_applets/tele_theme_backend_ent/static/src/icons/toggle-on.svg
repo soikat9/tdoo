@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#0078d4" d="M33,9c-2.965,0-15.035,0-18,0C6.716,9,0,15.716,0,24s6.716,15,15,15c2.965,0,15.035,0,18,0	c8.284,0,15-6.716,15-15S41.284,9,33,9z"/><radialGradient id="j~ntDPVE6oWSNuKGRAoKMa" cx="33" cy="24" r="14" gradientUnits="userSpaceOnUse"><stop offset="0"/><stop offset="1" stop-opacity="0"/></radialGradient><circle cx="33" cy="24" r="14" fill="url(#j~ntDPVE6oWSNuKGRAoKMa)"/><circle cx="33" cy="24" r="12" fill="#f9f9f9"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="toggle-on">
+<path id="Vector" d="M16.5 4.5C15.0175 4.5 8.9825 4.5 7.5 4.5C3.358 4.5 0 7.858 0 12C0 16.142 3.358 19.5 7.5 19.5C8.9825 19.5 15.0175 19.5 16.5 19.5C20.642 19.5 24 16.142 24 12C24 7.858 20.642 4.5 16.5 4.5Z" fill="#0078D4"/>
+<path id="Vector_2" d="M16.5 19C20.366 19 23.5 15.866 23.5 12C23.5 8.13401 20.366 5 16.5 5C12.634 5 9.5 8.13401 9.5 12C9.5 15.866 12.634 19 16.5 19Z" fill="url(#paint0_radial_206_9534)"/>
+<path id="Vector_3" d="M16.5 18C19.8137 18 22.5 15.3137 22.5 12C22.5 8.68629 19.8137 6 16.5 6C13.1863 6 10.5 8.68629 10.5 12C10.5 15.3137 13.1863 18 16.5 18Z" fill="#F9F9F9"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_206_9534" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5 12) scale(7)">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

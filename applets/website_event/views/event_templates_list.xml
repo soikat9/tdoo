@@ -93,7 +93,7 @@
     <xpath expr="//ul[hasclass('o_wevent_index_topbar_filters')]" position="inside">
         <li class="nav-item dropdown mr-2 my-1">
             <a href="#" role="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-calendar"/>
+                <img src="/tele_theme_backend_ent/static/src/icons/calendar.svg" />
                 <t t-if="current_date" t-esc="current_date"/>
                 <t t-else="">Upcoming Events</t>
             </a>

@@ -8,7 +8,7 @@
         <xpath expr="//button[hasclass('o_Activity_editButton')]" position="after">
             <t t-if="activity.calendar_event_id">
                 <button class="o_Activity_toolButton o_Activity_editButton btn btn-link" t-on-click="_onClickEdit">
-                    <i class="fa fa-calendar"/> Reschedule
+                    <img src="/tele_theme_backend_ent/static/src/icons/calendar.svg" /> Reschedule
                 </button>
             </t>
         </xpath>

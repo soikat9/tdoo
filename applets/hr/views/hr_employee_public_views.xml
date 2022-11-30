@@ -46,7 +46,7 @@
                                 <label for="name" string="Employee Name"/>
                                 <h1>
                                     <field name="name" placeholder="e.g. John Doe" required="True"/>
-                                    <a title="Chat" icon="fa-comments" href="#" class="ml8 o_employee_chat_btn" invisible="not context.get('chat_icon')" attrs="{'invisible': [('user_id','=', False)]}" role="button"><i class="fa fa-comments"/></a>
+                                    <a title="Chat" icon="fa-comments" href="#" class="ml8 o_employee_chat_btn" invisible="not context.get('chat_icon')" attrs="{'invisible': [('user_id','=', False)]}" role="button"><img src="/tele_studio/static/src/legacy/icons/chat-message.svg" /></a>
                                 </h1>
                                 <h2>
                                     <field name="job_title" placeholder="Job Title" />
@@ -174,7 +174,7 @@
                                     <div class="o_kanban_record_bottom">
                                         <div class="oe_kanban_bottom_left"/>
                                         <div class="oe_kanban_bottom_right">
-                                            <a title="Chat" icon="fa-comments" href="#" class="ml8 o_employee_chat_btn" attrs="{'invisible': [('user_id','=', False)]}" role="button"><i class="fa fa-comments"/></a>
+                                            <a title="Chat" icon="fa-comments" href="#" class="ml8 o_employee_chat_btn" attrs="{'invisible': [('user_id','=', False)]}" role="button"><img src="/tele_studio/static/src/legacy/icons/chat-message.svg" /></a>
                                         </div>
                                     </div>
                                 </div>
