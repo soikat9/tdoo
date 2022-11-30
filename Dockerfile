@@ -57,10 +57,10 @@ RUN set -x; \
 # Install rtlcss (on Debian buster)
 RUN npm install -g rtlcss
 
-COPY --chown=tele:tele ./tele /home/tele
-RUN pip3 install -r /home/tele/requirements.txt
+COPY --chown=tele:tele ./tele /workspace/tele
+RUN pip3 install -r /workspace/tele/requirements.txt
 
-RUN cp /home/tele/setup/tele /home/tele/tele-make && chmod +x /home/tele/tele-make
+RUN cp /workspace/tele/setup/tele /workspace/tele/tele-make && chmod +x /workspace/tele/tele-make
 
 # Copy entrypoint script and Tele configuration file
 COPY --chown=tele:tele ./entrypoint.sh /

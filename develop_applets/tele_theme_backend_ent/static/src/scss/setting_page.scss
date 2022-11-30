@@ -1,6 +1,4 @@
-:root{
-    --primary-color: 70,130,150;
-}
+
 
 .o_form_view{
     .o_form_label{
@@ -32,7 +30,7 @@ body.o_web_client {
                 padding: 0 16px;
                 border-radius: var(--border-radius-md) !important;
                 margin-bottom: 5px;
-                transition: 0.3s;
+                transition: 0.2s;
                 .icon {
                     background-size: cover !important;
                     height: 25px;

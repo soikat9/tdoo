@@ -210,7 +210,7 @@ body.o_web_client {
                     cursor: pointer;
                 }
                 a {
-                    color: #fff !important;
+                    color: var(--tele-theme-primary-color) !important;
                     padding: 0;
                 }
             }
@@ -324,7 +324,7 @@ body.o_web_client {
             width: 25px;
             height: 25px;
             line-height: 25px;
-            color: white;
+            color: var(--tele-theme-primary-color) !important;
             vertical-align: middle;
             cursor: pointer;
             transition: 0.2s;
@@ -337,7 +337,7 @@ body.o_web_client {
                 .app-image {
                     .ri{
                         font-size: 30px;
-                        color: white;
+                        color: var(--tele-theme-primary-color) !important;
                     }
                     .fa {
                         font-size: 17px;
@@ -452,7 +452,7 @@ body.o_web_client {
                             display: none;
                         }
                     }
-                    padding: 0 15px !important;
+                    padding: 0 5px !important;
                 }
                 .o_company_logo {
                     .company_logo_icon {
@@ -465,8 +465,8 @@ body.o_web_client {
                     .img{
                         max-height: 50px;
                     }
-                    margin-left: 15px;
-                    margin-right: 15px;
+                    margin-left: 10px;
+                    margin-right: 10px;
                     text-align: left;
                     position: relative;
                     overflow: hidden;
@@ -1160,7 +1160,7 @@ body.o_web_client {
 
 body:not(.top_menu_horizontal):not(.pinned){
     .o_action_manager {
-        transition: 0.3s;
+        transition: 0.2s;
         &.expanded{
             padding: 0px 5rem 0 calc(24rem + 16px) !important;
         }
