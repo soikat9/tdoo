@@ -197,10 +197,10 @@ img, .media_iframe_video, .o_image {
 
 // Others
 ::-moz-selection {
-    background: rgba(150, 150, 220, 0.3);
+    background: #0c7fd24d;
 }
 ::selection {
-    background: rgba(150, 150, 220, 0.3);
+    background: #0c7fd24d;
 }
 .oe_search_box {
     padding-right: 23px;
@@ -228,7 +228,7 @@ img, .media_iframe_video, .o_image {
 
 //  Background (kept for 8.0 compatibility) (! some are still used by website_blog)
 .oe_dark {
-    background-color: rgba(200, 200, 200, 0.14);
+    background-color: #262627f5;
 }
 .oe_black {
     background-color: rgba(0, 0, 0, 0.9);
@@ -242,18 +242,18 @@ img, .media_iframe_video, .o_image {
     }
 }
 .oe_blue_light {
-    background-color: #41b6ab;
+    background-color: #4186d0;
     color: white;
     .text-muted {
         color: #ddd !important;
     }
 }
 .oe_blue {
-    background-color: #34495e;
+    background-color: #1b6fc4;
     color: white;
 }
 .oe_orange {
-    background-color: #f05442;
+    background-color: #ff6d2f;
     color: white;
     .text-muted {
         color: #ddd !important;
@@ -267,7 +267,7 @@ img, .media_iframe_video, .o_image {
     }
 }
 .oe_red {
-    background-color: #9C1b31;
+    background-color: #a4182f;
     color: white;
     .text-muted {
         color: #ddd !important;
@@ -277,10 +277,10 @@ img, .media_iframe_video, .o_image {
     background-color: #FFFFFF;
 }
 .oe_yellow {
-    background-color: #A2A51B;
+    background-color: #e1ce6c;
 }
 .oe_green {
-    background-color: #149F2C;
+    background-color: #599a5b;
 }
 
 // Portal specific

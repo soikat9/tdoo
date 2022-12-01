@@ -30,40 +30,40 @@ $o-gray-700: #495057 !default;
 $o-gray-800: #343a40 !default;
 $o-gray-900: #212529 !default;
 
-$o-success: #28a745 !default;
-$o-info: #17a2b8 !default;
-$o-warning: #ffac00 !default;
-$o-danger: #E6000D !default;
+$o-success: #31be60 !default;
+$o-info: #0676bc !default;
+$o-warning: #e9d225 !default;
+$o-danger: #ce201a !default;
 
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
-    "success": #008818,
-    "info": #0180a5,
-    "warning": #9a6b01,
-    "danger": #d23f3a,
+    "success": #31be60,
+    "info": #0676bc,
+    "warning": #e9d225,
+    "danger": #ce201a,
 )!default;
 
 $o-main-text-color: $o-gray-700 !default;
 $o-main-color-muted: rgba($o-main-text-color, .76) !default;
 $o-main-headings-color: $o-gray-900 !default;
 $o-main-link-color: darken($o-brand-primary, 5%) !default;
-$o-main-favorite-color: #f3cc00 !default;
-$o-main-code-color: #d2317b !default;
+$o-main-favorite-color: #e9d225 !default;
+$o-main-code-color: #ce201a !default;
 
 $o-view-background-color: white !default;
 $o-shadow-color: #303030 !default;
 
-$o-form-lightsecondary: #ccc !default;
+$o-form-lightsecondary: #F9F9F9 !default;
 
 $o-list-footer-bg-color: #eee !default;
 $o-list-footer-font-weight: bold !default;
 
 $o-tooltip-background-color: white !default;
-$o-tooltip-color: #666666 !default;
+$o-tooltip-color: #5a5f60 !default;
 $o-tooltip-arrow-color: white !default;
-$o-tooltip-text-color: #777777 !default;
+$o-tooltip-text-color: #2e3031 !default;
 $o-tooltip-title-text-color: black !default;
-$o-tooltip-title-background-color: #F7F7F7 !default;
+$o-tooltip-title-background-color: #ffffff !default;
 
 // Forms
 
@@ -127,7 +127,7 @@ $o-base-settings-mobile-tabs-overflow-gap: 3% !default;
 
 $o-cp-breadcrumb-height: 30px !default;
 
-$o-datepicker-week-color: #8f8f8f !default;
+$o-datepicker-week-color: #dcdcdc !default;
 
 $o-card-body-bg-opacity: 0.9 !default;
 

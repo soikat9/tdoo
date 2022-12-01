@@ -96,7 +96,7 @@ class BackendConfig(models.Model):
 		('popup_style_2', 'popup Style 2'),
 		('popup_style_3', 'popup Style 3'),
 		('popup_style_4', 'popup Style 4')],
-		default="popup_style_2", string="popup Styles")
+		default="popup_style_1", string="popup Styles")
 	
 	chatter_position = fields.Selection([
 		('chatter_right', 'Chatter Right'),
@@ -112,7 +112,7 @@ class BackendConfig(models.Model):
 		('tele_theme_rounded', 'Rounded Theme'),
 		('tele_theme_standard', 'Standard Theme'),
 		('tele_theme_square', 'Square Theme')],
-		default="tele_theme_rounded", string="Theme Style")
+		default="tele_theme_standard", string="Theme Style")
 	
 	attachment_in_tree_view = fields.Boolean(string="Show Attachement in tree view")
 
@@ -133,7 +133,7 @@ class BackendConfig(models.Model):
 		('loader_style_8', 'Loader Style 8'),
 		('loader_style_9', 'Loader Style 9'),
 		('loader_style_10', 'Loader Style 10'),],
-		default="loader_style_10", string="Loader Styles")
+		default="loader_style_1", string="Loader Styles")
 	
 	font_family = fields.Selection([
 		('lato', 'Lato'),
@@ -149,4 +149,4 @@ class BackendConfig(models.Model):
 		('varela_round', 'Varela Round'),
 		('manrope', 'Manrope'),
 		('Nunito_Sans', 'Nunito Sans')],
-		default="rubik", string="Font Family")
+		default="inter", string="Font Family")

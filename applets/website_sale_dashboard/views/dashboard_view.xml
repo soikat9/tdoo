@@ -91,7 +91,7 @@
         <!-- ONBOARDING -->
         <template id="website_sale_dashboard_onboarding_panel" name="website.sale.dashboard.onboarding.panel">
             <t t-call="base.onboarding_container">
-                <t t-set="classes" t-valuef="o_onboarding_orange"/>
+                <t t-set="classes" t-valuef="o_onboarding"/>
                 <t t-set="bg_image" t-translation="off">/website_sale_dashboard/static/src/img/web-banner.jpg</t>
                 <t t-set="close_method" t-valuef="action_close_website_sale_dashboard_onboarding"/>
                 <t t-set="close_model" t-valuef="res.company"/>

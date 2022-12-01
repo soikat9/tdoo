@@ -185,7 +185,7 @@ def file_open(name, mode="r", filter_ext=None):
 
     >>> file_open('hr/static/description/icon.png')
     >>> file_open('hr/static/description/icon.png', filter_ext=('.png', '.jpg', '.svg'))
-    >>> with file_open('/workspace/tele/applets/hr/static/description/icon.png', 'rb') as f:
+    >>> with file_open('/home/tele/applets/hr/static/description/icon.png', 'rb') as f:
     ...     contents = f.read()
 
     :param name: absolute or relative path to a file located inside an applet

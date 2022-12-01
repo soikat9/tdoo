@@ -19,12 +19,12 @@ body.o_web_client {
     }
     .o_setting_container {
         .settings_tab {
-            border-right: 1px var(--tele-theme-primary-color) !important;
             background-color: var(--secondary-sidebar-bg) !important;
             .tab.selected {
                 color: var(--tele-theme-primary-text-color) !important;
                 background-color: var(--tele-theme-primary-color) !important;
                 box-shadow: unset !important;
+                padding-block: 2px;
             }
             .tab {
                 align-items: center;
@@ -113,7 +113,7 @@ body.o_web_client {
         .o_setting_container {
             .settings_tab {
                 flex-direction: row;
-                margin-left: 15px;
+                
                 &::-webkit-scrollbar {
                     height: 1px;
                     width: 1px;

@@ -1,7 +1,7 @@
 .modal.o_technical_modal {
 
     .modal-content {
-        border-radius: 0;
+        border-radius: .5rem;
 
         .modal-header .o_subtitle {
             margin-left: 10px;
@@ -11,11 +11,15 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            margin-bottom: .5px;
+            font-weight: bold;
         }
 
         .modal-body {
             &.o_act_window {
+                border-radius: .5rem;
                 padding: 0;
+                background-color: transparent;
             }
 
             .o_modal_header {

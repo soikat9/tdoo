@@ -33,7 +33,7 @@
                         <div class="o_ThreadIcon_away fa fa-circle" title="Away"/>
                     </t>
                     <t t-elif="thread.correspondent === messaging.partnerRoot">
-                        <div class="o_ThreadIcon_online fa fa-heart" title="Bot"/>
+                        <img class="o_ThreadIcon_online" title="Bot" src="/tele_theme_backend_ent/static/src/icons/bot.svg" />
                     </t>
                     <t t-else="" name="noImStatusCondition">
                         <div class="o_ThreadIcon_noImStatus fa fa-question-circle" title="No IM status available"/>
@@ -44,13 +44,14 @@
                 </t>
                 <t t-elif="thread.model === 'mail.box'">
                     <t t-if="thread === messaging.inbox">
-                        <div class="o_ThreadIcon_mailboxInbox fa fa-inbox"/>
+                       <img class="o_ThreadIcon_mailboxInbox" title="Inbox"  src="/tele_theme_backend_ent/static/src/icons/inbox.svg" />
                     </t>
                     <t t-elif="thread === messaging.starred">
-                        <div class="o_ThreadIcon_mailboxStarred fa fa-star-o"/>
+                  <img class="o_ThreadIcon_mailboxStarred" title="Starred"  src="/tele_theme_backend_ent/static/src/icons/starred.svg" />
+
                     </t>
                     <t t-elif="thread === messaging.history">
-                        <div class="o_ThreadIcon_mailboxHistory fa fa-history"/>
+                        <img class="o_ThreadIcon_mailboxHistory" title="History" src="/tele_theme_backend_ent/static/src/icons/history-inbox.svg" />
                     </t>
                 </t>
             </t>

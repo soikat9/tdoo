@@ -20,7 +20,7 @@
                     </t>
                     <t t-if="!threadViewTopbar.thread">
                         <div class="o_ThreadViewTopbar_threadName flex-shrink-0 px-1 text-truncate lead font-weight-bold">
-                            Discuss
+                            Collab
                         </div>
                     </t>
                     <t t-if="threadViewTopbar.hasDescriptionArea">
@@ -51,15 +51,15 @@
                     </t>
                     <t t-if="threadViewTopbar.thread and threadViewTopbar.thread.hasCallFeature and threadViewTopbar.thread.rtcSessions.length === 0">
                         <button class="o_ThreadViewTopbar_callButton o_ThreadViewTopbar_button o-active" t-att-disabled="threadViewTopbar.thread.hasPendingRtcRequest" title="Start a Call" t-on-click="_onClickPhone">
-                            <i class="fa fa-lg fa-phone"/>
+                          <img class="o_ThreadViewTopbar_callButton"  src="/tele_theme_backend_ent/static/src/icons/call.svg" />
                         </button>
                         <button class="o_ThreadViewTopbar_callButton o_ThreadViewTopbar_button o-active" t-att-disabled="threadViewTopbar.thread.hasPendingRtcRequest" title="Start a Video Call" t-on-click="_onClickCamera">
-                            <i class="fa fa-lg fa-video-camera"/>
+                           <img  title="Video Chat"  src="/tele_theme_backend_ent/static/src/icons/video-call.svg" />
                         </button>
                     </t>
                     <t t-if="threadViewTopbar.thread and threadViewTopbar.thread.hasInviteFeature">
                         <button class="o_ThreadViewTopbar_inviteButton o_ThreadViewTopbar_button" t-att-class="{ 'o-active': threadViewTopbar.invitePopoverView }" title="Add users" t-on-click="threadViewTopbar.onClickInviteButton" t-ref="inviteButton">
-                            <i class="fa fa-lg fa-user-plus"/>
+                               <img  src="/tele_theme_backend_ent/static/src/icons/add-user.svg" />
                         </button>
                         <t t-if="threadViewTopbar.invitePopoverView">
                             <PopoverView class="o_ThreadViewTopbar_invitePopoverView" popoverViewLocalId="threadViewTopbar.invitePopoverView.localId"/>
