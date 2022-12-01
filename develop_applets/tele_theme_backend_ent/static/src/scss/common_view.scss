@@ -187,7 +187,7 @@ body.o_web_client {
     .o_view_sample_data{
         .o_nocontent_help{
             border-radius: var(--border-radius-lg);
-            background-color: var(--tele-theme-body-color);
+            background-color: var(--tele-theme-body-color, 95%);
             color: var(--tele-theme-body-text-color);
             box-shadow: 0 0 120px 100px var(--tele-theme-secondary-color);
 

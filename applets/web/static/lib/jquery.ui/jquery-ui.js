@@ -11120,7 +11120,7 @@ colors = jQuery.Color.names = {
 	// 4.1. Basic color keywords
 	aqua: "#00ffff",
 	black: "#000000",
-	blue: "#0000ff",
+	blue: "#2c78b6",
 	fuchsia: "#ff00ff",
 	gray: "#808080",
 	green: "#008000",

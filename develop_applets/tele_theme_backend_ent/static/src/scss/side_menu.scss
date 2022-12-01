@@ -72,7 +72,7 @@ body.o_web_client {
                         height: 50px !important;
                         margin-bottom: 5px;
                         order: initial !important;
-                        border-radius: var(--border-radius-xl);
+                        border-radius: var(--border-radius-md);
                         margin: auto;
                         display: block;
                     }
@@ -91,7 +91,7 @@ body.o_web_client {
                         }
     
                         .greeting {
-                            font-size: 10px;
+                            font-size: 12px;
                         }
     
                     }
