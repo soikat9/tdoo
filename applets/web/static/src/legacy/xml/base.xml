@@ -1225,7 +1225,7 @@
     </div>
 </t>
 <t t-name="FieldBinaryImage-img">
-    <img class="img img-fluid"
+    <img class="img img-fluid rounded-sm bg-light"
         alt="Binary file"
         t-att-src='url'
         t-att-border="widget.readonly ? 0 : 1"

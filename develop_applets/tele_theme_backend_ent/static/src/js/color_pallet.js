@@ -63,9 +63,9 @@ tele.define('tele_theme_backend_ent.ColorPalletJS', function (require) {
         },
         pallet_9: function() {
             $(':root').css({
-                "--light-theme-primary-color": "#468296",
+                "--light-theme-primary-color": "#2c78b6",
                 "--light-theme-primary-text-color": "#ffffff",
-                "--primary-rgba": '#468296b3',
+                "--primary-rgba": '#2c78b6b3',
             });
         },
         custom_color_pallet: function(record_dict) {

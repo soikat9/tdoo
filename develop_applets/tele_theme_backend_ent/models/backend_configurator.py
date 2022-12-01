@@ -45,16 +45,16 @@ class BackendConfig(models.Model):
 		('drawer_pallet_9', 'Color Pallet 9'),
 	],default="drawer_pallet_9", string="Drawer Color Pallets")
 
-	appdrawer_custom_bg_color = fields.Char(string="App Drawer Custom Background Color",default="#468296")
+	appdrawer_custom_bg_color = fields.Char(string="App Drawer Custom Background Color",default="#2c78b6")
 	appdrawer_custom_text_color = fields.Char(string="App Drawer Custom Text Color",default="#ffffff")
 
-	light_primary_bg_color = fields.Char(string="Primary Background Color for light",default="#468296")
+	light_primary_bg_color = fields.Char(string="Primary Background Color for light",default="#2c78b6")
 	light_primary_text_color = fields.Char(string="Primary Text Color for light",default="#ffffff")
 
 	apply_light_bg_img = fields.Boolean(string="Apply light bg image")
 	light_bg_image = fields.Binary(string="Background Image For light", default=_default_app_drawer_bg_image, readonly=False)
 
-	dark_primary_bg_color = fields.Char(string="Primary Background Color for dark",default="#468296")
+	dark_primary_bg_color = fields.Char(string="Primary Background Color for dark",default="#2c78b6")
 	dark_primary_text_color = fields.Char(string="Primary Text Color for dark",default="#ffffff")
 
 	dark_secondry_bg_color = fields.Char(string="Secondry Background Color for dark",default="#242424")

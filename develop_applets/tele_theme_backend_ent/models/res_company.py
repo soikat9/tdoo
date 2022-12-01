@@ -59,6 +59,6 @@ class Company(models.Model):
     image_192_pwa = fields.Binary('Image 192px', readonly=False, store=True)
     image_512_pwa = fields.Binary('Image 512px', readonly=False, store=True)
     start_url_pwa = fields.Char('App Start Url', readonly=False, default='/web')
-    background_color_pwa = fields.Char('Background Color', readonly=False, default='#468296')
-    theme_color_pwa = fields.Char('Theme Color', readonly=False, default='#468296')
+    background_color_pwa = fields.Char('Background Color', readonly=False, default='#2c78b6')
+    theme_color_pwa = fields.Char('Theme Color', readonly=False, default='#2c78b6')
     pwa_shortcuts_ids = fields.Many2many('pwa.shortcuts', string='PWA Shortcuts')
