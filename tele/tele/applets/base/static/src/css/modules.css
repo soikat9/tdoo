@@ -1,25 +1,47 @@
 
 .oe_module_icon {
     width: 70px;
-    max-height: 70px;
+    height: 70px;
     max-width: 23%;
-    float: left;
+    justify-content: center;
+    align-items: center;
 }
 
 .oe_module_desc {
     font-size: 13px;
-    padding-left: 10px;
-    width: 77%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .o_kanban_view .oe_module_vignette.o_kanban_record {
-    align-items: center;
-    display: flex;
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 12px 0px 10px;
+gap: 10px;
+
+position: relative;
+width: 141px;
+height: 178px;
+
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(255, 255, 255, 0.39);
+border: 0.25px solid #575656;
+/* default-shadow */
+
+box-shadow: 0px 2px 4px rgba(227, 227, 227, 0.25);
+backdrop-filter: blur(1px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
 }
 
 .o_modules_kanban.o_kanban_view .o_kanban_record .o_dropdown_kanban {
     visibility: visible;
     opacity: 0.5;
+    align-items: center;
 }
 
 .o_modules_kanban.o_kanban_view .o_kanban_record:hover .o_dropdown_kanban,
@@ -31,21 +53,21 @@
     color: #131212;
     min-height: 26px;
     line-height: 1.1;
+    align-items: center;
     display: block;
 }
 
 .oe_module_desc p {
-    margin: 3px 0 3px;
+    align-items: center;
 }
 
 .oe_module_desc > h4 {
-    margin-right: 20px;
-
+    align-items: center;
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 .oe_module_desc {
@@ -57,4 +79,36 @@
     box-shadow: none;
     max-width: 70px;
     max-height: 70px;
+}
+
+
+.card_module_component{
+    /* card_module_component */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 12px 0px 10px;
+gap: 10px;
+
+position: relative;
+width: 141px;
+height: 178px;
+
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(255, 255, 255, 0.39);
+border: 0.25px solid #575656;
+/* default-shadow */
+
+box-shadow: 0px 2px 4px rgba(227, 227, 227, 0.25);
+backdrop-filter: blur(1px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
+
 }

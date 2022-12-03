@@ -2,7 +2,7 @@
 <tele>
 <data noupdate="1">
     <record id="main_company" model="res.company">
-        <field name="name">ProBike Inc</field>
+        <field name="name">Tele Inc</field>
     </record>
 </data>
 </tele>

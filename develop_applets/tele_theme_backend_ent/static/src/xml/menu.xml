@@ -2,7 +2,7 @@
 	<t t-name="SearchModalPopup" owl="1">
 		<div class="modal" id="search_bar_modal">
 			<div class="modal-dialog modal-dialog-scrollable">
-				<div class="modal-content p-0">
+				<div class="modal-content p-1">
 					<!-- Modal Header -->
 					<div class="modal-header d-block">
 						<div class="d-flex p-3 align-items-center justify-content-between">
@@ -12,7 +12,7 @@
 							</button>
 						</div>
 					</div>
-					<div class="modal-body px-0">
+					<div class="modal-body px-1">
 						<div class="d-flex align-items-center mb-4 px-3">
 							<div class="load-active-menu-selector border-1 w-25">
 								<t t-call="seletor-acvtive-menu-items"/>

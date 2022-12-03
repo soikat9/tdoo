@@ -11,7 +11,7 @@ $o-line-height-base: 1.5 !default; // This is BS default
 // Colors
 $o-community-color: #0e69b8 !default;
 $o-enterprise-color: #3c667c !default;
-$o-enterprise-primary-color: #017e84 !default;
+$o-enterprise-primary-color: #0e69b8 !default;
 
 $o-brand-tele: $o-community-color !default;
 $o-brand-primary: $o-community-color !default;
@@ -32,14 +32,14 @@ $o-gray-900: #212529 !default;
 
 $o-success: #31be60 !default;
 $o-info: #0676bc !default;
-$o-warning: #e9d225 !default;
+$o-warning: #f2dd58 !default;
 $o-danger: #ce201a !default;
 
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
     "success": #31be60,
     "info": #0676bc,
-    "warning": #e9d225,
+    "warning": #f2dd58,
     "danger": #ce201a,
 )!default;
 
@@ -47,11 +47,11 @@ $o-main-text-color: $o-gray-700 !default;
 $o-main-color-muted: rgba($o-main-text-color, .76) !default;
 $o-main-headings-color: $o-gray-900 !default;
 $o-main-link-color: darken($o-brand-primary, 5%) !default;
-$o-main-favorite-color: #e9d225 !default;
+$o-main-favorite-color: #f2dd58 !default;
 $o-main-code-color: #ce201a !default;
 
 $o-view-background-color: white !default;
-$o-shadow-color: #303030 !default;
+$o-shadow-color: #f2f2f28e !default;
 
 $o-form-lightsecondary: #F9F9F9 !default;
 
@@ -61,7 +61,7 @@ $o-list-footer-font-weight: bold !default;
 $o-tooltip-background-color: white !default;
 $o-tooltip-color: #5a5f60 !default;
 $o-tooltip-arrow-color: white !default;
-$o-tooltip-text-color: #2e3031 !default;
+$o-tooltip-text-color: #1e1f1f !default;
 $o-tooltip-title-text-color: black !default;
 $o-tooltip-title-background-color: #ffffff !default;
 

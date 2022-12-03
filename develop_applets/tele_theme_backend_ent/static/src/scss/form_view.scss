@@ -27,8 +27,7 @@ body.o_web_client {
             .o_form_statusbar {
                 padding-left: 10px;
                 padding-right: 10px;
-                background-color: var(--tele-theme-secondary-color) !important;
-                color: var(--tele-theme-secondary-text-color) !important;
+                background-color: transparent !important;
                 box-shadow: var(--box-shadow-common) !important;
                 border: 0;
                 border-radius: var(--border-radius-lg);

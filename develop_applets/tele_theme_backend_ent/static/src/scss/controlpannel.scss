@@ -30,7 +30,7 @@ body.o_web_client{
         }
 
         .o_form_statusbar {
-            background-color: var(--tele-theme-secondary-color) !important;
+            background-color: transparent !important;
 
             .o_statusbar_buttons{
                 .btn{
@@ -85,20 +85,19 @@ body.o_web_client{
                 box-shadow: var(--box-shadow-common) !important;
                 border: 0 !important;
                 border-radius: var(--border-radius-md) !important;
-                padding: 1px 25px 3px 5px;
                 .searchInput{
                     max-width: unset;
                     height: 28px;
-                    padding: 0 !important;
+                    padding: 10px !important;
                 }
 
                 input, .searchIcon {
                     background-color: transparent !important;
                     color: var(--tele-theme-body-text-color) !important;
                     border-color: var(--tele-theme-body-text-color) !important;
-                }
-                .searchIcon {
-                    right: 20px;
+                // }
+                // .searchIcon {
+                //     right: 20px;
                 }
             }
         }

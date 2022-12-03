@@ -14,12 +14,13 @@ body.o_web_client {
             border: 0 !important;
         }
         .searchIcon i {
-            vertical-align: bottom;
+            vertical-align: center;
         }
     }
     .o_setting_container {
         .settings_tab {
-            background-color: var(--secondary-sidebar-bg) !important;
+            border-color: var(--secondary-sidebar-bg) !important;
+            background-color: transparent;
             .tab.selected {
                 color: var(--tele-theme-primary-text-color) !important;
                 background-color: var(--tele-theme-primary-color) !important;

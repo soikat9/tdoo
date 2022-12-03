@@ -70,7 +70,7 @@ body.o_web_client {
                     .oe_topbar_avatar {
                         width: 50px !important;
                         height: 50px !important;
-                        margin-bottom: 5px;
+                        margin-bottom: 3px;
                         order: initial !important;
                         border-radius: var(--border-radius-md);
                         margin: auto;
@@ -110,7 +110,7 @@ body.o_web_client {
                         min-width: auto;
                         overflow: auto;
                         width: 18rem;
-                        padding: 12px 20px 15px 15px;
+                        padding: 12px 20px 5px 5px;
                         border-radius: var(--border-radius-md);
                         top: auto;
                         border: 0 !important;
@@ -143,7 +143,7 @@ body.o_web_client {
                         transform: translateX(-50%);
                     }
                     .dropdown-menu {
-                        color: #ffffff9a !important;
+                        color: #ffffff !important;
                         cursor: pointer;
                     }
                     .lang-name {
@@ -166,10 +166,9 @@ body.o_web_client {
                         max-height: unset !important;
                         min-width: auto;
                         overflow: auto;
-                        padding: 10px;
+                        padding: 5px;
                         border-radius: var(--border-radius-md);
                         border: 0 !important;
-                        left: 50%;
                         transform: translateX(-50%);
                         .text-primary {
                             color: var(--tele-theme-primary-color) !important;
