@@ -167,7 +167,7 @@
 			<div class="o_app_drawer">
 				<li class="list-unstyled">
 					<a class="appDrawerToggle mr-3" accesskey="A">
-						<span class="ri ri-apps-2-line"/>
+						<img src="/tele_theme_backend_ent/static/src/icons/main-menu.svg" />
 					</a>
 				</li>
 			</div>

@@ -817,7 +817,7 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
-msgid "<i class=\"fa fa-th-large mr-2\"/> WEBSITE"
+msgid "<img class="mr-2" src="/tele_theme_backend_ent/static/src/icons/main-menu.svg" />WEBSITE"
 msgstr ""
 
 #. module: website

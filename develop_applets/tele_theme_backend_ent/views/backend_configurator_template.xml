@@ -54,7 +54,7 @@
 										name="theme_style" value="tele_theme_standard"
 										t-att-checked="config_vals.theme_style == 'tele_theme_standard'" />
 									<label class="custom-control-label" for="theme_style_standard">
-										<img class="img img-fluid" src="/tele_theme_backend_ent/static/src/image/theme-style-standard.png" alt="Standard Theme" />
+										<img class="img img-fluid" src="/tele_theme_backend_ent/static/src/image/theme-style-standard.svg" alt="Standard Theme" />
 									</label>
 								</div>
 							</div>
@@ -344,7 +344,7 @@
 							</div>
 						</div>
 
-						<h5 class="py-3">Popup Animation</h5>
+						<h5 class="py-3">Transition Animation</h5>
 						<div class="row border-style pb4 popup-animate-style-row">
 							<div class="col-md-6 mb-3">
 								<div class="custom-control box-shadow custom-radio custom-control-inline d-flex m-0">
@@ -355,29 +355,21 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-md-6 mb-3 pl-md-0">
-								<div class="custom-control box-shadow custom-radio custom-control-inline d-flex m-0">
-									<input type="radio" class="custom-control-input" id="popup_style_2" name="popup"
-										value="popup_style_2" t-att-checked="config_vals.popup == 'popup_style_2'" />
-									<label class="custom-control-label" for="popup_style_2">
-										<span class="text-style-design">Vertical Flip</span>	
-									</label>
-								</div>
-							</div>
+							
 							<div class="col-md-6 mb-3">
 								<div class="custom-control box-shadow custom-radio custom-control-inline d-flex m-0">
-									<input type="radio" class="custom-control-input" id="popup_style_3" name="popup"
-										value="popup_style_3" t-att-checked="config_vals.popup == 'popup_style_3'" />
-									<label class="custom-control-label" for="popup_style_3">
+									<input type="radio" class="custom-control-input" id="popup_style_2" name="popup"
+										value="popup_style_3" t-att-checked="config_vals.popup == 'popup_style_2'" />
+									<label class="custom-control-label" for="popup_style_2">
 										<span class="text-style-design">BounceIn</span>	
 									</label>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3 pl-md-0">
 								<div class="custom-control box-shadow custom-radio custom-control-inline d-flex m-0">
-									<input type="radio" class="custom-control-input" id="popup_style_4" name="popup"
-										value="popup_style_4" t-att-checked="config_vals.popup == 'popup_style_4'" />
-									<label class="custom-control-label" for="popup_style_4">
+									<input type="radio" class="custom-control-input" id="popup_style_3" name="popup"
+										value="popup_style_4" t-att-checked="config_vals.popup == 'popup_style_3'" />
+									<label class="custom-control-label" for="popup_style_3">
 										<span class="text-style-design">Shrink</span>
 									</label>
 								</div>
