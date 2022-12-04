@@ -6,33 +6,6 @@ import { registry } from "../../core/registry";
 import { _lt } from "../../core/l10n/translation";
 import { session } from "@web/session";
 
-function documentationItem(env) {
-    const documentationURL = "https://www.docs.tele.studio/v1.0";
-    return {
-        type: "item",
-        id: "documentation",
-        description: env._t("Documentation"),
-        href: documentationURL,
-        callback: () => {
-            browser.open(documentationURL, "_blank");
-        },
-        sequence: 10,
-    };
-}
-
-function supportItem(env) {
-    const url = session.support_url;
-    return {
-        type: "item",
-        id: "support",
-        description: env._t("Support"),
-        href: url,
-        callback: () => {
-            browser.open(url, "_blank");
-        },
-        sequence: 20,
-    };
-}
 
 class ShortCutsDialog extends Dialog {}
 ShortCutsDialog.bodyTemplate = "web.UserMenu.shortcutsTable";
@@ -72,24 +45,7 @@ export function preferencesItem(env) {
     };
 }
 
-function teleAccountItem(env) {
-    return {
-        type: "item",
-        id: "account",
-        description: env._t("My Tele Account"),
-        callback: () => {
-            env.services
-                .rpc("/web/session/account")
-                .then((url) => {
-                    browser.location.href = url;
-                })
-                .catch(() => {
-                    browser.location.href = "https://accounts.tele.studio/account";
-                });
-        },
-        sequence: 60,
-    };
-}
+
 
 function logOutItem(env) {
     const route = "/web/session/logout";
@@ -107,10 +63,7 @@ function logOutItem(env) {
 
 registry
     .category("user_menuitems")
-    .add("documentation", documentationItem)
-    .add("support", supportItem)
     .add("shortcuts", shortCutsItem)
     .add("separator", separator)
     .add("profile", preferencesItem)
-    .add("tele_account", teleAccountItem)
     .add("log_out", logOutItem);
