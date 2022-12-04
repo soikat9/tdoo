@@ -75,7 +75,7 @@ RUN chown tele /etc/tele/tele.conf \
 VOLUME ["/var/lib/tele", "/mnt/extra-applets"]
 
 # Expose Tele services
-EXPOSE 8069 8071 8072
+EXPOSE 9000 9001 9002
 
 # Set the default config file
 ENV TELE_RC /etc/tele/tele.conf

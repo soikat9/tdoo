@@ -41,8 +41,8 @@ class SipsTest(SipsCommon):
             "Payulatam: transaction reference wasn't correctly singularized.")
 
     def test_redirect_form_values(self):
-        self.patch(self, 'base_url', 'http://localhost:8069')
-        self.patch(type(self.env['base']), 'get_base_url', lambda _: 'http://localhost:8069')
+        self.patch(self, 'base_url', 'http://localhost:9000')
+        self.patch(type(self.env['base']), 'get_base_url', lambda _: 'http://localhost:9000')
 
         tx = self.create_transaction(flow="redirect")
 

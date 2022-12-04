@@ -157,7 +157,7 @@ var IoTLongpolling = BusService.extend(IoTConnectionMixin, {
      */
     _rpcIoT: function (iot_ip, route, data, options) {
         this.protocol = window.location.protocol;
-        var port = this.protocol === 'http:' ? ':8069' : '';
+        var port = this.protocol === 'http:' ? ':9000' : '';
         var url = this.protocol + '//' + iot_ip + port;
         var queryOptions = _.extend({
             url: url + route,

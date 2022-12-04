@@ -130,9 +130,9 @@ class configmanager(object):
         group.add_option("--http-interface", dest="http_interface", my_default='',
                          help="Listen interface address for HTTP services. "
                               "Keep empty to listen on all interfaces (0.0.0.0)")
-        group.add_option("-p", "--http-port", dest="http_port", my_default=8069,
+        group.add_option("-p", "--http-port", dest="http_port", my_default=9000,
                          help="Listen port for the main HTTP service", type="int", metavar="PORT")
-        group.add_option("--longpolling-port", dest="longpolling_port", my_default=8072,
+        group.add_option("--longpolling-port", dest="longpolling_port", my_default=9002,
                          help="Listen port for the longpolling HTTP service", type="int", metavar="PORT")
         group.add_option("--no-http", dest="http_enable", action="store_false", my_default=True,
                          help="Disable the HTTP and Longpolling services entirely")

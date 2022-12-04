@@ -137,7 +137,7 @@ var PrinterMixin = {
 var Printer = core.Class.extend(PrinterMixin, {
     init: function (url, pos) {
         PrinterMixin.init.call(this, pos);
-        this.connection = new Session(undefined, url || 'http://localhost:8069', { use_cors: true});
+        this.connection = new Session(undefined, url || 'http://localhost:9000', { use_cors: true});
     },
 
     /**

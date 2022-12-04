@@ -147,7 +147,7 @@ class DocumentPageHistory(models.Model):
             base_url = (
                 self.env["ir.config_parameter"]
                 .sudo()
-                .get_param("web.base.url", default="http://localhost:8069")
+                .get_param("web.base.url", default="http://localhost:9000")
             )
 
             page.page_url = (

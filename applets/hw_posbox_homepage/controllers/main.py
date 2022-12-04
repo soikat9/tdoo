@@ -96,7 +96,7 @@ class IoTboxHomepage(web.Home):
         wifi = Path.home() / 'wifi_network.txt'
         remote_server = Path.home() / 'tele-remote-server.conf'
         if (wifi.exists() == False or remote_server.exists() == False) and helpers.access_point():
-            return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":8069/steps'>"
+            return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":9000/steps'>"
         else:
             return homepage_template.render(self.get_homepage_data())
 
@@ -122,7 +122,7 @@ class IoTboxHomepage(web.Home):
     def load_iot_handlers(self):
         helpers.download_iot_handlers(False)
         subprocess.check_call(["sudo", "service", "tele", "restart"])
-        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":8069/list_handlers'>"
+        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":9000/list_handlers'>"
 
     @http.route('/list_credential', type='http', auth='none', website=True)
     def list_credential(self):
@@ -137,14 +137,14 @@ class IoTboxHomepage(web.Home):
     def save_credential(self, db_uuid, enterprise_code):
         helpers.add_credential(db_uuid, enterprise_code)
         subprocess.check_call(["sudo", "service", "tele", "restart"])
-        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":8069'>"
+        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":9000'>"
 
     @http.route('/clear_credential', type='http', auth='none', cors='*', csrf=False)
     def clear_credential(self):
         helpers.unlink_file('tele-db-uuid.conf')
         helpers.unlink_file('tele-enterprise-code.conf')
         subprocess.check_call(["sudo", "service", "tele", "restart"])
-        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":8069'>"
+        return "<meta http-equiv='refresh' content='20; url=http://" + helpers.get_ip() + ":9000'>"
 
     @http.route('/wifi', type='http', auth='none', website=True)
     def wifi(self):
@@ -174,7 +174,7 @@ class IoTboxHomepage(web.Home):
             }
         else:
             res_payload['server'] = {
-                'url': 'http://' + helpers.get_ip() + ':8069',
+                'url': 'http://' + helpers.get_ip() + ':9000',
                 'message': 'Redirect to IoT Box'
             }
 
@@ -183,12 +183,12 @@ class IoTboxHomepage(web.Home):
     @http.route('/wifi_clear', type='http', auth='none', cors='*', csrf=False)
     def clear_wifi_configuration(self):
         helpers.unlink_file('wifi_network.txt')
-        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":8069'>"
+        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":9000'>"
 
     @http.route('/server_clear', type='http', auth='none', cors='*', csrf=False)
     def clear_server_configuration(self):
         helpers.unlink_file('tele-remote-server.conf')
-        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":8069'>"
+        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":9000'>"
 
     @http.route('/handlers_clear', type='http', auth='none', cors='*', csrf=False)
     def clear_handlers_list(self):
@@ -196,7 +196,7 @@ class IoTboxHomepage(web.Home):
             for file in os.listdir(get_resource_path('hw_drivers', 'iot_handlers', directory)):
                 if file != '__pycache__':
                     helpers.unlink_file(get_resource_path('hw_drivers', 'iot_handlers', directory, file))
-        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":8069/list_handlers'>"
+        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":9000/list_handlers'>"
 
     @http.route('/server_connect', type='http', auth='none', cors='*', csrf=False)
     def connect_to_server(self, token, iotname):
@@ -214,7 +214,7 @@ class IoTboxHomepage(web.Home):
             token = helpers.get_token()
         reboot = 'reboot'
         subprocess.check_call([get_resource_path('point_of_sale', 'tools/posbox/configuration/connect_to_server.sh'), url, iotname, token, reboot])
-        return 'http://' + helpers.get_ip() + ':8069'
+        return 'http://' + helpers.get_ip() + ':9000'
 
     @http.route('/steps', type='http', auth='none', cors='*', csrf=False)
     def step_by_step_configure_page(self):
@@ -253,7 +253,7 @@ class IoTboxHomepage(web.Home):
         """
         Establish a link with a customer box trough internet with a ssh tunnel
         1 - take a new auth_token on https://dashboard.ngrok.com/
-        2 - copy past this auth_token on the IoT Box : http://IoT_Box:8069/remote_connect
+        2 - copy past this auth_token on the IoT Box : http://IoT_Box:9000/remote_connect
         3 - check on ngrok the port and url to get access to the box
         4 - you can connect to the box with this command : ssh -p port -v pi@url
         """
@@ -282,13 +282,13 @@ class IoTboxHomepage(web.Home):
     def add_six_payment_terminal(self, terminal_id):
         helpers.write_file('tele-six-payment-terminal.conf', terminal_id)
         subprocess.check_call(["sudo", "service", "tele", "restart"])
-        return 'http://' + helpers.get_ip() + ':8069'
+        return 'http://' + helpers.get_ip() + ':9000'
 
     @http.route('/six_payment_terminal_clear', type='http', auth='none', cors='*', csrf=False)
     def clear_six_payment_terminal(self):
         helpers.unlink_file('tele-six-payment-terminal.conf')
         subprocess.check_call(["sudo", "service", "tele", "restart"])
-        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":8069'>"
+        return "<meta http-equiv='refresh' content='0; url=http://" + helpers.get_ip() + ":9000'>"
 
     @http.route('/hw_proxy/upgrade', type='http', auth='none', )
     def upgrade(self):

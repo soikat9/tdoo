@@ -242,7 +242,7 @@ QUOTE_THUNDERBIRD_1 = u"""<div>On 11/08/2012 05:29 PM,
       </div>
       <div>
         <p>Log in our portal at:
-<a href="http://localhost:8069#action=login&amp;db=mail_1&amp;token=rHdWcUART5PhEnJRaXjH">http://localhost:8069#action=login&amp;db=mail_1&amp;token=rHdWcUART5PhEnJRaXjH</a></p>
+<a href="http://localhost:9000#action=login&amp;db=mail_1&amp;token=rHdWcUART5PhEnJRaXjH">http://localhost:9000#action=login&amp;db=mail_1&amp;token=rHdWcUART5PhEnJRaXjH</a></p>
       </div>
     </blockquote>
     Ok for me. I am replying directly below your mail, using Thunderbird, with a signature.<br><br>
@@ -361,7 +361,7 @@ GMAIL_1 = u"""Hello,<div><br></div><div>Ok for me. I am replying directly in gma
 <li>9.45 AM: summary</li><li>10 AM: meeting with Fabien to present our app</li></ul></div><div>Is everything ok for you ?</div>
 <div><p>-- <br>Administrator</p></div>
 
-<div><p>Log in our portal at: <a href="http://localhost:8069#action=login&amp;db=mail_1&amp;login=demo">http://localhost:8069#action=login&amp;db=mail_1&amp;login=demo</a></p></div>
+<div><p>Log in our portal at: <a href="http://localhost:9000#action=login&amp;db=mail_1&amp;login=demo">http://localhost:9000#action=login&amp;db=mail_1&amp;login=demo</a></p></div>
 </blockquote></div><br></div>"""
 
 GMAIL_1_IN = [u'Ok for me. I am replying directly in gmail, without signature.', '<blockquote data-o-mail-quote-node="1" data-o-mail-quote="1">']

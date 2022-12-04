@@ -68,8 +68,8 @@ class TestBaseUrl(TestUrlCommon):
             ("https://www.monsite.com", "https://www.monsite.com"),
             ("http://www.monsite.com", "http://www.monsite.com"),
             # respect port
-            ("www.monsite.com:8069", "https://www.monsite.com:8069"),
-            ("www.monsite.com:8069/", "https://www.monsite.com:8069"),
+            ("www.monsite.com:9000", "https://www.monsite.com:9000"),
+            ("www.monsite.com:9000/", "https://www.monsite.com:9000"),
             # no guess wwww
             ("monsite.com", "https://monsite.com"),
             # mix

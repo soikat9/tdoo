@@ -26,7 +26,7 @@ class IotBox(models.Model):
             if not box.ip:
                 box.ip_url = False
             else:
-                url = 'https://%s' if box.get_base_url()[:5] == 'https' else 'http://%s:8069'
+                url = 'https://%s' if box.get_base_url()[:5] == 'https' else 'http://%s:9000'
                 box.ip_url = url % box.ip
 
     def _compute_device_count(self):

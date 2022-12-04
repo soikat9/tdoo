@@ -13,7 +13,7 @@ QUnit.test('add_link utility function', function (assert) {
         'http://admin:password@example.com:8/%2020': true,
         'https://admin:password@example.com/test': true,
         'www.example.com:8/test': true,
-        'https://127.0.0.5:8069': true,
+        'https://127.0.0.5:9000': true,
         'www.127.0.0.5': false,
         'should.notmatch': false,
         'fhttps://test.example.com/test': false,

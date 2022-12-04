@@ -6388,7 +6388,7 @@ QUnit.module('basic_fields', {
 
         this.data.partner.records = [{
             'id': 999,
-            'int_field': 8069,
+            'int_field': 9000,
         }];
 
         var form = await createView({
@@ -6406,11 +6406,11 @@ QUnit.module('basic_fields', {
         });
 
         assert.ok(form.$('.o_form_view').hasClass('o_form_readonly'), 'Form in readonly mode');
-        assert.strictEqual(form.$('.o_field_widget[name=int_field]').text(), '8069',
+        assert.strictEqual(form.$('.o_field_widget[name=int_field]').text(), '9000',
             'Integer value must not be formatted');
         await testUtils.form.clickEdit(form);
 
-        assert.strictEqual(form.$('.o_field_widget').val(), '8069',
+        assert.strictEqual(form.$('.o_field_widget').val(), '9000',
             'Integer value must not be formatted');
 
         form.destroy();
@@ -6421,7 +6421,7 @@ QUnit.module('basic_fields', {
 
         this.data.partner.records = [{
             'id': 999,
-            'int_field': 8069,
+            'int_field': 9000,
         }];
 
         var form = await createView({

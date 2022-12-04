@@ -240,7 +240,7 @@ class PrinterDriver(Driver):
             ips_filtered = [i for i in ips if i != '127.0.0.1']
             main_ips = ips_filtered and ips_filtered[0] or '127.0.0.1'
             mac = '\nMAC Address:\n%s\n' % helpers.get_mac_address()
-            homepage = '\nHomepage:\nhttp://%s:8069\n\n' % main_ips
+            homepage = '\nHomepage:\nhttp://%s:9000\n\n' % main_ips
 
         code = connection_manager.pairing_code
         if code:

@@ -7406,7 +7406,7 @@ msgstr ""
 #: code:applets/base/models/res_users.py:0
 #: model:ir.actions.act_window,name:base.ir_access_act
 #: model:ir.ui.menu,name:base.menu_ir_access_act
-#: model:res.groups,name:base.group_erp_manager
+#: model:res.groups,name:base.group_tele_manager
 #: model_terms:ir.ui.view,arch_db:base.edit_menu_access
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_form
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search

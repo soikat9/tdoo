@@ -286,13 +286,13 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
      *
      * @param {*} url
      * @param {Object} [options]
-     * @param {string} [options.port=8069] what port to listen to
+     * @param {string} [options.port=9000] what port to listen to
      * @returns {Promise<string|Array>}
      */
     try_hard_to_connect: function (url, options) {
         options   = options || {};
         var protocol = window.location.protocol;
-        var port = ( !options.port && protocol == "https:") ? ':443' : ':' + (options.port || '8069');
+        var port = ( !options.port && protocol == "https:") ? ':443' : ':' + (options.port || '9000');
 
         this.set_connection_status('connecting');
 
@@ -331,14 +331,14 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
      * Returns as a promise a valid host url that can be used as proxy.
      *
      * @param {Object} [options]
-     * @param {string} [options.port] what port to listen to (default 8069)
+     * @param {string} [options.port] what port to listen to (default 9000)
      * @param {function} [options.progress] callback for search progress ( fac in [0,1] )
      * @returns {Promise<string>} will be resolved with the proxy valid url
      */
     find_proxy: function(options){
         options = options || {};
         var self  = this;
-        var port  = ':' + (options.port || '8069');
+        var port  = ':' + (options.port || '9000');
         var urls  = [];
         var found = false;
         var parallel = 8;
