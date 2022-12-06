@@ -89,43 +89,7 @@
     </template>
     <template id="onboarding_confetti">
         <div class="o_onboarding_confetti">
-            <div>
-                <div class="flake color-3" />
-                <div class="ribbon color-1" />
-                <div class="ribbon color-2" />
-                <div class="flake color-1" />
-                <div /> <!-- spacer -->
-            </div>
-            <div>
-                <div class="ribbon color-2" />
-                <div class="flake color-2" />
-                <div class="flake color-3" />
-                <div class="ribbon color-1" />
-                <div class="flake color-4" />
-                <div /> <!-- spacer -->
-            </div>
-            <div>
-                <div class="ribbon color-1" />
-                <div class="ribbon color-4" />
-                <div class="ribbon color-2" />
-                <div class="flake color-3" />
-                <div /> <!-- spacer -->
-            </div>
-            <div>
-                <div class="flake color-3" />
-                <div class="ribbon color-1" />
-                <div class="ribbon color-4" />
-                <div class="flake color-3" />
-                <div class="ribbon color-2" />
-                <div /> <!-- spacer -->
-            </div>
-            <div>
-                <div class="ribbon color-2" />
-                <div class="flake color-3" />
-                <div class="flake color-4" />
-                <div class="ribbon color-1" />
-                <div /> <!-- spacer -->
-            </div>
+            
         </div>
     </template>
     <!-- ONBOARDING STEPS -->

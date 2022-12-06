@@ -7,11 +7,11 @@
 # a pipe alias in your mail server to use it, postfix uses a syntax that looks
 # like:
 #
-# email@address: "|/home/tele/src/tele-mail.py"
+# email@address: "|/workspace/tele/src/tele-mail.py"
 #
 # while exim uses a syntax that looks like:
 #
-# *: |/home/tele/src/tele-mail.py
+# *: |/workspace/tele/src/tele-mail.py
 #
 # Note python2 was chosen on purpose for backward compatibility with old mail
 # servers.
