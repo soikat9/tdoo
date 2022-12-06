@@ -86,7 +86,7 @@ WithSearch.props = {
 
     // search query elements
     comparison: { validate: () => true, optional: true }, // fix problem with validation with type: [Object, null]
-    // Issue OWL: https://github.com/tele-studio/owl/issues/910
+    // Issue OWL: https://github.com/tele/owl/issues/910
     context: { type: Object, optional: true },
     domain: { type: Array, element: [String, Array], optional: true },
     groupBy: { type: Array, element: String, optional: true },

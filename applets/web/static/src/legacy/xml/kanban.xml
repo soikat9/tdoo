@@ -2,7 +2,7 @@
 
 <t t-name="KanbanView.buttons">
     <div>
-        <button t-if="!noCreate" type="button" t-attf-class="btn #{btnClass} rounded-sm o-kanban-button-new" title="Create record" accesskey="c">
+        <button t-if="!noCreate" type="button" t-attf-class="btn #{btnClass} o-kanban-button-new" title="Create record" accesskey="c">
             <t t-esc="create_text || _t('Create')"/>
         </button>
     </div>
@@ -53,7 +53,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control o_input" placeholder="Column title"/>
                     <span class="input-group-append">
-                        <button class="btn btn-primary rounded-sm o_kanban_add" type="button">Add</button>
+                        <button class="btn btn-primary o_kanban_add" type="button">Add</button>
                     </span>
                 </div>
                 <span t-if="!widget.isMobile" class="o_discard_msg text-muted float-right">Esc to discard</span>
@@ -70,9 +70,9 @@
 
 <t t-name="KanbanView.RecordQuickCreate.buttons">
     <div class="d-flex">
-        <button class="btn btn-primary rounded-sm o_kanban_add mr-1 text-truncate">Add</button>
-        <button class="btn btn-primary rounded-sm o_kanban_edit mr-1 text-truncate">Edit</button>
-        <button class="btn btn-secondary rounded-sm o_kanban_cancel ml-auto">
+        <button class="btn btn-primary o_kanban_add mr-1 text-truncate">Add</button>
+        <button class="btn btn-primary o_kanban_edit mr-1 text-truncate">Edit</button>
+        <button class="btn btn-secondary o_kanban_cancel ml-auto">
             <i class="fa fa-trash"/>
         </button>
     </div>

@@ -30,7 +30,7 @@ tele.define('web.Class', function () {
  *
  *     The Person class can also be extended again:
  *
- *     var Editor = Person.extend({
+ *     var Ninja = Person.extend({
  *       init: function(){
  *         this._super( false );
  *       },

@@ -75,7 +75,7 @@
                     title="Your subscription code"
                 />
             </div>
-            <button class="btn btn-primary rounded-sm" t-on-click.prevent="_onCodeSubmit" ><t t-esc="state.buttonText"/></button>
+            <button class="btn btn-primary" t-on-click.prevent="_onCodeSubmit" ><t t-esc="state.buttonText"/></button>
         </form>
     </div>
     <span t-else=""/>

@@ -6,7 +6,7 @@
                 <video t-ref="videoPreview" autoplay="true" playsinline="true" class="" style="max-width: 100%; max-height: 100%;"/>
             </div>
             <t t-set-slot="buttons">
-                <button class="btn btn-secondary rounded-sm" t-on-click="closeDialog">Cancel</button>
+                <button class="btn btn-secondary" t-on-click="closeDialog">Cancel</button>
             </t>
         </Dialog>
     </t>

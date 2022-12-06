@@ -5,7 +5,7 @@
   // When applied on webclient (note: we do not specify the webclient class
   // here to avoid breaking studio custom style)
   &:not(.o_home_menu_background_custom) .o_main_navbar {
-    background-color: #ffffff1c;
+    background-color: transparent;
     border-color: transparent;
 
     .dropdown-menu {

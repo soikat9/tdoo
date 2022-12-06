@@ -2860,7 +2860,7 @@ msgstr ""
 #. tele-web
 #: code:applets/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Tele Applets will be available soon"
+msgid "Tele Apps will be available soon"
 msgstr ""
 
 #. module: web

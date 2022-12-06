@@ -54,7 +54,7 @@
 
                 .modal-footer {
                     @include o-webclient-padding($top: 1rem, $bottom: 0.5rem);
-                    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.276);
+                    box-shadow: 0 1rem 2rem black;
                     z-index: 0;
                 }
             }

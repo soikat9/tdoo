@@ -1065,10 +1065,10 @@ QUnit.module("Views", (hooks) => {
         const bannerArch = `
             <div class="modal o_onboarding_modal o_technical_modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content rounded-sm">
+                    <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Remove Configuration Tips</h5>
-                            <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-label="Close">×</span>
                             </button>
                         </div>
@@ -1076,8 +1076,8 @@ QUnit.module("Views", (hooks) => {
                             <p>Do you want to remove this configuration panel?</p>
                         </div>
                         <div class="modal-footer">
-                            <a type="action" class="btn btn-primary rounded-sm" data-dismiss="modal" data-toggle="collapse" href=".o_onboarding_container" data-model="mah.model" data-method="mah_method">Remove</a>
-                            <button type="button" class="btn btn-secondary rounded-sm" data-dismiss="modal">Discard</button>
+                            <a type="action" class="btn btn-primary" data-dismiss="modal" data-toggle="collapse" href=".o_onboarding_container" data-model="mah.model" data-method="mah_method">Remove</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
                         </div>
                     </div>
                 </div>

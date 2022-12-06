@@ -31,7 +31,7 @@ QUnit.test("Ignore empty hrefs", async (assert) => {
     MyComponent.template = tags.xml/* xml */ `
         <div class="my_component">
             <a href="#" class="inactive_link">This link does nothing</a>
-            <button class="btn btn-secondary rounded-sm">
+            <button class="btn btn-secondary">
                 <a href="#">
                     <i class="fa fa-trash"/>
                 </a>
@@ -70,7 +70,7 @@ QUnit.test("Simple rendering with a scroll", async (assert) => {
     class MyComponent extends Component {}
     MyComponent.template = tags.xml/* xml */ `
         <div class="o_content">
-            <a href="#scrollToHere"  class="btn btn-primary rounded-sm">sroll to ...</a>
+            <a href="#scrollToHere"  class="btn btn-primary">sroll to ...</a>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
                 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed,
@@ -198,7 +198,7 @@ QUnit.test("clicking anchor when no scrollable", async (assert) => {
     class MyComponent extends Component {}
     MyComponent.template = tags.xml/* xml */ `
         <div class="o_content">
-            <a href="#scrollToHere"  class="btn btn-primary rounded-sm">scroll to ...</a>
+            <a href="#scrollToHere"  class="btn btn-primary">scroll to ...</a>
             <div class="active-container">
                 <p>There is no scrollable with only the height of this element</p>
             </div>
@@ -236,7 +236,7 @@ QUnit.test("clicking anchor when multi levels scrollables", async (assert) => {
     class MyComponent extends Component {}
     MyComponent.template = tags.xml/* xml */ `
         <div class="o_content scrollable-1">
-            <a href="#scroll1"  class="btn1 btn btn-primary rounded-sm">go to level 2 anchor</a>
+            <a href="#scroll1"  class="btn1 btn btn-primary">go to level 2 anchor</a>
             <div>
                 <p>This is some content</p>
                 <p>
@@ -266,7 +266,7 @@ QUnit.test("clicking anchor when multi levels scrollables", async (assert) => {
                         felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
                     </p>
                     <div id="scroll1" style="background: orange;">this element is contained in a scrollable metaverse!</div>
-                        <a href="#scroll2"  class="btn2 btn btn-primary rounded-sm">go to level 1 anchor</a>
+                        <a href="#scroll2"  class="btn2 btn btn-primary">go to level 1 anchor</a>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
                             Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed,

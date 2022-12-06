@@ -16,15 +16,15 @@
 <stop offset="1" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1_181" x1="28.0987" y1="70.3467" x2="59.1292" y2="98.6442" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0176D0"/>
+<stop stop-color="#33BEF0"/>
 <stop offset="1" stop-color="#0A85D9"/>
 </linearGradient>
 <linearGradient id="paint2_linear_1_181" x1="108.284" y1="33.0308" x2="133.355" y2="57.1078" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0176D0"/>
+<stop stop-color="#33BEF0"/>
 <stop offset="1" stop-color="#0A85D9"/>
 </linearGradient>
 <linearGradient id="paint3_linear_1_181" x1="109.657" y1="109.092" x2="138.699" y2="139.373" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0176D0"/>
+<stop stop-color="#33BEF0"/>
 <stop offset="1" stop-color="#0A85D9"/>
 </linearGradient>
 </defs>

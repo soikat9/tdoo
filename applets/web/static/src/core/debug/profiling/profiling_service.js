@@ -24,7 +24,7 @@ const profilingService = {
             const debugItem = document.querySelector(".o_main_navbar .o_debug_manager .fa-bug");
             if (state.isEnabled) {
                 recordingIcon = document.createElement("span");
-                recordingIcon.classList.add("o_recording", "text-warning", "fa", "fa-circle");
+                recordingIcon.classList.add("o_recording", "text-danger", "fa", "fa-circle");
                 debugItem.appendChild(recordingIcon);
             } else if (recordingIcon) {
                 debugItem.removeChild(recordingIcon);

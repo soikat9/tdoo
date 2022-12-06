@@ -30,7 +30,7 @@ function date_to_utc (k, v) {
 
 /**
  * Converts a string to a Date javascript object using Tele's
- * datetime string format (exemple: '2022-12-01 15:12:35.832').
+ * datetime string format (exemple: '2011-12-01 15:12:35.832').
  * 
  * The time zone is assumed to be UTC (standard for Tele 6.1)
  * and will be converted to the browser's time zone.

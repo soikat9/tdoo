@@ -5,7 +5,7 @@
         <span class="o_file_input" aria-atomic="true">
             <span class="o_file_input_trigger" t-on-click.prevent="onTriggerClicked">
                 <t t-slot="default">
-                    <button class="btn btn-primary rounded-sm">Choose File</button>
+                    <button class="btn btn-primary">Choose File</button>
                 </t>
             </span>
             <input type="file" name="ufile" class="o_input_file d-none"

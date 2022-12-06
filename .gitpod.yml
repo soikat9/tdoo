@@ -15,7 +15,7 @@ tasks:
       ./tele-install.sh
     command:
       cd tele
-      ./tele-make -w tele -r tele --applets-path=/workspace/tele/applets,/workspace/tele/develop_applets --db_host 127.0.0.1
+      ./tele-make -w tele -r tele --applets-path=/workspace/tele/applets,/workspace/tele/develop_applets,/workspace/tele/healthcare,/workspace/tele/saas_applets --db_host 127.0.0.1
   - command: gp await-port 9000 && gp preview "$(gp url 9000)/web/database/selector"
 
 # P.S. You should remove ":433" from the url when running the web preview.

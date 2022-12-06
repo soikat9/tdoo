@@ -2936,7 +2936,10 @@
         set(mode) {
             QWeb.dev = mode === "dev";
             if (QWeb.dev) {
-                console.info(`Tele is running in developer mode. Please be aware, developer mode is not suitable for production use.`);
+                console.info(`Owl is running in 'dev' mode.
+
+This is not suitable for production use.
+See https://github.com/tele/owl/blob/master/doc/reference/config.md#mode for more information.`);
             }
         },
     });
@@ -5568,7 +5571,7 @@
     __info__.version = '1.4.10';
     __info__.date = '2022-04-27T09:54:49.146Z';
     __info__.hash = 'c060490';
-    __info__.url = 'https://github.com/tele-studio/tele';
+    __info__.url = 'https://github.com/tele/owl';
 
 
 })(this.owl = this.owl || {});

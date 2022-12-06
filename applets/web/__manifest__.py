@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+# Part of Tele. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Web',
@@ -184,6 +184,7 @@ This module provides the core of the Tele Web Client.
             'web/static/src/legacy/js/widgets/week_days.js',
             'web/static/src/legacy/js/widgets/signature.js',
             'web/static/src/legacy/js/widgets/attach_document.js',
+            'web/static/src/legacy/js/apps.js',
             'web/static/src/legacy/js/env.js',
             'web/static/src/legacy/js/model.js',
             'web/static/src/legacy/js/owl_compatibility.js',

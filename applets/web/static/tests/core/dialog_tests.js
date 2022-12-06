@@ -160,8 +160,8 @@ QUnit.module("Components", (hooks) => {
         class SimpleButtonsDialog extends Dialog {}
         SimpleButtonsDialog.footerTemplate = owl.tags.xml`
             <div>
-                <button class="btn btn-primary rounded-sm">The First Button</button>
-                <button class="btn btn-primary rounded-sm">The Second Button</button>
+                <button class="btn btn-primary">The First Button</button>
+                <button class="btn btn-primary">The Second Button</button>
             </div>
           `;
         class Parent extends owl.Component {

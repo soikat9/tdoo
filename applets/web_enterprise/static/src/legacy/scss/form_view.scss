@@ -113,7 +113,6 @@
 
     // Labels
     .o_form_label {
-        font-weight: 600 !important;
         &.o_form_label_empty, &.o_form_label_false {
             opacity: 0.5;
             font-weight: $font-weight-normal;

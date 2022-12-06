@@ -24,13 +24,13 @@ QUnit.module("Title", {
 
 QUnit.test("simple title", async (assert) => {
     assert.expect(1);
-    env.services.title.setParts({ ztele: "Tele" });
+    env.services.title.setParts({ ztelecms: "Tele" });
     assert.strictEqual(env.services.title.current, "Tele");
 });
 
 QUnit.test("add title part", async (assert) => {
     assert.expect(2);
-    env.services.title.setParts({ ztele: "Tele", chat: null });
+    env.services.title.setParts({ ztelecms: "Tele", chat: null });
     assert.strictEqual(env.services.title.current, "Tele");
     env.services.title.setParts({ action: "Import" });
     assert.strictEqual(env.services.title.current, "Tele - Import");
@@ -38,34 +38,34 @@ QUnit.test("add title part", async (assert) => {
 
 QUnit.test("modify title part", async (assert) => {
     assert.expect(2);
-    env.services.title.setParts({ ztele: "Tele" });
+    env.services.title.setParts({ ztelecms: "Tele" });
     assert.strictEqual(env.services.title.current, "Tele");
-    env.services.title.setParts({ ztele: "Ztele" });
-    assert.strictEqual(env.services.title.current, "Ztele");
+    env.services.title.setParts({ ztelecms: "Ztelecms" });
+    assert.strictEqual(env.services.title.current, "Ztelecms");
 });
 
 QUnit.test("delete title part", async (assert) => {
     assert.expect(2);
-    env.services.title.setParts({ ztele: "Tele" });
+    env.services.title.setParts({ ztelecms: "Tele" });
     assert.strictEqual(env.services.title.current, "Tele");
-    env.services.title.setParts({ ztele: null });
+    env.services.title.setParts({ ztelecms: null });
     assert.strictEqual(env.services.title.current, "");
 });
 
 QUnit.test("all at once", async (assert) => {
     assert.expect(2);
-    env.services.title.setParts({ ztele: "Tele", action: "Import" });
+    env.services.title.setParts({ ztelecms: "Tele", action: "Import" });
     assert.strictEqual(env.services.title.current, "Tele - Import");
-    env.services.title.setParts({ action: null, ztele: "Ztele", chat: "Sauron" });
-    assert.strictEqual(env.services.title.current, "Ztele - Sauron");
+    env.services.title.setParts({ action: null, ztelecms: "Ztelecms", chat: "Sauron" });
+    assert.strictEqual(env.services.title.current, "Ztelecms - Sauron");
 });
 
 QUnit.test("get title parts", async (assert) => {
     assert.expect(3);
-    env.services.title.setParts({ ztele: "Tele", action: "Import" });
+    env.services.title.setParts({ ztelecms: "Tele", action: "Import" });
     assert.strictEqual(env.services.title.current, "Tele - Import");
     const parts = env.services.title.getParts();
-    assert.deepEqual(parts, { ztele: "Tele", action: "Import" });
+    assert.deepEqual(parts, { ztelecms: "Tele", action: "Import" });
     parts.action = "Export";
     assert.strictEqual(env.services.title.current, "Tele - Import"); // parts is a copy!
 });

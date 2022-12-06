@@ -554,7 +554,7 @@ QUnit.module('Views', {
         );
         cpButtons = testUtils.controlPanel.getButtons(list);
         assert.containsOnce(cpButtons[0], 'button[name="x"]');
-        assert.hasClass(cpButtons[0].querySelector('button[name="x"]'), 'btn btn-secondary rounded-sm');
+        assert.hasClass(cpButtons[0].querySelector('button[name="x"]'), 'btn btn-secondary');
         assert.containsOnce(cpButtons[0], '.o_list_selection_box');
         assert.strictEqual(
             cpButtons[0].querySelector('button[name="x"]').nextElementSibling,
@@ -9809,7 +9809,7 @@ QUnit.module('Views', {
         // save the record
         // check line is at the correct place
 
-        var inputText = 'editor';
+        var inputText = 'ninja';
         await testUtils.dom.click($('.o_list_button_add'));
         await testUtils.fields.editInput(list.$('.o_input[name="foo"]'), inputText);
         await testUtils.dom.click($('.o_list_button_save'));
@@ -12309,7 +12309,7 @@ QUnit.module('Views', {
             View: ListView,
         });
 
-        assert.containsOnce(list, ".o_data_row .text-warning");
+        assert.containsOnce(list, ".o_data_row .text-danger");
 
         list.destroy();
         unpatchDate();
@@ -12362,7 +12362,7 @@ QUnit.module('Views', {
             View: ListView,
         });
 
-        assert.containsOnce(list, ".o_data_row .text-warning");
+        assert.containsOnce(list, ".o_data_row .text-danger");
 
         list.destroy();
         unpatchDate();

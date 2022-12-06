@@ -14,8 +14,8 @@
     </t>
 
     <t t-name="web.RedirectWarningDialogFooter" owl="1">
-      <button  class="btn btn-primary rounded-sm" t-on-click="onClick"><t t-esc="env._t(buttonText)"/></button>
-      <button  class="btn btn-secondary rounded-sm" t-on-click="onCancel">Cancel</button>
+      <button  class="btn btn-primary" t-on-click="onClick"><t t-esc="env._t(buttonText)"/></button>
+      <button  class="btn btn-secondary" t-on-click="onCancel">Cancel</button>
     </t>
 
     <t t-name="web.Error504DialogBody" owl="1">
@@ -35,13 +35,13 @@
     </t>
 
     <t t-name="web.SessionExpiredDialogFooter" owl="1">
-        <button class="btn btn-primary rounded-sm" t-on-click="onClick">Ok</button>
+        <button class="btn btn-primary" t-on-click="onClick">Ok</button>
     </t>
 
      <t t-name="web.ErrorDialogBody" owl="1">
       <div class="alert alert-warning clearfix" role="alert">
           <div class="float-right ml8 btn-group-vertical">
-              <button class="btn btn-primary rounded-sm" t-on-click="onClickClipboard">
+              <button class="btn btn-primary" t-on-click="onClickClipboard">
                   <i class="fa fa-clipboard mr8"/><t>Copy the full error to clipboard</t>
               </button>
           </div>
@@ -50,7 +50,7 @@
       </div>
 
 
-      <button class="btn btn-link rounded-sm" t-on-click="state.showTraceback = !state.showTraceback">See details</button>
+      <button class="btn btn-link" t-on-click="state.showTraceback = !state.showTraceback">See details</button>
       <div t-if="state.showTraceback and (props.name or props.message)" class="alert clearfix" style="background-color:#ececec;" role="alert">
         <code t-if="props.name" t-esc="props.name"></code>
         <p t-if="props.message" t-esc="props.message"></p>

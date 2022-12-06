@@ -9,12 +9,12 @@
                 t-ref="modal"
                 >
                 <div class="modal-dialog" t-att-class="size">
-                    <div class="modal-content rounded-sm" t-att-class="contentClass">
+                    <div class="modal-content" t-att-class="contentClass">
                         <header t-if="renderHeader" class="modal-header">
                             <h4 class="modal-title">
                                 <t t-esc="title"/>
                             </h4>
-                            <button type="button" class="close rounded-sm" aria-label="Close" tabindex="-1" t-on-click="close">×</button>
+                            <button type="button" class="close" aria-label="Close" tabindex="-1" t-on-click="close">×</button>
                         </header>
                         <main class="modal-body">
                             <t t-call="{{ constructor.bodyTemplate }}"/>
@@ -29,7 +29,7 @@
     </t>
 
     <t t-name="web.DialogFooterDefault" owl="1">
-        <button class="btn btn-primary rounded-sm" t-on-click="close">
+        <button class="btn btn-primary" t-on-click="close">
             <t>Ok</t>
         </button>
     </t>

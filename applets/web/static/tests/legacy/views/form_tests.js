@@ -2057,7 +2057,7 @@ QUnit.module('Views', {
                 '<form string="Partners">' +
                     '<header>' +
                         '<button name="0"/>' +
-                        '<button name="1" class="btn-primary rounded-sm"/>' +
+                        '<button name="1" class="btn-primary"/>' +
                         '<button name="2" class="oe_highlight"/>' +
                         '<button name="3" class="btn-secondary"/>' +
                         '<button name="4" class="btn-link"/>' +
@@ -2067,7 +2067,7 @@ QUnit.module('Views', {
                     '</header>' +
                     '<sheet>' +
                         '<button name="8"/>' +
-                        '<button name="9" class="btn-primary rounded-sm"/>' +
+                        '<button name="9" class="btn-primary"/>' +
                         '<button name="10" class="oe_highlight"/>' +
                         '<button name="11" class="btn-secondary"/>' +
                         '<button name="12" class="btn-link"/>' +
@@ -2079,18 +2079,18 @@ QUnit.module('Views', {
             res_id: 2,
         });
 
-        assert.hasAttrValue(form.$('button[name="0"]'), 'class', 'btn btn-secondary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="1"]'), 'class', 'btn btn-primary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="2"]'), 'class', 'btn btn-primary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="3"]'), 'class', 'btn btn-secondary rounded-sm');
+        assert.hasAttrValue(form.$('button[name="0"]'), 'class', 'btn btn-secondary');
+        assert.hasAttrValue(form.$('button[name="1"]'), 'class', 'btn btn-primary');
+        assert.hasAttrValue(form.$('button[name="2"]'), 'class', 'btn btn-primary');
+        assert.hasAttrValue(form.$('button[name="3"]'), 'class', 'btn btn-secondary');
         assert.hasAttrValue(form.$('button[name="4"]'), 'class', 'btn btn-link');
         assert.hasAttrValue(form.$('button[name="5"]'), 'class', 'btn btn-link');
         assert.hasAttrValue(form.$('button[name="6"]'), 'class', 'btn btn-success');
         assert.hasAttrValue(form.$('button[name="7"]'), 'class', 'btn o_this_is_a_button btn-secondary');
-        assert.hasAttrValue(form.$('button[name="8"]'), 'class', 'btn btn-secondary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="9"]'), 'class', 'btn btn-primary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="10"]'), 'class', 'btn btn-primary rounded-sm');
-        assert.hasAttrValue(form.$('button[name="11"]'), 'class', 'btn btn-secondary rounded-sm');
+        assert.hasAttrValue(form.$('button[name="8"]'), 'class', 'btn btn-secondary');
+        assert.hasAttrValue(form.$('button[name="9"]'), 'class', 'btn btn-primary');
+        assert.hasAttrValue(form.$('button[name="10"]'), 'class', 'btn btn-primary');
+        assert.hasAttrValue(form.$('button[name="11"]'), 'class', 'btn btn-secondary');
         assert.hasAttrValue(form.$('button[name="12"]'), 'class', 'btn btn-link');
         assert.hasAttrValue(form.$('button[name="13"]'), 'class', 'btn btn-link');
         assert.hasAttrValue(form.$('button[name="14"]'), 'class', 'btn btn-success');
@@ -3085,7 +3085,7 @@ QUnit.module('Views', {
             data: this.data,
             arch: '<form string="Partners">' +
                         '<field name="foo"/>' +
-                        '<button string="Do something" class="btn-primary rounded-sm" name="abc" type="object"/>' +
+                        '<button string="Do something" class="btn-primary" name="abc" type="object"/>' +
                         '<button string="Or discard" class="btn-secondary" special="cancel"/>' +
                 '</form>',
             res_id: 1,
@@ -3128,7 +3128,7 @@ QUnit.module('Views', {
             data: this.data,
             arch: '<form string="Partners">' +
                         '<field name="foo"/>' +
-                        '<button string="Save" class="btn-primary rounded-sm" special="save"/>' +
+                        '<button string="Save" class="btn-primary" special="save"/>' +
                 '</form>',
             res_id: 1,
             intercepts: {
@@ -9384,7 +9384,7 @@ QUnit.module('Views', {
             model: 'partner',
             data: this.data,
             arch: '<form string="Partners">' +
-                '<button string="Save" class="btn-primary rounded-sm" special="save"/>' +
+                '<button string="Save" class="btn-primary" special="save"/>' +
                 '<button class="mybutton">westvleteren</button>' +
               '</form>',
             res_id: 2,
@@ -9643,8 +9643,8 @@ QUnit.module('Views', {
             arch: '<form string="Partners">' +
                     '<field name="state" invisible="1"/>' +
                     '<header>' +
-                        '<button name="post" class="btn-primary rounded-sm firstButton" string="Confirm" type="object"/>' +
-                        '<button name="post" class="btn-primary rounded-sm secondButton" string="Confirm2" type="object"/>' +
+                        '<button name="post" class="btn-primary firstButton" string="Confirm" type="object"/>' +
+                        '<button name="post" class="btn-primary secondButton" string="Confirm2" type="object"/>' +
                     '</header>' +
                     '<sheet>' +
                         '<group>' +
@@ -9676,8 +9676,8 @@ QUnit.module('Views', {
             arch: '<form string="Partners">' +
                     '<field name="state" invisible="1"/>' +
                     '<header>' +
-                        '<button name="post" class="btn-primary rounded-sm firstButton" string="Confirm" type="object"/>' +
-                        '<button name="post" class="btn-primary rounded-sm secondButton" string="Confirm2" type="object"/>' +
+                        '<button name="post" class="btn-primary firstButton" string="Confirm" type="object"/>' +
+                        '<button name="post" class="btn-primary secondButton" string="Confirm2" type="object"/>' +
                     '</header>' +
                     '<sheet>' +
                         '<group>' +

@@ -62,7 +62,7 @@ tele.define('web.owl_dialog_tests', function (require) {
                     >
                     <SubComponent text="state.textContent"/>
                     <t t-set="buttons">
-                        <button class="btn btn-primary rounded-sm" t-on-click="_onButtonClicked">The Button</button>
+                        <button class="btn btn-primary" t-on-click="_onButtonClicked">The Button</button>
                     </t>
                 </Dialog>`;
 
@@ -349,7 +349,7 @@ tele.define('web.owl_dialog_tests', function (require) {
                 const $modal = $(
                     `<div role="dialog" class="${className}" tabindex="-1">
                         <div class="modal-dialog medium">
-                            <div class="modal-content rounded-sm">
+                            <div class="modal-content">
                                 <main class="modal-body">The modal body</main>
                             </div>
                         </div>

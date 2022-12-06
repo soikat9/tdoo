@@ -45,7 +45,7 @@
                             </div>
                             <button
                                 type="button"
-                                class="btn btn-primary rounded-sm o_mobile_search_footer"
+                                class="btn btn-primary o_mobile_search_footer"
                                 t-on-click="state.showMobileSearch = false"
                             >
                                 SEE RESULT
@@ -100,7 +100,7 @@
                                             />
                                         </t>
                                         <t t-foreach="env.config.viewSwitcherEntries" t-as="view" t-key="view.type">
-                                            <button class="btn btn-light rounded-sm fa o_switch_view"
+                                            <button class="btn btn-light fa o_switch_view"
                                                 t-attf-class="o_{{view.type}} {{view.icon}} {{view.active ? 'active' : ''}}"
                                                 t-att-data-tooltip="view.name"
                                                 t-on-click="onViewClicked(view.type)"
@@ -121,7 +121,7 @@
             <t t-set="breadcrumbs" t-value="env.config.breadcrumbs or []" />
             <t t-if="breadcrumbs.length">
                 <t t-set="breadcrumb" t-value="breadcrumbs[breadcrumbs.length - 1]" />
-                <li class="breadcrumb-item o_back_button btn btn-secondary rounded-sm"
+                <li class="breadcrumb-item o_back_button btn btn-secondary"
                     t-on-click.prevent="onBreadcrumbClicked(breadcrumb.jsId)"
                 />
             </t>

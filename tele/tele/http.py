@@ -652,7 +652,7 @@ class JsonRequest(WebRequest):
                     _logger.exception("Exception during JSON request handling.")
             error = {
                 'code': 200,
-                'message': "Tele Server Error",
+                'message': "Oops, there must be a mistake..",
                 'data': serialize_exception(exception),
             }
             if isinstance(exception, werkzeug.exceptions.NotFound):
@@ -661,10 +661,10 @@ class JsonRequest(WebRequest):
                 error['message'] = "404: Not Found"
             if isinstance(exception, AuthenticationError):
                 error['code'] = 100
-                error['message'] = "Tele Session Invalid"
+                error['message'] = "Session Invalid"
             if isinstance(exception, SessionExpiredException):
                 error['code'] = 100
-                error['message'] = "Tele Session Expired"
+                error['message'] = "Session Expired"
             return self._json_response(error=error)
 
     def dispatch(self):
@@ -784,9 +784,7 @@ class HttpRequest(WebRequest):
                     _logger.warning("""No CSRF validation token provided for path '%s'
 
 Tele URLs are CSRF-protected by default (when accessed with unsafe
-HTTP methods). See
-https://www.docs.tele.studio/1.0/developer/reference/applets/http.html#csrf for
-more details.
+HTTP methods). 
 
 * if this endpoint is accessed through Tele via py-QWeb form, embed a CSRF
   token in the form, Tokens are available via `request.csrf_token()`

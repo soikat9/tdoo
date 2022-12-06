@@ -2,8 +2,8 @@
 <templates xml:space="preserve">
 
     <t t-name="web.DebugMenu.SetDefaultFooter" owl="1">
-        <button class="btn btn-secondary rounded-sm" t-on-click="trigger('dialog-closed')">Close</button>
-        <button class="btn btn-secondary rounded-sm" t-on-click="saveDefault">Save default</button>
+        <button class="btn btn-secondary" t-on-click="trigger('dialog-closed')">Close</button>
+        <button class="btn btn-secondary" t-on-click="saveDefault">Save default</button>
     </t>
 
     <t t-name="web.DebugMenu.setDefaultBody" owl="1">

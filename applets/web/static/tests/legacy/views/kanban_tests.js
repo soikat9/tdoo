@@ -5749,7 +5749,7 @@ QUnit.module('Views', {
                         '<t t-name="kanban-box">' +
                             '<div>' +
                                 '<field name="foo"/>' +
-                                '<button type="object" attrs="{\'invisible\':[\'|\', (\'bar\',\'=\',True), (\'category_ids\', \'!=\', [])]}" class="btn btn-primary rounded-sm float-right" name="arbitrary">Join</button>' +
+                                '<button type="object" attrs="{\'invisible\':[\'|\', (\'bar\',\'=\',True), (\'category_ids\', \'!=\', [])]}" class="btn btn-primary float-right" name="arbitrary">Join</button>' +
                             '</div>' +
                         '</t>' +
                     '</templates>' +
@@ -7995,7 +7995,7 @@ QUnit.module('Views', {
             which: $.ui.keyCode.TAB,
         });
 
-        assert.hasClass(document.activeElement, "btn btn-primary rounded-sm o_kanban_add");
+        assert.hasClass(document.activeElement, "btn btn-primary o_kanban_add");
 
         kanban.destroy();
     });

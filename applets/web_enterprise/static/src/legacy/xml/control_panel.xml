@@ -39,7 +39,7 @@
                         />
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary rounded-sm o_mobile_search_footer"
+                <button type="button" class="btn btn-primary o_mobile_search_footer"
                     t-on-click="state.showMobileSearch = false"
                     >
                     <t>SEE RESULT</t>
@@ -51,7 +51,7 @@
             <div class="o_cp_top">
                 <ol t-if="props.withBreadcrumbs and !state.showSearchBar" class="breadcrumb" role="navigation">
                     <t t-set="breadcrumb" t-value="props.breadcrumbs[props.breadcrumbs.length - 1]"/>
-                    <li t-if="breadcrumb" class="breadcrumb-item o_back_button btn btn-secondary rounded-sm" accesskey="b"
+                    <li t-if="breadcrumb" class="breadcrumb-item o_back_button btn btn-secondary" accesskey="b"
                         t-on-click.prevent="trigger('breadcrumb_clicked', { controllerID: breadcrumb.controllerID })"
                     />
                     <li class="breadcrumb-item active" t-esc="props.title"/>
@@ -92,7 +92,7 @@
                     <!-- Show "searchViewButtons" when custom CP have search view buttons but no SearchBar -->
                     <div class="btn-group o_search_options position-static" role="search" t-if="!props.withSearchBar" t-ref="searchViewButtons"/>
                     <button t-if="env.view and env.view.type === 'calendar'"
-                        class="o_cp_today_button btn btn-sm rounded-sm btn-link"
+                        class="o_cp_today_button btn btn-sm btn-link"
                         t-on-click="trigger('today-button-click')"
                         >
                         <span class="fa-stack o_calendar_button_today">

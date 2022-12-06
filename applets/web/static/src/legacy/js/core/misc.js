@@ -46,7 +46,7 @@ var Throbber = Widget.extend({
 /** Setup blockui */
 if ($.blockUI) {
     $.blockUI.defaults.baseZ = 1100;
-    $.blockUI.defaults.message = '<div class="tele oe_blockui_spin_container" style="background-color: transparent;">';
+    $.blockUI.defaults.message = '<div class="telecms oe_blockui_spin_container" style="background-color: transparent;">';
     $.blockUI.defaults.css.border = '0';
     $.blockUI.defaults.css["background-color"] = '';
 }
@@ -125,7 +125,7 @@ function redirect (url, wait) {
 
 //  * Client action to reload the whole interface.
 //  * If params.menu_id, it opens the given menu entry.
-//  * If params.wait, reload will wait the tele server to be reachable before reloading
+//  * If params.wait, reload will wait the telecms server to be reachable before reloading
 
 function Reload(parent, action) {
     var params = action.params || {};

@@ -22,7 +22,7 @@
                 </CheckBox>
             </div>
             <div class="px-3 py-2">
-                <button class="o_save_favorite btn btn-primary rounded-sm" t-on-click="saveFavorite">
+                <button class="o_save_favorite btn btn-primary" t-on-click="saveFavorite">
                     Save
                 </button>
             </div>

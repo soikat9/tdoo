@@ -23,7 +23,7 @@
                         <t t-call="web.SearchPanel" />
                     </div>
                     <button type="button"
-                        class="btn btn-primary rounded-sm o_mobile_search_footer"
+                        class="btn btn-primary o_mobile_search_footer"
                         t-on-click.stop="state.showMobileSearch = false"
                     >
                         <t>SEE RESULT</t>

@@ -259,7 +259,7 @@ var EventDispatcherMixin = _.extend({}, ParentedMixin, {
      *
      * Other methods will fix the bound method to what it is when creating the
      * binding/proxy, which is fine in most javascript code but problematic in
-     * tele Web where developers may want to replace existing callbacks with
+     * Tele Web where developers may want to replace existing callbacks with
      * theirs.
      *
      * The semantics of this precisely replace closing over the method call.

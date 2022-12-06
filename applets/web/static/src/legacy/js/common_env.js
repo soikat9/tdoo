@@ -14,7 +14,7 @@ tele.define("web.commonEnv", function (require) {
      * will allow an easier testing of components. See [1] for more information
      * on environments.
      *
-     * [1] https://github.com/tele-studio/owl/blob/master/doc/reference/environment.md#content-of-an-environment
+     * [1] https://github.com/tele/owl/blob/master/doc/reference/environment.md#content-of-an-environment
      */
 
     const { jsonRpc } = require("web.ajax");

@@ -3,7 +3,7 @@
 
     <t t-name="web.GroupByMenu" owl="1">
         <Dropdown class="o_group_by_menu btn-group"
-            togglerClass="'btn btn-light rounded-sm'"
+            togglerClass="'btn btn-light'"
             t-props="dropdownProps"
             t-on-dropdown-item-selected="onGroupBySelected"
         >

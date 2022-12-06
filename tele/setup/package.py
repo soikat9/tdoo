@@ -393,7 +393,7 @@ class KVM(object):
             "-cpu", "Skylake-Client,hypervisor=on,hle=off,rtm=off",
             "-smp", "2,sockets=2,cores=1,threads=1",
             "-net", "nic,model=e1000e,macaddr=52:54:00:d3:38:5e",
-            "-net", "user,hostfwd=tcp:127.0.0.1:10022-:22,hostfwd=tcp:127.0.0.1:18069-:9000,hostfwd=tcp:127.0.0.1:15432-:5432",
+            "-net", "user,hostfwd=tcp:127.0.0.1:10022-:22,hostfwd=tcp:127.0.0.1:19000-:9000,hostfwd=tcp:127.0.0.1:15432-:5432",
             "-m", "2048",
             "-drive", f"if=virtio,file={self.image},snapshot=on",
             "-nographic",
@@ -479,7 +479,7 @@ class KVMWinTestExe(KVM):
         self.ssh('PGPASSWORD=telepwd /cygdrive/c/"Program Files"/"Tele %s"/PostgreSQL/bin/createdb.exe -e -U tele mycompany' % setupversion)
         self.ssh('netsh advfirewall set publicprofile state off')
         self.ssh('/cygdrive/c/"Program Files"/"Tele {sv}"/python/python.exe \'c:\\Program Files\\Tele {sv}\\server\\tele-make\' -d mycompany -i base --stop-after-init'.format(sv=setupversion))
-        _rpc_count_modules(port=18069)
+        _rpc_count_modules(port=19000)
         logging.info('Finished testing Windows package')
 
 

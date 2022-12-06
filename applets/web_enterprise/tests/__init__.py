@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+# Part of Tele. See LICENSE file for full copyright and licensing details.
 from . import test_enterprise
 from . import test_partner

@@ -53,13 +53,13 @@
 
         .o_view_nocontent_smiling_face:before {
             @extend %o-nocontent-init-image;
-            @include size(140px, 140px);
+            @include size(120px, 140px);
             background: transparent url(/web/static/img/smiling_face.svg) no-repeat center;
         }
 
         .o_view_nocontent_neutral_face:before {
             @extend %o-nocontent-init-image;
-            @include size(140px, 140px);
+            @include size(120px, 140px);
             background: transparent url(/web/static/img/telebot.svg) no-repeat center;
         }
 
@@ -92,8 +92,8 @@
 
     .o_nocontent_help {
         border-radius: 20%;
-        background-color: #f9f9f9df;
-        box-shadow: 0 0 120px 120px #f9f9f928;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 120px 100px #f9f9f9;
     }
 
     .o_sample_data_disabled {

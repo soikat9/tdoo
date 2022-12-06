@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+# Part of Tele. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Web Enterprise',
     'category': 'Hidden',
-    'auto_install': True,
     'version': '1.0',
     'description': """
 Tele-Enterprise Web Client.
@@ -13,6 +12,7 @@ Tele-Enterprise Web Client.
 This module modifies the web applet to provide Enterprise design and responsiveness.
         """,
     'depends': ['web'],
+    'auto_install': True,
     'data': [
         'views/partner_view.xml',
         'views/webclient_templates.xml',
@@ -20,7 +20,6 @@ This module modifies the web applet to provide Enterprise design and responsiven
     'assets': {
         'web.assets_qweb': [
             'web_enterprise/static/src/**/*.xml',
-            'web_enterprise/static/src/webclient/menu/menu.xml',
         ],
         'web._assets_primary_variables': [
             ('prepend', 'web_enterprise/static/src/legacy/scss/primary_variables.scss'),
@@ -65,9 +64,9 @@ This module modifies the web applet to provide Enterprise design and responsiven
             'web_enterprise/static/src/search/**/*.scss',
             'web_enterprise/static/src/webclient/**/*.scss',
             'web_enterprise/static/src/views/**/*.scss',
-            'web_enterprise/static/src/webclient/menu/menu.scss',
 
             # Allows events to be added to the ListRenderer before it is extended.
+            # for more info, see: https://github.com/tele/enterprise/pull/30169#pullrequestreview-1064657223
             ('prepend', 'web_enterprise/static/src/legacy/js/views/list/list_renderer_mobile.js'),
 
             ('replace', 'web/static/src/legacy/js/fields/upgrade_fields.js', 'web_enterprise/static/src/legacy/js/apps.js'),

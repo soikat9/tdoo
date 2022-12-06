@@ -9,9 +9,9 @@ $o-font-size-base: 13rem * (1px / $o-root-font-size) !default;
 $o-line-height-base: 1.5 !default; // This is BS default
 
 // Colors
-$o-community-color: #0e69b8 !default;
+$o-community-color: #0c72cc !default;
 $o-enterprise-color: #3c667c !default;
-$o-enterprise-primary-color: #0e69b8 !default;
+$o-enterprise-primary-color: #017e84 !default;
 
 $o-brand-tele: $o-community-color !default;
 $o-brand-primary: $o-community-color !default;
@@ -30,40 +30,40 @@ $o-gray-700: #495057 !default;
 $o-gray-800: #343a40 !default;
 $o-gray-900: #212529 !default;
 
-$o-success: #31be60 !default;
-$o-info: #0676bc !default;
-$o-warning: #f2dd58 !default;
-$o-danger: #ce201a !default;
+$o-success: #28a745 !default;
+$o-info: #17a2b8 !default;
+$o-warning: #ffac00 !default;
+$o-danger: #dc3545 !default;
 
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
-    "success": #31be60,
-    "info": #0676bc,
-    "warning": #f2dd58,
-    "danger": #ce201a,
+    "success": #008818,
+    "info": #0180a5,
+    "warning": #9a6b01,
+    "danger": #d23f3a,
 )!default;
 
 $o-main-text-color: $o-gray-700 !default;
 $o-main-color-muted: rgba($o-main-text-color, .76) !default;
 $o-main-headings-color: $o-gray-900 !default;
 $o-main-link-color: darken($o-brand-primary, 5%) !default;
-$o-main-favorite-color: #f2dd58 !default;
-$o-main-code-color: #ce201a !default;
+$o-main-favorite-color: #f3cc00 !default;
+$o-main-code-color: #d2317b !default;
 
 $o-view-background-color: white !default;
-$o-shadow-color: #f2f2f28e !default;
+$o-shadow-color: #303030 !default;
 
-$o-form-lightsecondary: #F9F9F9 !default;
+$o-form-lightsecondary: #ccc !default;
 
 $o-list-footer-bg-color: #eee !default;
 $o-list-footer-font-weight: bold !default;
 
 $o-tooltip-background-color: white !default;
-$o-tooltip-color: #5a5f60 !default;
+$o-tooltip-color: #666666 !default;
 $o-tooltip-arrow-color: white !default;
-$o-tooltip-text-color: #1e1f1f !default;
+$o-tooltip-text-color: #777777 !default;
 $o-tooltip-title-text-color: black !default;
-$o-tooltip-title-background-color: #ffffff !default;
+$o-tooltip-title-background-color: #F7F7F7 !default;
 
 // Forms
 
@@ -127,7 +127,7 @@ $o-base-settings-mobile-tabs-overflow-gap: 3% !default;
 
 $o-cp-breadcrumb-height: 30px !default;
 
-$o-datepicker-week-color: #dcdcdc !default;
+$o-datepicker-week-color: #8f8f8f !default;
 
 $o-card-body-bg-opacity: 0.9 !default;
 

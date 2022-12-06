@@ -3,10 +3,10 @@
     <template id="onboarding_container">
         <div class="modal o_onboarding_modal o_technical_modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-                <div class="modal-content rounded-sm">
+                <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Remove Configuration Tips</h5>
-                        <button type="button" class="close rounded-sm" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-label="Close">×</span>
                         </button>
                     </div>
@@ -14,12 +14,12 @@
                         <p>Do you want to remove this configuration panel?</p>
                     </div>
                     <div class="modal-footer">
-                        <a type="action" class="btn btn-primary rounded-sm" data-dismiss="modal"
+                        <a type="action" class="btn btn-primary" data-dismiss="modal"
                         data-toggle="collapse" href=".o_onboarding_container"
                         t-att-data-model="close_model" t-att-data-method="close_method">
                             Remove
                         </a>
-                        <button type="button" class="btn btn-secondary rounded-sm" data-dismiss="modal">Discard</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                             <t t-if="text_completed" t-esc="text_completed" />
                             <t t-else="">Nice work! Your configuration is done.</t>
                         </span>
-                            <a type="action" class="btn btn-primary rounded-sm" data-toggle="collapse" href=".o_onboarding_container"
+                            <a type="action" class="btn btn-primary" data-toggle="collapse" href=".o_onboarding_container"
                             t-att-data-model="close_model" t-att-data-method="close_method">
                                 Close
                             </a>
@@ -152,7 +152,7 @@
             <xpath expr="//group[@name='social_media']" position="replace" />
             <form position="inside">
                 <footer position="replace">
-                    <button name="action_save_onboarding_company_step" class="btn btn-primary rounded-sm" type="object" string="Apply" data-hotkey="q"/>
+                    <button name="action_save_onboarding_company_step" class="btn btn-primary" type="object" string="Apply" data-hotkey="q"/>
                     <button special="cancel" data-hotkey="z" string="Cancel" />
                 </footer>
             </form>

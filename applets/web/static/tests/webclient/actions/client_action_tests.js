@@ -229,12 +229,12 @@ QUnit.module("ActionManager", (hooks) => {
         registerCleanup(() => delete core.action_registry.map.HelloWorldTest);
         const webClient = await createWebClient({ serverData });
         let currentTitle = webClient.env.services.title.current;
-        assert.strictEqual(currentTitle, '{"ztele":"Tele"}');
+        assert.strictEqual(currentTitle, '{"ztelecms":"Tele"}');
         let currentHash = webClient.env.services.router.current.hash;
         assert.deepEqual(currentHash, {});
         await doAction(webClient, "HelloWorldTest");
         currentTitle = webClient.env.services.title.current;
-        assert.strictEqual(currentTitle, '{"ztele":"Tele","action":"a title"}');
+        assert.strictEqual(currentTitle, '{"ztelecms":"Tele","action":"a title"}');
         currentHash = webClient.env.services.router.current.hash;
         assert.deepEqual(currentHash, {
             action: "HelloWorldTest",

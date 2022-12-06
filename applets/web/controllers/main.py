@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+# Part of Tele. See LICENSE file for full copyright and licensing details.
 
 import base64
 import copy
@@ -1043,7 +1043,7 @@ class Proxy(http.Controller):
             base_url = request.httprequest.base_url
             query_string = request.httprequest.query_string
             client = Client(http.root, werkzeug.wrappers.Response)
-            headers = {'X-Tele-Session-Id': request.session.sid}
+            headers = {'X-Openerp-Session-Id': request.session.sid}
             return client.post('/' + path, base_url=base_url, query_string=query_string,
                                headers=headers, data=data)
 

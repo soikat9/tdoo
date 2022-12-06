@@ -1427,7 +1427,7 @@ QUnit.module("ActionManager", (hooks) => {
     });
 
     QUnit.test("flags field of ir.actions.act_window is used", async function (assert) {
-        // more info about flags field : https://github.com/tele-studio/tele/commit/c9b133813b250e89f1f61816b0eabfb9bee2009d
+        // more info about flags field : https://github.com/tele/tele/commit/c9b133813b250e89f1f61816b0eabfb9bee2009d
         assert.expect(7);
         serverData.actions[44] = {
             id: 33,
@@ -2444,12 +2444,12 @@ QUnit.module("ActionManager", (hooks) => {
         const webClient = await createWebClient({ serverData });
         await doAction(webClient, 3); // list view
         const titleService = webClient.env.services.title;
-        assert.strictEqual(titleService.current, '{"ztele":"Tele","action":"Partners"}');
+        assert.strictEqual(titleService.current, '{"ztelecms":"Tele","action":"Partners"}');
         await click(webClient.el.querySelector(".o_data_row"));
         await legacyExtraNextTick();
-        assert.strictEqual(titleService.current, '{"ztele":"Tele","action":"First record"}');
+        assert.strictEqual(titleService.current, '{"ztelecms":"Tele","action":"First record"}');
         await click(webClient.el.querySelector(".o_pager_next"));
-        assert.strictEqual(titleService.current, '{"ztele":"Tele","action":"Second record"}');
+        assert.strictEqual(titleService.current, '{"ztelecms":"Tele","action":"Second record"}');
     });
 
     QUnit.test("action part of title is updated when an action is mounted", async (assert) => {
@@ -2462,7 +2462,7 @@ QUnit.module("ActionManager", (hooks) => {
         const webClient = await createWebClient({ serverData });
         await doAction(webClient, 3);
         const titleService = webClient.env.services.title;
-        assert.strictEqual(titleService.current, '{"ztele":"Tele","action":"Partners"}');
+        assert.strictEqual(titleService.current, '{"ztelecms":"Tele","action":"Partners"}');
     });
 
     QUnit.test("action group_by of type string", async function (assert) {

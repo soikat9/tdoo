@@ -1238,7 +1238,7 @@ tele.define("web/static/src/js/control_panel/control_panel_model_extension.js", 
                 );
             }
             // the following code aims to remodel this:
-            // https://github.com/tele-studio/tele/blob/12.0/applets/web/static/src/js/views/search/search_inputs.js#L498
+            // https://github.com/tele/tele/blob/12.0/applets/web/static/src/js/views/search/search_inputs.js#L498
             // this is required for the helpdesk tour to pass
             // this seems weird to only do that for m2o fields, but a test fails if
             // we do it for other fields (my guess being that the test should simply

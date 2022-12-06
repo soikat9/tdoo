@@ -63,7 +63,7 @@ QUnit.module(
                         actionID: 121,
                         appID: 1,
                         id: 1,
-                        label: "Connect",
+                        label: "Discuss",
                         parents: "",
                         webIcon: false,
                         xmlid: "app.1",

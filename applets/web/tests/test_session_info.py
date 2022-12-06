@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+# Part of Tele. See LICENSE file for full copyright and licensing details.
 import json
 from uuid import uuid4
 

@@ -10,8 +10,8 @@
                 <form string="Change Password">
                     <field name="user_ids"/>
                     <footer>
-                        <button string="Change Password" name="change_password_button" type="object" class="btn-primary rounded-sm" data-hotkey="q"/>
-                        <button string="Cancel" class="btn-secondary rounded-sm" special="cancel" data-hotkey="z" />
+                        <button string="Change Password" name="change_password_button" type="object" class="btn-primary" data-hotkey="q"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z" />
                     </footer>
                 </form>
             </field>
@@ -46,11 +46,11 @@
                         <div>
                             <field class="col-10 col-md-6 px-0" name="password" autocomplete="current-password" required="True" password="True"/>
                         </div>
-                        <a href="/web/reset_password/" class="btn btn-link rounded-sm" role="button">Forgot password?</a>
+                        <a href="/web/reset_password/" class="btn btn-link" role="button">Forgot password?</a>
                     </sheet>
                     <footer>
-                        <button string="Confirm Password" type="object" name="run_check" class="btn btn-primary rounded-sm" data-hotkey="q"/>
-                        <button string="Cancel" special="cancel" data-hotkey="z" class="btn btn-secondary rounded-sm"/>
+                        <button string="Confirm Password" type="object" name="run_check" class="btn btn-primary" data-hotkey="q"/>
+                        <button string="Cancel" special="cancel" data-hotkey="z" class="btn btn-secondary"/>
                     </footer>
                 </form>
             </field>
@@ -184,13 +184,13 @@
                     <sheet>
                         <field name="id" invisible="1"/>
                         <div class="oe_button_box" name="button_box">
-                            <button name="action_show_groups" type="object" groups="base.group_no_one" class="oe_stat_button" ><img role="img" aria-label="Users" title="Users" src="/tele_theme_backend_ent/static/src/icons/users.svg"/> 
+                            <button name="action_show_groups" type="object" groups="base.group_no_one" class="oe_stat_button" icon="fa-users">
                                 <field string="Groups" name="groups_count" widget="statinfo"/>
                             </button>
-                            <button name="action_show_accesses" type="object" groups="base.group_no_one" class="oe_stat_button" ><img role="img" aria-label="List" title="List" src="/tele_theme_backend_ent/static/src/icons/list.svg"/> 
+                            <button name="action_show_accesses" type="object" groups="base.group_no_one" class="oe_stat_button" icon="fa-list">
                                 <field string="Access Rights" name="accesses_count" widget="statinfo"/>
                             </button>
-                            <button name="action_show_rules" type="object" groups="base.group_no_one" class="oe_stat_button" ><img role="img" src="/tele_theme_backend_ent/static/src/icons/new-contract.svg"/> 
+                            <button name="action_show_rules" type="object" groups="base.group_no_one" class="oe_stat_button" icon="fa-list-ul">
                                 <field string="Record Rules" name="rules_count" widget="statinfo"/>
                             </button>
                         </div>
@@ -298,7 +298,7 @@
                                 <div class="oe_kanban_details">
                                     <ul>
                                         <li class="text-success float-right mb4" t-if="record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Ok" title="Ok"></i></li>
-                                        <li class=" float-right mb4" t-if="!record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Invalid" title="Invalid"></i></li>
+                                        <li class="text-danger float-right mb4" t-if="!record.active.raw_value"><i class="fa fa-circle" role="img" aria-label="Invalid" title="Invalid"></i></li>
                                         <li class="mb4">
                                             <strong><field name="name"/></strong>
                                         </li>
@@ -385,8 +385,8 @@
                         identify the key once created</strong>.
                     </p>
                     <footer>
-                        <button name="make_key" type="object" string="Generate key" class="btn-primary rounded-sm" data-hotkey="q"/>
-                        <button special="cancel" data-hotkey="z" string="Cancel" class="btn-secondary rounded-sm"/>
+                        <button name="make_key" type="object" string="Generate key" class="btn-primary" data-hotkey="q"/>
+                        <button special="cancel" data-hotkey="z" string="Cancel" class="btn-secondary"/>
                     </footer>
                     </sheet>
                 </form>
@@ -466,12 +466,14 @@
                         <page string="Account Security">
                             <group name="auth" string="Password Management">
                                 <div>
-                                    <button name="preference_change_password" type="object" string="Change password" class="btn btn-secondary rounded-sm"/>
+                                    <button name="preference_change_password" type="object" string="Change password" class="btn btn-secondary"/>
                                 </div>
                             </group>
                             <group groups="base.group_no_one">
                                 <div class="o_horizontal_separator">Developer API Keys
-                                    
+                                    <a href="https://www.tele.studio/documentation/1.0/developer/misc/api/external_api.html#api-keys" target="_blank">
+                                        <i title="Documentation" class="fa fa-fw o_button_icon fa-info-circle"></i>
+                                    </a>
                                 </div>
                                 <div colspan="2" attrs="{'invisible': [('api_key_ids', '=', [])]}">
                                     <field name="api_key_ids" nolabel="1" colspan="4" readonly="0">
@@ -484,14 +486,14 @@
                                     </field>
                                 </div>
                                 <div colspan="2">
-                                    <button name="api_key_wizard" string="New API Key" type="object" class="btn btn-secondary rounded-sm"/>
+                                    <button name="api_key_wizard" string="New API Key" type="object" class="btn btn-secondary"/>
                                 </div>
                             </group>
                         </page>
                     </notebook>
                     <footer>
-                        <button name="preference_save" type="object" string="Save" class="btn-primary rounded-sm" data-hotkey="q"/>
-                        <button name="preference_cancel" string="Cancel" special="cancel" data-hotkey="z" class="btn-secondary rounded-sm"/>
+                        <button name="preference_save" type="object" string="Save" class="btn-primary" data-hotkey="q"/>
+                        <button name="preference_cancel" string="Cancel" special="cancel" data-hotkey="z" class="btn-secondary"/>
                     </footer>
                 </form>
             </field>
