@@ -6,7 +6,7 @@ image:
 ports:
 - port: 5432 # PostgreSQL
   onOpen: ignore
-- port: 8069 # preview on browser
+- port: 9000 # preview on browser
   onOpen: open-browser
 
 tasks:
@@ -15,8 +15,8 @@ tasks:
       ./tele-install.sh
     command:
       cd tele
-      ./tele-make -w tele -r tele --applets-path=/workspace/tele/applets,/workspace/tele/develop_applets --db_host 127.0.0.1
-  - command: gp await-port 8069 && gp preview "$(gp url 8069)/web/database/selector"
+      ./tele-make -w tele -r tele --applets-path=./applets --db_host 127.0.0.1
+  - command: gp await-port 9000 && gp preview "$(gp url 9000)/web/database/selector"
 
 # P.S. You should remove ":433" from the url when running the web preview.
 

@@ -53,7 +53,7 @@ def run_cmd(cmd, chdir=None, timeout=None):
     return subprocess.run(cmd, cwd=chdir, timeout=timeout)
 
 
-def _rpc_count_modules(addr='http://127.0.0.1', port=8069, dbname='mycompany'):
+def _rpc_count_modules(addr='http://127.0.0.1', port=9000, dbname='mycompany'):
     time.sleep(5)
     uid = xmlrpclib.ServerProxy('%s:%s/xmlrpc/2/common' % (addr, port)).authenticate(
         dbname, 'admin', 'admin', {}
@@ -295,7 +295,7 @@ class DockerTgz(Docker):
             'su tele -s /bin/bash -c "tele -d mycompany -i base --stop-after-init"',
             'su tele -s /bin/bash -c "tele -d mycompany --pidfile=/data/src/tele.pid"',
         ]
-        self.run(' && '.join(cmds), self.args.build_dir, 'tele-src-test-%s' % TSTAMP, user='root', detach=True, exposed_port=8069, timeout=300)
+        self.run(' && '.join(cmds), self.args.build_dir, 'tele-src-test-%s' % TSTAMP, user='root', detach=True, exposed_port=9000, timeout=300)
         self.test_tele()
         logging.info('Finished testing tgz package')
 
@@ -327,7 +327,7 @@ class DockerDeb(Docker):
             'su tele -s /bin/bash -c "tele -d mycompany -i base --stop-after-init"',
             'su tele -s /bin/bash -c "tele -d mycompany --pidfile=/data/src/tele.pid"',
         ]
-        self.run(' && '.join(cmds), self.args.build_dir, 'tele-deb-test-%s' % TSTAMP, user='root', detach=True, exposed_port=8069, timeout=300)
+        self.run(' && '.join(cmds), self.args.build_dir, 'tele-deb-test-%s' % TSTAMP, user='root', detach=True, exposed_port=9000, timeout=300)
         self.test_tele()
         logging.info('Finished testing debian package')
 
@@ -355,7 +355,7 @@ class DockerRpm(Docker):
             'su tele -s /bin/bash -c "tele -c /etc/tele/tele.conf -d mycompany -i base --stop-after-init"',
             'su tele -s /bin/bash -c "tele -c /etc/tele/tele.conf -d mycompany --pidfile=/data/src/tele.pid"',
         ]
-        self.run(' && '.join(cmds), args.build_dir, 'tele-rpm-test-%s' % TSTAMP, user='root', detach=True, exposed_port=8069, timeout=300)
+        self.run(' && '.join(cmds), args.build_dir, 'tele-rpm-test-%s' % TSTAMP, user='root', detach=True, exposed_port=9000, timeout=300)
         self.test_tele()
         logging.info('Finished testing rpm package')
 
@@ -393,7 +393,7 @@ class KVM(object):
             "-cpu", "Skylake-Client,hypervisor=on,hle=off,rtm=off",
             "-smp", "2,sockets=2,cores=1,threads=1",
             "-net", "nic,model=e1000e,macaddr=52:54:00:d3:38:5e",
-            "-net", "user,hostfwd=tcp:127.0.0.1:10022-:22,hostfwd=tcp:127.0.0.1:18069-:8069,hostfwd=tcp:127.0.0.1:15432-:5432",
+            "-net", "user,hostfwd=tcp:127.0.0.1:10022-:22,hostfwd=tcp:127.0.0.1:18069-:9000,hostfwd=tcp:127.0.0.1:15432-:5432",
             "-m", "2048",
             "-drive", f"if=virtio,file={self.image},snapshot=on",
             "-nographic",

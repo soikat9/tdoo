@@ -5,9 +5,9 @@ services:
     depends_on:
       - db
     ports:
-      - "8069:8069"
-      - "8071:8071"
-      - "8072:8072"
+      - "9000:9000"
+      - "9001:9001"
+      - "9002:9002"
     volumes:
       - ./applets:/mnt/extra-applets
       - ./tele_applets:/mnt/tele-applets
