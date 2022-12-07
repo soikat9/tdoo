@@ -17,7 +17,7 @@
                                 <i class="fa fa-file-text" role="img" title="Text file"/>
                             </t>
                             <t t-if="attachmentViewer.attachment.isVideo">
-                                <i class="fa fa-video-camera" role="img" title="Video"/>
+                                  <img role="img" aria-label="Video Call" title="Video Call" t-attf-src="/mail/static/img/icons/video-call.svg" />
                             </t>
                         </div>
                     </t>

@@ -71,15 +71,13 @@ export class MessagingMenu extends Component {
      */
     get tabs() {
         return [{
-            icon: 'fa fa-envelope',
+           
             id: 'all',
             label: this.env._t("All"),
         }, {
-            icon: 'fa fa-user',
             id: 'chat',
             label: this.env._t("Chat"),
         }, {
-            icon: 'fa fa-users',
             id: 'channel',
             label: this.env._t("Channel"),
         }];

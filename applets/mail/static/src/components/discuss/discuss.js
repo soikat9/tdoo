@@ -75,15 +75,15 @@ export class Discuss extends Component {
      */
     mobileNavbarTabs() {
         return [{
-            icon: 'fa fa-inbox',
+            
             id: 'mailbox',
             label: this.env._t("Mailboxes"),
         }, {
-            icon: 'fa fa-user',
+           
             id: 'chat',
             label: this.env._t("Chat"),
         }, {
-            icon: 'fa fa-users',
+           
             id: 'channel',
             label: this.env._t("Channel"),
         }];

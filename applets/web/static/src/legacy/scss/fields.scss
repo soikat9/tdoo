@@ -491,7 +491,7 @@
             min-width: 35px;
 
             > button.fa {
-                border: none;
+                
                 background-color: transparent;
             }
 
@@ -525,7 +525,7 @@
         }
 
         &.o_field_invalid > img {
-            border: 1px solid theme-color('danger');
+            border: 0px solid theme-color('danger');
         }
     }
 

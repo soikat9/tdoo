@@ -578,7 +578,7 @@
             <field name="arch" type="xml">
                 <form string="Project">
                     <group>
-                        <field name="name" class="o_project_name oe_inline"
+                        <field name="name" class="p-1 o_project_name oe_inline"
                             string="Project Name" placeholder="e.g. Office Party"/>
                         <field name="user_id" invisible="1"/>
                     </group>

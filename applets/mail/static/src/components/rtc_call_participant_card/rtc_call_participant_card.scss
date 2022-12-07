@@ -115,6 +115,7 @@
 
 .o_RtcCallParticipantCard {
     border-radius: $o-mail-rounded-rectangle-border-radius-sm;
+    background-color: transparent;
 
     &.o-isClickable {
         cursor: pointer;

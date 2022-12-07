@@ -12,7 +12,7 @@
                         <div class="o_ThreadIcon_channelPublic fa fa-globe" title="Public channel"/>
                     </t>
                     <t t-if="thread.public === 'groups'">
-                        <div class="o_ThreadIcon_channelGroups fa fa-hashtag" title="Selected group of users"/>
+                        <div class="o_ThreadIcon_channelGroups" title="Selected group of users"/><img role="img" aria-label="Groups" title="Groups" t-attf-src="/mail/static/src/img/icons/user-groups.svg"  style="width:50px height:50px" />
                     </t>
                 </t>
                 <t t-elif="thread.channel_type === 'chat' and thread.correspondent">
@@ -40,17 +40,17 @@
                     </t>
                 </t>
                 <t t-elif="thread.channel_type === 'group'">
-                    <div class="o_ThreadIcon" title="Grouped Chat"/><img  role="img" aria-label="Group Chat"  title="Group Chat" src="/tele_theme_backend_ent/static/src/icons/user-groups.svg"  />
+                    <div class="o_ThreadIcon mr-2" title="Conference Call"/><img role="img" aria-label="Conference" title="Conference" t-attf-src="/mail/static/src/img/icons/conference.svg" class="mr-2" style="width:50px height:50px" />
                 </t>
                 <t t-elif="thread.model === 'mail.box'">
                     <t t-if="thread === messaging.inbox">
-                        <div class="o_ThreadIcon_mailboxInbox fa fa-inbox"/>
+                        <div class="o_ThreadIcon_mailboxInbox"/> <img role="img" aria-label="Inbox" title="Inbox" t-attf-src="/mail/static/src/img/icons/inbox.svg" />
                     </t>
                     <t t-elif="thread === messaging.starred">
-                        <div class="o_ThreadIcon_mailboxStarred fa fa-star-o"/>
+                        <div class="o_ThreadIcon_mailboxStarred"/><img role="img" aria-label="Liked" title="Liked" t-attf-src="/mail/static/src/img/icons/star.svg" />
                     </t>
                     <t t-elif="thread === messaging.history">
-                        <div class="o_ThreadIcon_mailboxHistory fa fa-history"/>
+                        <div class="o_ThreadIcon_mailboxHistory"/><img role="img" aria-label="Inbox History" title="Inbox History" t-attf-src="/mail/static/src/img/icons/history-inbox.svg" />
                     </t>
                 </t>
             </t>

@@ -127,7 +127,7 @@
                             </t>
                             <t t-else="">
                                 <button class="o_Activity_toolButton o_Activity_uploadButton btn btn-link" t-on-click="_onClickUploadDocument">
-                                    <i class="fa fa-upload"/> Upload Document
+                                    <img role="img" aria-label="Upload" title="Upload" t-attf-src="/mail/static/img/icons/upload.svg" />Upload Document
                                 </button>
                                 <FileUploader
                                     t-if="activity.thread"

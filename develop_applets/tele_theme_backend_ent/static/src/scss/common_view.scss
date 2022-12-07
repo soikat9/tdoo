@@ -103,7 +103,7 @@ body.o_web_client {
         > .o_input {
             min-height: calc(var(--input-height) - 2px);
             border: 0 !important;
-            padding: 0 !important;
+            padding: 1 !important;
         }
         &:focus{
             border-color: var(--primary-rgba)!important;
@@ -113,6 +113,7 @@ body.o_web_client {
         color: var(--tele-theme-primary-color);
     }
     .o_required_modifier.o_input, .o_required_modifier .o_input{
+        padding: 1 !important;
         border-color: var(--tele-theme-primary-color);
         background-color: transparent !important;
     }
@@ -362,6 +363,8 @@ body.o_web_client {
     .o_field_widget .o_input_dropdown .o_dropdown_button:after, .o_field_widget .o_input_dropdown .o_datepicker_button:after, .o_field_widget.o_datepicker .o_dropdown_button:after, .o_field_widget.o_datepicker .o_datepicker_button:after {
         border-top: 4px solid;
         border-top-color: inherit;
+        margin-right: .5px;
+        
     }
     .badge.badge-pill {
         max-height: 20px;

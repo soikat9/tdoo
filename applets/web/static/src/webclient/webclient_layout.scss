@@ -39,6 +39,7 @@ html {
           position: relative; // Allow to redistribute the 100% height to its child
           overflow: auto;
           height: 100%;
+          padding: 1px;
         }
       }
     }

@@ -20,7 +20,7 @@
                     </t>
                     <t t-if="!threadViewTopbar.thread">
                         <div class="o_ThreadViewTopbar_threadName flex-shrink-0 px-1 text-truncate lead font-weight-bold">
-                            Discuss
+                            Connect
                         </div>
                     </t>
                     <t t-if="threadViewTopbar.hasDescriptionArea">
@@ -51,15 +51,15 @@
                     </t>
                     <t t-if="threadViewTopbar.thread and threadViewTopbar.thread.hasCallFeature and threadViewTopbar.thread.rtcSessions.length === 0">
                         <button class="o_ThreadViewTopbar_callButton o_ThreadViewTopbar_button o-active" t-att-disabled="threadViewTopbar.thread.hasPendingRtcRequest" title="Start a Call" t-on-click="_onClickPhone">
-                            <i class="fa fa-lg fa-phone"/>
+                            <img role="img" aria-label="Phone Call" title="Phone Call" t-attf-src="/mail/static/src/img/icons/phone.svg" style="width:50px height:50px" />
                         </button>
                         <button class="o_ThreadViewTopbar_callButton o_ThreadViewTopbar_button o-active" t-att-disabled="threadViewTopbar.thread.hasPendingRtcRequest" title="Start a Video Call" t-on-click="_onClickCamera">
-                            <i class="fa fa-lg fa-video-camera"/>
+                         <img role="img" aria-label="Video Call" title="Video Call" t-attf-src="/mail/static/src/img/icons/video-call.svg" style="width:50px height:50px" />
                         </button>
                     </t>
                     <t t-if="threadViewTopbar.thread and threadViewTopbar.thread.hasInviteFeature">
                         <button class="o_ThreadViewTopbar_inviteButton o_ThreadViewTopbar_button" t-att-class="{ 'o-active': threadViewTopbar.invitePopoverView }" title="Add users" t-on-click="threadViewTopbar.onClickInviteButton" t-ref="inviteButton">
-                            <i class="fa fa-lg fa-user-plus"/>
+                       <img role="img" aria-label="Add User" title="Add User" t-attf-src="/mail/static/src/img/icons/add-user.svg" style="width:50px height:50px" />
                         </button>
                         <t t-if="threadViewTopbar.invitePopoverView">
                             <PopoverView class="o_ThreadViewTopbar_invitePopoverView" popoverViewLocalId="threadViewTopbar.invitePopoverView.localId"/>
@@ -80,7 +80,7 @@
                 <!-- FIXME: handle display on mobile -->
                 <t t-if="threadViewTopbar.threadView.threadViewer.discussPublicView and !messaging.device.isMobile">
                     <div class="o_ThreadViewTopbar_userInfo d-flex align-items-center">
-                        <img class="o_ThreadViewTopbar_avatar ml-1 mr-1 rounded-circle" t-att-src="threadViewTopbar.avatarUrl" alt="Avatar"/>
+                        <img class="o_ThreadViewTopbar_avatar ml-1 mr-1 rounded_square" t-att-src="threadViewTopbar.avatarUrl" alt="Avatar"/>
                         <t t-if="!threadViewTopbar.isEditingGuestName">
                             <span class="o_ThreadViewTopbar_userName o_ThreadViewTopbar_editableItem px-1 font-weight-bold text-truncate" t-att-class="{ 'o-userNameEditable': threadViewTopbar.isMouseOverUserName and messaging.isCurrentUserGuest }" t-on-click="threadViewTopbar.onClickUserName" t-on-mouseenter="threadViewTopbar.onMouseEnterUserName" t-on-mouseleave="threadViewTopbar.onMouseLeaveUserName">
                                 <t t-esc="messaging.isCurrentUserGuest ? messaging.currentGuest.name : messaging.currentUser.nameOrDisplayName"/>

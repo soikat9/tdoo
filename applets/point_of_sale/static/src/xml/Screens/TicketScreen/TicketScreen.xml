@@ -29,9 +29,7 @@
                             </t>
                             <t t-else="">
                                 <button class="search" t-on-click="state.showSearchBar = !state.showSearchBar;">
-                                    <span class="search-icon">
-                                        <i class="fa fa-search"/>
-                                    </span>
+                                    <span class="icon"><img t-attf-src="'/mail/static/src/img/icons/search.svg"/></span>
                                 </button>
                             </t>
                         </t>

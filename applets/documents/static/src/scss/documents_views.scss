@@ -164,11 +164,11 @@ $o-dms-inspector-width-model-button: 30px;
     flex: 0 0 $o-dms-inspector-width;
     overflow: auto;
     color: $o-dms-inspector-txt-lighter;
-    background-color: $o-dms-inspector-bg;
+    background-color: var(--tele-theme-primary-color) !important;
 
     .o_documents_inspector_preview {
         padding: $o-dms-p-small;
-        background-color: $o-dms-inspector-bg-dark;
+        background-color: var(--tele-theme-primary-color) !important;
         border-bottom: 1px solid $o-dms-inspector-bg-darker;
         min-height: 100px;
 
@@ -179,7 +179,7 @@ $o-dms-inspector-width-model-button: 30px;
 
         .o_document_preview {
             margin: $o-dms-p-tiny;
-            background-color: $o-dms-inspector-bg-medium;
+            background-color: var(--tele-theme-primary-color) !important;
             box-shadow: 0 1px 10px -2px $o-dms-inspector-bg-darker;
             animation: o_documents_preview_in 0.2s ease-out 0s 1 normal backwards;
 

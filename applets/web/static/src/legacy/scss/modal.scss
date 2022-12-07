@@ -1,7 +1,7 @@
 .modal.o_technical_modal {
 
     .modal-content {
-        border-radius: 0;
+        border-radius: 2px;
 
         .modal-header .o_subtitle {
             margin-left: 10px;
@@ -15,7 +15,7 @@
 
         .modal-body {
             &.o_act_window {
-                padding: 0;
+                padding: 1;
             }
 
             .o_modal_header {

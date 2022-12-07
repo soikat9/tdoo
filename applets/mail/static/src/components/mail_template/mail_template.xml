@@ -4,7 +4,7 @@
     <t t-name="mail.MailTemplate" owl="1">
         <div class="o_MailTemplate">
             <t t-if="mailTemplate">
-                <i class="fa fa-envelope-o" title="Mail" role="img"/>
+                <img role="img" aria-label="Mail" title="Mail" t-attf-src="/mail/static/src/img/icons/mail.svg" />
                 <span class="o_MailTemplate_name" t-esc="mailTemplate.name"/>
                 <span>:</span>
                 <button

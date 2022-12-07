@@ -4,7 +4,7 @@
     <t t-name="mail.DropZone" owl="1">
         <div class="o_DropZone" t-att-class="{ 'o-dragging-inside': state.isDraggingInside }" t-on-dragenter="_onDragenter" t-on-dragleave="_onDragleave" t-on-dragover="_onDragover" t-on-drop="_onDrop">
             <h4>
-                Drag Files Here <i class="fa fa-download"/>
+                Drag Files Here <img role="img" aria-label="Download" title="Download" t-attf-src="/mail/static/src/img/icons/download.svg" />
             </h4>
         </div>
     </t>

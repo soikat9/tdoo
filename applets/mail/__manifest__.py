@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Meetings',
+    'name': 'Connect',
     'version': '1.5',
     'category': 'Productivity/Meetings',
     'sequence': 145,

@@ -9,7 +9,7 @@
             </div>
             <div class="item search-box">
                 <span class="icon">
-                    <i class="fa fa-search" />
+                    <img t-attf-src="'/mail/static/src/img/icons/phone.svg"/>
                 </span>
                 <input type="text" t-model="orderManagementContext.searchString" t-on-keydown="onInputKeydown" placeholder="E.g. customer: Steward, date: 2020-05-09" />
                 <span class="clear" t-on-click="trigger('clear-search')">
