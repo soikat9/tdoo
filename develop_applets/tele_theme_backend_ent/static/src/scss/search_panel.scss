@@ -34,8 +34,8 @@ body.o_web_client {
                     border-color: var(--tele-theme-primary-color);
                     &:hover {
                         background-color: transparent !important;
-                        border: 1px solid #17a2b8 !important;
-                        color: #17a2b8 !important;
+                        border: 1px solid #1173a8 !important;
+                        color: #176db8 !important;
                     }
                 }
 
@@ -81,7 +81,7 @@ body.o_web_client {
                         transition: 0.3s;
 
                         &:hover {
-                            background-color: rgba(0, 169, 228, 0.18) !important;
+                            background-color: rgba(155, 159, 160, 0.18) !important;
                         }
 
                     }
@@ -105,7 +105,7 @@ body.o_web_client {
             .o_search_panel {
                 width: 100%;
                 flex: 0 0 40px;
-                padding: 0px 15px 15px 15px;
+                padding: 5px;
                 border-right: 0;
                 border-bottom: 1px solid #dee2e6;
             }
