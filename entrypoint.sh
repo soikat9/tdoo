@@ -7,7 +7,7 @@ set -e
 : ${HOST:=${DB_PORT_5432_TCP_ADDR:='db'}}
 : ${PORT:=${DB_PORT_5432_TCP_PORT:=5432}}
 : ${USER:=${DB_ENV_POSTGRES_USER:=${POSTGRES_USER:='tele'}}}
-: ${PASSWORD:=${DB_ENV_POSTGRES_PASSWORD:=${POSTGRES_PASSWORD:='tele'}}}
+: ${PASSWORD:=${DB_ENV_POSTGRES_PASSWORD:=${POSTGRES_PASSWORD:='telepwd'}}}
 
 DB_ARGS=()
 function check_config() {
@@ -28,15 +28,15 @@ case "$1" in
     -- | tele)
         shift
         if [[ "$1" == "scaffold" ]] ; then
-            exec /workspace/tele/tele-make "$@"
+            exec /opt/tele/tele-make "$@"
         else
             wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-            exec /workspace/tele/tele-make "$@" "${DB_ARGS[@]}"
+            exec /opt/tele/tele-make "$@" "${DB_ARGS[@]}"
         fi
         ;;
     -*)
         wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-        exec /workspace/tele/tele-make "$@" "${DB_ARGS[@]}"
+        exec /opt/tele/tele-make "$@" "${DB_ARGS[@]}"
         ;;
     *)
         exec "$@"

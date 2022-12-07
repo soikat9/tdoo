@@ -505,8 +505,8 @@ def parse_args():
     ap.add_argument("--build-win", action="store_true")
 
     # Windows VM
-    ap.add_argument("--vm-winxp-image", default='/workspace/tele/vm/win1036/win10_winpy36.qcow2', help="%(default)s")
-    ap.add_argument("--vm-winxp-ssh-key", default='/workspace/tele/vm/win1036/id_rsa', help="%(default)s")
+    ap.add_argument("--vm-winxp-image", default='/opt/tele/vm/win1036/win10_winpy36.qcow2', help="%(default)s")
+    ap.add_argument("--vm-winxp-ssh-key", default='/opt/tele/vm/win1036/id_rsa', help="%(default)s")
     ap.add_argument("--vm-winxp-login", default='Naresh', help="Windows login %(default)s")
     ap.add_argument("--vm-winxp-python-version", default='3.7.7', help="Windows Python version installed in the VM (default: %(default)s)")
 
