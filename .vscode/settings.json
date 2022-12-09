@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "*.py": "dockerfile"
-    },
-    "yaml.schemas": {
-        "https://gitpod.io/schemas/gitpod-schema.json": "file:///workspace/gitpod/.gitpod.yml"
-    }
-}

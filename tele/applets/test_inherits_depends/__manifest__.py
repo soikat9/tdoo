@@ -1,0 +1,13 @@
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+
+{
+    'name': 'test-inherits-depends',
+    'version': '0.1',
+    'category': 'Hidden/Tests',
+    'description': """A module to verify the inheritance using _inherits in non-original modules.""",
+    'depends': ['test_inherits'],
+    'data': [],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

@@ -2,7 +2,7 @@
 _build/
 
 # dotfiles
-
+.*
 !.gitignore
 !.mailmap
 # compiled python files
@@ -31,8 +31,6 @@ package.json
 /man/
 /share/
 /src/
-# postgres
-/postgres/
 
 #PyDev
 .project

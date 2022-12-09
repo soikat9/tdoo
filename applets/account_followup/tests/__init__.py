@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# For full licensing and copyright information, see the LICENSE file - Tele, INC.
+
+# import tests
+
+from . import test_ui
+from . import test_followup
