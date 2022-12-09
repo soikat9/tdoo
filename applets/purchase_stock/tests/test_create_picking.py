@@ -13,7 +13,7 @@ class TestCreatePicking(common.TestProductCommon):
 
     def setUp(self):
         super(TestCreatePicking, self).setUp()
-        self.partner_id = self.env['res.partner'].create({'name': 'Wood Corner Partner'})
+        self.partner_id = self.env['res.partner'].create({'name': 'Tele Manufacturing Partner'})
         self.product_id_1 = self.env['product.product'].create({'name': 'Large Desk'})
         self.product_id_2 = self.env['product.product'].create({'name': 'Conference Chair'})
 

@@ -18,7 +18,7 @@ class TestStockValuation(TransactionCase):
         self.supplier_location = self.env.ref('stock.stock_location_suppliers')
         self.stock_location = self.env.ref('stock.stock_location_stock')
         self.partner_id = self.env['res.partner'].create({
-            'name': 'Wood Corner Partner',
+            'name': 'Tele Manufacturing Partner',
             'company_id': self.env.user.company_id.id,
         })
         self.product1 = self.env['product.product'].create({
@@ -226,7 +226,7 @@ class TestStockValuationWithCOA(AccountTestInvoicingCommon):
 
         cls.supplier_location = cls.env.ref('stock.stock_location_suppliers')
         cls.stock_location = cls.env.ref('stock.stock_location_stock')
-        cls.partner_id = cls.env['res.partner'].create({'name': 'Wood Corner Partner'})
+        cls.partner_id = cls.env['res.partner'].create({'name': 'Tele Manufacturing Partner'})
         cls.product1 = cls.env['product.product'].create({'name': 'Large Desk'})
 
         cls.cat = cls.env['product.category'].create({

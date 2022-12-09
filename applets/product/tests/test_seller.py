@@ -17,7 +17,7 @@ class TestSeller(TransactionCase):
             'type': 'consu',
         })
         self.product_consu.default_code = 'DEFCODE'
-        self.asustec = self.env['res.partner'].create({'name': 'Wood Corner'})
+        self.asustec = self.env['res.partner'].create({'name': 'Tele Manufacturing'})
         self.camptocamp = self.env['res.partner'].create({'name': 'Azure Interior'})
 
     def test_10_sellers(self):

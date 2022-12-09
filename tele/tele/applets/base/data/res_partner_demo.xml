@@ -43,7 +43,7 @@
             <field name="website">www.example.com</field>
         </record>
         <record id="res_partner_1" model="res.partner">
-            <field name="name">Wood Corner</field>
+            <field name="name">Tele Manufacturing</field>
             <field eval="[Command.set([ref('res_partner_category_14'), ref('res_partner_category_12')])]" name="category_id"/>
             <field name="is_company">1</field>
             <field name="street">1839 Arbor Way</field>

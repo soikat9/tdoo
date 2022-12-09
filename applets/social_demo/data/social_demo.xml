@@ -4,7 +4,7 @@
     <!-- COMMON DEMO DATA -->
 
     <record id="res_partner_1" model="res.partner">
-        <field name="name">Wood Corner</field>
+        <field name="name">Tele Manufacturing</field>
         <field name="is_company">1</field>
         <field name="image_1920" type="base64" file="base/static/img/res_partner_1-image.png"/>
     </record>

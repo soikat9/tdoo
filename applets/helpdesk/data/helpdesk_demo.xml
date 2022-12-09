@@ -366,7 +366,7 @@ Could you please replace it with the right product?
 Waiting for your response.
 
 Best,
-Wood Corner
+Tele Manufacturing
         </field>
     </record>
     <function model="helpdesk.ticket" name="rating_apply" eval="([ref('helpdesk_ticket_18')], 3, None,'Good Service')"/>

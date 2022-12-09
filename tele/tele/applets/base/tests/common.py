@@ -96,7 +96,7 @@ class SavepointCaseWithUserDemo(TransactionCase):
         # Load all the demo partners
         cls.partners = cls.env['res.partner'].create([
             {
-                'name': 'Inner Works', # Wood Corner
+                'name': 'Inner Works', # Tele Manufacturing
                 'state_id': cls.env.ref('base.state_us_1').id,
                 'category_id': [Command.set([cls.partner_category_child_1.id, cls.partner_category_child_2.id,])],
                 'child_ids': [Command.create({

@@ -12,7 +12,7 @@ class TestRepair(AccountTestInvoicingCommon):
         super().setUpClass(chart_template_ref=chart_template_ref)
 
         # Partners
-        cls.res_partner_1 = cls.env['res.partner'].create({'name': 'Wood Corner'})
+        cls.res_partner_1 = cls.env['res.partner'].create({'name': 'Tele Manufacturing'})
         cls.res_partner_address_1 = cls.env['res.partner'].create({'name': 'Willie Burke', 'parent_id': cls.res_partner_1.id})
         cls.res_partner_12 = cls.env['res.partner'].create({'name': 'Partner 12'})
 

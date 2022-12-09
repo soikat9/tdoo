@@ -65,5 +65,5 @@ class TestPurchaseRequisitionCommon(common.TransactionCase):
             })
 
         cls.res_partner_1 = cls.env['res.partner'].create({
-            'name': 'Wood Corner',
+            'name': 'Tele Manufacturing',
         })

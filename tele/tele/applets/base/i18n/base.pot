@@ -27948,7 +27948,7 @@ msgstr ""
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_1
 msgid ""
-"Wood Corner brings honesty and seriousness to wood industry while helping "
+"Tele Manufacturing brings honesty and seriousness to wood industry while helping "
 "customers deal with trees, flowers and fungi."
 msgstr ""
 
