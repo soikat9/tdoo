@@ -7,7 +7,7 @@
 <path id="Vector_5" d="M19 17.5L21 17V7L19 6.5L17 7V17L19 17.5Z" fill="#4CAF50"/>
 <path id="Vector_6" d="M17 7L17.5 5L17 3H4.5C3.6715 3 3 3.6715 3 4.5V17L5 17.5L7 17V7H17Z" fill="#1E88E5"/>
 <path id="Vector_7" d="M17 17V21L21 17H17Z" fill="#E53935"/>
-<path id="Vector_8" d="M19.5 3H17V7H21V4.5C21 3.6715 20.3285 3 19.5 3Z" fill="#3d7abe"/>
-<path id="Vector_9" d="M4.5 21H7V17H3V19.5C3 20.3285 3.6715 21 4.5 21Z" fill="#3d7abe"/>
+<path id="Vector_8" d="M19.5 3H17V7H21V4.5C21 3.6715 20.3285 3 19.5 3Z" fill="#1565C0"/>
+<path id="Vector_9" d="M4.5 21H7V17H3V19.5C3 20.3285 3.6715 21 4.5 21Z" fill="#1565C0"/>
 </g>
 </svg>

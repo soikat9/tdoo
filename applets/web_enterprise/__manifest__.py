@@ -4,7 +4,7 @@
 {
     'name': 'Web Enterprise',
     'category': 'Hidden',
-    'auto_install': True,
+    'auto_install': False,
     'version': '1.0',
     'description': """
 Tele-Enterprise Web Client.

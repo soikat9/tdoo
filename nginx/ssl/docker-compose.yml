@@ -1,0 +1,68 @@
+version: '3.7'
+
+services: 
+    db:
+        image: postgres:14
+        restart: always
+        env_file:
+            - ./postgresql/.env.dev
+        volumes: 
+            - postgresql-data:/var/lib/postgresql/data
+    tele:
+        build: ./tele
+        restart: always
+        depends_on:
+            - db
+        volumes: 
+            - tele-data:/var/lib/tele/
+            - /opt/tele/applets:/mnt/common-applets
+            - /opt/tele/config/main:/etc/tele
+            - /opt/tele/tele_applets:/mnt/tele-applets
+            - /opt/tele/develop_applets:/mnt/develop-applets
+        ports:
+           - 9000:9000
+        env_file:
+            - ./tele/.env.dev
+    nginx:
+        build: ./nginx
+        #restart: always
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./nginx/ssl/:/etc/ssl/nginx/
+            - ./nginx/sites-enabled/:/etc/nginx/conf.d/
+        links:
+            - tele
+        depends_on:
+            - tele
+        
+    long:
+        image: tele:1.0
+        container_name: tele_long
+        depends_on:
+        - db
+        ports:
+        - "9001:9001"
+        volumes:
+        - ./applets:/mnt/common-applets
+        - ./tele_applets:/mnt/tele-applets
+        - ./develop_applets:/mnt/develop-applets
+        - ./config/long:/etc/tele
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+  
+    cron:
+        image: tele:1.0
+        container_name: tele_cron
+        depends_on:
+        - db
+        volumes:
+        - ./applets:/mnt/common-applets
+        - ./tele_applets:/mnt/tele-applets
+        - ./develop_applets:/mnt/develop-applets
+        - ./config/cron:/etc/tele
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+        
+volumes: 
+    postgresql-data:
+    tele-data:

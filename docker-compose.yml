@@ -1,20 +1,45 @@
 version: '2'
 services:
   web:
-    image: telehub:1.0
+    image: tele:1.0
+    container_name: tele
     depends_on:
       - db
     ports:
       - "9000:9000"
-      - "9001:9001"
-      - "9002:9002"
     volumes:
       - ./applets:/mnt/common-applets
       - ./tele_applets:/mnt/tele-applets
       - ./develop_applets:/mnt/develop-applets
-      - ./common-applets_v1:/mnt/common-applets_v1
-      - ./config:/etc/tele
+      - ./config/main:/etc/tele
       - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  long:
+    image: tele:1.0
+    container_name: tele_long
+    depends_on:
+      - db
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./applets:/mnt/common-applets
+      - ./tele_applets:/mnt/tele-applets
+      - ./develop_applets:/mnt/develop-applets
+      - ./config/long:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+  
+  cron:
+    image: tele:1.0
+    container_name: tele_cron
+    depends_on:
+      - db
+    volumes:
+      - ./applets:/mnt/common-applets
+      - ./tele_applets:/mnt/tele-applets
+      - ./develop_applets:/mnt/develop-applets
+      - ./config/cron:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
   db:
     image: postgres:14
     environment:
