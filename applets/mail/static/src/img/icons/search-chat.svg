@@ -1,0 +1,26 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.2825 2.90961H2.90961C2.40932 2.90961 2 3.31893 2 3.81921V15.6441C2 16.1444 2.40932 16.5537 2.90961 16.5537H6.54804V20.1922C6.54804 20.6015 7.04832 20.7834 7.32121 20.5105L11.278 16.5537H19.2825C19.7828 16.5537 20.1922 16.1444 20.1922 15.6441V3.81921C20.1922 3.31893 19.7828 2.90961 19.2825 2.90961Z" fill="url(#paint0_linear_40_4288)"/>
+<path d="M20.1922 18.4639L19.3735 19.2825L21.1472 21.0562C21.1927 21.1017 21.2837 21.1017 21.3292 21.0562L21.9659 20.4195C22.0114 20.374 22.0114 20.2831 21.9659 20.2376L20.1922 18.4639Z" fill="url(#paint1_linear_40_4288)"/>
+<path d="M19.1916 17.4633L18.3729 18.282L19.3735 19.2825L20.1922 18.4639L19.1916 17.4633Z" fill="url(#paint2_radial_40_4288)"/>
+<path opacity="0.05" d="M20.1922 15.6441V13.7794C19.51 12.4605 18.1455 11.5509 16.5537 11.5509C14.2797 11.5509 12.4605 13.3701 12.4605 15.6441C12.4605 15.9625 12.506 16.2809 12.5515 16.5537H19.2826C19.7828 16.5537 20.1922 16.1444 20.1922 15.6441Z" fill="black"/>
+<path opacity="0.07" d="M20.1922 15.6441V14.3706C19.6464 12.8698 18.2365 11.7783 16.5537 11.7783C14.4162 11.7783 12.6879 13.5065 12.6879 15.6441C12.6879 15.9625 12.7334 16.2808 12.7789 16.5537H19.2826C19.7828 16.5537 20.1922 16.1444 20.1922 15.6441Z" fill="black"/>
+<path d="M16.5537 19.2825C18.5631 19.2825 20.1922 17.6535 20.1922 15.6441C20.1922 13.6347 18.5631 12.0057 16.5537 12.0057C14.5443 12.0057 12.9153 13.6347 12.9153 15.6441C12.9153 17.6535 14.5443 19.2825 16.5537 19.2825Z" fill="url(#paint3_linear_40_4288)"/>
+<defs>
+<linearGradient id="paint0_linear_40_4288" x1="5.95043" y1="1.35964" x2="16.3627" y2="18.3006" gradientUnits="userSpaceOnUse">
+<stop stop-color="#33BEF0"/>
+<stop offset="1" stop-color="#0A85D9"/>
+</linearGradient>
+<linearGradient id="paint1_linear_40_4288" x1="20.2016" y1="18.5042" x2="21.5003" y2="21.0083" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7DD8F3"/>
+<stop offset="1" stop-color="#45B0D0"/>
+</linearGradient>
+<radialGradient id="paint2_radial_40_4288" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5592 15.6659) scale(4.45799)">
+<stop offset="0.693" stop-color="#006185"/>
+<stop offset="0.921" stop-color="#35C1F1"/>
+</radialGradient>
+<linearGradient id="paint3_linear_40_4288" x1="14.5274" y1="10.9216" x2="19.4601" y2="18.1627" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCFCFC"/>
+<stop offset="0.95" stop-color="#C3C9CD"/>
+</linearGradient>
+</defs>
+</svg>

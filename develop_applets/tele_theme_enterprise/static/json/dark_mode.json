@@ -1,0 +1,1326 @@
+{
+    "name": "dark",
+    "mode_template": "template1",
+    "version": "1.0.0.1",
+    "template_var_vals": {
+        "back_ground": [
+            {
+                "name": "$light_background_color",
+                "value": "#313852",
+                "description": "light background color, like the background of the main window"
+            },
+            {
+                "name": "$semi_dark_background_color",
+                "value": "#394160",
+                "description": "semi dark background color, like the background of the control panel"
+            },
+            {
+                "name": "$dark_background_color",
+                "value": "#182139",
+                "description": "dark background color, like the background of the sidebar"
+            }
+        ],
+        "side_bar": [
+            {
+                "name": "$sidebar_background_color",
+                "value": "#313852",
+                "disable_opacity": true,
+                "description": "dark background color, like the background of the sidebar"
+            },
+            {
+                "name": "$sidebar_tab_color",
+                "value": "#313852",
+                "disable_opacity": true,
+                "description": "dark background color, like the background of the sidebar"
+            },
+            {
+                "name": "$sidebar_text_color",
+                "value": "#c7c7c7",
+                "disable_opacity": true,
+                "description": "dark background color, like the background of the sidebar"
+            }
+        ],
+        "text_color": [
+            {
+                "name": "$text_color",
+                "value": "#c7c7c7",
+                "description": "text color, default color of all text"
+            }
+        ],
+        "input": [
+            {
+                "name": "$input_background_color",
+                "value": "#292f44",
+                "description": "input background color"
+            },
+            {
+                "name": "$input_border_color",
+                "value": "#394160",
+                "description": "input border color"
+            },
+            {
+                "name": "$input_text_color",
+                "value": "#c7c7c7",
+                "description": "input text color"
+            },
+            {
+                "name": "$input_foucus_color",
+                "value": "#313852",
+                "description": "input focus color"
+            },
+            {
+                "name": "$input_checked_color",
+                "value": "#182139",
+                "description": "input checked color"
+            },
+            {
+                "name": "$input_hover_color",
+                "value": "#313852",
+                "description": "input hover color"
+            }
+        ],
+        "primary": [
+            {
+                "name": "$primary_color",
+                "value": "#313852",
+                "description": "primary background color, like the primary button color"
+            },
+            {
+                "name": "$primary_hover_color",
+                "value": "#3b425c",
+                "description": "primary hover background color, like the primary button hover color"
+            },
+            {
+                "name": "$primary_active_color",
+                "value": "#3b425c",
+                "description": "primary active background color, like the primary button active color"
+            },
+            {
+                "name": "$primary_border_color",
+                "value": "#4d5075",
+                "description": "primary border color, like the primary button border color"
+            },
+            {
+                "name": "$primary_border_hover_color",
+                "value": "#F2F2F2",
+                "description": "primary border hover color, like the primary button border hover color"
+            },
+            {
+                "name": "$primary_border_active_color",
+                "value": "#F2F2F2",
+                "description": "primary border active color, like the primary button border active color"
+            },
+            {
+                "name": "$primary_text_color",
+                "value": "#c7c7c7",
+                "description": "primary text color, like the primary button text color"
+            },
+            {
+                "name": "$primary_text_hover_color",
+                "value": "#c7c7c7",
+                "description": "primary text hover color, like the primary button text hover color"
+            },
+            {
+                "name": "$primary_text_active_color",
+                "value": "#c7c7c7",
+                "description": "primary text active color, like the primary button text active color"
+            }
+        ],
+        "secondary": [
+            {
+                "name": "$secondary_color",
+                "value": "#3b425c",
+                "description": "secondary background color, like the secondary button color"
+            },
+            {
+                "name": "$secondary_hover_color",
+                "value": "#3b425c",
+                "description": "secondary hover background color, like the secondary button hover color"
+            },
+            {
+                "name": "$secondary_active_color",
+                "value": "#3b425c",
+                "description": "secondary active background color, like the secondary button active color"
+            },
+            {
+                "name": "$secondary_border_color",
+                "value": "#313852",
+                "description": "secondary border color, like the secondary button border color"
+            },
+            {
+                "name": "$secondary_border_hover_color",
+                "value": "#313852",
+                "description": "secondary border hover color, like the secondary button border hover color"
+            },
+            {
+                "name": "$secondary_border_active_color",
+                "value": "#313852",
+                "description": "secondary border active color, like the secondary button border active color"
+            },
+            {
+                "name": "$secondary_text_color",
+                "value": "#c7c7c7",
+                "description": "secondary text color, like the secondary button text color"
+            },
+            {
+                "name": "$secondary_text_hover_color",
+                "value": "#c7c7c7",
+                "description": "secondary text hover color, like the secondary button text hover color"
+            },
+            {
+                "name": "$secondary_text_active_color",
+                "value": "#c7c7c7",
+                "description": "secondary text active color, like the secondary button text active color"
+            }
+        ],
+        "border": [
+            {
+                "name": "$dark_border_color",
+                "value": "#22273a",
+                "description": "dark border color, like the border of the main window"
+            },
+            {
+                "name": "$semi_dark_border_color",
+                "value": "#454c66",
+                "description": "semi border color, like the border of the control panel"
+            },
+            {
+                "name": "$light_border_color",
+                "value": "#313852",
+                "description": "light border color, like the border of the sidebar"
+            }
+        ],
+        "menu item": [
+            {
+                "name": "$menu_item_color",
+                "value": "#3b425c",
+                "description": "menu item color, like the menu item color"
+            },
+            {
+                "name": "$menu_item_text_color",
+                "value": "#c7c7c7",
+                "description": "menu item text color, like the menu item text color"
+            },
+            {
+                "name": "$menu_item_hover_color",
+                "value": "#454c66",
+                "description": "menu item hover color, like the menu item hover color"
+            },
+            {
+                "name": "$menu_item_active_color",
+                "value": "#454c66",
+                "description": "menu item hover color, like the menu item hover color"
+            },
+            {
+                "name": "$menu_item_text_hover_color",
+                "value": "#c7c7c7",
+                "description": "menu item text color, like the menu item text color"
+            },
+            {
+                "name": "$menu_item_text_active_color",
+                "value": "#c7c7c7",
+                "description": "menu item text color, like the menu item text color"
+            }
+        ],
+
+        "shadow": [
+            {
+                "name": "$shadow_color",
+                "value": "#00000049",
+                "description": "shadow color, like the shadow color"
+            }
+        ],
+
+        "link": [
+            {
+                "name": "$link_text_color",
+                "value": "#66598f",
+                "description": "link text color"
+            },
+            {
+                "name": "$link_text_hover_color",
+                "value": "#66598f",
+                "description": "link text hover color"
+            },
+            {
+                "name": "$link_text_active_color",
+                "value": "#66598f",
+                "description": "link text active color"
+            }
+        ],
+
+        "table": [
+            {
+                "name": "$table_header_color",
+                "value": "#3b425c",
+                "description": "table header background color"
+            },
+            {
+                "name": "$table_header_text_color",
+                "value": "#c7c7c7",
+                "description": "table header text color"
+            },
+            {
+                "name": "$table_color",
+                "value": "#c7c7c7",
+                "description": "table body background color"
+            },
+            {
+                "name": "$table_border_color",
+                "value": "#dee2e6",
+                "description": "table header border color"
+            },
+            {
+                "name": "$table_row_color",
+                "value": "#182139",
+                "description": "table row color"
+            },
+            {
+                "name": "$table_row_text_color",
+                "value": "#c7c7c7",
+                "description": "table row text color"
+            },
+            {
+                "name": "$table_row_hover_color",
+                "value": "#424b70",
+                "description": "table row hover color"
+            },
+            {
+                "name": "$table_row_hover_text_color",
+                "value": "#c7c7c7",
+                "description": "table row hover text color"
+            },
+            {
+                "name": "$table_odd_row_color",
+                "value": "#3b425c",
+                "description": "table odd row color"
+            }
+        ],
+        "appboard": [
+            {
+                "name": "$appboard_color1",
+                "value": "#1565c0",
+                "description": "appboard color1"
+            },
+            {
+                "name": "$appboard_color2",
+                "value": "#041d3a",
+                "description": "appboard color2"
+            }
+        ]
+    },
+
+    "theme_styles": [
+        {
+            "name": "style1",
+            "is_default": true,
+            "groups": [
+                {
+                    "name": "side bar",
+                    "sub_groups": [
+                        {
+                            "name": "app tab",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".sidebar_menu .app_container"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "side_bar_background"
+                                        }
+                                    ],
+                                    "val_template": "background: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".sidebar_menu .app_name"
+                                    ],
+                                    "val_template": "color: {color} !important;",
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "header",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_header "
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "header_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "toggler",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "border color",
+                                    "selectors": [
+                                        ".header .navigation-toggler"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_border_color"
+                                        }
+                                    ],
+                                    "val_template": "border-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "search bar",
+                            "style_items": [
+                                {
+                                    "name": "input background",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar  .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview .o_searchview_input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "body",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "sub_group": "body",
+                                    "selectors": [
+                                        ".o_action_manager"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color",
+                                            "identity": "body_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "app board",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_app_board"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color1",
+                                            "ref_var": "$appboard_color1"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "name": "color2",
+                                            "ref_var": "$appboard_color2"
+                                        }
+                                    ],
+                                    "val_template": "background: radial-gradient({color1}, {color2}) !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "control panel",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background color",
+                                    "selectors": [
+                                        ".o_control_panel"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "list view",
+                    "sub_groups": [
+                        {
+                            "name": "header",
+                            "style_items": [
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".o_list_view .o_list_table thead"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                },
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table thead",
+                                        ".o_list_view .table-responsive .o_list_table thead tr:nth-child(1) th"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "body",
+                            "style_items": [
+                                {
+                                    "name": "row hover color",
+                                    "selectors": [
+                                        ".table-hover.table-striped tbody tr:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_row_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "odd row color",
+                                    "selectors": [
+                                        ".table-striped tbody tr:nth-of-type(odd)"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_odd_row_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "footer",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table tfoot",
+                                        ".o_list_view .table-responsive .o_list_table tfoot tr:nth-child(1) td"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "style2",
+            "is_default": true,
+            "groups": [
+                {
+                    "name": "side bar",
+                    "sub_groups": [
+                        {
+                            "name": "app tab",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".sidebar_menu .app_container"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "side_bar_background"
+                                        }
+                                    ],
+                                    "val_template": "background: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".sidebar_menu .app_name"
+                                    ],
+                                    "val_template": "color: {color} !important;",
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "header",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_header "
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "header_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "toggler",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "border color",
+                                    "selectors": [
+                                        ".header .navigation-toggler"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_border_color"
+                                        }
+                                    ],
+                                    "val_template": "border-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "search bar",
+                            "style_items": [
+                                {
+                                    "name": "input background",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar  .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview .o_searchview_input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "body",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "sub_group": "body",
+                                    "selectors": [
+                                        ".o_action_manager"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color",
+                                            "identity": "body_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "app board",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_app_board"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color1",
+                                            "ref_var": "$light_background_color"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "name": "color2",
+                                            "ref_var": "$dark_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background: radial-gradient({color1}, {color2}) !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "control panel",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background color",
+                                    "selectors": [
+                                        ".o_control_panel"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "list view",
+                    "sub_groups": [
+                        {
+                            "name": "header",
+                            "style_items": [
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".o_list_view .o_list_table thead"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                },
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table thead",
+                                        ".o_list_view .table-responsive .o_list_table thead tr:nth-child(1) th"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "body",
+                            "style_items": [
+                                {
+                                    "name": "row hover color",
+                                    "selectors": [
+                                        ".table-hover.table-striped tbody tr:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_row_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "odd row color",
+                                    "selectors": [
+                                        ".table-striped tbody tr:nth-of-type(odd)"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_odd_row_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "footer",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table tfoot",
+                                        ".o_list_view .table-responsive .o_list_table tfoot tr:nth-child(1) td"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "style3",
+            "is_default": true,
+            "groups": [
+                {
+                    "name": "side bar",
+                    "sub_groups": [
+                        {
+                            "name": "app tab",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".sidebar_menu .app_container"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "side_bar_background"
+                                        }
+                                    ],
+                                    "val_template": "background: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".sidebar_menu .app_name"
+                                    ],
+                                    "val_template": "color: {color} !important;",
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "header",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_header "
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color",
+                                            "identity": "header_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "toggler",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler a:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "border color",
+                                    "selectors": [
+                                        ".header .navigation-toggler"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_border_color"
+                                        }
+                                    ],
+                                    "val_template": "border-color: {color} !important;"
+                                },
+                                {
+                                    "name": "hover background",
+                                    "selectors": [
+                                        ".header .navigation-toggler:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$secondary_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "search bar",
+                            "style_items": [
+                                {
+                                    "name": "input background",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar  .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview .o_searchview_input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".tele_theme_header .tele_search_bar .o_searchview",
+                                        ".tele_theme_header .tele_search_bar .o_searchview input"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "body",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "sub_group": "body",
+                                    "selectors": [
+                                        ".o_action_manager"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$dark_background_color",
+                                            "identity": "body_background"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "app board",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".tele_app_board"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color1",
+                                            "ref_var": "$light_background_color"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "name": "color2",
+                                            "ref_var": "$dark_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background: radial-gradient({color1}, {color2}) !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "control panel",
+                    "sub_groups": [
+                        {
+                            "name": "normal",
+                            "style_items": [
+                                {
+                                    "name": "background color",
+                                    "selectors": [
+                                        ".o_control_panel"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "list view",
+                    "sub_groups": [
+                        {
+                            "name": "header",
+                            "style_items": [
+                                {
+                                    "name": "text color",
+                                    "selectors": [
+                                        ".o_list_view .o_list_table thead"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_text_color"
+                                        }
+                                    ],
+                                    "val_template": "color: {color} !important;"
+                                },
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table thead",
+                                        ".o_list_view .table-responsive .o_list_table thead tr:nth-child(1) th"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_header_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "body",
+                            "style_items": [
+                                {
+                                    "name": "row hover color",
+                                    "selectors": [
+                                        ".table-hover.table-striped tbody tr:hover"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_row_hover_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                },
+                                {
+                                    "name": "odd row color",
+                                    "selectors": [
+                                        ".table-striped tbody tr:nth-of-type(odd)"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$table_odd_row_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "footer",
+                            "style_items": [
+                                {
+                                    "name": "background",
+                                    "selectors": [
+                                        ".o_list_view .table-responsive .o_list_table tfoot",
+                                        ".o_list_view .table-responsive .o_list_table tfoot tr:nth-child(1) td"
+                                    ],
+                                    "vars": [
+                                        {
+                                            "type": "color",
+                                            "name": "color",
+                                            "ref_var": "$light_background_color"
+                                        }
+                                    ],
+                                    "val_template": "background-color: {color} !important;"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -17,7 +17,7 @@ class TestACL(TransactionCaseWithUserDemo):
 
     def setUp(self):
         super(TestACL, self).setUp()
-        self.erp_system_group = self.env.ref(GROUP_SYSTEM)
+        self.tele_system_group = self.env.ref(GROUP_SYSTEM)
 
     def _set_field_groups(self, model, field_name, groups):
         field = model._fields[field_name]
@@ -71,7 +71,7 @@ class TestACL(TransactionCaseWithUserDemo):
                           "Label for 'decimal_places' must not be found in view definition")
 
         # Make demo user a member of the restricted group and check that the field is back
-        self.erp_system_group.users += self.user_demo
+        self.tele_system_group.users += self.user_demo
         has_group_system = self.user_demo.has_group(GROUP_SYSTEM)
         fields = currency.fields_get([])
         form_view = currency.fields_view_get(False, 'form')
@@ -103,7 +103,7 @@ class TestACL(TransactionCaseWithUserDemo):
             partner.write({'bank_ids': []})
 
         # Add the restricted group, and check that it works again
-        self.erp_system_group.users += self.user_demo
+        self.tele_system_group.users += self.user_demo
         has_group_system = self.user_demo.has_group(GROUP_SYSTEM)
         self.assertTrue(has_group_system, "`demo` user should now belong to the restricted group")
         self.assertTrue(partner.read(['bank_ids']))
@@ -137,7 +137,7 @@ class TestACL(TransactionCaseWithUserDemo):
 
     def test_view_create_edit_button_visibility(self):
         """ Test form view Create, Edit, Delete button visibility based on access right of model"""
-        self.erp_system_group.users += self.user_demo
+        self.tele_system_group.users += self.user_demo
         methods = ['create', 'edit', 'delete']
         company = self.env['res.company'].with_user(self.user_demo)
         company_view = company.fields_view_get(False, 'form')
@@ -158,7 +158,7 @@ class TestACL(TransactionCaseWithUserDemo):
 
     def test_m2o_field_create_edit_visibility(self):
         """ Test many2one field Create and Edit option visibility based on access rights of relation field""" 
-        self.erp_system_group.users += self.user_demo
+        self.tele_system_group.users += self.user_demo
         methods = ['create', 'write']
         company = self.env['res.company'].with_user(self.user_demo)
         company_view = company.fields_view_get(False, 'form')

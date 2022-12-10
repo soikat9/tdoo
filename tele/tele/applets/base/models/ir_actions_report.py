@@ -864,7 +864,7 @@ class IrActionsReport(models.Model):
             # wkhtmltopdf.
             Model = self.env[self_sudo.model]
             record_ids = Model.browse(res_ids)
-            wk_record_ids = Model
+            tele_record_ids = Model
             if self_sudo.attachment:
                 for record_id in record_ids:
                     attachment = self_sudo.retrieve_attachment(record_id)
@@ -873,10 +873,10 @@ class IrActionsReport(models.Model):
                         save_in_attachment[record_id.id] = stream
                         stream_record[stream] = record_id
                     if not self_sudo.attachment_use or not attachment:
-                        wk_record_ids += record_id
+                        tele_record_ids += record_id
             else:
-                wk_record_ids = record_ids
-            res_ids = wk_record_ids.ids
+                tele_record_ids = record_ids
+            res_ids = tele_record_ids.ids
 
         # A call to wkhtmltopdf is mandatory in 2 cases:
         # - The report is not linked to a record.

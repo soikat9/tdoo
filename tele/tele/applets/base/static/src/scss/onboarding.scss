@@ -277,7 +277,7 @@ $o-onboarding-violet-ui-2: #FBEEC8;
         @include o-onboarding-variation($o-onboarding-blue-bg-1, $o-onboarding-blue-bg-2, $o-onboarding-blue-ui-1, $o-onboarding-blue-ui-2);
     }
 
-    &.o_onboarding_orange {
+    &.onboarding_panel_default {
         @include o-onboarding-variation($o-onboarding-orange-bg-1, $o-onboarding-orange-bg-2, $o-onboarding-orange-ui-1, $o-onboarding-orange-ui-2);
     }
 

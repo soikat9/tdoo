@@ -49,7 +49,7 @@ ARG TELE_USER_GID=1000
 
 RUN set -x; \
         groupadd -r -g ${TELE_USER_GID} ${TELE_USER} \
-        && adduser --system --home=/home/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
+        && adduser --system --home=/opt/${TELE_USER} ${TELE_USER} --uid ${TELE_USER_UID} --gid ${TELE_USER_GID} \
         && apt update && apt-get install -y git libpq-dev libxml2-dev libxslt-dev libffi-dev gcc python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev libjpeg-dev \
         && mkdir /var/log/tele \
         && chown ${TELE_USER}:root /var/log/tele
@@ -57,25 +57,25 @@ RUN set -x; \
 # Install rtlcss (on Debian buster)
 RUN npm install -g rtlcss
 
-COPY --chown=tele:tele ./tele /workspace/tele
-RUN pip3 install -r /workspace/tele/requirements.txt
+COPY --chown=tele:tele ./tele /opt/tele
+RUN pip3 install --no-cache-dir -r /opt/tele/requirements.txt 
 
-RUN cp /workspace/tele/setup/tele /workspace/tele/tele-make && chmod +x /workspace/tele/tele-make
+RUN cp /opt/tele/setup/tele /opt/tele/tele-make && chmod +x /opt/tele/tele-make
 
 # Copy entrypoint script and Tele configuration file
 COPY --chown=tele:tele ./entrypoint.sh /
 COPY --chown=tele:tele ./tele.conf /etc/tele/
 
-# Set permissions and Mount /var/lib/tele to allow restoring filestore and /mnt/extra-applets for users applets
+# Set permissions and Mount /var/lib/tele to allow restoring filestore and /mnt/common-applets for users applets
 RUN chown tele /etc/tele/tele.conf \
-    && mkdir -p /mnt/extra-applets \
-    && chown -R tele /mnt/extra-applets \
+    && mkdir -p /mnt/common-applets \
+    && chown -R tele /mnt/common-applets \
     && mkdir -p /var/lib/tele \
     && chown -R tele /var/lib/tele 
-VOLUME ["/var/lib/tele", "/mnt/extra-applets"]
+VOLUME ["/var/lib/tele", "/mnt/common-applets"]
 
 # Expose Tele services
-EXPOSE 9000 9001 9002
+EXPOSE 9000 9001
 
 # Set the default config file
 ENV TELE_RC /etc/tele/tele.conf

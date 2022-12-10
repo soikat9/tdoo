@@ -24,7 +24,7 @@ if [ ! -f $TELE_CONFIGURATION_FILE ]
 then
     echo "[options]
 ; This is the password that allows database operations:
-; admin_passwd = admin
+; admin_passwd = telepwd
 db_host = False
 db_port = False
 db_user = $TELE_USER

@@ -1,5 +1,5 @@
 # This is a test POT file, not a true template. It is manually maintained
-# to test the import translation behavior of OpenERP.
+# to test the import translation behavior of Tele.
 #
 # In particular, the
 # `1XBUO5PUYH2RYZSA1FTLRYS8SPCNU1UYXMEYMM25ASV7JC2KTJZQESZYRV9L8CGB` source is
@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.1\n"
+"Project-Id-Version: Tele Server 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-17 12:36+0000\n"
 "PO-Revision-Date: 2012-10-17 12:36+0000\n"

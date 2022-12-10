@@ -1,3 +1,0 @@
-#!/bin/sh
-
-wget 'http://localhost:9000/hw_drivers/check_certificate' >/dev/null

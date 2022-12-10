@@ -1,0 +1,72 @@
+version: "3.7"
+
+
+services:
+
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=telepwd
+      - POSTGRES_USER=tele
+
+  tele:
+    container_name: tele_main
+    image: telehub:1.0
+    restart: unless-stopped
+    volumes:
+      - tele_home:/var/lib/tele
+      - ./applets:/mnt/common-applets
+      - ./tele_applets:/mnt/tele-applets
+      - ./develop_applets:/mnt/develop-applets
+      - ./config/main:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - db
+    ports:
+      - "9000:9000"
+    networks:
+      - tele_network
+  
+  tele_long:
+    container_name: tele_long
+    image: telehub:1.0
+    restart: unless-stopped
+    volumes:
+      - tele_home:/var/lib/tele
+      - ./applets:/mnt/common-applets
+      - ./tele_applets:/mnt/tele-applets
+      - ./develop_applets:/mnt/develop-applets
+      - ./config/long:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - db
+    ports:
+      - "9001:9001"
+    networks:
+      - tele_network
+
+  tele_cron:
+    container_name: tele_cron
+    image: telehub:1.0
+    restart: unless-stopped
+    volumes:
+      - tele_home:/var/lib/tele
+      - ./applets:/mnt/common-applets
+      - ./tele_applets:/mnt/tele-applets
+      - ./develop_applets:/mnt/develop-applets
+      - ./config/cron:/etc/tele
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - db
+    networks:
+      - tele_network
+
+volumes:
+  tele_home:
+    external: false
+
+
+networks:
+  tele_network: 
+    name: tele_network

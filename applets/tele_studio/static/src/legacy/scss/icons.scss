@@ -1,0 +1,147 @@
+
+
+.o_tele_studio_component:after{
+    background-repeat: no-repeat;
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 4px;
+    
+}
+
+.o_tele_studio_field_fa {
+    .fa {
+        position: absolute;
+        left: 7px;
+        top: 6px;
+        font-size: 20px;
+    }
+    &:after {
+        content: none;
+    }
+}
+
+.o_tele_studio_field_binary:after {
+    background-image: url('../icons/add-file.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_boolean:after {
+    background-image: url('../icons/checkbox.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_char:after {
+    // @include o-studio-sprite-icon(0, -40px); 
+    background-image: url('../icons/text.svg');
+    background-size: contain;
+    
+}
+
+.o_tele_studio_field_columns:after {
+    background-image: url('../icons/field-column.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_date:after {
+    background-image: url('../icons/date.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_datetime:after {
+    // @include o-studio-sprite-icon(0, -100px); 
+    background-image: url('../icons/schedule.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_float:after {
+    background-image: url('../icons/decimal.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_html:after {
+    background-image: url('../icons/html.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_picture:after {
+    background-image: url('../icons/add-image.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_integer:after {
+    background-image: url('../icons/integer.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_many2many:after {
+    background-image: url('../icons/many2many.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_many2one:after {
+    background-image: url('../icons/many2one.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_monetary:after {
+    background-image: url('../icons/monetary.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_one2many:after {
+    background-image: url('../icons/one-2-many.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_selection:after {
+    background-image: url('../icons/select.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_tabs:after {
+    background-image: url('../icons/add-tab.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_tags:after {
+    background-image: url('../icons/tags.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_text:after {
+    background-image: url('../icons/multi-lines.svg');
+    background-size: contain;
+    
+}
+
+.o_tele_studio_filter_separator:after {
+    background-image: url('../icons/insert.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_priority:after {
+    background-image: url('../icons/rate.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_related:after {
+    background-image: url('../icons/related.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_filter:after {
+    background-image: url('../icons/filter.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_signature:after {
+    background-image: url('../icons/signature.svg');
+    background-size: contain;
+}
+
+.o_tele_studio_field_lines:after {
+    background-image: url('../icons/multi-lines-text.svg');
+    background-size: contain;
+}

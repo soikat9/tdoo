@@ -1,0 +1,11 @@
+<tele>
+    <data noupdate="0">
+
+        <function model="tele_theme_setting.mode_template" name="install_template">
+            <value eval="'template1'"/>
+            <value eval="'/tele_theme_enterprise/static/template/template1.scss'"/>
+            <value eval="['/tele_theme_enterprise/static/json/white_mode.json', '/tele_theme_enterprise/static/json/dark_mode.json']"/>
+        </function>
+
+    </data>
+</tele>

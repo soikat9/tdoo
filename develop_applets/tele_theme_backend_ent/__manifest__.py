@@ -58,7 +58,7 @@
             "/tele_theme_backend_ent/static/src/scss/pivot_view.scss",
             "/tele_theme_backend_ent/static/src/scss/graph_view.scss",
             "/tele_theme_backend_ent/static/src/scss/dashboards.scss",
-            "/tele_theme_backend_ent/static/src/scss/calendear_view.scss",
+            "/tele_theme_backend_ent/static/src/scss/calendar_view.scss",
             "/tele_theme_backend_ent/static/src/scss/setting_page.scss",
             "/tele_theme_backend_ent/static/src/scss/tab_styles.scss",
             "/tele_theme_backend_ent/static/src/scss/popup_styles.scss",
@@ -104,6 +104,6 @@
     },
     'sequence': 1,
     'application': True,
-    'auto_install': True,
+    'auto_install': False,
     'license': 'TPL-1',
 }
