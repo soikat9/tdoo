@@ -35,7 +35,7 @@
     }
   }
   .ui-autocomplete .ui-menu-item.o_m2o_dropdown_option > a {
-    color: #0093b2;
+    color: #0e79d2;
   }
 }
 .editMode {
@@ -52,7 +52,7 @@
       display: table;
       height: $o-navbar-height;
       .faClose {
-        background: #0093b2;
+        background: #0e79d2;
         border: 1px solid #1f242a;
         display: table-cell;
         vertical-align: middle;
@@ -310,7 +310,7 @@
         .wAC {
           border-left: 1px solid #4d5365;
           .fSave {
-            color: #03A9F4;
+            color: #0388f4;
           }
           .fReset {
             color: #FF5722;
@@ -726,7 +726,7 @@
       }
     }
     &.aSave {
-      color: #03A9F4;
+      color: #0388f4;
     }
     &.aReset {
       color: #FF5722;

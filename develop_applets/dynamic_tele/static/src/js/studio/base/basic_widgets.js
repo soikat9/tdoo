@@ -299,7 +299,7 @@ tele.define('dynamic_tele.basic_widgets', function (require) {
             this.state = {value: value || "#5f5e5e"};
         },
         initParams: function () {
-            this.colors = ["#f44336", "#e91e63", "#9c27b0", "#424869", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4",
+            this.colors = ["#f44336", "#e91e63", "#9c27b0", "#424869", "#673ab7", "#3f51b5", "#2196f3", "#0394f4", "#00bcd4",
                 "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffeb3b", "#ffc107", "#ff9800", "#ff5722", "#795548",
                 "#9e9e9e", "#607d8b", "white"];
         },

@@ -144,7 +144,7 @@ class account_journal(models.Model):
             data[:0] = [build_graph_data(last_month, amount)]
 
         [graph_title, graph_key] = self._graph_title_and_key()
-        color = '#136dc7' if 'e' in version else '#7c7bad'
+        color = '#136dc7' if 'e' in version else '#7ba0ad'
 
         is_sample_data = not last_stmt and len(query_result) == 0
         if is_sample_data:

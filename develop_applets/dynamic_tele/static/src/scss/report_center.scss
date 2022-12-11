@@ -289,7 +289,7 @@
     }
     .virtualHelper {
       padding: 1px;
-      outline: 1px dashed #03a9f4;
+      outline: 1px dashed #0394f4;
       .ui-sortable-placeholder {
         visibility: inherit !important;
         height: auto !important;
@@ -351,7 +351,7 @@ address {
 
 .canHelp .ui-sortable-placeholder, [type="component"][stop="true"] {
   //outline: 1px dashed #ff8b6b;
-  outline: 1px dashed #03a9f4;
+  outline: 1px dashed #0394f4;
   background: #def3ff;
   visibility: inherit !important;
   width: auto !important;
@@ -397,7 +397,7 @@ address {
   }
   &.columnsHelper {
     width: 10px;
-    //border: 1px dashed #03a9f4;
+    //border: 1px dashed #0394f4;
     //outline: none !important;
     div[type="component"][stop="true"] {
       outline: none;
@@ -412,7 +412,7 @@ address {
 }
 
 .canHelp {
-  outline: 1px dashed #03a9f4 !important;
+  outline: 1px dashed #0394f4 !important;
   outline-offset: -2px !important;
   //.nodeActive {
   //  outline: none !important;

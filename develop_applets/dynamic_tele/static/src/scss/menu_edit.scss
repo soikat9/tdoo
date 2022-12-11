@@ -7,7 +7,7 @@ a[data-menu-xmlid='menu_app.edit'] {
     background: #454849;
     font-size: 12px;
     display: block;
-    color: #0093b2 !important;
+    color: #0e79d2 !important;
     &::before {
       content: "\f040";
       display: inline-block;
@@ -39,12 +39,12 @@ a[data-menu-xmlid='menu_app.edit'] {
   .o_main_navbar {
     & > .o_menu_brand:hover {
       background: #4a535d;
-      border-bottom: 1px solid #0093b2;
+      border-bottom: 1px solid #0e79d2;
     }
     & > ul > li > a {
       &:hover {
         background: #4a535d;
-        border-bottom: 1px solid #0093b2;
+        border-bottom: 1px solid #0e79d2;
       }
       &._menuEdit {
         color: #07c4ec;

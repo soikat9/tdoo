@@ -16,7 +16,7 @@
   &.checked {
     ._wCb {
       ._wCcB {
-        background: #9496e0;
+        background: #0e79d2;
       }
     }
   }
@@ -102,7 +102,7 @@
 // Field Input
 .wFieldInput {
   &.valDiff input {
-    color: #03a9f4 !important;
+    color: #0394f4 !important;
   }
 }
 
@@ -216,7 +216,7 @@
   input:checked + .slider {
     background-color: white;
     &:before {
-      background-color: #9496e0;
+      background-color: #0e79d2;
     }
     //border: 1px solid #7bc4ff;
   }
