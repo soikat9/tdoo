@@ -707,7 +707,7 @@ const ColorpickerDialog = Dialog.extend({
             size: 'small',
             title: _t('Pick a color'),
             buttons: [
-                {text: _t('Choose'), classes: 'btn-primary', close: true, click: this._onFinalPick.bind(this)},
+                {text: _t('Choose'), classes: 'btn-primary rounded-sm', close: true, click: this._onFinalPick.bind(this)},
                 {text: _t('Discard'), close: true},
             ],
         }, this.options));

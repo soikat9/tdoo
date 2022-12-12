@@ -3986,7 +3986,7 @@ const SnippetOptionWidget = Widget.extend({
                             + (typeof reloadMessage === 'string' ? reloadMessage : ''), {
                         buttons: [{
                             text: _t('Save and Reload'),
-                            classes: 'btn-primary',
+                            classes: 'btn-primary rounded-sm',
                             close: true,
                             click: () => resolve(true),
                         }, {
@@ -7056,7 +7056,7 @@ registry.SnippetSave = SnippetOptionWidget.extend({
                 buttons: [
                     {
                         text: _t("Save and Reload"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: () => {
                             const snippetKey = this.$target[0].dataset.snippet;

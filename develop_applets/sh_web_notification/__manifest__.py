@@ -4,7 +4,7 @@
     "name":   "Web Notification",
     "license": "TPL-1",
     "category": "Website",
-    "summary": "Web Push Notification,Website Push Notification, Website Notification,Website Custom Push Notification,Website Custom Notification,Web Notify,user Backend Notification, Web News Announcement,Web Client Notification,Notify User Tele",   
+    "summary": "Web Push Notification",   
     "description": """This module is useful to create a custom web notification. You can create and send instant web push notifications to users. You can send notifications in 3 ways, popup notification, animation & simple text notification.""",       
     "version": "1.0.3",
     "depends": [

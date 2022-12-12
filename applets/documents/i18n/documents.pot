@@ -2683,7 +2683,7 @@ msgstr ""
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_upload_url_view
-msgid "e.g. https://www.youtube.com/watch?v=CP96yVnXNrY"
+msgid "e.g. https://www.youtube.com/watch?v="
 msgstr ""
 
 #. module: documents

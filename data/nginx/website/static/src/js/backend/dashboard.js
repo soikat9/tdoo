@@ -119,7 +119,7 @@ var Dashboard = AbstractAction.extend({
             buttons: [
                 {
                     text: _t("Save"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: function() {
                         var ga_client_id = dialog.$el.find('input[name="ga_client_id"]').val();

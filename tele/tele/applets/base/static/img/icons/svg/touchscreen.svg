@@ -1,0 +1,30 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="touchscreen">
+<path id="Vector" d="M18 4.5H6V21.5C6 22.0525 6.4475 22.5 7 22.5H17C17.5525 22.5 18 22.0525 18 21.5V4.5Z" fill="url(#paint0_linear_206_9596)"/>
+<path id="Vector_2" d="M18 4.5H6V3C6 2.4475 6.4475 2 7 2H17C17.5525 2 18 2.4475 18 3V4.5Z" fill="url(#paint1_linear_206_9596)"/>
+<path id="Vector_3" d="M10 3.625C10.2071 3.625 10.375 3.45711 10.375 3.25C10.375 3.04289 10.2071 2.875 10 2.875C9.79289 2.875 9.625 3.04289 9.625 3.25C9.625 3.45711 9.79289 3.625 10 3.625Z" fill="#0C63AD"/>
+<path id="Vector_4" d="M13.75 2.875C13.653 2.875 11.347 2.875 11.25 2.875C11.043 2.875 10.875 3.043 10.875 3.25C10.875 3.457 11.043 3.625 11.25 3.625C11.347 3.625 13.653 3.625 13.75 3.625C13.957 3.625 14.125 3.457 14.125 3.25C14.125 3.043 13.957 2.875 13.75 2.875Z" fill="#0C63AD"/>
+<path id="Vector_5" d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" fill="#0078D4"/>
+<path id="Vector_6" d="M12 16C13.6569 16 15 14.6569 15 13C15 11.3431 13.6569 10 12 10C10.3431 10 9 11.3431 9 13C9 14.6569 10.3431 16 12 16Z" fill="#1B9DE2"/>
+<path id="Vector_7" d="M12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15Z" fill="url(#paint2_linear_206_9596)"/>
+<path id="Vector_8" d="M12 14C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13C11 13.5523 11.4477 14 12 14Z" fill="url(#paint3_linear_206_9596)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_206_9596" x1="10.1658" y1="5.28715" x2="14.4638" y2="23.9117" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D61A9"/>
+<stop offset="1" stop-color="#16528C"/>
+</linearGradient>
+<linearGradient id="paint1_linear_206_9596" x1="9.78343" y1="2.03838" x2="10.1065" y2="5.02817" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7DD8F3"/>
+<stop offset="1" stop-color="#45B0D0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_206_9596" x1="11.4614" y1="11.1744" x2="12.2378" y2="15.444" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32BDEF"/>
+<stop offset="1" stop-color="#1EA2E4"/>
+</linearGradient>
+<linearGradient id="paint3_linear_206_9596" x1="11.6306" y1="12.0307" x2="12.6195" y2="13.9375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7DD8F3"/>
+<stop offset="1" stop-color="#45B0D0"/>
+</linearGradient>
+</defs>
+</svg>

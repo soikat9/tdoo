@@ -40,10 +40,10 @@ QUnit.test("ErrorDialog with traceback", async (assert) => {
     class Parent extends Component {
         constructor() {
             super(...arguments);
-            this.message = "Something bad happened";
-            this.data = { debug: "Some strange unreadable stack" };
+            this.message = "Something doesn't seem right.";
+            this.data = { debug: "It appears that the code isn't parsing correctly. Please reformat and try again." };
             this.name = "ERROR_NAME";
-            this.traceback = "This is a tracback string";
+            this.traceback = "Hint: The following is a trace back string.";
         }
     }
     Parent.components = { ErrorDialog };
@@ -52,7 +52,7 @@ QUnit.test("ErrorDialog with traceback", async (assert) => {
     env = await makeTestEnv();
     parent = await mount(Parent, { env, target });
     assert.containsOnce(target, ".o_dialog");
-    assert.strictEqual(target.querySelector("header .modal-title").textContent, "Tele Error");
+    assert.strictEqual(target.querySelector("header .modal-title").textContent, "An error occurred with your Tele-Server:");
     const mainButtons = target.querySelectorAll("main button");
     assert.deepEqual(
         [...mainButtons].map((el) => el.textContent),
@@ -237,7 +237,7 @@ QUnit.test("RedirectWarningDialog", async (assert) => {
     assert.containsNone(target, ".o_dialog");
     parent = await mount(Parent, { env, target });
     assert.containsOnce(target, ".o_dialog");
-    assert.strictEqual(target.querySelector("header .modal-title").textContent, "Tele Warning");
+    assert.strictEqual(target.querySelector("header .modal-title").textContent, "Attention - Warning:");
     assert.strictEqual(target.querySelector("main").textContent, "Some strange unreadable message");
     let footerButtons = target.querySelectorAll("footer button");
     assert.deepEqual(

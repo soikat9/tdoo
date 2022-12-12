@@ -135,7 +135,7 @@ tele.define('payment.manage_form', require => {
                     $content: $('<div>').append($dialogContentMessage),
                     buttons: [
                         {
-                            text: _t("Confirm Deletion"), classes: 'btn-primary', close: true,
+                            text: _t("Confirm Deletion"), classes: 'btn-primary rounded-sm', close: true,
                             click: execute
                         },
                         {

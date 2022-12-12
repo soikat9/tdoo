@@ -44,7 +44,7 @@ tele.define('dynamic_tele.basic_widgets', function (require) {
             },
             {
                 text: _t("Confirm"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: options && options.confirm_callback,
             }
@@ -202,7 +202,7 @@ tele.define('dynamic_tele.basic_widgets', function (require) {
                     },
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: () => {
                             onChange(chooseField.ref.fieldSelector.chain.join("."));
@@ -636,7 +636,7 @@ tele.define('dynamic_tele.basic_widgets', function (require) {
                     },
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: this.onSave.bind(this),
                     },
@@ -1414,7 +1414,7 @@ tele.define('dynamic_tele.basic_widgets', function (require) {
                     },
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: this.onSave.bind(this),
                     },

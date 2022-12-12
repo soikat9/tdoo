@@ -227,7 +227,7 @@ var HierarchyKanbanRecord = KanbanRecord.extend({
                 title: _t('Delete Activity'),
                 buttons: [{
                     text: _t('Delete All'),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: this._super.bind(this, event)
                 }, {

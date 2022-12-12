@@ -109,7 +109,7 @@ SectionAndNoteFieldOne2Many.include({
                 }
             )),
             buttons: [
-                {text: _t('Confirm'), classes: 'btn-primary', close: true, click: function (result) {
+                {text: _t('Confirm'), classes: 'btn-primary rounded-sm', close: true, click: function (result) {
                     var $inputs = this.$('.o_matrix_input');
                     var matrixChanges = [];
                     _.each($inputs, function (matrixInput) {

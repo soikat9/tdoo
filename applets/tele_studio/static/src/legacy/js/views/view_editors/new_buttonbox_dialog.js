@@ -28,7 +28,7 @@ var NewButtonBoxDialog = Dialog.extend(StandaloneFieldManagerMixin, {
             size: 'small',
             buttons: [{
                 text: _t("Confirm"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onConfirm.bind(this)
             }, {
                 text: _t("Cancel"),

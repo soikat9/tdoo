@@ -13,7 +13,7 @@ var SlideEnrollDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t('Yes'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onSendRequest.bind(this)
             }, {
                 text: _t('Cancel'),

@@ -44,7 +44,7 @@ var QuickCreate = Dialog.extend({
             backdrop: true,
             size: 'small',
             buttons: this._buttons ? [
-                {text: _t("Create"), classes: 'btn-primary', click: function () {
+                {text: _t("Create"), classes: 'btn-primary rounded-sm', click: function () {
                     if (!self._quickAdd(dataCalendar)) {
                         self.focus();
                     }

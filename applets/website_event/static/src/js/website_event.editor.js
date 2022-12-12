@@ -32,7 +32,7 @@ var EventCreateDialog = Dialog.extend({
             buttons: [
                 {
                     text: _t("Create"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: this._onClickCreate.bind(this),
                 },
                 {

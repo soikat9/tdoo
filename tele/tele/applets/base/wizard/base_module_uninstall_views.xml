@@ -42,7 +42,7 @@
                             <field name="count"/>
                         </tree>
                     </field>
-                    <div class="alert alert-warning" role="alert">
+                    <div class="alert alert-info" role="alert">
                         <p>
                             Module uninstallation is not always consistent and can sometimes lead to issues,
                             some data may be deleted, the database could be left in an unstable state,

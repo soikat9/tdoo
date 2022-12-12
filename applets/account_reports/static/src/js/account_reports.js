@@ -540,7 +540,7 @@ var accountReportsWidget = AbstractAction.extend({
             $content: $content,
             buttons: [{
                 text: _t('Save'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: save
             },
@@ -941,7 +941,7 @@ var accountReportsWidget = AbstractAction.extend({
             buttons: [
                 {
                     text: _t('Save'),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: save,
                 }, {

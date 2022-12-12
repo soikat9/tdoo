@@ -80,7 +80,7 @@ const ProjectListController = ListController.extend({
         const dialog = new Dialog(this, {
             buttons: [
                 {
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: () => {
                         this._rpc({
                             model: 'project.task',

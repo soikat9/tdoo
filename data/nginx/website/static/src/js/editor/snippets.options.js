@@ -183,7 +183,7 @@ const FontFamilyPickerUserValueWidget = SelectUserValueWidget.extend({
             buttons: [
                 {
                     text: _t("Save & Reload"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: async () => {
                         const inputEl = dialog.el.querySelector('.o_input_google_font');
                         // if font page link (what is expected)
@@ -1185,7 +1185,7 @@ options.registry.OptionsTab = options.Class.extend({
                 buttons: [
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         click: async () => {
                             await this._rpc({
                                 model: 'website',
@@ -2387,7 +2387,7 @@ options.registry.anchor = options.Class.extend({
         var self = this;
         var buttons = [{
             text: _t("Save & copy"),
-            classes: 'btn-primary',
+            classes: 'btn-primary rounded-sm',
             click: function () {
                 var $input = this.$('.o_input_anchor_name');
                 var anchorName = self._text2Anchor($input.val());

@@ -648,7 +648,7 @@
             options = _.defaults(options || {}, {
                 title: _t('Delete Question'),
                 buttons: [
-                    { text: _t('Yes'), classes: 'btn-primary', click: this._onConfirmClick },
+                    { text: _t('Yes'), classes: 'btn-primary rounded-sm', click: this._onConfirmClick },
                     { text: _t('No'), close: true}
                 ],
                 size: 'medium'

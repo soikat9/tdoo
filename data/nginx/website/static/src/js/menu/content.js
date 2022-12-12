@@ -47,7 +47,7 @@ var PagePropertiesDialog = weWidgets.Dialog.extend({
         this.page_id = page_id;
 
         var buttons = [
-            {text: _t("Save"), classes: 'btn-primary', click: this.save},
+            {text: _t("Save"), classes: 'btn-primary rounded-sm', click: this.save},
             {text: _t("Discard"), classes: 'mr-auto', close: true},
         ];
         if (options.fromPageManagement) {

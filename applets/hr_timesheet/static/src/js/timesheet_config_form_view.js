@@ -20,7 +20,7 @@ tele.define('hr_timesheet.res.config.form', function (require) {
                 title: _t('Download our App'),
                 buttons: [{
                     text: _t('View App'),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: function() {
                         window.open(url, '_blank');
                     }

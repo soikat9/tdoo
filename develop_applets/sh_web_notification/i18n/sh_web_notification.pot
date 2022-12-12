@@ -227,5 +227,5 @@ msgstr ""
 
 #. module: sh_web_notification
 #: model:ir.model.fields,field_description:sh_web_notification.field_sh_announcement__simple_text
-msgid "Want Simple Text ?"
+msgid "Want Simple Notification"
 msgstr ""

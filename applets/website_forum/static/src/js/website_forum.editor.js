@@ -32,7 +32,7 @@ var ForumCreateDialog = Dialog.extend({
             buttons: [
                 {
                     text: _t("Create"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: this.onCreateClick.bind(this),
                 },
                 {

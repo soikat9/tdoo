@@ -456,7 +456,7 @@ var SelectCreateDialog = ViewDialog.extend({
         if (!this.options.no_create) {
             this.__buttons.unshift({
                 text: _t("Create"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this.create_edit_record.bind(this)
             });
         }

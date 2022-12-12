@@ -44,7 +44,7 @@ tele.define('web.TranslationDialog', function (require) {
                 size: 'large',
                 title: _.str.sprintf(_t('Translate: %s'), this.fieldName),
                 buttons: [
-                    { text: _t('Save'), classes: 'btn-primary', close: true, click: this._onSave.bind(this) },
+                    { text: _t('Save'), classes: 'btn-primary rounded-sm', close: true, click: this._onSave.bind(this) },
                     { text: _t('Discard'), close: true },
                 ],
             }, options));

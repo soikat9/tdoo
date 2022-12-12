@@ -36,7 +36,7 @@ const ListConfirmDialog = Dialog.extend(WidgetAdapterMixin, {
             $content: $(qweb.render('ListView.confirmModal', params)),
             buttons: options.buttons || [{
                 text: _t("Ok"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: options.confirm_callback,
             }, {

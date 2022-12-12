@@ -94,7 +94,7 @@ tele.define('dynamic_tele.ReportCenter', function (require) {
                     },
                     {
                         text: _t("Create"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: this.onCreateReport.bind(this),
                     },

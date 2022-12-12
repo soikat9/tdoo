@@ -81,7 +81,7 @@ const MainMenu = AbstractAction.extend({
                     {
                         text: _t("Remove it"),
                         close: true,
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         click: function () {
                             Session.rpc('/stock_barcode/rid_of_message_demo_barcodes');
                             location.reload();

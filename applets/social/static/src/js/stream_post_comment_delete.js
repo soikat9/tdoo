@@ -16,7 +16,7 @@ var StreamPostCommentDelete = Dialog.extend({
         options = _.defaults(options || {}, {
             title: _t('Delete Comment'),
             buttons: [{
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 text: _t('Ok'),
                 click: this._onConfirmCommentDelete.bind(this)
             }, {

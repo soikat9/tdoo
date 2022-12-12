@@ -34,7 +34,7 @@
         </html>
     </template>
 
-    <template id="mail.discuss_public_channel_template" name="Discuss Public Channel Template">
+    <template id="mail.discuss_public_channel_template" name="Connect Public Channel Template">
         <t t-call="mail.discuss_public_layout">
             <t t-set="head">
                 <script>

@@ -58,7 +58,7 @@ def session_store(self):
     return RedisSessionStore(redis=redis_client, prefix=prefix,
                              expiration=expiration,
                              anon_expiration=anon_expiration,
-                             session_class=http.OpenERPSession)
+                             session_class=http.TeleSession)
 
 
 def session_gc(session_store):
@@ -80,9 +80,9 @@ def purge_fs_sessions(path):
 
 
 def copy_fs_sessions(path):
-    from tele.http import OpenERPSession
+    from tele.http import TeleSession
     from werkzeug.contrib.sessions import FilesystemSessionStore
-    werkzeug_session_store = FilesystemSessionStore(path, session_class=OpenERPSession)
+    werkzeug_session_store = FilesystemSessionStore(path, session_class=TeleSession)
     session_store = http.Root().session_store
     filename_prefix_len = len('werkzeug_')
     filename_suffix_len = len('.sess')

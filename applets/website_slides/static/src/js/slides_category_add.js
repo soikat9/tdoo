@@ -16,7 +16,7 @@ var CategoryAddDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t('Save'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onClickFormSubmit.bind(this)
             }, {
                 text: _t('Discard'),

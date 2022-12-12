@@ -293,7 +293,7 @@ var NewContentMenu = websiteNavbarData.WebsiteNavbarActionWidget.extend({
             content = _.str.sprintf(this.newContentText.installNeeded, name);
             buttons = [{
                 text: _t("Install"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: function () {
                     // move the element where it will be after installation

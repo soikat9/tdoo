@@ -48,7 +48,7 @@ var M2ODialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t('Create'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: function () {
                     this.trigger_up('quick_create', { value: this.value });

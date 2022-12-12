@@ -51,7 +51,7 @@ var NewFieldDialog = Dialog.extend(StandaloneFieldManagerMixin, {
             size: 'small',
             buttons: [{
                 text: _t("Confirm"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onSave.bind(this),
             }, {
                 text: _t("Cancel"),
@@ -202,7 +202,7 @@ var NewFieldDialog = Dialog.extend(StandaloneFieldManagerMixin, {
                     element: self.selection[index],
                 })),
                 buttons: [
-                    {text: _t('Confirm'), classes: 'btn-primary', close: true, click: function () {
+                    {text: _t('Confirm'), classes: 'btn-primary rounded-sm', close: true, click: function () {
                         var newValue = this.$('input#o_selection_value').val() || val;
                         var newString = this.$('input#o_selection_label').val();
                         self.selection[index] = [newValue, newString];

@@ -385,7 +385,7 @@ FormController.include({
         var $content = $('<div>').append($('<input>', {type: 'text', class: 'o_set_qty_input'}));
         this.dialog = new Dialog(this, {
             title: _t('Set quantity'),
-            buttons: [{text: _t('Select'), classes: 'btn-primary', close: true, click: function () {
+            buttons: [{text: _t('Select'), classes: 'btn-primary rounded-sm', close: true, click: function () {
                 var new_qty = this.$content.find('.o_set_qty_input').val();
                 var record = self.model.get(self.handle);
                 return self._barcodeSelectedCandidate(activeBarcode.candidate, record,

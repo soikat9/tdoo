@@ -30,7 +30,7 @@ var FieldSelectorDialog = Dialog.extend({
             title: _t('Select a Field'),
             buttons: [{
                 text: _t("Confirm"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onConfirm.bind(this),
                 close: true
             }, {
