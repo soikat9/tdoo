@@ -33,13 +33,13 @@
 
 .o_social_stream_post_facebook_stats {
     .o_social_facebook_likes.o_social_facebook_user_likes {
-        @include o-hover-text-color($o-enterprise-color, darken($o-enterprise-color, 10%));
+        @include o-hover-text-color($o-brand-tele, darken($o-brand-tele, 10%));
     }
 }
 
 .o_social_original_post_facebook_stats {
     .o_social_facebook_likes.o_social_facebook_user_likes {
-        color: $o-enterprise-color;
+        color: $o-brand-tele;
     }
 }
 

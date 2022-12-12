@@ -10,11 +10,9 @@ $o-line-height-base: 1.5 !default; // This is BS default
 
 // Colors
 $o-community-color: #0e69b8 !default;
-$o-enterprise-color: #3c667c !default;
-$o-enterprise-primary-color: #017e84 !default;
 
-$o-brand-tele: $o-community-color !default;
-$o-brand-primary: $o-community-color !default;
+$o-brand-tele: #0e69b8 !default;
+$o-brand-primary: #0e69b8 !default;
 
 $o-brand-secondary: #f0eeee !default;
 $o-brand-lightsecondary: #e2e2e0 !default;
@@ -32,15 +30,15 @@ $o-gray-900: #212529 !default;
 
 $o-success: #28a745 !default;
 $o-info: #17a2b8 !default;
-$o-warning: #ffac00 !default;
-$o-danger: #E6000D !default;
+$o-warning: #f7c35b !default;
+$o-danger: #d22b33 !default;
 
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
-    "success": #008818,
-    "info": #0180a5,
-    "warning": #9a6b01,
-    "danger": #d23f3a,
+    "success": #9f9f9f,
+    "info": #6b6e6f,
+    "warning": #555452,
+    "danger": #9d9d9d,
 )!default;
 
 $o-main-text-color: $o-gray-700 !default;

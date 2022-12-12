@@ -2,9 +2,9 @@ $o-tip-width: 28px;
 $o-tip-height: 38px;
 $o-tip-anchor-space: 0;
 $o-tip-bounce-half-size: 3px;
-$o-tip-color: $o-enterprise-color;
+$o-tip-color: $o-brand-tele;
 $o-tip-border-width: 3px;
-$o-tip-border-color: white;
+$o-tip-border-color: rgba(255, 255, 255, 0.697);
 $o-tip-animation-speed: 500ms;
 $o-tip-arrow-size: 12px;
 
@@ -55,6 +55,7 @@ $o-tip-size-delay-in: $o-tip-duration-in - $o-tip-size-duration-in;
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
+    border-radius: 4px;
     /*rtl:end:ignore*/
     z-index: $zindex-tooltip !important; // See comment on 'o_tooltip_parent' class
     opacity: 0 !important;

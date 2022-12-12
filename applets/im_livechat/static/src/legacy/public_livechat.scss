@@ -519,7 +519,7 @@ $o-mail-thread-window-zindex: $zindex-modal + 1 !default;
     opacity: 0.6;
 
     &.o_all_seen {
-        color: $o-enterprise-color;
+        color: $o-brand-tele;
     }
 
     &:hover {

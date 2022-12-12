@@ -39,12 +39,12 @@ label.o_wbooth_category_unavailable {
 
     & > input:checked + div,
     &:hover > input:checked + div {
-        border-color: $o-enterprise-primary-color;
+        border-color: $o-brand-tele;
     }
 
     & > input:checked + div:before,
     &:hover > input:checked + div:before {
-        color: $o-enterprise-primary-color;
+        color: $o-brand-tele;
     }
 
     & > input:checked + div:before,

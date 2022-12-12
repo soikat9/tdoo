@@ -67,8 +67,8 @@ table > tbody.o_grid_section > tr {
         width: 25px;
         height: 23px;
         &.primary-green {
-            border: 1px solid $o-enterprise-primary-color;
-            background-color: $o-enterprise-primary-color;
+            border: 1px solid $o-brand-tele;
+            background-color: $o-brand-tele;
             color: white;
         }
     }
@@ -104,7 +104,7 @@ table > tbody.o_grid_section > tr {
                 margin: 0 9px 0 10px;
             }
             &[aria-pressed="false"] {
-                background-color: $o-enterprise-primary-color;
+                background-color: $o-brand-tele;
             }
             > i.o-timer-play-button, > i.o-timer-stop-button , &:hover > i.o-timer-play-button, &:hover > i.o-timer-stop-button {
                 color: white !important;

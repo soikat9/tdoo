@@ -36,7 +36,7 @@ $o-we-ace-color: #292e31 !default;
 $o-we-handles-offset-to-hide: 10000px !default;
 $o-we-handles-btn-size: 20px !default;
 $o-we-handles-accent-color: $o-we-accent !default;
-$o-we-handles-accent-color-preview: $o-enterprise-color !default;
+$o-we-handles-accent-color-preview: $o-brand-tele !default;
 $o-we-handle-edge-size: 8px !default;
 $o-we-handle-border-width: 2px !default;
 
@@ -472,8 +472,8 @@ $o-base-color-palette: (
 ) !default;
 $o-color-palettes: (
     'base-1': (
-        'o-color-1': scale-color($o-enterprise-primary-color, $saturation: -50%, $lightness: 20%),
-        'o-color-2': scale-color($o-enterprise-color, $saturation: -50%),
+        'o-color-1': scale-color($o-brand-tele, $saturation: -50%, $lightness: 20%),
+        'o-color-2': scale-color($o-brand-tele, $saturation: -50%),
         'o-color-3': #F6F6F6,
         'o-color-4': #FFFFFF,
         'o-color-5': #383E45,
@@ -495,8 +495,8 @@ $o-theme-color-palettes: (
     // They should not be used in the code base anymore and ideally they will
     // not generate any classes for >= 13.4 databases.
     'base-1': (
-        'alpha': $o-enterprise-primary-color,
-        'beta': $o-enterprise-color,
+        'alpha': $o-brand-tele,
+        'beta': $o-brand-tele,
         'gamma': #5C5B80,
         'delta': #5B899E,
         'epsilon': #E46F78,

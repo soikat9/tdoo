@@ -1,6 +1,6 @@
 .o_social_stream_post_twitter_stats {
     .o_social_twitter_likes.o_social_twitter_user_likes {
-        @include o-hover-text-color($o-enterprise-color, darken($o-enterprise-color, 10%));
+        @include o-hover-text-color($o-brand-tele, darken($o-brand-tele, 10%));
     }
 }
 

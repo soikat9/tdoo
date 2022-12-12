@@ -2,7 +2,7 @@
     .progress-bar {
         font-size: 1.08333333rem;
         height: 14px;
-        background-color: $o-enterprise-color;
+        background-color: $o-brand-tele;
         span {
             display: contents;
         }
@@ -226,7 +226,7 @@
         }
         &:focus caption .o_buttons button {
             outline: none;
-            box-shadow: 4px 4px 4px 0px $o-enterprise-color;
+            box-shadow: 4px 4px 4px 0px $o-brand-tele;
         }
         &:focus{
             outline: none;
@@ -307,7 +307,7 @@
         .add_line_container {
             text-align: center;
             clear: both;
-            color: $o-enterprise-primary-color;
+            color: $o-brand-tele;
             cursor: pointer;
         }
     }

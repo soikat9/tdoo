@@ -1,6 +1,8 @@
 $o-td-label-padding-right: 8px;
 
 .o_form_view {
+
+    background: url(/web/static/img/arylic-light.svg);
     $sheet-min-width: 650px;
     $sheet-padding: 16px;
 
@@ -24,8 +26,7 @@ $o-td-label-padding-right: 8px;
         margin: 0;
     }
     .o_form_sheet_bg {
-        border-bottom: 1px solid #ddd;
-        background: url(/web/static/img/form_sheetbg.png);
+        background: url(/web/static/img/arylic-light.svg);
 
         > .o_form_sheet {
             min-width: $sheet-min-width;

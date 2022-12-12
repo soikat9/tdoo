@@ -111,7 +111,7 @@
   }
 }
 
-@mixin o-web-studio-sidebar-btn-link($color: $o-enterprise-primary-color) {
+@mixin o-web-studio-sidebar-btn-link($color: $o-brand-tele) {
   color: $color;
   &:hover {
     color: darken($color, 5%);

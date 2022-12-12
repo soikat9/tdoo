@@ -150,7 +150,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.734);
     z-index: 100;
 }
 .floor-map .edit-bar .edit-button {
@@ -276,7 +276,7 @@
     display: inline-block;
     padding: 6px 7px 3px;
     margin: 0px 3px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.734);
     border-radius: 3px;
 }
 

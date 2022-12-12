@@ -111,7 +111,7 @@
 
     .o_validate_button {
         color: white !important;
-        background-color: $o-enterprise-primary-color !important;
+        background-color: $o-brand-tele !important;
     }
 }
 
@@ -198,7 +198,7 @@
         padding: 10px;
         position: absolute;
         bottom: 0;
-        background-color: $o-enterprise-color;
+        background-color: $o-brand-tele;
         opacity: 0;
         transition: opacity 500ms;
 
@@ -211,7 +211,7 @@
             margin-top: 5px;
             text-transform: uppercase;
             color: white !important;
-            background-color: $o-enterprise-primary-color !important;
+            background-color: $o-brand-tele !important;
         }
 
         .o_sign_item_bottom_sheet_field {
