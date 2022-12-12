@@ -1361,7 +1361,7 @@ tele.define('sign.document_signing', function (require) {
                 if (!/^(f|ht)tps?:\/\//i.test(RedirectURL)) {
                     RedirectURL = "http://" + RedirectURL;
                  }
-                options.buttons.push({text: RedirectURLText, classes: 'btn-primary', click: function (e) {
+                options.buttons.push({text: RedirectURLText, classes: 'btn-primary rounded-sm', click: function (e) {
                     window.location.replace(RedirectURL);
                 }});
             }
@@ -1418,7 +1418,7 @@ tele.define('sign.document_signing', function (require) {
                 this.options.buttons.push(openDocumentButton);
 
                 this.options.buttons.push({
-                    text: _t('Next Document'), classes: 'btn-primary', click: function (e) {
+                    text: _t('Next Document'), classes: 'btn-primary rounded-sm', click: function (e) {
                         multiFileUpload.removeFile(nextTemplate.template);
                         self.do_action({
                             type: "ir.actions.client",
@@ -1443,7 +1443,7 @@ tele.define('sign.document_signing', function (require) {
                     return (Math.abs(curr.sign_request_id[0] - self.requestID) <= Math.abs(prev.sign_request_id[0] - self.requestID) ? curr : prev);
                 });
                 this.options.buttons.push({
-                    text: _t('Sign Next Document'), classes: 'btn-primary', click: function (e) {
+                    text: _t('Sign Next Document'), classes: 'btn-primary rounded-sm', click: function (e) {
                         self._rpc({
                             model: 'sign.request',
                             method: 'go_to_document',

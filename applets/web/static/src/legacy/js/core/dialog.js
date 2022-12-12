@@ -429,7 +429,7 @@ Dialog.confirm = function (owner, message, options) {
     var buttons = [
         {
             text: _t("Ok"),
-            classes: 'btn-primary',
+            classes: 'btn-primary rounded-sm',
             close: true,
             click: options && options.confirm_callback,
         },

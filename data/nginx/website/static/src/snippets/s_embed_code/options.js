@@ -32,7 +32,7 @@ options.registry.EmbedCode = options.Class.extend({
                 buttons: [
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         click: async () => {
                             $container[0].innerHTML = aceEditor.getValue();
                         },

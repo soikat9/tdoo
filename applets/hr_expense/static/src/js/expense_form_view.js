@@ -38,7 +38,7 @@ tele.define('hr_expense.FormView', function (require) {
                     buttons: [
                         {
                             text: _t("Save Anyways"),
-                            classes: 'btn-primary',
+                            classes: 'btn-primary rounded-sm',
                             close: true,
                             click: function() {
                                 confirm_callback();

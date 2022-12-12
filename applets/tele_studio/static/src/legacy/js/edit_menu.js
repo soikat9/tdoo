@@ -77,7 +77,7 @@ var EditMenuDialog = Dialog.extend({
             dialogClass: 'o_tele_studio_edit_menu_modal',
             buttons: [{
                 text: _t("Confirm"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onSave.bind(this),
             }, {
                 text: _t("Cancel"),

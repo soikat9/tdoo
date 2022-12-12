@@ -28,7 +28,7 @@
                     $content: $(QWeb.render('calendar.RecurrentEventUpdate')),
                     buttons: [{
                         text: _t('Confirm'),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         close: true,
                         click: function () {
                             resolve(this.$('input:checked').val());

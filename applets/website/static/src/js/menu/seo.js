@@ -683,7 +683,7 @@ var SeoConfigurator = Dialog.extend({
         _.defaults(options, {
             title: _t('Optimize SEO'),
             buttons: [
-                {text: _t('Save'), classes: 'btn-primary', click: this.update},
+                {text: _t('Save'), classes: 'btn-primary rounded-sm', click: this.update},
                 {text: _t('Discard'), close: true},
             ],
         });

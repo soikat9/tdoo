@@ -28,7 +28,7 @@ var TranslatorInfoDialog = Dialog.extend({
         this._super(parent, _.extend({
             title: _t("Translation Info"),
             buttons: [
-                {text: _t("Ok, never show me this again"), classes: 'btn-primary', close: true, click: this._onStrongOk.bind(this)},
+                {text: _t("Ok, never show me this again"), classes: 'btn-primary rounded-sm', close: true, click: this._onStrongOk.bind(this)},
                 {text: _t("Ok"), close: true}
             ],
         }, options || {}));
@@ -58,7 +58,7 @@ var AttributeTranslateDialog = weDialog.extend({
         this._super(parent, _.extend({
             title: _t("Translate Attribute"),
             buttons: [
-                {text: _t("Close"), classes: 'btn-primary', click: this.save}
+                {text: _t("Close"), classes: 'btn-primary rounded-sm', click: this.save}
             ],
         }, options || {}));
         this.wysiwyg = options.wysiwyg;

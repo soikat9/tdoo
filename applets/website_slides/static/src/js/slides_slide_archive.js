@@ -16,7 +16,7 @@ var SlideArchiveDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t('Archive'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onClickArchive.bind(this)
             }, {
                 text: _t('Cancel'),

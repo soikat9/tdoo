@@ -2882,7 +2882,7 @@ msgstr ""
 #. tele-web
 #: code:applets/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Tele Error"
+msgid "An error occurred with your Tele-Server:"
 msgstr ""
 
 #. module: web
@@ -2913,7 +2913,7 @@ msgstr ""
 #: code:applets/web/static/src/core/errors/error_dialogs.js:0
 #: code:applets/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Tele Warning"
+msgid "Attention - Warning:"
 msgstr ""
 
 #. module: web

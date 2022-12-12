@@ -334,7 +334,7 @@ var YoutubeUploadField = basicFields.FieldChar.extend({
                 size: 'medium',
                 buttons: [{
                     text: _t("Yes, delete it"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: function () {
                         $.ajax({

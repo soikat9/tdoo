@@ -439,11 +439,11 @@ tele.define('sign.template', function(require) {
 
             if(!options.buttons) {
                 options.buttons = [];
-                options.buttons.push({text: _t('Add once'), classes: 'btn-primary', close: true, click: function(e) {
+                options.buttons.push({text: _t('Add once'), classes: 'btn-primary rounded-sm', close: true, click: function(e) {
                     this.updateTargetResponsible();
                     this.$currentTarget.trigger('itemChange');
                 }});
-                options.buttons.push({text: _t('Add to all pages'), classes: 'btn-secondary', close: true, click: function(e) {
+                options.buttons.push({text: _t('Add to all pages'), classes: 'rounded-sm btn-secondary', close: true, click: function(e) {
                     this.updateTargetResponsible();
                     this.$currentTarget.draggable('destroy').resizable('destroy');
                     this.$currentTarget.trigger('itemClone');

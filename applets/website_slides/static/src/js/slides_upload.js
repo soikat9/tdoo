@@ -185,7 +185,7 @@ var SlideUploadDialog = Dialog.extend({
             btnList.push({text: _t("Cancel"), classes: 'o_w_slide_cancel', close: true});
         } else if (state === '_import') {
             if (! this.modulesToInstallStatus.installing) {
-                btnList.push({text: this.modulesToInstallStatus.failed ? _t("Retry") : _t("Install"), classes: 'btn-primary', click: this._onClickInstallModuleConfirm.bind(this)});
+                btnList.push({text: this.modulesToInstallStatus.failed ? _t("Retry") : _t("Install"), classes: 'btn-primary rounded-sm', click: this._onClickInstallModuleConfirm.bind(this)});
             }
             btnList.push({text: _t("Discard"), classes: 'o_w_slide_go_back', click: this._onClickGoBack.bind(this)});
         } else if (state !== '_upload') { // no button when uploading

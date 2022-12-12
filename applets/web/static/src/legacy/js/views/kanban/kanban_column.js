@@ -321,7 +321,7 @@ var KanbanColumn = Widget.extend({
         var buttons = [
             {
                 text: _t("Ok"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: this.trigger_up.bind(this, 'kanban_column_delete'),
             },

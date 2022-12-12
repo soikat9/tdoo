@@ -22,7 +22,7 @@ var WysiwygDialog = Dialog.extend({
         this._super(parent, _.extend({}, {
             buttons: [{
                     text: this.options.save_text || _t("Save"),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: this.save,
                 },
                 {

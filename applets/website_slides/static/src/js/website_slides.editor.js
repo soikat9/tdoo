@@ -31,7 +31,7 @@ var ChannelCreateDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t("Create"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onClickFormSubmit.bind(this)
             }, {
                 text: _t("Discard"),

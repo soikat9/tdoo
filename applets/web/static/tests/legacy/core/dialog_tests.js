@@ -29,7 +29,7 @@ QUnit.module('core', {}, function () {
             buttons: [
                 {
                     text: "Close",
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: testPromise.resolve,
                 },
@@ -59,7 +59,7 @@ QUnit.module('core', {}, function () {
             buttons: [
                 {
                     text: "Close",
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                     click: testPromise.reject,
                 },
@@ -142,7 +142,7 @@ QUnit.module('core', {}, function () {
             buttons: [
                 {
                     text: "Close",
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     close: true,
                 },
             ],

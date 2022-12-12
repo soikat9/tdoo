@@ -71,7 +71,7 @@
             display: flex;
             flex: 0 0 auto;
             flex-flow: column nowrap;
-            background: #2769a0;
+            background: #ffffff;
             overflow: auto;
 
             .selected {
@@ -83,7 +83,7 @@
                 display: flex;
                 padding: 0 $o-horizontal-padding*2 0 $o-horizontal-padding;
                 height: 40px;
-                color: gray('400');
+                color: gray('100');
                 font-size: 13px;
                 line-height: 40px;
                 cursor: pointer;

@@ -67,7 +67,7 @@ var AbstractFieldUpgrade = {
         var buttons = [
             {
                 text: _t("Upgrade now"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: this._confirmUpgrade.bind(this),
             },

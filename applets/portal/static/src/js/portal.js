@@ -179,7 +179,7 @@ publicWidget.registry.NewAPIKeyButton = publicWidget.Widget.extend({
         const d_description = new Dialog(self, {
             title: _t('New API Key'),
             $content: qweb.render('portal.keydescription'),
-            buttons: [{text: _t('Confirm'), classes: 'btn-primary', close: true, click: async () => {
+            buttons: [{text: _t('Confirm'), classes: 'btn-primary rounded-sm', close: true, click: async () => {
                 var description = d_description.el.querySelector('[name="description"]').value;
                 var wizard_id = await this._rpc({
                     model: 'res.users.apikeys.description',

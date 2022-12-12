@@ -42,19 +42,19 @@ export class ErrorDialog extends Dialog {
 }
 ErrorDialog.contentClass = "o_dialog_error";
 ErrorDialog.bodyTemplate = "web.ErrorDialogBody";
-ErrorDialog.title = _lt("Tele Error");
+ErrorDialog.title = _lt("An error occurred with your Tele-Server:");
 
 // -----------------------------------------------------------------------------
 // Client Error Dialog
 // -----------------------------------------------------------------------------
 export class ClientErrorDialog extends ErrorDialog {}
-ClientErrorDialog.title = _lt("Tele Client Error");
+ClientErrorDialog.title = _lt("An error occurred with your Tele-Client:");
 
 // -----------------------------------------------------------------------------
 // Network Error Dialog
 // -----------------------------------------------------------------------------
 export class NetworkErrorDialog extends ErrorDialog {}
-NetworkErrorDialog.title = _lt("Tele Network Error");
+NetworkErrorDialog.title = _lt("An error occurred with your Tele-Network:");
 
 // -----------------------------------------------------------------------------
 // RPC Error Dialog
@@ -78,13 +78,13 @@ export class RPCErrorDialog extends ErrorDialog {
         if (!this.props.type) return;
         switch (this.props.type) {
             case "server":
-                this.title = this.env._t("Tele Server Error");
+                this.title = this.env._t("Please refer to the following and try again later.");
                 break;
             case "script":
-                this.title = this.env._t("Tele Client Error");
+                this.title = this.env._t("Please refer to the following and try again later.");
                 break;
             case "network":
-                this.title = this.env._t("Tele Network Error");
+                this.title = this.env._t("Please refer to the following and try again later.");
                 break;
         }
     }
@@ -102,7 +102,7 @@ export class RPCErrorDialog extends ErrorDialog {
 export class WarningDialog extends Dialog {
     setup() {
         super.setup();
-        this.title = this.env._t("Tele Warning");
+        this.title = this.env._t("Attention - Warning:");
         this.inferTitle();
         const { data, message } = this.props;
         if (data && data.arguments && data.arguments.length > 0) {
@@ -128,7 +128,7 @@ export class RedirectWarningDialog extends Dialog {
         this.actionService = useService("action");
         const { data, subType } = this.props;
         const [message, actionId, buttonText, additional_context] = data.arguments;
-        this.title = capitalize(subType) || this.env._t("Tele Warning");
+        this.title = capitalize(subType) || this.env._t("Attention - Warning:");
         this.message = message;
         this.actionId = actionId;
         this.buttonText = buttonText;

@@ -19,7 +19,7 @@ const categoryDeleteDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t('Delete'),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: () => this._onClickDelete(),
             }, {
                 text: _t('Cancel'),

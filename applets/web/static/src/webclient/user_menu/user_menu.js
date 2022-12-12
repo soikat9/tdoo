@@ -23,6 +23,8 @@ class UserMenuItem extends DropdownItem {
     }
 }
 
+
+
 export class UserMenu extends Component {
     setup() {
         this.user = useService("user");

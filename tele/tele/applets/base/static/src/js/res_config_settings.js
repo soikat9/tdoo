@@ -350,7 +350,7 @@ var BaseSettingController = FormController.extend({
                 title: _t('Unsaved changes'),
                 buttons: [{
                     text: _t('Save'),
-                    classes: 'btn-primary',
+                    classes: 'btn-primary rounded-sm',
                     click: async () => {
                         this._disableButtons();
                         try {

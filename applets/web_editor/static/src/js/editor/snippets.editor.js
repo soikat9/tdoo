@@ -3074,7 +3074,7 @@ var SnippetsMenu = Widget.extend({
             ),
             buttons: [{
                 text: _t("Save and Install"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: function () {
                     this.$footer.find('.btn').toggleClass('o_hidden');
                     this._rpc({
@@ -3100,7 +3100,7 @@ var SnippetsMenu = Widget.extend({
             }, {
                 text: _t("Install in progress"),
                 icon: 'fa-spin fa-circle-o-notch fa-spin mr8',
-                classes: 'btn-primary disabled o_hidden',
+                classes: 'btn-primary rounded-sm disabled o_hidden',
             }, {
                 text: _t("Cancel"),
                 close: true,
@@ -3154,7 +3154,7 @@ var SnippetsMenu = Widget.extend({
             buttons: [{
                 text: _t("Yes"),
                 close: true,
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: async () => {
                     await this._rpc({
                         model: 'ir.ui.view',

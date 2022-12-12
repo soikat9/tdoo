@@ -197,7 +197,7 @@ function factory(dependencies) {
                         buttons: [
                             {
                                 text: this.env._t("Leave"),
-                                classes: 'btn-primary',
+                                classes: 'btn-primary rounded-sm',
                                 close: true,
                                 click: resolve,
                             },
@@ -223,7 +223,7 @@ function factory(dependencies) {
                         buttons: [
                             {
                                 text: this.env._t("Leave"),
-                                classes: 'btn-primary',
+                                classes: 'btn-primary rounded-sm',
                                 close: true,
                                 click: resolve
                             },

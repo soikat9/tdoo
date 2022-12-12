@@ -216,7 +216,7 @@ var FollowupFormRenderer = FormRenderer.extend({
             $content: $content,
             buttons: [{
                 text: 'Save',
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 close: true,
                 click: save
             },

@@ -211,7 +211,7 @@ var EventScanView = AbstractAction.extend({
             buttons.push({
                 text: _t('Confirm'),
                 close: true,
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: function() {
                     self._onRegistrationConfirm();
                 }

@@ -106,7 +106,7 @@ weSnippetEditor.SnippetsMenu.include({
                 size: 'medium',
                 title: _t("Google Map API Key"),
                 buttons: [
-                    {text: _t("Save"), classes: 'btn-primary', click: async (ev) => {
+                    {text: _t("Save"), classes: 'btn-primary rounded-sm', click: async (ev) => {
                         const $apiKeyInput = dialog.$('#api_key_input');
                         const valueAPIKey = $apiKeyInput.val();
                         const $apiKeyHelp = dialog.$('#api_key_help');

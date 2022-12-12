@@ -350,7 +350,7 @@ body .modal {
 
             .r {
                 cursor: pointer;
-                color:#1a0dab;
+                color:#0d6cab;
                 font-size: 18px;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -428,7 +428,7 @@ body .modal {
                 width: 110px;
                 height: 110px;
                 border: 3px solid lighten(#2C2C36, 10%);
-                border-radius: 100%;
+                border-radius: 10%;
                 line-height: 104px;
                 background-color: #2C2C36;
                 color: white;
@@ -445,7 +445,7 @@ body .modal {
                 text-decoration: none;
                 outline: none; // remove ugly dotted border on Firefox
                 i {
-                    border-color: #1cc1a9;
+                    border-color: #24b5d6;
                     box-shadow: 0 0 10px rgba(28, 193, 169, 0.46);
                 }
             }

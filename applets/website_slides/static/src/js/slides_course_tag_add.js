@@ -22,7 +22,7 @@ var TagCourseDialog = Dialog.extend({
             size: 'medium',
             buttons: [{
                 text: _t("Add"),
-                classes: 'btn-primary',
+                classes: 'btn-primary rounded-sm',
                 click: this._onClickFormSubmit.bind(this)
             }, {
                 text: _t("Discard"),

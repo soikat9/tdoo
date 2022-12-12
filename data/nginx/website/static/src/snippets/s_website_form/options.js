@@ -460,7 +460,7 @@ options.registry.WebsiteFormEditor = FormEditor.extend({
                 buttons: [
                     {
                         text: _t("Save"),
-                        classes: 'btn-primary',
+                        classes: 'btn-primary rounded-sm',
                         click: (ev) => {
                             const restore = dom.addButtonLoadingEffect(ev.currentTarget);
                             this.trigger_up('request_save', {
