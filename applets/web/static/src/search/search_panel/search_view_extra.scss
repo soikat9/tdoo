@@ -1,21 +1,24 @@
 .o_searchview {
     background-color: white;
     border: 1px solid rgb(235, 235, 235);
-    border-radius: $border-radius;
+    border-radius: $border-radius-sm;
     padding: 1px 25px 3px 5px;
 
     .o_searchview_facet {
-        border: 1px solid gray('600');
+        border: 1px solid gray('400');
         background: $o-brand-lightsecondary;
+        border-radius: $border-radius-sm;
+        
 
         .o_searchview_facet_label {
             background-color: $o-brand-tele;
+            border-radius: $border-radius-sm;
         }
 
         .o_facet_remove {
-            color: gray('600');
+            color: gray('500');
             &:hover {
-                color: gray('700');
+                color: gray('600');
             }
         }
     }
