@@ -60,7 +60,7 @@
             <field name="name">ir.module.module.form</field>
             <field name="model">ir.module.module</field>
             <field name="arch" type="xml">
-                <form create="0" edit="0" string="Module" class="o_module_form">
+                <form create="0" edit="0" string="Module" class="o_module_form ">
                     <link rel="stylesheet" href="/base/static/src/css/description.css"></link>
                     <sheet>
                     <field name="icon_image" widget="image" class="oe_avatar"/>
@@ -196,7 +196,6 @@
                             <a t-att-href="record.website.raw_value" target="_blank" attrs="{'invisible':[('website', '=', '')]}" class="btn btn-sm rounded-sm btn-secondary float-right o-hidden-ios" role="button">Learn More</a>
                             <a type="edit" class="btn btn-secondary rounded-sm btn-sm float-right" role="button" attrs="{'invisible': [('website', '&lt;&gt;', '')]}">Module Info</a>
                             <button type="object" class="btn btn-primary rounded-sm btn-sm" name="button_immediate_install" states="uninstalled" t-if="! record.to_buy.raw_value">Install</button>
-                            <a href="https://tele.studio/pricing?utm_source=db&amp;utm_medium=module#hosting=on_premise" target="_blank" class="btn btn-info rounded-sm btn-sm" states="uninstalled,uninstallable" t-if="record.to_buy.raw_value" role="button">Upgrade</a>
                             <div t-if="installed" class="text-muted float-left">Installed</div>
                             <button states="to remove" type="object" class="btn btn-sm rounded-sm btn-primary" name="button_uninstall_cancel">Cancel Uninstall</button>
                             <button states="to install" type="object" class="btn btn-sm rounded-sm btn-primary" name="button_install_cancel">Cancel Install</button>

@@ -33,7 +33,7 @@
 								<field name="font_color" widget="color" />
 								<field name="background_color"  widget="color" /> 
 								<field name="font_family" widget="selection" />	
-								<!-- <field name="google_font_family" attrs="{'invisible': [('font_family', '!=', 'custom_google_font')]}"/> -->
+								<field name="google_font_family" attrs="{'invisible': [('font_family', '!=', 'custom_google_font')]}"/>
 								<field name="font_size" />	
 								<field name="padding" />	
 							</group>

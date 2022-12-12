@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tele_pos_theme_settings_all,access.tele.pos.theme.settings.all,model_tele_pos_theme_settings,,1,1,0,0
+

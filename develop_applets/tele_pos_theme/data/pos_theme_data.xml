@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tele>
+    <data noupdate="1">
+        <record id="tele_pos_theme_settings_1" model="tele.pos.theme.settings">
+            <field name="name">POS Theme</field>
+            <field name="theme_color_type">solid</field>
+            <field name="theme_primary_1_color">#0a7fe9</field>
+            <field name="theme_primary_2_color">#0a7fe9</field>
+            <field name="theme_secondary_color">#f6f7fb</field>
+            <field name="theme_background_type">none</field>
+            <field name="theme_background_color">#ffffff</field>
+        	<field name="theme_background_image" type="base64" file="tele_pos_theme/static/src/img/2.png"/>
+            <field name="button_type">style_1</field>
+            <field name="button_color_type">solid</field>
+            <field name="button_primary_1_color">#0a7fe9</field>
+            <field name="button_primary_2_color">#0a7fe9</field>
+            <field name="button_secondary_color">#f6f7fb</field>
+            <field name="is_use_google_font" eval="False"></field>
+        </record>
+    </data> 
+    <data noupdate="1">    
+        <record id="tele_pos_theme_attachment_asset_variables" model="ir.attachment">
+        	<field name="datas" type="base64" file="tele_pos_theme/data/pos_theme_variables.scss"/>
+            <field name="mimetype">text/scss</field>
+            <field name="name">pos_theme_variables.scss</field>
+            <field name="type">binary</field>
+            <field name="url">/tele_pos_theme/static/src/scss/pos_theme_variables.scss</field>
+        </record>
+    </data>
+</tele>

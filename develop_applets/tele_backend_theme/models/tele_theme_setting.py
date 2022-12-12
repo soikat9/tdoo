@@ -77,7 +77,7 @@ class TeleThemeSettings(models.Model):
     
     theme_background_type = fields.Selection([
         ("none",'None'),
-        # ("color",'Color'),
+        ("color",'Color'),
         ("image",'Image'),        
         ],string="Background Type", default="none")
     theme_background_color = fields.Char(string="Theme Background Color")
@@ -173,7 +173,7 @@ class TeleThemeSettings(models.Model):
         ("style_3",'Style 3'),
         ("style_4",'Style 4'),
         ("style_5",'Style 5'),        
-        ],string="Tab Style", default="default")     
+        ],string="Tab Style", default="style_3")     
     theme_form_style = fields.Selection([
         ("default",'default'),
         ("style_1",'Style 1'),
@@ -181,7 +181,7 @@ class TeleThemeSettings(models.Model):
         ("style_3",'Style 3'),
         ("style_4",'Style 4'),
         ("style_5",'Style 5'),        
-        ],string="Tab Style", default="default") 
+        ],string="Tab Style", default="1") 
     theme_separator_style = fields.Selection([
         ("default",'default'),
         ("style_1",'Style 1'),
@@ -189,7 +189,7 @@ class TeleThemeSettings(models.Model):
         ("style_3",'Style 3'),
         ("style_4",'Style 4'),
         ("style_5",'Style 5'),        
-        ],string="Tab Style", default="default") 
+        ],string="Tab Style", default="1") 
     theme_popup_style = fields.Selection([
         ("default",'default'),
         ("style_1",'Style 1'),
@@ -202,7 +202,7 @@ class TeleThemeSettings(models.Model):
     tele_one2many_field_tree_view = fields.Boolean(string="One2many Field Tree View")
     tele_sticky_form_view_chatter = fields.Boolean(string="Sticky Form View Chatter")
     tele_sticky_form_view_statusbar = fields.Boolean(string="Sticky Form View Statusbar")
-    # tele_sticky_pivot_view = fields.Boolean(string="Sticky Pivot View Statusbar")
+    tele_sticky_pivot_view = fields.Boolean(string="Sticky Pivot View Statusbar")
     theme_font_size = fields.Selection([
         ("small",'Small'),
         ("medium",'Medium'),

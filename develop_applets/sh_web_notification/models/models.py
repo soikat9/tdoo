@@ -4,7 +4,7 @@ from tele import fields, models, _, api
 
 class Annoucement(models.Model):
     _name = 'sh.announcement'
-    _description = 'Sh Announcement'
+    _description = 'Announcement'
 
     name = fields.Char("Name")
     description = fields.Html("Description ",translate=True)
@@ -12,10 +12,10 @@ class Annoucement(models.Model):
     user_ids = fields.Many2many('res.users',string="Users")
     font_color = fields.Char("Font Color")
     background_color = fields.Char("Background Color")
-    date = fields.Date("Creation Date",default=fields.Date.today())
-    is_animation = fields.Boolean("Enable Animation ?")
+    date = fields.Date("Notification Date",default=fields.Date.today())
+    is_animation = fields.Boolean("Enable Animation")
     direction = fields.Selection([('right','Left to Right'),('left','Right To Left')],string="Direction",default='right')
-    simple_text = fields.Boolean("Want Simple Text ?")
+    simple_text = fields.Boolean("Simple Notification")
     description_text = fields.Text("Description")
     font_size = fields.Integer("Font Size", default=12)
     padding = fields.Float("Padding", default=5)

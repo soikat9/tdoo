@@ -1,0 +1,1175 @@
+
+/* common css */
+.cash-move-button:hover,
+.ticket-button:hover,
+.pos .pos-topheader .status-buttons > div:hover,
+.ticket-button.highlight{
+    background: rgba(0,0,0,.3);
+}
+.pos .leftpane .pads{
+    border-top-color: transparent;
+}
+.pos .pos-rightheader > *{
+    border-right-color: transparent;
+}
+.search-bar-portal .search-box input{
+    border-radius: 3px;
+}
+.pos .leftpane{
+    background-color: #fff;
+}
+.pos .category-list.simple{
+    background: transparent;
+}
+.pos .green-border-bottom{
+    border-bottom: 1px solid #bbbbbb;
+}
+.pos .product-list{
+    gap: 15px;
+    padding: 15px 15px;
+}
+.pos .product .product-name{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    background: transparent;
+}
+.pos .product{
+    border-color: #fff;
+}
+.pos .product .product-img img{
+    max-height: 75px;
+    max-width: 75px;
+}
+.pos .pane-border{
+    border-right: 0;
+}
+.pos .category-simple-button{
+    border-right: 0;
+}
+.pos .order .orderline{
+    padding-top: 10px;
+}
+.pos .breadcrumb:last-child{
+    border-right: 0;
+}
+.pos .control-button:focus-visible {
+    outline: none;
+}
+.pos .control-button:active,
+.pos .actionpad .button:active{
+    border-color: transparent;
+}
+.pos .clientlist-screen .client-details input.client-name{
+    margin: 10px 3px 18px;
+}
+.pos .clientlist-screen .client-details input, .pos .clientlist-screen .client-details select{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+:focus-visible {
+    outline: none;
+}
+.pos *::-webkit-scrollbar{
+    width: 3px;
+    background-color: transparent;
+}
+.pos *::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+}
+.pos *::-webkit-scrollbar-track{
+    box-shadow: none;
+    background-color: transparent !important;
+    border-left: 0 !important;
+}
+
+
+/* solid */
+@if $tele_pos_theme_color_type == 'solid'{    
+    .pos .pos-topheader{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .ticket-button .with-badge:after{
+        background-color: #fff;
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .control-button{
+        background: $tele_pos_theme_secondary_color;
+        border-color: $tele_pos_theme_secondary_color;
+    }
+    .pos .actionpad .button,
+    .pos .actionpad,
+    .pos .numpad button,
+    .pos .numpad{
+        border-color: $tele_pos_theme_secondary_color;
+    }
+    .pos button, .pos a.button,
+    .pos .rightpane-header,
+    .pos .category-simple-button{
+        background: $tele_pos_theme_secondary_color;
+    }
+    .pos .mode-button.selected-mode,
+    .pos .mode-button.selected-mode:hover{
+        background: $tele_pos_theme_primary_1_color;
+    }
+    .pos .pos-content,
+    .pos .order .orderline.selected{
+        background: $tele_pos_theme_secondary_color;
+    }
+    .pos .product .price-tag,
+    .pos .product .product-info-button{
+        background: $tele_pos_theme_primary_1_color;
+    }
+    .pos .control-button:hover{
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .pos .actionpad .button:hover,
+    .pos .numpad button:hover{
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .pos .modal-dialog .popup{
+        background-color: $tele_pos_theme_secondary_color;
+    }
+    .cash-move .input-amount .input-type,
+    .pos .popup .button{
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .pos textarea:focus,.pos .popup input:focus, .pos .popup-input.active{
+        box-shadow: 0px 0px 0px 1px $tele_pos_theme_primary_1_color;
+    }
+    .cash-move .input-amount .input-type.highlight{
+        background: $tele_pos_theme_primary_1_color !important;
+        border: solid 1px $tele_pos_theme_primary_1_color !important;
+    }
+    .pos .orders .header-row{
+        background-color: #73788c;
+    }
+    .pos .orders .order-row:nth-child(odd){
+        background: darken($tele_pos_theme_secondary_color, 4%);
+    }
+    .pos .orders .order-row:hover, .pos .orders .order-row.highlight{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .clientlist-screen .client-list tr{
+        background: darken($tele_pos_theme_secondary_color, 4%);
+    }
+    .pos .clientlist-screen .client-list thead > tr{
+        background-color: #73788c;
+        color: #fff;
+    }
+    .pos .clientlist-screen .client-list tr.highlight{
+        background-color: $tele_pos_theme_primary_1_color !important;
+    }
+    .pos .payment-numpad .numpad{
+        border: 0;
+    }
+    .receipt-screen .default-view .actions .send-email button.send.highlight{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .payment-status-container .amount.highlight,
+    .payment-screen .paymentlines-empty .total{
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .product{
+        border: 1px solid #e6ebf1
+    }
+    .pos .popup .title{
+        background: transparent;
+    }
+    .pos .paymentline,
+    .paymentmethods .button,
+    .payment-screen .payment-buttons .button{
+        background: $tele_pos_theme_secondary_color;
+    }
+    .payment-screen .payment-buttons .button.highlight{
+        background-color: $tele_pos_theme_primary_1_color !important;
+        border-color: $tele_pos_theme_primary_1_color !important;
+    }
+    .pos .order .orderline.dirty{
+        color: $tele_pos_theme_primary_1_color;
+        border-left: solid 6px $tele_pos_theme_primary_1_color;
+    }
+    .pos .order-button.floor-button{
+        background: rgba(0,0,0,0.2);
+        margin-top: 0;
+    }
+} 
+
+@if $tele_pos_button_type == 'style_1'{
+    
+    @if $tele_pos_button_color_type == 'solid'{
+        .ticket-screen .controls button.highlight{
+            border-color: $tele_pos_button_primary_1_color;
+            background-color: $tele_pos_button_primary_1_color;
+            transition: all .4s;
+        }
+        .ticket-screen .controls button{
+            background: $tele_pos_button_secondary_color;
+            transition: all .4s;
+        }
+        .pos .product .product-info-button:hover{
+            background-color: darken($tele_pos_button_primary_1_color, 5%);
+        }
+        .screen .top-content .button{
+            background: $tele_pos_button_secondary_color;
+            transition: all .4s;
+        }
+        .pos .control-button.highlight, .pos .button.highlight{
+            border-color: $tele_pos_button_primary_1_color !important;
+            background-color: $tele_pos_button_primary_1_color !important;
+        }
+        // .screen .top-content .button:hover{
+        //     background-color: darken($tele_pos_button_secondary_color, 5%);
+        // }
+        .paymentmethods .button,
+        .pos .paymentline,
+        .payment-screen .payment-buttons .button{
+            background: $tele_pos_button_secondary_color;
+        }
+        .receipt-screen .default-view .actions .send-email button.send.highlight{
+            background-color: $tele_pos_button_primary_1_color;
+        }
+        .ticket-screen .controls button.highlight:hover,
+        .ticket-screen .controls button:hover,
+        .screen .top-content .button:hover{
+            border-color: $tele_pos_button_primary_1_color;
+            color: $tele_pos_button_primary_1_color;
+            background-color: transparent;
+        }
+        .screen .top-content .button.highlight:hover{
+            border-color: $tele_pos_button_primary_1_color !important;
+            color: $tele_pos_button_primary_1_color !important;
+            background-color: transparent !important;
+        }
+    }
+    @if $tele_pos_button_color_type == 'gradient'{
+       
+       .ticket-screen .controls button.highlight{
+           background: linear-gradient(to right, $tele_pos_button_primary_1_color, $tele_pos_button_primary_2_color);
+           border-image: linear-gradient(to right, $tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color); 
+           transition: all .4s;
+        }
+        .pos .control-button.highlight, .pos .button.highlight{
+            background: linear-gradient(to right, $tele_pos_button_primary_1_color, $tele_pos_button_primary_2_color) !important;
+            border-color: $tele_pos_button_primary_1_color !important;
+            border-radius: 3px;
+        }
+        .screen .top-content .button,
+        .ticket-screen .controls button{
+            background-color: $tele_pos_button_secondary_color;
+            transition: all .4s;
+        }
+        .paymentmethods .button,
+        .paymentline.selected,
+        .pos .paymentline,
+        .payment-screen .payment-buttons .button{
+            background: $tele_pos_button_secondary_color;
+        }
+        .ticket-screen .controls button.highlight:hover,
+        .ticket-screen .controls button:hover,
+        .screen .top-content .button:hover{
+            color: $tele_pos_button_primary_1_color;
+            background: transparent;
+            border: 1px solid $tele_pos_button_primary_1_color;
+        }
+        .screen .top-content .button.highlight:hover{
+            color: $tele_pos_button_primary_1_color !important;
+            background: transparent !important;
+            border: 1px solid $tele_pos_button_primary_1_color !important;
+        }
+    }
+}
+
+
+@if $tele_pos_theme_color_type == 'gradient'{
+    
+    .pos .pos-topheader{
+        background: linear-gradient(135deg,$tele_pos_theme_primary_1_color 60%,$tele_pos_theme_primary_2_color);
+    }
+    .pos .product .product-info-button,
+    .pos .product .price-tag,
+    .pos .mode-button.selected-mode,
+    .pos .mode-button.selected-mode:hover{
+        background: linear-gradient(135deg,$tele_pos_theme_primary_1_color 60%,$tele_pos_theme_primary_2_color);
+    }
+    .pos .pos-content,.pos .rightpane-header,.pos .category-simple-button, .pos .order-container,.pos .leftpane{
+        background: $tele_pos_theme_secondary_color;
+    }
+    .pos .pane-border{
+        border-right: 1px solid #ccc;
+    }
+    .pos .product{
+        border: 1px solid #ccc;
+        border-radius: 0;
+        border-bottom-width: 2px;
+        border-bottom-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .green-border-bottom{
+        border-bottom: 1px solid #ccc;
+    }
+    .pos .control-button{
+        background: transparent;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+    }
+    .pos .actionpad .button:first-child,
+    .pos .actionpad .button:last-child,
+    .pos .actionpad,
+    .pos .numpad button:nth-child(4),
+    .pos .numpad button:last-child{
+        border-radius: 0;
+    }
+    .pos .actionpad .button,
+    .pos .numpad button{
+        background: transparent;
+    }
+    .pos .actionpad,
+    .pos .numpad{
+        border-color: #ccc;
+    }
+    .pos .order{
+        background-color: transparent;
+    }
+    .pos .actionpad .button:hover,
+    .pos .numpad button:hover,
+    .pos .control-button:hover
+    {
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .pos .modal-dialog .popup{
+        background-color: $tele_pos_theme_secondary_color;
+    }
+    .pos .popup .button{
+        border-radius: 0;
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .pos .popup .button:hover{
+        background: darken($tele_pos_theme_secondary_color, 5%);
+    }
+    .search-bar-portal .search-box input,
+    .ticket-screen .pos-search-bar .radius-left,
+    .ticket-screen .pos-search-bar .radius-right{
+        border-radius: 0;
+    }
+    .pos .popup .button:hover, .cash-move .input-amount .input-type{
+        border-radius: 0;
+        background: darken($tele_pos_theme_secondary_color, 3%);
+    }
+    .cash-move .input-amount .input-type:hover,
+    .pos .popup .button:hover{
+        background: darken($tele_pos_theme_secondary_color, 5%);
+    }
+    .cash-move .input-amount .input-type.highlight{
+        background: linear-gradient(135deg,$tele_pos_theme_primary_1_color,$tele_pos_theme_primary_2_color) !important;
+        border-image: linear-gradient(135deg,$tele_pos_theme_primary_1_color,$tele_pos_theme_primary_2_color) !important;
+    }
+    .pos .popup input:focus, .pos .popup-input.active,
+    .pos textarea:focus{
+        box-shadow: 0px 0px 0px 1px $tele_pos_theme_primary_1_color;
+    }
+    .cash-move .input-amount input,
+    .cash-move textarea{
+        border-radius: 0;
+    }
+    .pos .orders .header-row,.pos .clientlist-screen .client-list thead > tr{
+        background: darken($tele_pos_theme_secondary_color, 70%);
+        color: #fff;
+    }
+    .pos .orders .order-row:nth-child(odd),.pos .clientlist-screen .client-list tr{
+        background: darken($tele_pos_theme_secondary_color, 7%);
+    }
+    .pos .orders .order-row:hover, .pos .orders .order-row.highlight,
+    .pos .clientlist-screen .client-list tr.highlight{
+        background: linear-gradient(135deg,$tele_pos_theme_primary_1_color,$tele_pos_theme_primary_2_color) !important;
+    }
+    .pos .ticket-button .with-badge:after{
+        background: #fff;
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .pos button, .pos a.button{
+        border-radius: 0;
+    }
+    .pos .searchbox-client input,
+    .pos .clientlist-screen .client-details input.client-name,
+    .pos .clientlist-screen .client-details input, .pos .clientlist-screen .client-details select{
+        border-radius: 0;
+    }
+    .pos .payment-numpad .numpad button{
+        border-radius: 0 !important;
+    }
+    .pos .order .orderline .to-refund-highlight{
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .paymentmethods .button,
+    .paymentlines .paymentline:last-child,
+    .paymentlines .paymentline:first-child,
+    .pos .paymentline{
+        border-radius: 0 !important;
+        background-color: $tele_pos_button_secondary_color;
+    }
+    .payment-screen .payment-buttons .button:last-child{
+        border-radius: 0;
+        background-color: $tele_pos_button_secondary_color;
+    }
+    .pos .control-button.highlight, .pos .button.highlight{
+        background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color) !important;
+        border-color: $tele_pos_button_primary_1_color !important;
+        border-bottom-width: 3px !important;
+        border-bottom-color: darken($tele_pos_button_primary_1_color, 9%) !important;
+    }
+    .pos .order .orderline.dirty{
+        color: $tele_pos_theme_primary_1_color;
+        border-left: solid 6px $tele_pos_theme_primary_1_color;
+    }
+    .pos .order-button.floor-button{
+        background: rgba(0,0,0,0.2);
+        margin-top: 0;
+    }
+    .payment-screen .paymentlines-empty .total{
+        color: $tele_pos_theme_primary_1_color;
+    }
+} 
+
+@if $tele_pos_button_type == 'style_2'{
+    
+    @if $tele_pos_button_color_type == 'solid'{
+        .ticket-screen .controls button,
+        .screen .top-content .button{
+            border-radius: 0;
+            border-bottom-width: 3px;
+            background: $tele_pos_button_secondary_color;
+        }
+        .ticket-screen .controls button.highlight{
+            background: $tele_pos_button_primary_1_color;
+            border: solid 1px $tele_pos_button_primary_1_color;
+            border-bottom-width: 3px;
+            border-bottom-color: darken($tele_pos_button_primary_1_color, 9%);
+            transition: all .4s;
+        }
+        .screen .top-content .button.highlight{
+            background: $tele_pos_button_primary_1_color !important;
+            border: solid 1px $tele_pos_button_primary_1_color !important;
+            border-bottom-width: 3px !important;
+            border-bottom-color: darken($tele_pos_button_primary_1_color, 9%) !important;
+            transition: all .4s;
+        }
+        .ticket-screen .controls button.highlight:hover{
+            background: darken($tele_pos_button_primary_1_color, 3%);
+        }
+        .screen .top-content .button.highlight:hover{
+            background: darken($tele_pos_button_primary_1_color, 3%) !important;
+        }
+    }
+
+    @if $tele_pos_button_color_type == 'gradient'{
+        
+        .ticket-screen .controls button.highlight{
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color);
+            border-radius: 0;
+            border-color: $tele_pos_button_primary_1_color;
+            border-bottom-width: 3px;
+            border-bottom-color: darken($tele_pos_button_primary_1_color, 9%);
+        }
+        .ticket-screen .controls button{
+            border-radius: 0;
+            border-bottom-width: 3px;
+        }
+        .screen .top-content .button{
+            border-radius: 0;
+            background-color: $tele_pos_button_secondary_color;
+            border-bottom-width: 3px;
+        }
+        .screen .top-content .button:hover{
+            background: darken($tele_pos_button_secondary_color, 5%);
+        }
+        
+        .receipt-screen .default-view .actions .send-email button.send.highlight{
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color);
+            border-radius: 0;
+            border-image: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color);
+        }
+        .pos .actionpad .button.pay .pay-circle.highlight{
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color);
+        }
+
+    }
+
+}
+
+
+
+@if $tele_pos_theme_color_type == 'dark'{
+
+    .pos .pos-content,
+    .pos .rightpane-header,
+    .pos .category-simple-button{
+        background-color: $tele_pos_theme_secondary_color;
+    }
+    .pos .order,
+    .pos .leftpane,
+    .pos .control-button,
+    .pos button, .pos a.button,
+    .pos .order-container,
+    .pos .pos-topheader{
+        background-color: $tele_pos_theme_primary_2_color;
+    }
+    .pos .pos-topheader{
+        box-shadow: 0 1px 8px -1px rgba(0,0,0,.75);
+        z-index: 1;
+        height: 53px;
+    }
+    .pos .pos-content{
+        top: 53px;
+    }
+    .search-bar-portal .search-box input{
+        height: 36px;
+        padding-left: 50px;
+        background-color: $tele_pos_theme_secondary_color;
+        border: 1px solid #4d5b75;
+    }
+    .search-bar-portal .search-box .database-icon{
+        margin-left: 32px;
+    }
+    .search-bar-portal .search-box .icon{
+        margin-left: 10px;
+    }
+    .pos .category-simple-button{
+        border-top: 0;
+    }
+    .pos .product{
+        border-color: $tele_pos_theme_primary_2_color;
+        background-color: $tele_pos_theme_primary_2_color;
+    }
+    .pos .product .product-img{
+        background-color: transparent;
+    }
+    .pos .product .price-tag,
+    .pos .product .product-info-button{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .product .price-tag{
+        top: auto;
+        background-color: transparent;
+        bottom: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        width: fit-content;
+    }
+    .pos .product .product-name{
+        padding: 0 3px;
+        margin-bottom: 3px;
+        background: transparent;
+        color: #b4bed2;
+    }
+    .pos .product .product-info-button{
+        background-color: transparent;
+        color: #858585;
+    }
+    .pos .product .product-img{
+        height: 110px;
+    }
+    .pos .product{
+        height: 130px;
+    }
+    .pos,.pos .actionpad .button,.pos .numpad button{
+        color: #d6d7dc;
+    }
+    .pos .control-button{
+        border-radius: 0.625rem;
+    }
+    .pos .actionpad{
+        border-top-left-radius: 0.625rem;
+        border-bottom-left-radius: 0.625rem;
+    }
+    .pos .numpad{
+        border-top-right-radius: 0.625rem;
+    }
+    .pos .actionpad .button:first-child {
+        border-top-left-radius: 0.625rem;
+    }
+    .pos .actionpad .button:last-child {
+        border-bottom-left-radius: 0.625rem;
+    }
+    .pos .numpad button:nth-child(4) {
+        border-top-right-radius: 0.625rem;
+    }
+    .pos .numpad button:last-child {
+        border-bottom-right-radius: 0.625rem;
+    }
+    .pos .mode-button.selected-mode,
+    .pos .mode-button.selected-mode:hover{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .green-border-bottom{
+        border-bottom: 1px solid #4d5b75;
+    }
+    .pos .control-button,
+    .pos .actionpad .button,
+    .pos .actionpad,
+    .pos .numpad button,.pos .numpad{
+        border-color: #4d5b75;
+    }
+    .pos .order .orderline .info-list,
+    .pos .order .orderline .info-list em{
+        color: rgba(114,132,154,.9);
+    }
+    .ticket-button .with-badge:after{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .modal-dialog .popup,
+    .cash-move textarea,
+    .cash-move .input-amount input{
+        background-color: $tele_pos_theme_primary_2_color;
+    }
+    .cash-move .input-amount .input-type,
+    .pos .popup .button{
+        background: darken($tele_pos_theme_primary_2_color, 5%);
+    }
+    .cash-move .input-amount .input-type.highlight{
+        background-color: $tele_pos_theme_primary_1_color !important;
+        border: solid 1px $tele_pos_theme_primary_1_color !important;
+    }
+    .cash-move .input-amount input,
+    .cash-move textarea{
+        border: 1px solid #4d5b75;
+        box-shadow: none;
+        color: #d6d7dc;
+    }
+    .pos .popup input:focus, .pos .popup-input.active,
+    .pos textarea:focus{
+        box-shadow: 0px 0px 0px 1px $tele_pos_theme_primary_1_color;
+    }
+    .pos .orders .order-row:nth-child(odd),
+    .pos .orders .order-row:nth-child(even),
+    .pos .orders .header-row,.pos .popup .title{
+        background: transparent;
+    }
+    .pos .pane-border{
+        background: $tele_pos_theme_primary_2_color;
+    }
+    .pos .orders .header-row,
+    .pos .orders .order-row,.pos .popup .title{
+        border-bottom: 1px solid #4d5b75;
+    }
+    .pos .orders .col{
+        padding: 15px 10px;
+    }
+    .pos .orders .order-row:hover, .pos .orders .order-row.highlight{
+        background-color: #364663;
+    }
+    .pos .control-button:hover,.pos .actionpad .button:hover,
+    .pos .numpad button:hover,.pos .actionpad .button.pay .pay-circle{
+        background: #364663;
+    }
+    .ticket-screen .pos-search-bar .search input,
+    .ticket-screen .pos-search-bar .filter{
+        background-color: #1b2531;
+        border: 1px solid #4d5b75;
+        border-radius: 0;
+    }
+    .ticket-screen .pos-search-bar .search .search-icon,
+    .ticket-screen .pos-search-bar .search input,
+    .ticket-screen .pos-search-bar .search input::placeholder{
+        color: #d6d7dc;
+    }
+    .pos .order .orderline.selected{
+        background: rgba(255,255,255,.1);
+    }
+    .pos .clientlist-screen .client-list thead > tr, .pos .clientlist-screen .client-list tr:nth-child(even),
+    .pos .clientlist-screen .client-list tr{
+        background-color: transparent;
+    }
+    .pos .clientlist-screen .client-list th, .pos .clientlist-screen .client-list td{
+        padding: 15px 8px;
+    }
+    .pos .clientlist-screen .client-list tr{
+        border-bottom: 1px solid #4d5b75;
+    }
+    .pos .clientlist-screen .client-list tr.highlight{
+        background: #364663 !important;
+    }
+    .pos .edit-client-button{
+        color: #d6d7dc;
+    }
+    .pos .clientlist-screen .client-details input, .pos .clientlist-screen .client-details select{
+        background-color: $tele_pos_theme_secondary_color;
+        border: solid 1px #4d5b75;
+        color: #b4bed2;
+    }
+    .paymentmethods .button, .pos .paymentline, .payment-screen .payment-buttons .button{
+        background-color: $tele_pos_theme_primary_2_color;
+        border: solid 1px #4d5b75;
+    }
+    .payment-status-total-due{
+        color: rgba(114,132,154,.9);
+    }
+    .pos .payment-numpad .numpad{
+        border-color: #4d5b75;
+    }
+    .payment-screen .payment-buttons .button:hover{
+        background: darken(#283142, 3%);
+    }
+    .payment-screen .paymentlines-empty .total{
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .receipt-screen .default-view .actions .buttons .button,
+    .receipt-screen .default-view .actions .send-email .input-email,
+    .pos .pos-receipt-container > div{
+        background-color: transparent;
+        border: solid 1px #4d5b75;
+    }
+    .receipt-screen .default-view .actions .send-email .input-email input,
+    .receipt-screen .default-view .actions .send-email .input-email input::placeholder,
+    .pos .searchbox-client input,
+    .pos .searchbox-client input::placeholder{
+        background-color: transparent;
+        color: #d6d7dc;
+    }
+    .cash-move .input-amount .input-type, .pos .popup .button,
+    .cash-move .input-amount input, .cash-move textarea{
+        border-radius: .625rem;
+    }
+    .ticket-screen .pos-search-bar .search input{
+        border-top-left-radius: .625rem;
+        border-bottom-left-radius: .625rem;
+    }
+    .ticket-screen .pos-search-bar .filter{
+        border-top-right-radius: .625rem;
+        border-bottom-right-radius: .625rem;
+    }
+    .search-bar-portal .search-box input,
+    .pos .searchbox-client input{
+        border-radius: .625rem;
+    }
+    .pos .searchbox-client input{
+        border: solid 1px #4d5b75;
+    }
+    .pos .searchbox-client input:focus{
+        box-shadow: 0px 0px 0px 1px $tele_pos_theme_primary_1_color inset;
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .payment-status-container .amount.highlight{
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .rightpane.pane-border{
+        border-right: solid 1px #4d5b75;
+    }
+    .pos .product{
+        border-radius: 0.625rem;
+    }
+    .paymentmethods .button:last-child,.paymentlines .paymentline:last-child{
+        border-bottom-left-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+    }
+    .pos .payment-numpad .numpad button:first-child{
+        border-top-left-radius: 0.625rem;
+    }
+    .pos .payment-numpad .numpad button:nth-child(16){
+        border-bottom-left-radius: 0.625rem;
+    }
+    .paymentmethods .button:first-child,
+    .paymentlines .paymentline:first-child{
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+    }
+    .payment-screen .payment-buttons .button,
+    .payment-screen .payment-buttons .button:first-child,
+    .pos .payment-numpad .numpad{
+        border-radius: 0.625rem;
+    }
+    .ticket-screen .controls button,
+    .screen .top-content .button{
+        color: #b4bed2;
+    }
+    .pos .order .orderline.dirty{
+        color: $tele_pos_theme_primary_1_color;
+        border-left: solid 6px $tele_pos_theme_primary_1_color;
+    }
+    .pos .order-button.floor-button{
+        background: rgba(0,0,0,0.2);
+        margin-top: 0;
+    }
+    .pos .close-pos-popup .closing-notes{
+        background: transparent;
+        color: #fff;
+    }
+    .pos .close-pos-popup textarea::placeholder,
+    .pos .close-pos-popup .payment-methods-overview table .pos-input{
+        color: #fff;
+    }
+
+}
+
+
+@if $tele_pos_button_type == 'style_3'{
+    
+    @if $tele_pos_button_color_type == 'solid'{
+        .ticket-screen .controls button,
+        .screen .top-content .button{
+            //color: #b4bed2;
+            background: $tele_pos_button_secondary_color;
+            border: 1px solid #4d5b75;
+            border-radius: .625rem;
+        }
+        .screen .top-content .button:hover{
+           // color: #b4bed2;
+            background: darken($tele_pos_button_secondary_color, 5%);
+        }
+        .screen .top-content .button.highlight{
+            background: $tele_pos_button_primary_1_color !important;
+            border: solid 1px $tele_pos_button_primary_1_color !important;
+        }
+        .ticket-screen .controls button.highlight{
+            background: $tele_pos_button_primary_1_color;
+            border: solid 1px $tele_pos_button_primary_1_color;
+        }
+        .ticket-screen .controls button.highlight:hover{
+            background: darken($tele_pos_button_primary_1_color, 5%);
+        }
+        .pos .control-button.highlight, .pos .button.highlight{
+            background: $tele_pos_button_primary_1_color !important;
+            border: solid 1px $tele_pos_button_primary_1_color !important;
+        }
+        .receipt-screen .default-view .actions .send-email button.send.highlight{
+            background-color: $tele_pos_button_primary_1_color;
+            border-color: $tele_pos_button_primary_1_color;
+        }
+    }
+
+    @if $tele_pos_button_color_type == 'gradient'{
+        .ticket-screen .controls button,
+        .screen .top-content .button{
+            //color: #b4bed2;
+            background: $tele_pos_button_secondary_color;
+            border: 1px solid #4d5b75;
+            border-radius: .625rem;
+        }
+        .screen .top-content .button:hover{
+           // color: #b4bed2;
+            background: darken($tele_pos_button_secondary_color, 5%);
+        }
+        .screen .top-content .button.highlight{
+            background: $tele_pos_button_primary_1_color !important;
+            border: solid 1px $tele_pos_button_primary_1_color !important;
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color) !important;     
+        }
+        .ticket-screen .controls button.highlight{
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color);
+            border: solid 1px $tele_pos_button_primary_1_color;
+        }
+        // .ticket-screen .controls button.highlight:hover{
+        //     background: darken($tele_pos_button_primary_1_color, 5%);
+        // }
+        .pos .control-button.highlight{
+            background: linear-gradient(135deg,$tele_pos_button_primary_1_color,$tele_pos_button_primary_2_color) !important;
+            border: solid 1px $tele_pos_button_primary_1_color !important;
+        }
+    }
+
+}
+
+
+
+
+
+@if $tele_pos_theme_background_type == 'image'{
+    .pos{
+        background: url('/web/image?model=tele.pos.theme.settings&id=1&field=theme_background_image') !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pos .pos-content, .pos .order .orderline.selected,
+    .pos,.pos .green-border-bottom,
+    .pos .category-simple-button,
+    .pos .order,
+    .pos .order-container,
+    .pos .leftpane,
+    .pos .product .product-img{
+        background: transparent;
+    }
+    .pos .leftpane,
+    .pos .control-button,
+    .pos .actionpad,
+    .pos .numpad,
+    .pos .pos-topheader{
+        background: rgba(0,0,0,0.2);
+    }
+    .pos .product{
+        border: 1px solid rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.2);
+    }
+    .pos .actionpad .button,
+    .pos .numpad button{
+        background: transparent;
+        border-color: transparent;
+    }
+    .pos .actionpad,
+    .pos .control-button,
+    .pos .numpad,
+    .pos .category-simple-button{
+        border-color: transparent;
+    }
+    .pos,
+    .pos .actionpad .button,
+    .pos .numpad button,
+    .pos .breadcrumb-button{
+        color: #fff;
+    }
+    .pos .order .orderline .info-list,
+    .pos .order .orderline .info-list em{
+        color: rgba(255,255,255,0.7);
+    }
+    .pos .green-border-bottom{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .pos .order .summary .line{
+        border-color: #fff;
+    }
+    .pos *::-webkit-scrollbar-thumb{
+        background-color: rgba(255,255,255,.22);
+    }
+    .pos .pos-topheader{
+        box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.18);
+    }
+    .search-bar-portal .search-box input{
+        background: rgba(0,0,0,0.2);
+        border: 1px solid rgba(255,255,255,.3);
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .search-bar-portal .search-box .database-icon,
+    .search-bar-portal .search-box .icon{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .search-bar-portal .search-box input::placeholder{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .pos .product .price-tag, .pos .product .product-info-button,
+    .pos .actionpad .button.pay .pay-circle,
+    .pos .order .orderline.selected{
+        background: rgba(0,0,0,0.2);
+    }
+    .pos .control-button:hover,
+    .pos .actionpad .button:hover, .pos .numpad button:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    .pos .modal-dialog .popup,
+    .cash-move textarea,
+    .cash-move .input-amount input{
+        background-color: rgba(0,0,0,0.8);
+    }
+    .cash-move .input-amount .input-type, .pos .popup .button{
+        background: rgba(255,255,255,.15);
+    }
+    .cash-move textarea,
+    .pos .popup input, .pos .popup-input{
+        box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.35) inset;
+        color: #fff;
+    }
+    .pos .orders .order-row:nth-child(odd) {
+        background: transparent;
+    }
+    .pos .orders .order-row:nth-child(even){
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .pos .orders .header-row{
+        background-color: rgba(0,0,0,0.6);
+    }
+    .pos .orders .order-row:hover, .pos .orders .order-row.highlight{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .ticket-screen .pos-search-bar .search input,
+    .ticket-screen .pos-search-bar .filter{
+        border: 1px solid rgba(255,255,255,.3);
+        background: rgba(0,0,0,.15);
+        color: #fff;
+    }
+    .ticket-screen .pos-search-bar .search .search-icon{
+        color: #fff;
+    }
+    .pos .clientlist-screen .client-list thead > tr, .pos .clientlist-screen .client-list tr:nth-child(even){
+        background-color: transparent;
+    }
+    .pos .clientlist-screen .client-list tr{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .pos .clientlist-screen .client-list thead > tr {
+        background-color: rgba(0,0,0,0.6);
+    }
+    .screen .top-content .button{
+        color: #555555;
+    }
+    .pos .clientlist-screen .client-details input, .pos .clientlist-screen .client-details select,
+    .pos .searchbox-client input{
+        background-color: rgba(0,0,0,.15);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,.3);
+    }
+    .pos .clientlist-screen .client-details select option{
+        background-color: rgba(0,0,0,0.8);
+    }
+    .paymentmethods .button,
+    .paymentmethods .button, .pos .paymentline, .payment-screen .payment-buttons .button{
+        background-color: rgba(0, 0, 0, 0.2);
+        border-color: rgba(255,255,255,.15);
+    }
+    .paymentmethods .button:hover,
+    .payment-screen .payment-buttons .button:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .payment-screen .paymentlines-empty .total,
+    .payment-status-total-due{
+        color: #fff;
+    }
+    .receipt-screen .default-view .actions .buttons .button{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,.15);
+    }
+    .receipt-screen .default-view .actions .send-email input,
+    .receipt-screen .default-view .actions .send-email .input-email{
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,.15);
+    }
+    .receipt-screen .default-view .actions .send-email input{
+        background-color: transparent;
+    }
+    .pos .pos-receipt-container > div{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,.15);
+    }
+    .pos .clientlist-screen .client-details input::placeholder,
+    .pos .searchbox-client input::placeholder,
+    .pos .searchbox-client input,
+    .pos .searchbox-client input:focus{
+        color: #fff;
+    }
+    .pos .searchbox-client input:focus{
+        box-shadow: none;
+    }
+    .cash-move .input-amount .input-type:hover, .pos .popup .button:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .pos .popup .title{
+        background: transparent;
+    }
+    .paymentmethods .button, .paymentlines .paymentline:last-child, .paymentlines .paymentline:first-child, .pos .paymentline,
+    .payment-screen .payment-buttons .button:last-child{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .pos .pane-border{
+        border-right: 0;
+    }
+    .pos textarea{
+        background-color: transparent;
+        border-color: rgba(255,255,255,.15);
+        color: #fff;
+    }
+    .pos .popup-number .popup-input{
+        background: transparent;
+    }
+    .pos .popup-numpad .input-button, .pos .popup-numpad .mode-button{
+        color: #fff;
+    }
+    .pos .receipt-screen .centered-content .button{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,.15);
+    }
+    .pos .splitbill-screen .order,
+    .splitbill-screen.screen .pay-button .button{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,.15);
+    }
+    .splitbill-screen .order-info{
+        color: #ffffff;
+    }
+}   
+
+@if $tele_pos_button_type == 'style_3'{
+    @if $tele_pos_theme_background_type == 'image'{
+        .pos .rightpane.pane-border {
+            background: rgba(0, 0, 0, 0.2);
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .pos .product .product-info-button{
+            color: #fff;
+            background-color: transparent;
+        }
+        .pos .product .price-tag{
+            background-color: transparent;
+        }
+        .pos .clientlist-screen .client-list tr.highlight{
+             background-color: $tele_pos_theme_primary_1_color !important;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .pos .product{
+        width: 31%;
+    }
+    .pos .product .product-img img{
+        vertical-align: text-top;
+        max-height: 100px;
+        max-width: none;
+    }
+    .pos .switchpane .btn-switchpane{
+        background-color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .switchpane .btn-switchpane.secondary{
+        color: $tele_pos_theme_primary_1_color;
+    }
+    .pos .product:active{
+        border: solid 3px $tele_pos_theme_primary_1_color;
+    }
+    .pos .clientlist-screen .client-details-box{
+        justify-content: space-between;
+    }
+    .pos .clientlist-screen .client-details-left,
+    .pos .clientlist-screen .client-details-right{
+        width: 48%;
+        float: none;
+        flex-grow: unset;
+    }
+    .pos .clientlist-screen .client-details-box:after {
+        display: none;
+    }
+    @if $tele_pos_button_type == 'style_3'{
+        .pos .product{
+            height: auto;
+        }
+        .pos .product .product-img{
+            height: 100%;
+        }
+        .pos .product .price-tag{
+            bottom: 20px;
+        }
+    }
+}
+@media (max-width: 574px){
+    .pos .product .product-img img{
+        max-height: 75px;
+        max-width: 75px;
+    }
+    .pos .product{
+        min-height: 160px;
+        width: 30%;
+    }
+    .pos .clientlist-screen .client-details-left, .pos .clientlist-screen .client-details-right{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+    .pos .product{
+        width: 47%;
+    }
+}

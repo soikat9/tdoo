@@ -42,6 +42,7 @@
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/account_accountant.png</field>
             <field name="website">https://www.tele.studio/app/accounting?utm_source=db&amp;utm_medium=module</field>
+            
         </record>
 
         <record model="ir.module.module" id="base.module_industry_fsm">

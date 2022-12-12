@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="area-chart">
+<path id="Vector" d="M21 17.498H3V8.01851C3 7.69201 3.159 7.38651 3.4265 7.19951L7.61 4.27101C7.857 4.09801 8.1685 4.04601 8.458 4.12851L14.5555 5.87051C14.8375 5.95101 15.141 5.90401 15.385 5.74101L20.096 2.60051C20.482 2.34301 21 2.62001 21 3.08501V17.498Z" fill="url(#paint0_linear_206_10389)"/>
+<path id="Vector_2" d="M20 21H4C3.4475 21 3 20.5525 3 20V14.9805C3 14.6765 3.138 14.3895 3.3755 14.1995L7.6625 10.77C7.878 10.5975 8.1555 10.522 8.4285 10.561L14.59 11.441C14.8525 11.4785 15.119 11.41 15.3315 11.251L20.2 7.59996C20.5295 7.35296 21 7.58796 21 7.99996V20C21 20.5525 20.5525 21 20 21Z" fill="url(#paint1_linear_206_10389)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_206_10389" x1="10.961" y1="4.36351" x2="12.338" y2="12.1845" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0078D3"/>
+<stop offset="1" stop-color="#0858A1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_206_10389" x1="8.67514" y1="7.70642" x2="14.1942" y2="21.8938" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7DD8F3"/>
+<stop offset="1" stop-color="#45B0D0"/>
+</linearGradient>
+</defs>
+</svg>
