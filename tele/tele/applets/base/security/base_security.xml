@@ -165,7 +165,7 @@
             <field name="domain_force">[('id','in', company_ids)]</field>
         </record>
         <record id="res_company_rule_tele_manager" model="ir.rule">
-            <field name="name">company rule erp manager</field>
+            <field name="name">company rule tele manager</field>
             <field name="model_id" ref="model_res_company"/>
             <field eval="False" name="global"/>
             <field name="groups" eval="[Command.set([ref('base.group_tele_manager')])]"/>

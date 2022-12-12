@@ -23,7 +23,7 @@
         ]
     },
     "images": ["", ],
-    "auto_install": False,
+    "auto_install": True,
     "installable": True,
 
 }

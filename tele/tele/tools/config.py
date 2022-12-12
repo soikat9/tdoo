@@ -72,7 +72,7 @@ class configmanager(object):
         # Options not exposed on the command line. Command line options will be added
         # from optparse's parser.
         self.options = {
-            'admin_passwd': 'admin',
+            'admin_passwd': 'telepwd',
             'csv_internal_sep': ',',
             'publisher_warranty_url': 'http://services.tele.studio/publisher-warranty/',
             'reportgz': False,
