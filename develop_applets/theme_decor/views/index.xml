@@ -29,11 +29,11 @@
                               </div>
                           <div >
                                 
-                                  <a href="mailto:info@tele.studio" class="btn btn-primary btn-lg mt16 mb16" style="background-color: #ff8a00;
-                                border: 1px solid #ff8a00; border-radius: 0px; color:white; font-family: Montserrat; margin-right: .75rem;">Email Us</a>
+                                  <a href="mailto:info@tele.studio" class="btn btn-primary btn-lg mt16 mb16" style="background-color: #227ed4;
+                                border: 1px solid #227ed4; border-radius: 0px; color:white; font-family: Montserrat; margin-right: .75rem;">Email Us</a>
                                 
-                                  <a href="skype:live:teles?chat" class="btn btn-primary btn-lg mt16 mb16" style="background-color: #ff8a00;
-                                border: 1px solid #ff8a00; border-radius: 0px; color:white; font-family: Montserrat;">Skype</a>
+                                  <a href="skype:live:teles?chat" class="btn btn-primary btn-lg mt16 mb16" style="background-color: #227ed4;
+                                border: 1px solid #227ed4; border-radius: 0px; color:white; font-family: Montserrat;">Skype</a>
 
                           </div>                   
                           </div>
@@ -50,7 +50,7 @@
                             </div>
                         </section> -->
 
-                        <section class="index-banner mt-4 shadow position-relative" style="border-bottom: 4px solid #ff8a00">
+                        <section class="index-banner mt-4 shadow position-relative" style="border-bottom: 4px solid #227ed4">
                             <img class="img img-fluid position-absolute" src="index-banner-wave.png" style="bottom: 0;"></img>
                             <div class="container pt32 pb32">
                                 <div class="row align-items-center">
@@ -160,15 +160,15 @@
                             <section style="margin-bottom: 30px;">
                               <div class="row">
                                 <div class="col-lg-6">
-                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #ff8a00;">
-                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Product Layout Options</h2>
+                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #227ed4;">
+                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #227ed4;">Product Layout Options</h2>
                                     <p class="mb-4" style="font-size: 16px; font-weight: bold; color: #000000;">Different Product layout options to show products in your style</p>
                                     <img class="img img-fluid shadow border-lg" src="/decor_theme_common/static/description/product-layout2.gif"></img>
                                   </section>
                                 </div>
                                 <div class="col-lg-6">
-                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #ff8a00;">
-                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Product Quick View</h2>
+                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #227ed4;">
+                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #227ed4;">Product Quick View</h2>
                                     <p class="mb-4" style="font-size: 16px; font-weight: bold; color: #000000;">Quick view gives you brief information without redirecting to product page.</p>
                                     <img class="img img-fluid shadow border-lg" src="/decor_theme_common/static/description/quick-view.gif"></img>
                                   </section>
@@ -179,15 +179,15 @@
                             <section style="margin-bottom: 30px;">
                               <div class="row">
                                 <div class="col-lg-6">
-                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #ff8a00;">
-                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Special Category in Mobile</h2>
+                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #227ed4;">
+                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #227ed4;">Special Category in Mobile</h2>
                                     <p class="mb-4" style="font-size: 16px; font-weight: bold; color: #000000;">Different Product layout options to show products in your style</p>
                                     <img class="img img-fluid shadow border-lg" src="/decor_theme_common/static/description/product-layout.gif"></img>
                                   </section>
                                 </div>
                                 <div class="col-lg-6">
-                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #ff8a00;">
-                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Product Quick View</h2>
+                                  <section class="p-5 shadow text-center" style="border-bottom: 4px solid #227ed4;">
+                                    <h2 class="mb-4" style="font-size: 22px; font-weight: bold; color: #227ed4;">Product Quick View</h2>
                                     <p class="mb-4" style="font-size: 16px; font-weight: bold; color: #000000;">Quick view gives you brief information without redirecting to product page.</p>
                                     <img class="img img-fluid shadow border-lg" src="/decor_theme_common/static/description/quick-view.gif"></img>
                                   </section>
@@ -197,39 +197,39 @@
                             <section style="margin-bottom: 30px;">
                               <div class="row">
                                 <div class="col-lg-3">
-                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #ff8a00;">
+                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #227ed4;">
                                     <img class="img img-fluid position-absolute" src="/decor_theme_common/static/description/top-stripe1.png"></img>
                                     <div class="text-center px-5 pt-5">
                                       <img class="text-center img img-fluid" src="/decor_theme_common/static/description/mobile-menu.gif"></img>
                                     </div>
-                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Sidebar Menu</h2>
+                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #227ed4;">Sidebar Menu</h2>
                                   </section>
                                 </div>
                                 <div class="col-lg-3">
-                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #ff8a00;">
+                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #227ed4;">
                                     <img class="img img-fluid position-absolute" src="/decor_theme_common/static/description/top-stripe2.png"></img>
                                     <div class="text-center px-5 pt-5">
                                       <img class="text-center img img-fluid" src="/decor_theme_common/static/description/quick-filter-mobile.gif"></img>
                                     </div>
-                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Filter Sidebar</h2>
+                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #227ed4;">Filter Sidebar</h2>
                                   </section>
                                 </div>
                                 <div class="col-lg-3">
-                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #ff8a00;">
+                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #227ed4;">
                                     <img class="img img-fluid position-absolute" src="/decor_theme_common/static/description/top-stripe2.png"></img>
                                     <div class="text-center px-5 pt-5">
                                       <img class="text-center img img-fluid" src="/decor_theme_common/static/description/mobile-search.gif"></img>
                                     </div>
-                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Search Popup</h2>
+                                    <h2 class="text-center mb-0 pt-4 px-5 pb-5" style="font-size: 22px; font-weight: bold; color: #227ed4;">Search Popup</h2>
                                   </section>
                                 </div>
                                 <div class="col-lg-3">
-                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #ff8a00;">
+                                  <section class="shadow position-relative overflow-hidden" style="border-bottom: 4px solid #227ed4;">
                                     <img class="img img-fluid position-absolute" src="/decor_theme_common/static/description/top-stripe2.png"></img>
                                     <div class="text-center px-5 pt-5">
                                       <img class="text-center img img-fluid" src="/decor_theme_common/static/description/two-product-mbl.png"></img>
                                     </div>
-                                    <h2 class="text-center mb-0 pt-4 px-3 pb-5" style="font-size: 22px; font-weight: bold; color: #ff8a00;">Two Products Layout</h2>
+                                    <h2 class="text-center mb-0 pt-4 px-3 pb-5" style="font-size: 22px; font-weight: bold; color: #227ed4;">Two Products Layout</h2>
                                   </section>
                                 </div>
                               </div>
@@ -251,7 +251,7 @@
                           </div>
                         </section>
 
-                        <div class="alert alert-info mt32" style="background-color: #ff8a00;color: white; font-size: 29px; border-radius: 0px; margin-bottom: 0px;">
+                        <div class="alert alert-info mt32" style="background-color: #227ed4;color: white; font-size: 29px; border-radius: 0px; margin-bottom: 0px;">
                             <h1 style="font-size: 21px;margin-top: 20px;margin-bottom: 20px;color: white;"><strong>Note :- </strong> This Product is developed and tested with tele Addons for declared compatible versions and does not guarantee compatibility with any 3rd party module.
                                 <a href="mailto:support@tele.studio" style="color: #020a17;">Contact us</a> for more information or in case of any trouble with this module.
                             </h1>
@@ -280,22 +280,22 @@
                                 </div>
                                 
                                 <div class="s_btn text-center pt0" data-name="Button">
-                                <a href="https://apps.tele.com/apps/modules/browse?search=tele" target="_blank" class="btn btn-outline-primary btn-lg mt16 mb16" style="background-color: #ff8a00;border: 1px solid #ff8a00;border-radius: 0px;color:white;font-family:Montserrat;"> <i class="fa fa-file-code-o"></i>  All Apps</a>
+                                <a href="https://apps.tele.com/apps/modules/browse?search=tele" target="_blank" class="btn btn-outline-primary btn-lg mt16 mb16" style="background-color: #227ed4;border: 1px solid #227ed4;border-radius: 0px;color:white;font-family:Montserrat;"> <i class="fa fa-file-code-o"></i>  All Apps</a>
                               
-                                <a href="https://apps.tele.com/apps/themes/browse?search=tele" target="_blank" class="btn btn-outline-primary btn-lg mt16 mb16" style="background-color: #ff8a00;border: 1px solid #ff8a00;border-radius: 0px;color:white;font-family:Montserrat;"> <i class="fa fa-eyedropper"></i>  All Themes</a>
+                                <a href="https://apps.tele.com/apps/themes/browse?search=tele" target="_blank" class="btn btn-outline-primary btn-lg mt16 mb16" style="background-color: #227ed4;border: 1px solid #227ed4;border-radius: 0px;color:white;font-family:Montserrat;"> <i class="fa fa-eyedropper"></i>  All Themes</a>
                               
                               </div>
                                 
-                               <a class="oe_share_facebook" href="https://www.facebook.com/tele/" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #ff8a00; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
+                               <a class="oe_share_facebook" href="https://www.facebook.com/tele/" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #227ed4; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
                                   <i class="fa fa-facebook"></i>
                                   </a>  
-                                  <a class="oe_share_twitter" href="https://twitter.com/teles" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #ff8a00; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
+                                  <a class="oe_share_twitter" href="https://twitter.com/teles" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #227ed4; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
                                   <i class="fa fa-twitter"></i>
                                   </a>
-                                  <a class="_blank" href="https://www.linkedin.com/company/tele-solutions" style="margin-right: 8px;font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #ff8a00; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
+                                  <a class="_blank" href="https://www.linkedin.com/company/tele-solutions" style="margin-right: 8px;font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #227ed4; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
                                           <i class="fa fa-linkedin"></i>
                                         </a>
-                                  <a class="_blank" href="https://www.youtube.com/channel/UCpAQZ63QOhlINj46Wbtd_HA" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #ff8a00; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
+                                  <a class="_blank" href="https://www.youtube.com/channel/UCpAQZ63QOhlINj46Wbtd_HA" style="margin-right: 8px; font-size: 20px; width: 40px; height: 40px; background-color: #fff; display: inline-block; line-height: 40px; order-radius: 0px; text-align: center; color: #227ed4; box-shadow: 0 5px 10px 0 rgba(130, 136, 184, 0.2);">
                                     <i class="fa fa-youtube-play"></i>
                                   </a>
                             </div>                   
