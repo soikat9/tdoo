@@ -2831,7 +2831,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 187, 49, 0.777);
+  box-shadow: 0 0 0 0.2rem rgba(174, 140, 40, 0.941);
 }
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {

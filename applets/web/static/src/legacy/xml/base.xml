@@ -15,7 +15,7 @@
                         t-on-click.prevent="trigger('breadcrumb-clicked', { controllerID: bc.controllerID })"
                         title="Previous menu"
                         >
-                        <a t-if="bc.title" href="#" t-esc="bc.title"/>
+                        <a t-if="bc.title " href="#" t-esc="bc.title"/>
                         <em t-else="" class="text-warning">Unnamed</em>
                     </li>
                     <li class="breadcrumb-item active">

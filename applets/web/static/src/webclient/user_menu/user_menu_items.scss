@@ -3,14 +3,12 @@
   border-spacing: 0 1em;
 
   .o_key {
-    background-color: #f4f7f8;
+    background-color: linear-gradient(180deg, #C3CDD9 10.75%, #9FA7B0 126.03%);
     border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), inset 0px -1px 1px 1px rgba(230, 230, 230, 0.8),
-      inset 0px 2px 0px 0px rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid linear-gradient(0deg, #899198 -62.68%, #787E85 51.48%);
     display: inline-block;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif, monospace;
     font-size: 0.85em;
-    padding: 2px 4px;
+    padding: 2px 5px;
   }
 }
