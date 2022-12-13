@@ -3,6 +3,31 @@
     &,
     .o_menu_sections,
     .o_menu_systray {
+        .o-dropdown--menu{
+            overflow: visible !important;
+            z-index: 999;
+            padding: 15px 0;
+            min-width: 40em;
+            min-height: 28vh;
+            .category_group {
+                display: flex;
+            }
+            .sub-menu {
+                position: absolute;
+                right: 0;
+                background: #fff;
+                display: none;
+                top: 0;
+                width: 65%;
+                padding: 12px 0;
+                &:hover {
+                    display: block !important;
+                }
+            }
+            .dropdown-header:hover + .sub-menu {
+                display: block;
+            }
+        }
         .o_dropdown_menu_group_entry.o_dropdown_fifth_menu_group.dropdown-item {
             padding-left: $o-dropdown-hpadding * 2 !important;
             // padding-left: 45px !important;
