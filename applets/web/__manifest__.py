@@ -54,7 +54,7 @@ This module provides the core of the Tele Web Client.
             'web/static/src/legacy/xml/graph.xml',
             'web/static/src/legacy/xml/search_panel.xml',
             'web/static/src/legacy/xml/week_days.xml',
-            '/web/static/src/legacy/xml/search_panel_toggle.xml',
+        #    '/web/static/src/legacy/xml/search_panel_toggle.xml',
         ],
         'web.assets_common_minimal': [
             'web/static/lib/es6-promise/es6-promise-polyfill.js',
@@ -344,7 +344,7 @@ This module provides the core of the Tele Web Client.
             'web/static/src/legacy/scss/daterangepicker.scss',
             'web/static/src/legacy/scss/banner.scss',
             'web/static/src/legacy/scss/colorpicker.scss',
-            '/web/static/src/legacy/scss/search_panel_toggle.scss',
+       #     '/web/static/src/legacy/scss/search_panel_toggle.scss',
             'web/static/src/legacy/scss/popover.scss',
             'web/static/src/legacy/scss/translation_dialog.scss',
             'web/static/src/legacy/scss/keyboard.scss',
@@ -436,7 +436,7 @@ This module provides the core of the Tele Web Client.
             'web/static/src/legacy/js/core/smooth_scroll_on_drag.js',
             'web/static/src/legacy/js/widgets/colorpicker.js',
             'web/static/src/legacy/js/widgets/translation_dialog.js',
-            '/web/static/src/legacy/js/search_panel_toggle.js',
+      #      '/web/static/src/legacy/js/search_panel_toggle.js',
         ],
 
         # Used during the transition of the web architecture

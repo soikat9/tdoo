@@ -511,10 +511,10 @@
                     margin: 0px;
                     text-align: center;
                     &.o_select_file_button{
-                        background: $o-brand-primary;
+                        background: transparent;
                     }
                     &.o_clear_file_button{
-                        background: theme-color('danger');
+                        background: transparent;
                     }
                 }
             }

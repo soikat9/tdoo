@@ -7,8 +7,8 @@
     'version': '1.0.0.3',
     'author': 'Tele INC.',
     'website': 'https://www.tele.studio',
-    'summary': 'Theme Decor is featured with eCommerce functionalities and fully responsive to all devices. Theme Decor is perfect for any Industry like electronics, fashion, furniture, grocery, etc, it will work for any Industry.',
-    'description': """Theme Decor is featured with eCommerce functionalities and fully responsive to all devices. Theme Decor can be used to take your store online with attractive and eye catching design. Theme Decor is perfect for any category store like electronics, fashion, furniture, grocery, etc, it will work for any category.""",
+    'summary': '',
+    'description': """""",
     'depends': [
         'decor_theme_common',
     ],

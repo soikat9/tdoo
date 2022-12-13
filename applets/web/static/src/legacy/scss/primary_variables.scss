@@ -9,10 +9,10 @@ $o-font-size-base: 13rem * (1px / $o-root-font-size) !default;
 $o-line-height-base: 1.5 !default; // This is BS default
 
 // Colors
-$o-community-color: #0e69b8 !default;
+$o-community-color: #1b79ca !default;
 
-$o-brand-tele: #0e69b8 !default;
-$o-brand-primary: #0e69b8 !default;
+$o-brand-tele: #1b79ca !default;
+$o-brand-primary: #1b79ca  !default;
 
 $o-brand-secondary: #f0eeee !default;
 $o-brand-lightsecondary: #e2e2e0 !default;
@@ -35,10 +35,10 @@ $o-danger: #d22b33 !default;
 
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
-    "success": #9f9f9f,
-    "info": #6b6e6f,
-    "warning": #555452,
-    "danger": #9d9d9d,
+    "success": #f7f7f7,
+    "info": #ffffff,
+    "warning": #ffffff,
+    "danger": #ffffff,
 )!default;
 
 $o-main-text-color: $o-gray-700 !default;

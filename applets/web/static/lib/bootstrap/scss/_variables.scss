@@ -34,8 +34,8 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #3d7abe !default;
-$indigo:  #af88ee !default;
+$blue:    #1f73d2 !default;
+$indigo:  #b399dc !default;
 $purple:  #765ba8 !default;
 $pink:    #d275a0 !default;
 $red:     #cf2e36 !default;
@@ -67,7 +67,7 @@ $colors: map-merge(
 );
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $gray-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -238,9 +238,9 @@ $border-radius-sm:            .2rem !default;
 
 $rounded-pill:                50rem !default;
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($gray-500, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($gray-500, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($gray-500, .175) !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
@@ -335,7 +335,7 @@ $nested-kbd-font-weight:      $font-weight-bold !default;
 
 $list-inline-padding:         .5rem !default;
 
-$mark-bg:                     #fcf8e3 !default;
+$mark-bg:                     #ededed !default;
 
 $hr-margin-y:                 $spacer !default;
 

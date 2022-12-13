@@ -13,8 +13,8 @@
                 </field>
                 <xpath expr="//span[hasclass('oe_kanban_partner_links')]" position="inside">
                     <span class="badge badge-pill" t-if="record.meeting_count.value>0">
-                    <img class="mr-2" t-attf-src="/mail/static/src/img/icons/calendar.svg" aria-label="Meetings" role="img" title="Meetings"/>
-                        <t t-esc="record.meeting_count.value"/>
+                    <img class="mr-2" t-esc="record.meeting_count.value" t-attf-src="/mail/static/src/img/icons/calendar.svg" aria-label="Meetings" role="img" title="Meetings"/>
+                       
                     </span>
                 </xpath>
             </field>
@@ -31,9 +31,8 @@
                     <div name="button_box" position="inside">
                         <button class="oe_stat_button" type="object"
                             name="schedule_meeting"
-                            context="{'partner_id': active_id, 'partner_name': name}">
+                            context="{'partner_id': active_id, 'partner_name': name}"> <img t-attf-src="/mail/static/src/img/icons/calendar.svg" />
                             <field string="Meetings" name="meeting_count" widget="statinfo"/>
-                            <img t-attf-src="/mail/static/src/img/icons/calendar.svg" />
                         </button>
                     </div>
                 </data>

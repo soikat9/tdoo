@@ -67,24 +67,18 @@
 
     <div t-name="website.ga_dialog_content">
         Your Measurement ID: <input type="text" name="ga_analytics_key" placeholder="G-XXXXXXXXXX" t-att-value="ga_analytics_key" style="width: 100%"></input>
-        <a href="https://support.google.com/analytics/answer/9304153" target="_blank">
-            <i class="fa fa-arrow-right"/>
-            How to get my Measurement ID
-        </a>
+
         <br/><br/>
         Your Client ID: <input type="text" name="ga_client_id" t-att-value="ga_key" style="width: 100%"></input>
-        <a href="https://www.docs.tele.studio/1.0/applications/websites/website/optimize/google_analytics_dashboard.html" target="_blank">
-            <i class="fa fa-arrow-right"/>
-            How to get my Client ID
-        </a>
+       
     </div>
 
     <t t-name="website.DateRangeButtons">
         <!-- TODO: Hide in mobile as it is going to push in control panel and it breaks UI, maybe we will improve it in future -->
         <div class="btn-group o_date_range_buttons d-none d-md-inline-flex float-right">
-            <button class="btn btn-secondary rounded-sm js_date_range active" data-date="week">Last Week</button>
-            <button class="btn btn-secondary rounded-sm js_date_range" data-date="month">Last Month</button>
-            <button class="btn btn-secondary rounded-sm js_date_range" data-date="year">Last Year</button>
+            <button class="btn btn-secondary rounded-sm mx-1 js_date_range active" data-date="week">Last Week</button>
+            <button class="btn btn-secondary rounded-sm mx-1  js_date_range" data-date="month">Last Month</button>
+            <button class="btn btn-secondary rounded-sm mx-1  js_date_range" data-date="year">Last Year</button>
         </div>
         <div class="btn-group d-none d-md-inline-block float-right" style="margin-right: 20px;">
             <t t-foreach="widget.websites" t-as="website">

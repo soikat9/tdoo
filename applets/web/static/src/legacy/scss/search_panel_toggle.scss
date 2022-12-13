@@ -6,32 +6,6 @@
 		padding-left: 6px;
 		overflow: auto;
 		scrollbar-width: thin;
-		margin-left: 4px;
-		.o_search_panel_section_header {
-			padding: 4px 0;
-		}
-		.o_search_panel_category {
-			.o_search_panel_field {
-				li.o_search_panel_category_value::before  {
-					width: 1px;
-					top: -6px;
-					
-				}
-				li.o_search_panel_category_value::after  {
-					width: 16px;
-					
-				}				
-				li.o_search_panel_category_value:last-child::before   {
-					height: 18px;
-				}					
-				li.o_search_panel_category_value  {
-
-					.o_search_panel_label_title{
-						padding-left:6px;
-					}
-				
-				}
-			}
 		}
 	}
 	.btn-search-panel-toggle {

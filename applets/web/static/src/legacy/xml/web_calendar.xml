@@ -121,16 +121,16 @@
 
     <t t-name="CalendarView.navigation_buttons">
         <button class="o_calendar_button_prev btn btn-primary rounded-sm" aria-label="Previous" title="Previous"><span class="fa fa-arrow-left"/></button>
-        <button class="o_calendar_button_today btn btn-primary rounded-sm">Today</button>
+        <button class="o_calendar_button_today btn btn-primary mx-1 rounded-sm">Today</button>
         <button class="o_calendar_button_next btn btn-primary rounded-sm" aria-label="Next" title="Next"><span class="fa fa-arrow-right"/></button>
     </t>
 
     <t t-name="CalendarView.scale_buttons">
         <div class="btn-group">
-            <button type="button" t-if="scales.includes('day')" class="o_calendar_button_day btn btn-secondary rounded-sm">Day</button>
-            <button type="button" t-if="scales.includes('week')" class="o_calendar_button_week btn btn-secondary rounded-sm">Week</button>
-            <button type="button" t-if="scales.includes('month')" class="o_calendar_button_month btn btn-secondary rounded-sm">Month</button>
-            <button type="button" t-if="scales.includes('year')" class="o_calendar_button_year btn btn-secondary rounded-sm">Year</button>
+            <button type="button" t-if="scales.includes('day')" class="o_calendar_button_day mx-1 btn btn-secondary rounded-sm">Day</button>
+            <button type="button" t-if="scales.includes('week')" class="o_calendar_button_week mx-1 btn btn-secondary rounded-sm">Week</button>
+            <button type="button" t-if="scales.includes('month')" class="o_calendar_button_month mx-1 btn btn-secondary rounded-sm">Month</button>
+            <button type="button" t-if="scales.includes('year')" class="o_calendar_button_year mx-1 btn btn-secondary rounded-sm">Year</button>
         </div>
     </t>
 
