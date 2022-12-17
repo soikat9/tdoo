@@ -1,0 +1,5 @@
+@mixin ent-barcode-view() {
+    .o_stock_barcode_main_menu_container {
+        background: radial-gradient(circle, darken($brand-secondary, 20%), $black);
+    }
+}

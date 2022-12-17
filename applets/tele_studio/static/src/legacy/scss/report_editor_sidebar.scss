@@ -19,7 +19,7 @@
 
             &:before {
                 content: "";
-                background-color: transparentize($o-web-studio-bg-light,0.5);
+                background-color: transparentize($o-tele-studio-bg-light,0.5);
                 width: 1px;
                 @include o-position-absolute(0, auto, 0, 5px);
             }
@@ -37,7 +37,7 @@
 
                 &:hover, &.o_tele_studio_active {
                     .card-header {
-                        background: $o-web-studio-bg-darker;
+                        background: $o-tele-studio-bg-darker;
 
                         button[data-toggle="collapse"] {
                             color: white;
@@ -60,12 +60,12 @@
                     transition: none;
                 }
                 .card-header {
-                    background: $o-web-studio-bg-dark;
+                    background: $o-tele-studio-bg-dark;
                     padding: 0;
                     border: none;
 
                     &:before, &:after {
-                        background-color: darken($o-web-studio-bg-light, 50%);
+                        background-color: darken($o-tele-studio-bg-light, 50%);
                         content: "";
                         @include o-position-absolute($top:0, $bottom: 0,  $left: 5px);
                         width: 1px;
@@ -79,7 +79,7 @@
                     button[data-toggle="collapse"] {
                         display: block;
                         padding: 3px 8px 6px 10px;
-                        color: $o-web-studio-text-inactive;
+                        color: $o-tele-studio-text-inactive;
 
                         > small {
                             font-size: 90%;
@@ -92,7 +92,7 @@
                             @include o-text-overflow(inline-block);
                             width: 92%;
                             vertical-align: middle;
-                            font: 400 11px $o-web-studio-font-family-monospace;
+                            font: 400 11px $o-tele-studio-font-family-monospace;
                         }
                         i.fa-angle-left {
                             transition: transform .3s;
@@ -103,9 +103,9 @@
                 }
                 .card-body {
                     border: none;
-                    border-top: 1px solid $o-web-studio-bg-dark;
+                    border-top: 1px solid $o-tele-studio-bg-dark;
                     padding-top: 8px;
-                    @include o-bg-color($o-web-studio-bg-medium);
+                    @include o-bg-color($o-tele-studio-bg-medium);
 
                     .row {
                         margin-bottom: 8px;
@@ -131,7 +131,7 @@
                     }
                     .o_tele_studio_text_decoration, .o_tele_studio_text_alignment, .o_tele_studio_font_size {
                         > button , button.dropdown-toggle {
-                            @include o-web-studio-btn;
+                            @include o-tele-studio-btn;
                             padding: 2px 7px;
                             font-size: 13px;
                             &.active {
@@ -161,7 +161,7 @@
 
                         .fa {
                             @include o-position-absolute(1px, 1px);
-                            background-color: $o-web-studio-bg-darker;
+                            background-color: $o-tele-studio-bg-darker;
                             padding: 4px;
                             cursor: pointer;
                         }
@@ -173,7 +173,7 @@
                     }
                     .o_field_many2manytags {
                         width: 100%;
-                        background-color: $o-web-studio-bg-dark;
+                        background-color: $o-tele-studio-bg-dark;
                     }
                     .o_tele_studio_colors {
                         position: relative;
@@ -183,8 +183,8 @@
                             position: initial;
 
                             > button {
-                                @include o-web-studio-btn;
-                                @include o-web-studio-btn-variation($o-web-studio-bg-dark, $o-web-studio-bg-darker);
+                                @include o-tele-studio-btn;
+                                @include o-tele-studio-btn-variation($o-tele-studio-bg-dark, $o-tele-studio-bg-darker);
                                 padding: 2px 7px;
                                 font-size: 13px;
                                 font-weight: 300;
@@ -192,15 +192,15 @@
                             }
                             .dropdown-menu {
                                 padding: 0;
-                                border-color: $o-web-studio-bg-darker;
+                                border-color: $o-tele-studio-bg-darker;
                             }
                             .dropdown-item {
                                 &, &:hover, &:active, &:focus {
-                                    background-color: $o-web-studio-bg-darker;
+                                    background-color: $o-tele-studio-bg-darker;
                                 }
                                 > button {
-                                    @include o-web-studio-btn;
-                                    @include o-web-studio-btn-variation($o-web-studio-bg-medium, $o-web-studio-bg-dark);
+                                    @include o-tele-studio-btn;
+                                    @include o-tele-studio-btn-variation($o-tele-studio-bg-medium, $o-tele-studio-bg-dark);
                                 }
                             }
                             .o_tele_studio_color_palette {
@@ -218,7 +218,7 @@
                                     }
                                 }
                                 h6 {
-                                    color: $o-web-studio-text-disabled;
+                                    color: $o-tele-studio-text-disabled;
                                     font-size:15px;
                                     margin-top: 9px;
                                     margin-bottom: 9px;
@@ -238,7 +238,7 @@
                         padding: 3px 8px;
                     }
                     .o_field_selector_value {
-                        background-color: $o-web-studio-bg-dark;
+                        background-color: $o-tele-studio-bg-dark;
                     }
                     .o_input {
                         border-bottom: none;

@@ -1,6 +1,6 @@
 .o_tele_studio_icon_creator {
   h6 {
-    color: $o-web-studio-text-inactive;
+    color: $o-tele-studio-text-inactive;
   }
 
   .o_tele_studio_uploaded_image {
@@ -63,7 +63,7 @@
     .o_tele_studio_selector {
       display: inline-block;
       margin: 5px;
-      border-radius: 0;
+      border-radius: 2px;
       border: 2px solid white;
       width: 30px;
       height: 30px;
@@ -93,8 +93,8 @@
     margin: 6px 0 27px 17px;
     text-align: center;
     border-radius: 3px;
-    border: 2px solid $o-web-studio-bg-dark;
-    box-shadow: 0 0 0 1px darken($o-web-studio-bg-light, 50%);
+    border: 2px solid $o-tele-studio-bg-dark;
+    box-shadow: 0 0 0 1px darken($o-tele-studio-bg-light, 50%);
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease 0s;
@@ -108,7 +108,7 @@
       width: 15px;
       text-align: right;
       font-family: "FontAwesome";
-      color: $o-web-studio-text-light;
+      color: $o-tele-studio-text-light;
       @include o-position-absolute(1px, -15px);
     }
 
@@ -125,7 +125,7 @@
         line-height: 0;
         font-size: 50px;
         color: white;
-        text-shadow: 0 0 1px $o-web-studio-bg-dark;
+        text-shadow: 0 0 1px $o-tele-studio-bg-dark;
         @include o-position-absolute(12px, auto, auto, -16px);
         transition: all 0.3s ease 0s;
       }
@@ -165,7 +165,7 @@
     }
 
     &:hover {
-      box-shadow: 0 0 0 1px $o-web-studio-bg-light;
+      box-shadow: 0 0 0 1px $o-tele-studio-bg-light;
       .o_tele_studio_selector_pointer {
         border-top: 1px solid white;
         &:before {

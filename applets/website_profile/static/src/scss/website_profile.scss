@@ -51,7 +51,7 @@ $owprofile-color-bg: mix($body-bg, #efeff4);
         border-bottom: 0;
 
         .nav-link {
-            border-radius: 0;
+            border-radius: 2px;
             border-width: 0 1px;
             line-height: $line-height-base;
             @include o-hover-text-color(rgba(white, 0.8), white);
@@ -151,7 +151,7 @@ $owprofile-color-bg: mix($body-bg, #efeff4);
         @include media-breakpoint-up(md) {
             @include o-hover-text-color(white, $gray-800);
             margin-top: -1px;
-            border-radius: 0;
+            border-radius: 2px;
             min-height: 35px;
 
             &:hover {

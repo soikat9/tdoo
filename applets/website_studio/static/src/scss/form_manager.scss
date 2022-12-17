@@ -1,15 +1,15 @@
 .o_website_studio_manager {
-    @include o-web-studio-thumbnails-container;
+    @include o-tele-studio-thumbnails-container;
 
     > h6 {
         margin: $o-horizontal-padding;
     }
 
     .o_website_studio_forms {
-        @include o-web-studio-thumbnails;
+        @include o-tele-studio-thumbnails;
 
         .o_website_studio_form {
-            @include o-web-studio-thumbnail;
+            @include o-tele-studio-thumbnail;
             margin: $o-horizontal-padding;
             margin-top: 0px;
             &:first-child {

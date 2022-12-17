@@ -1,0 +1,48 @@
+@mixin ent-cohort-view() {
+    .o_cohort_renderer {
+        padding: var(--main-padding);
+
+        .table {
+            border-right: 1px solid var(--border);
+            color: var(--font-color);
+
+            thead,
+            tfoot {
+                background-color: $tr-hover;
+                color: var(--Label);
+
+                &>tr {
+                    &>th {
+                        border: 1px solid var(--border);
+                        border-right: 0;
+                    }
+
+                    &>td {
+                        border: 1px solid var(--border);
+                        border-right: 0;
+                    }
+                }
+            }
+
+            tbody {
+                &>tr {
+                    &>td {
+                        border: 1px solid var(--border);
+                        border-right: 0;
+                    }
+
+                    &:hover {
+                        background-color: $tr-hover;
+                        border-left: 0;
+
+                        &>td:first-child {
+                            &:before {
+                                background-color: var(--brand-primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

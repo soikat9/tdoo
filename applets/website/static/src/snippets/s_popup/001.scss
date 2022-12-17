@@ -3,7 +3,7 @@
         min-height: $font-size-lg * 2;
         max-height: none;
         border: 0;
-        border-radius: 0;
+        border-radius: 2px;
         box-shadow: $modal-content-box-shadow-sm-up;
     }
 
@@ -38,7 +38,7 @@
             // Use the backdrop color as background-color
             background-color: transparent;
             box-shadow: none;
-            border-radius: 0;
+            border-radius: 2px;
         }
     }
 

@@ -227,7 +227,7 @@ label {
 }
 
 button {
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 button:focus {
@@ -4776,12 +4776,12 @@ input[type="button"].btn-block {
 }
 
 .accordion > .card:not(:first-of-type) .card-header:first-child {
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .accordion > .card:not(:first-of-type):not(:last-of-type) {
   border-bottom: 0;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .accordion > .card:first-of-type {

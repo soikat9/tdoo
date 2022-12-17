@@ -288,7 +288,7 @@ $o-wslides-fs-side-width: 300px;
     border-bottom: 0;
 
     .nav-link {
-        border-radius: 0;
+        border-radius: 2px;
         border-width: 0 1px;
         line-height: $line-height-base;
         @include o-hover-text-color(rgba(white, 0.8), white);

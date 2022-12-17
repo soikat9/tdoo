@@ -1,0 +1,15 @@
+@mixin syn_cohort_view() {
+    .o_cohort_view {
+        table {
+            color: var(--font-color);
+
+            tbody {
+                &>tr {
+                    &>td:first-child:before {
+                        background-color: $night-hover;
+                    }
+                }
+            }
+        }
+    }
+}

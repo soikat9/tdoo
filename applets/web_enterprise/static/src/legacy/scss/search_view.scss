@@ -16,6 +16,7 @@
     .o_searchview_facet {
         @include media-breakpoint-down(sm) {
             flex-flow: row wrap;
+            border-radius: 2px;
         }
 
         .o_facet_values {

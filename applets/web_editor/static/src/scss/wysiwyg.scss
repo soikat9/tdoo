@@ -253,7 +253,7 @@ $o-we-toolbar-color-clickable-active: $o-we-bg-darkest;
 
     .btn {
         border: none;
-        border-radius: 0;
+        border-radius: 2px;
         background: transparent;
         font-weight: 400;
 
@@ -401,7 +401,7 @@ $o-we-toolbar-color-clickable-active: $o-we-bg-darkest;
 // Floating Table Picker
 .oe-tablepicker-wrapper .oe-tablepicker {
     .oe-tablepicker-cell {
-        border-radius: 0;
+        border-radius: 2px;
 
         &.active {
             background: $o-we-toolbar-color-accent;

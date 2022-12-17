@@ -209,7 +209,7 @@ body.editor_enable.editor_has_snippets {
             box-sizing: content-box;
             padding: 0 $o-we-sidebar-content-field-clickable-spacing;
             border: none;
-            border-radius: 0;
+            border-radius: 2px;
             background-color: transparent;
             color: inherit;
 
@@ -1022,7 +1022,7 @@ body.editor_enable.editor_has_snippets {
                     background-clip: padding-box;
                     background-color: $o-we-sidebar-content-field-dropdown-item-bg;
                     color: $o-we-sidebar-content-field-dropdown-item-color;
-                    border-radius: 0;
+                    border-radius: 2px;
 
                     > we-title {
                         flex-grow: 1;
@@ -1143,7 +1143,7 @@ body.editor_enable.editor_has_snippets {
 
                 we-button {
                     padding: 0 $o-we-sidebar-content-field-button-group-button-spacing;
-                    border-radius: 0;
+                    border-radius: 2px;
 
                     + we-button {
                         border-left: none;

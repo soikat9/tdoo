@@ -1,0 +1,21 @@
+@mixin tele-studio-list() {
+    .o_tele_studio_editor {
+        .o_action_manager {
+            .o_tele_studio_editor_manager {
+                .o_tele_studio_view_renderer {
+                    table.o_list_table {
+                        tbody {
+                            tr {
+                                td {
+                                    .o_attachment {
+                                        display: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

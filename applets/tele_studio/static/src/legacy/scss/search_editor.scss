@@ -87,13 +87,13 @@
                 max-width: 320px;
 
                 table {
-                    border: 10px solid $o-web-studio-bg-light;
+                    border: 10px solid $o-tele-studio-bg-light;
                     border-width: 5px 10px 15px;
                     border-collapse: separate;
                     border-radius: 2px;
 
                     thead, tbody > tr:nth-of-type(odd) {
-                        background-color: $o-web-studio-bg-light;
+                        background-color: $o-tele-studio-bg-light;
                     }
                 }
             }

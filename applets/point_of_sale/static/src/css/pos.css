@@ -683,7 +683,7 @@ td {
     text-align: center;
     vertical-align: top;
     border: none;
-    border-radius: 0;
+    border-radius: 2px;
     border-top: 1px solid;
     border-left: 1px solid;
     border-color: #bfbfbf;
@@ -701,7 +701,7 @@ td {
     vertical-align: middle;
     color: #555555;
     font-size: 14px;
-    border-radius: 0;
+    border-radius: 2px;
     border: none;
     border-right: 1px solid;
     border-bottom: 1px solid;
@@ -792,7 +792,7 @@ td {
     margin-top: 8px;
     margin-left: 0px;
     border: none;
-    border-radius: 0;
+    border-radius: 2px;
     border-top: 1px solid;
     border-color: #bfbfbf;
     border-top-right-radius: 4px;
@@ -805,7 +805,7 @@ td {
     font-weight: bold;
     vertical-align: middle;
     color: #555555;
-    border-radius: 0;
+    border-radius: 2px;
     border: none;
     border-right: 1px solid;
     border-bottom: 1px solid;

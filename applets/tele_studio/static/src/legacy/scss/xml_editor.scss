@@ -1,7 +1,7 @@
 .o_tele_studio_client_action .o_ace_view_editor {
     float: right;
-    border-right: 3px solid $o-web-studio-bg-dark;
-    background: $o-web-studio-bg-medium;
+    border-right: 3px solid $o-tele-studio-bg-dark;
+    background: $o-tele-studio-bg-medium;
     color: white;
     height: 100%;
     position: relative;
@@ -9,15 +9,15 @@
     overflow: hidden;
 
     #ace-view-id, .ace-monokai {
-        background: $o-web-studio-bg-darker;
+        background: $o-tele-studio-bg-darker;
     }
     .ace_gutter, .ace-monokai .ace_marker-layer .ace_active-line {
-        background: $o-web-studio-bg-dark;
+        background: $o-tele-studio-bg-dark;
     }
 
     .o_ace_view_editor_title {
         .btn {
-            @include o-web-studio-btn;
+            @include o-tele-studio-btn;
         }
         .o_include_option {
             display: none;
@@ -33,21 +33,21 @@
         &:after {
             content: '';
             z-index: 1;
-            background-color: rgba($o-web-studio-bg-darker, 0.6);
+            background-color: rgba($o-tele-studio-bg-darker, 0.6);
             user-select: none;
             @include o-position-absolute(0,0,0,0);
         }
     }
     .select2-choice, .select2-drop-active {
         border-width: 0;
-        border-radius: 0;
+        border-radius: 2px;
         .select2-chosen > div {
             padding: 0!important;
         }
     }
     .select2-drop {
         padding: $grid-gutter-width/3;
-        background-color: $o-web-studio-bg-light;
+        background-color: $o-tele-studio-bg-light;
         .select2-search {
             margin: 0 0 $grid-gutter-width/4;
             padding-left: 0;
@@ -63,7 +63,7 @@
                 color: inherit;
                 font-weight: bold;
                 border-left: 2px solid $o-brand-primary;
-                background-color: $o-web-studio-bg-lighter;
+                background-color: $o-tele-studio-bg-lighter;
             }
             .select2-no-results {
                 font-style: italic;

@@ -1,0 +1,73 @@
+body.o_web_client {
+    .text-primary {
+        color: var(--brand-secondary) !important;
+    }
+
+    .o_action_manager {
+        @include ent-cohort-view();
+
+        &>.o_action {
+            @include control_panel_view_ent();
+
+            .o_content {
+                @include ent-dashboard-view();
+                @include ent-kanban-view();
+                @include end-document-view();
+                @include ent-gannt-view();
+                @include ent-grid-view();
+                @include ent-form-view();
+                @include ent-barcode-view();
+                @include referral_view_ent();
+                @include ent-map-view();
+            }
+        }
+    }
+
+    @include ent-dial-view();
+
+    &.ad_full_view {
+        @include ent-dial-view-full();
+    }
+
+    .o_home_menu_background {
+        background: radial-gradient(circle, darken($brand-secondary, 20%), $black);
+    }
+
+    .modal.o_technical_modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body {
+                    @include domain-node-field();
+                    @include ent-form-view();
+                }
+            }
+        }
+    }
+
+    &.oe_base_menu.o_home_menu_background {
+        .o_home_menu {
+            top: 45px;
+            margin-top: 0;
+        }
+
+        #av_full_view {
+            display: none !important;
+        }
+    }
+}
+
+.database_expiration_panel {
+    .alert {
+        @include media-breakpoint-up(lg) {
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.o_menu_search {
+    @include media-breakpoint-up(lg) {
+        margin-top: 0px;
+        margin: 0;
+    }
+}

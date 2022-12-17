@@ -1,0 +1,13 @@
+@mixin tele-studio-graph() {
+    .o_tele_studio_editor {
+        .o_action_manager {
+            .o_tele_studio_editor_manager {
+                .o_tele_studio_view_renderer {
+                    .o_graph_controller {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

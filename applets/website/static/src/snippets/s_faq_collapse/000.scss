@@ -7,7 +7,7 @@
             position: relative;
             padding: .5em 1em;
             padding-left: 2.25em;
-            border-radius: 0;
+            border-radius: 2px;
             outline: none;
             &:before {
                 content: '\f056';
@@ -48,7 +48,7 @@
         .accordion .card {
             border-left: 0;
             border-right: 0;
-            border-radius: 0;
+            border-radius: 2px;
             .card-header {
                 background-color: transparent;
                 &:before {

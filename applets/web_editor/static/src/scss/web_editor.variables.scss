@@ -277,7 +277,7 @@ $o-we-technical-modal-zindex: 2001;
         border: 1px solid #d4d5d7;
         color: #555;
         background-color: #fff;
-        border-radius: 0;
+        border-radius: 2px;
 
         &.is-invalid {
             border-color: $danger;
@@ -306,7 +306,7 @@ $o-we-technical-modal-zindex: 2001;
 
 @mixin o-w-preserve-modals {
     .modal-content {
-        border-radius: 0;
+        border-radius: 2px;
         background-color: white;
 
         .modal-header {
@@ -353,7 +353,7 @@ $o-we-technical-modal-zindex: 2001;
 
 @mixin o-w-preserve-btn {
     .btn:not(.o_btn_preview) {
-        border-radius: 0;
+        border-radius: 2px;
         font-weight: normal;
         text-transform: none;
         @include button-size(.375rem, .75rem, 0.875rem, 1.5, 0);
@@ -395,7 +395,7 @@ $o-we-technical-modal-zindex: 2001;
         margin-bottom: 20px;
         background-color: white;
         border: 1px solid darken(white, 5%);
-        border-radius: 0;
+        border-radius: 2px;
         box-shadow: none;
     }
 }

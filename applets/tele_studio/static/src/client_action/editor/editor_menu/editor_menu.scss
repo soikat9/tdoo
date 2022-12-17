@@ -19,7 +19,7 @@
 }
 
 .o_tele_studio_menu_item {
-  border-bottom: $o-web-studio-menu-item-border-width solid $o-web-studio-bg-dark;
+  border-bottom: $o-tele-studio-menu-item-border-width solid $o-tele-studio-bg-dark;
 }
 
 .o_tele_studio_menu_undo_redo {
@@ -58,7 +58,7 @@
 }
 
 .o_tele_studio_undo_redo_separator_line {
-  border-left: 1px solid $o-web-studio-text-disabled;
+  border-left: 1px solid $o-tele-studio-text-disabled;
   height: 1.3rem;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .o_tele_studio_views_icons_separator {
-  border-left: 1px solid $o-web-studio-bg-dark;
+  border-left: 1px solid $o-tele-studio-bg-dark;
   height: 100%;
 }
 
@@ -79,14 +79,14 @@
   display: flex;
   background-color: rgb(16, 16, 17);
   text-align: center;
-  min-height: $o-web-studio-menu-height;
+  min-height: $o-tele-studio-menu-height;
 
   .o_tele_studio_breadcrumb {
     display: inline-flex;
-    flex: 0 1 $o-web-studio-sidebar-width;
+    flex: 0 1 $o-tele-studio-sidebar-width;
 
     &.o_tele_studio_breadcrumb_report {
-      flex-basis: $o-web-studio-report-sidebar-width;
+      flex-basis: $o-tele-studio-report-sidebar-width;
     }
 
     > ol {
@@ -99,10 +99,10 @@
         line-height: 1;
         cursor: default;
         font-weight: bold;
-        color: $o-web-studio-text-inactive;
+        color: $o-tele-studio-text-inactive;
 
         &.active:not(:first-child) {
-          color: $o-web-studio-text-light;
+          color: $o-tele-studio-text-light;
         }
 
         &.o_back_button:hover {
@@ -129,8 +129,8 @@
     > button {
       padding-left: 0;
       cursor: default;
-      background-color: $o-web-studio-bg-medium;
-      color: $o-web-studio-text-disabled;
+      background-color: $o-tele-studio-bg-medium;
+      color: $o-tele-studio-text-disabled;
       outline: none;
       box-shadow: none;
 
@@ -142,11 +142,11 @@
     }
 
     &.o_tele_studio_active > button {
-      color: $o-web-studio-text-inactive;
+      color: $o-tele-studio-text-inactive;
 
       &:hover {
         cursor: pointer;
-        color: $o-web-studio-text-light;
+        color: $o-tele-studio-text-light;
       }
     }
   }
@@ -155,7 +155,7 @@
     min-width: 0;
     display: inline-flex;
     align-items: center;
-    color: $o-web-studio-text-inactive;
+    color: $o-tele-studio-text-inactive;
   }
 
   .o_menu_sections {
@@ -181,7 +181,7 @@
           cursor: pointer;
           outline: none;
           border-color: lighten($o-brand-primary, 10%);
-          background-color: darken($o-web-studio-bg-medium, 2%);
+          background-color: darken($o-tele-studio-bg-medium, 2%);
 
           > a {
             color: white;
@@ -193,7 +193,7 @@
 
           > a {
             outline: none;
-            color: $o-web-studio-text-light;
+            color: $o-tele-studio-text-light;
           }
         }
       }
@@ -202,7 +202,7 @@
         font-size: 0.9em;
         display: block;
         padding: 0 ($grid-gutter-width * 0.3);
-        color: $o-web-studio-text-inactive;
+        color: $o-tele-studio-text-inactive;
       }
     }
 
@@ -216,10 +216,10 @@
         align-items: center;
         padding: 0 7px;
         background-color: transparent;
-        color: $o-web-studio-text-inactive;
+        color: $o-tele-studio-text-inactive;
 
         &:hover {
-          color: $o-web-studio-text-light;
+          color: $o-tele-studio-text-light;
         }
       }
     }

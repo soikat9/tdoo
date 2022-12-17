@@ -6,7 +6,7 @@ $o-td-label-padding-right: 8px;
 
     .o_statusbar_status > .o_arrow_button {
         transition: none;
-        border-radius: 0;
+        border-radius: 2px
 
         &:active {
             box-shadow: none;

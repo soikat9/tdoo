@@ -161,7 +161,7 @@ $o-tip-size-delay-in: $o-tip-duration-in - $o-tip-size-duration-in;
             width: $o-tip-arrow-size;
             height: $o-tip-arrow-size;
             border-color: $o-tip-color;
-            border-radius: 0;
+            border-radius: 2px;
             background: white;
             box-shadow: none;
         }

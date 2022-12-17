@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="tele_backend_theme_ent.ProjectControlPanel" t-inherit="project.ProjectControlPanel" t-inherit-mode="extension" owl="1">
+        <xpath expr="//t[@t-if='(env.config.viewSwitcherEntries or []).length']" position="replace" />
+        <xpath expr="//div[hasclass('o_search_options')]" position="replace" />
+        <xpath expr="//div[hasclass('o_cp_top_right')]" position="after">
+            <div class="btn-group o_search_options position-static o_hidden" role="search">
+                <t t-foreach="searchMenus" t-as="menu" t-key="menu.key">
+                    <t t-component="menu.Component" />
+                </t>
+            </div>
+            <t t-if="(env.config.viewSwitcherEntries or []).length">
+                <nav t-if="env.config.viewSwitcherEntries.length gt 1" class="btn-group o_cp_switch_buttons" role="toolbar" aria-label="View switcher">
+                    <t t-foreach="env.config.viewSwitcherEntries" t-as="view" t-key="view.type" t-if="view.active">
+                        <button class="btn btn-link btn-sm" data-toggle="dropdown" aria-expanded="false">
+                            <span t-attf-class="btn btn-secondary fa fa-lg o_switch_view o_{{ view.type }} {{ view.icon }}"></span>
+                        </button>
+                    </t>
+                    <ul class="dropdown-menu dropdown-menu-right list-inline">
+                        <t t-foreach="env.config.viewSwitcherEntries" t-as="view" t-key="view.type">
+                            <div class="oe_view_btn">
+                                <button class="btn btn-light fa fa-lg o_switch_view " t-attf-class="o_{{view.type}} {{view.icon}} {{view.active ? 'active' : ''}}" t-att-data-tooltip="view.name" t-on-click="onViewClicked(view.type)">
+                                    <t t-esc="view.type" /></button>
+                            </div>
+                        </t>
+                    </ul>
+                </nav>
+            </t>
+        </xpath>
+        <xpath expr="//t[@t-slot='control-panel-top-right']" position="replace">
+            <t t-if="!env.isSmall">
+                <t t-slot="control-panel-top-right">
+                    <SearchBar />
+                </t>
+            </t>
+            <t t-else="">
+                <div class="o_cp_searchview">
+                    <div class="o_searchview">
+                        <i role="img" aria-label="Search..." title="Search..." class="o_searchview_icon fa fa-search" t-on-click="state.visibleSearch = true"></i>
+                    </div>
+                </div>
+                <t t-if="state.visibleSearch">
+                    <Portal target="'body'">
+                        <div class="o_searchview o_mobile_search">
+                            <div class="o_mobile_search_header">
+                                <button type="button" class="o_mobile_search_button btn" t-on-click="state.visibleSearch = false">
+                                    <i class="fa fa-arrow-left" />
+                                    <strong class="ml8">FILTER</strong>
+                                </button>
+                                <button type="button" class="o_mobile_search_button btn" t-on-click="env.searchModel.clearQuery()">
+                                    CLEAR
+                                </button>
+                            </div>
+                            <div class="o_mobile_search_content">
+                                <t t-if="display['top-right']">
+                                    <t t-slot="control-panel-top-right">
+                                        <SearchBar />
+                                    </t>
+                                </t>
+                                <t t-if="display['bottom-right']">
+                                    <t t-slot="control-panel-bottom-right">
+                                        <div class="o_mobile_search_filter o_search_options">
+                                            <t t-foreach="searchMenus" t-as="menu" t-key="menu.key">
+                                                <t t-component="menu.Component" />
+                                            </t>
+                                        </div>
+                                    </t>
+                                </t>
+                            </div>
+                            <button type="button" class="btn btn-primary o_mobile_search_footer" t-on-click="state.visibleSearch = false">
+                                SEE RESULT
+                            </button>
+                        </div>
+                    </Portal>
+                </t>
+            </t>
+        </xpath>
+    </t>
+</templates>

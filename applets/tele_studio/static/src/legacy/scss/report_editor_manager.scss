@@ -1,7 +1,7 @@
 .o_tele_studio_client_action .o_tele_studio_editor_manager.o_tele_studio_report_editor_manager {
     .o_tele_studio_sidebar {
         // make it bigger
-        flex: 0 0 $o-web-studio-report-sidebar-width;
+        flex: 0 0 $o-tele-studio-report-sidebar-width;
     }
     .o_tele_studio_report_actions {
         @include o-position-absolute($top: 8px, $right: 24px);
@@ -13,9 +13,9 @@
 
         .o_tele_studio_report_pager {
             display: inline-block;
-            background-color: $o-web-studio-bg-medium;
+            background-color: $o-tele-studio-bg-medium;
             border-radius: 5px;
-            color: $o-web-studio-text-inactive;
+            color: $o-tele-studio-text-inactive;
             padding: 3px 3px 3px 8px;
 
             .o_input {
@@ -28,7 +28,7 @@
             }
             .btn-group > button {
                 padding: 0 5px;
-                @include o-web-studio-btn-variation($o-web-studio-bg-medium, $o-web-studio-bg-medium);
+                @include o-tele-studio-btn-variation($o-tele-studio-bg-medium, $o-tele-studio-bg-medium);
                 @include o-hover-opacity;
             }
         }

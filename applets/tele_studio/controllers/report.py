@@ -237,7 +237,7 @@ class TeleStudioReportController(main.TeleStudioController):
                     getattr(self, '_operation_%s' % (op['type']))(arch, op)
 
             # Save or create changes into studio view, identifiable by xmlid
-            # Example for view id 42 of model crm.lead: web-studio_crm.lead-42
+            # Example for view id 42 of model crm.lead: tele-studio_crm.lead-42
             new_arch = etree.tostring(arch, encoding='unicode', pretty_print=True)
             self._set_studio_view(view, new_arch)
 

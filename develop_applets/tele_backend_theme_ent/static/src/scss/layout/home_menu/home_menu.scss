@@ -1,0 +1,120 @@
+@mixin home_menu() {
+
+    // Home menu Mount
+    &.o_home_menu_background {
+        background-image: radial-gradient(circle, darken($brand-secondary, 20%), $black);
+
+        // Horizontal View
+        &.oe_base_menu {
+            header {
+                .o_main_navbar:not(.oe_favorite_view) {
+                    .o_menu_brand {
+                        display: none;
+                    }
+
+                    .o_menu_sections {
+                        display: none;
+                    }
+                }
+
+                .o_main_navbar {
+                    --Label: white;
+                    --brightness: brightness(1);
+                }
+            }
+
+            .o_action_manager {
+                border-top: 0;
+
+                .o_action {
+                    display: none !important;
+                }
+            }
+        }
+
+        header {
+            .o_main_navbar {
+                background: transparent !important;
+
+                .__menu_toggle {
+                    background: transparent !important;
+                }
+
+                #av_full_view i.fa,
+                .oe_full_button {
+                    color: white;
+                }
+            }
+        }
+
+        .o_action_manager {
+            .o_home_menu {
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+
+                .__editor {
+                    width: auto;
+                    display: block;
+                    padding: 6px 10px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    color: white;
+                    border-radius: 3px;
+                    width: 33px;
+                    margin-left: auto;
+                }
+
+                .o_home_menu_scrollable {
+                    .o_app {
+                        position: relative;
+                        transition: none;
+
+                        .o_app_icon {
+                            box-shadow: none;
+                            transform: none;
+                        }
+                    }
+                }
+
+                .o_menu_search {
+
+                    &.invisible {
+                        +.o_home_menu_scrollable {
+
+                            .o_app {
+
+                                .o_favorite {
+                                    position: absolute;
+                                    margin: auto;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    text-align: right;
+                                    font-size: 16px;
+                                    overflow: visible;
+                                    z-index: 1;
+
+                                    &:before {
+                                        position: relative;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 25px;
+                                        height: 25px;
+                                        top: 0;
+                                        margin-left: calc(((100% + 70px) / 2) - 12.5px); // (total width + Image size) / 2) - (width / 2))
+                                        color: gold;
+                                        background-color: var(--brand-secondary);
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

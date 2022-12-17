@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="web.NavBar.favoriteMenu" owl="1">
+        <div class="o_main_navbar oe_favorite_view d-flex">
+            <ul id="av_full_view" t-on-click='onFullViewClicked'>
+                <i class="fa fa-bars" />
+            </ul>
+            <ul class="oe_full_button" t-on-click='onFullScreen'>
+                <li class="oe_full"><i class="fa fa-expand" /></li>
+            </ul>
+            <div class="oe_menu_layout oe_theme_menu_layout">
+                <nav class="oe_favorite_menu">
+                    <div class="oe_apps_menu" id="oe_shorting">
+                        <t t-foreach="onOpenMenu()" t-as="app" t-key="app.id">
+                            <div class="dropdown-item o_app oe_favorite" t-att-data-id="app.id" t-on-click="OpenMenu(app)">
+                                <t t-set="webIcon" t-value="app.web_icon and app.web_icon.split(',')" />
+                                <div t-if="app.theme_icon_data" class="oe_menu_icon" t-attf-style="background-image: url({{app.theme_icon_data}});" />
+                                <div t-else="" class="o_app_icon oe_menu_icon" t-attf-style="background-color: {{webIcon[2]}};">
+                                    <i t-att-class="webIcon[0]" t-attf-style="color: {{webIcon[1]}};" />
+                                </div>
+                                <span>
+                                    <t t-esc="app['favorite_menu_id'][1]" />
+                                </span>
+                            </div>
+                        </t>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </t>
+    <t t-name="web.NavBar.AppsMenu" t-inherit="web.NavBar.AppsMenu" t-inherit-mode="extension" owl="1">
+        <xpath expr="//Dropdown[contains(@class, 'o_navbar_apps_menu')]" position="attributes">
+            <attribute name="class">o_navbar_apps_menu menu_toggle</attribute>
+        </xpath>
+    </t>
+    <t t-name="tele_backend_theme_ent.CustomMenu" t-inherit="web_enterprise.EnterpriseNavBar" t-inherit-mode="extension">
+        <xpath expr="//a[contains(@class, 'o_menu_toggle')]" position="replace">
+            <a href="#" class="__menu_toggle" accesskey="h" t-ref="menuApps" t-on-click.prevent="hm.toggle()">
+                <div class="_icon"><img src="/tele_backend_theme_ent/static/src/img/home.svg"></img>
+                    <span />
+                    <span />
+                    <span />
+                </div>
+            </a>
+        </xpath>
+        <xpath expr="//nav[contains(@class, 'o_main_navbar')]" position="after">
+            <t t-call="web.NavBar.favoriteMenu" />
+        </xpath>
+        <xpath expr="//div[contains(@class, 'o_menu_systray')]" position="replace">
+            <div t-if="window['TeleTheme'].base_menu == 'base_menu'" class="o_menu_systray" role="menu">
+                <t t-foreach="systrayItems" t-as="item" t-key="item.key">
+                    <NotUpdatable>
+                        <ErrorHandler onError="error => handleItemError(error, item)">
+                            <t t-component="item.Component" t-props="item.props" />
+                        </ErrorHandler>
+                    </NotUpdatable>
+                </t>
+            </div>
+            <div t-else="" class="__menu_systray __user_menu" role="menu">
+                <a role="button" data-hotkey="u" class="user_menu" data-toggle="collapse" data-target="#o_menu_systray" aria-expanded="true">
+                    <img class="rounded-square rounded-sm" t-att-src="userData" />
+                </a>
+                <div id="o_menu_systray" class="o_menu_systray collapse">
+                    <t t-foreach="systrayItems" t-as="item" t-key="item.key">
+                        <NotUpdatable>
+                            <ErrorHandler onError="error => handleItemError(error, item)">
+                                <t t-component="item.Component" t-props="item.props" />
+                            </ErrorHandler>
+                        </NotUpdatable>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//t[@t-if='currentAppSections.length and !env.isSmall']" position="replace">
+            <t t-if="currentAppSections.length" t-call="web.NavBar.SectionsMenu">
+                <t t-set="currentAppName" t-value="currentApp.name" />
+                <t t-set="currentAppIcon" t-value="currentApp.webIconData" />
+                <t t-set="sections" t-value="currentAppSections" />
+            </t>
+        </xpath>
+    </t>
+    <t t-inherit="web.NavBar.SectionsMenu" t-inherit-mode="extension">
+        <xpath expr="//t[@t-call='web.NavBar.SectionsMenu.MoreDropdown']" position="inside">
+            <t t-set="currentAppName" t-value="currentAppName" />
+            <t t-set="currentAppIcon" t-value="currentAppIcon" />
+        </xpath>
+    </t>
+    <t t-inherit="web.NavBar.SectionsMenu.MoreDropdown" t-inherit-mode="extension">
+        <xpath expr="//Dropdown" position="attributes">
+            <attribute name="t-on-click">CloseUserMenu</attribute>
+        </xpath>
+        <xpath expr="//t[@t-set-slot='toggler']" position="after">
+            <div class="__main_menu" t-if="window['TeleTheme'].base_menu == 'theme_menu' or env.isSmall">
+                <div class="__menu_icon" t-attf-style="background-image: url({{currentAppIcon}})" />
+                <span class="__menu_title" t-esc="currentAppName" />
+            </div>
+        </xpath>
+    </t>
+    <t t-name="tele_backend_theme_ent.UserMenu" t-inherit="web.UserMenu" t-inherit-mode="extension">
+        <xpath expr="//Dropdown" position="replace">
+            <div class="o_user_menu" t-if="window['TeleTheme'].base_menu == 'theme_menu'" t-on-dropdown-item-selected.stop="onDropdownItemSelected">
+                <div class="o-dropdown--menu dropdown-menu d-block">
+                    <div class="__user">
+                        <div class="__user_circle h1 rounded-square rounded-sm">
+                            <t t-esc="user.name[0]" />
+                        </div>
+                        <div class="__user_info h4 mb-4 text-center">
+                            <div class="mb-2 __name">
+                                <t t-esc="user.name" />
+                            </div>
+                            <div class="__db_name">
+                                <t t-if="env.debug" t-esc="' (' + user.db.name + ')'" />
+                            </div>
+                        </div>
+                    </div>
+                    <t t-foreach="getElements()" t-as="element" t-key="element_index">
+                        <t t-if="!element.hide">
+                            <UserMenuItem t-if="element.type == 'item'" payload="{ callback: element.callback, id: element.id }" href="element.href" t-esc="element.description" />
+                            <div t-if="element.type == 'separator'" role="separator" class="dropdown-divider" />
+                        </t>
+                    </t>
+                </div>
+            </div>
+            <Dropdown t-else="" class="o_user_menu" t-on-dropdown-item-selected.stop="onDropdownItemSelected">
+                <t t-set-slot="toggler">
+                    <img class="rounded-square rounded-sm o_user_avatar" t-att-src="source" alt="User" />
+                </t>
+                <div class="__user">
+                    <div class="__user_circle h1 rounded-square rounded-sm">
+                        <t t-esc="user.name[0]" />
+                    </div>
+                    <div class="__user_info h4 mb-4 text-center">
+                        <div class="mb-2 __name">
+                            <t t-esc="user.name" />
+                        </div>
+                        <div class="__db_name">
+                            <t t-if="env.debug" t-esc="' (' + user.db.name + ')'" />
+                        </div>
+                    </div>
+                </div>
+                <t t-foreach="getElements()" t-as="element" t-key="element_index">
+                    <t t-if="!element.hide">
+                        <UserMenuItem t-if="element.type == 'item'" payload="{ callback: element.callback, id: element.id }" href="element.href" t-esc="element.description" />
+                        <div t-if="element.type == 'separator'" role="separator" class="dropdown-divider" />
+                    </t>
+                </t>
+            </Dropdown>
+        </xpath>
+    </t>
+
+</templates>

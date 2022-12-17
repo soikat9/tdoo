@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tele>
+    <template id="tele_backend_theme_ent.webclient_bootstrap" inherit_id="web_enterprise.webclient_bootstrap">
+        <xpath expr="//meta[@name='theme-color']" position="replace" />
+        <xpath expr="//meta[@name='msapplication-navbutton-color']" position="replace" />
+        <xpath expr="//meta[@name='msapplication-TileColor']" position="replace" />
+    </template>
+    <template id="tele_backend_theme_ent.layout" inherit_id="web.layout">
+        <xpath expr="//head" position="inside">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <meta name="theme-color" content="#285072" />
+            <meta name="msapplication-navbutton-color" content="#285072" />
+            <meta name="msapplication-TileColor" content="#285072" />
+            <script type="text/javascript">
+            if (tele.define) {
+                tele.define('tele_backend_theme_ent.TeleWebThemes', function(require) {
+                    var WebThemesDB = require('tele_backend_theme_ent.WebThemesDB');
+                    var __themesDB = new WebThemesDB();
+                    __themesDB.add_themes(<t t-raw="request.env['ir.web.theme'].sudo().get_json_themes()"/>);
+                    return __themesDB;
+                });
+            }
+            </script>
+        </xpath>
+        <xpath expr="//body" position="attributes">
+            <attribute name="t-attf-class">#{body_classname} uc_theme_#{request.env.user.font_type_values} tele_#{request.env.user.chatter} #{'oe_base_menu' if request.env.user.base_menu == 'base_menu' else ''}</attribute>
+        </xpath>
+    </template>
+</tele>

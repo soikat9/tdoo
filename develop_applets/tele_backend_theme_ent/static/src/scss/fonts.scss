@@ -1,0 +1,155 @@
+// font
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Inter";
+        src: url('/tele_backend_theme_ent/static/src/font/inter/Inter-Medium.ttf') format('truetype');;
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url('/tele_backend_theme_ent/static/src/font/inter/Inter-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url('/tele_backend_theme_ent/static/src/font/inter/Inter-Regular.ttf') format('truetype');;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body{
+        font-family: 'Inter';
+      }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Roboto";
+        src: url('/tele_backend_theme_ent/static/src/font/roboto/Roboto-Medium.ttf') format('truetype');;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Roboto";
+        src: url('/tele_backend_theme_ent/static/src/font/roboto/Roboto-Regular.ttf') format('truetype');;
+        font-weight: 400;
+      }
+      body{
+        font-family: 'Roboto';
+      }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Poppins";
+        src: url('/tele_backend_theme_ent/static/src/font/poppins/Poppins-Regular.ttf') format('truetype');;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('/tele_backend_theme_ent/static/src/font/poppins/Poppins-Medium.ttf') format('truetype');;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url('/tele_backend_theme_ent/static/src/font/poppins/Poppins-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+      }
+      body{
+        font-family: 'Poppins';
+      }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Public Sans";
+        src: url('/tele_backend_theme_ent/static/src/font/public-sans/PublicSans-Regular.ttf') format('truetype');;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Public Sans";
+        src: url('/tele_backend_theme_ent/static/src/font/public-sans/PublicSans-Medium.ttf') format('truetype');;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Public Sans";
+        src: url('/tele_backend_theme_ent/static/src/font/public-sans/PublicSans-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+      }
+      body{
+        font-family: 'Public Sans';
+      }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Raleway";
+        src: url('/tele_backend_theme_ent/static/src/font/raleway/Raleway-Regular.ttf') format('truetype');;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Raleway";
+        src: url('/tele_backend_theme_ent/static/src/font/raleway/Raleway-Medium.ttf') format('truetype');;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Raleway";
+        src: url('/tele_backend_theme_ent/static/src/font/raleway/Raleway-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+      }
+      body{
+        font-family: 'Raleway';
+      }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Rubik";
+        src: url('/tele_backend_theme_ent/static/src/font/rubik/Rubik-Regular.ttf') format('truetype');;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url('/tele_backend_theme_ent/static/src/font/rubik/Rubik-Medium.ttf') format('truetype');;
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url('/tele_backend_theme_ent/static/src/font/rubik/Rubik-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+    }
+    body{
+        font-family: 'Rubik';
+    }
+}
+@mixin gle-font($type, $weight, $style) {
+    @font-face {
+        font-family: "Lora";
+        src: url('/tele_backend_theme_ent/static/src/font/lora/Lora-Regular.ttf') format('truetype');;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Lora";
+        src: url('/tele_backend_theme_ent/static/src/font/lora/Lora-Medium.ttf') format('truetype');;
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "Lora";
+        src: url('/tele_backend_theme_ent/static/src/font/lora/Lora-SemiBold.ttf') format('truetype');;
+        font-weight: 600;
+    }
+    body{
+        font-family: 'Lora';
+    }
+}
+
+
+@mixin gle-font-pair($type, $weight) {
+    @include gle-font('#{$type}', $weight, normal);
+    @include gle-font('#{$type}Italic', $weight, italic);
+}
+
+@include gle-font-pair('Thin', 100);
+@include gle-font-pair('Light', 300);
+@include gle-font-pair('Regular', 400);
+@include gle-font-pair('Medium', 500);
+@include gle-font-pair('Bold', 700);
+@include gle-font-pair('Black', 900);
+
+
+

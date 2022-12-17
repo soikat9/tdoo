@@ -1,6 +1,6 @@
 // App creator - style
 .o_tele_studio_app_creator {
-  //@include o-web-studio-app-creator-background;
+  //@include o-tele-studio-app-creator-background;
   background: url(/web_enterprise/static/img/home-menu-bg-overlay.svg),
   linear-gradient(to right bottom, #2a5170f2, #0a4370);
   background-size: cover;
@@ -10,8 +10,8 @@
 
 
   .o_tele_studio_app_creator_box {
-    box-shadow: 0 16px 13px -8px rgba($o-web-studio-bg-dark, 0.5);
-    color: $o-web-studio-bg-dark;
+    box-shadow: 0 16px 13px -8px rgba($o-tele-studio-bg-dark, 0.5);
+    color: $o-tele-studio-bg-dark;
 
     .o_tele_studio_app_creator_left {
       background: #f2f2f2;
@@ -39,10 +39,10 @@
 
       .o_tele_studio_app_creator_model_choice {
         margin-top: 25px;
-        @include o-web-studio-checkbox(
+        @include o-tele-studio-checkbox(
           $body-color,
-          $o-web-studio-bg-medium,
-          $o-web-studio-bg-dark,
+          $o-tele-studio-bg-medium,
+          $o-tele-studio-bg-dark,
           white,
           gray("600")
         );
@@ -56,17 +56,17 @@
         &:focus,
         &:active {
           background-color: transparent;
-          color: $o-web-studio-bg-dark;
+          color: $o-tele-studio-bg-dark;
         }
       }
 
       .o_tele_studio_app_creator_field_warning > label {
-        color: $o-web-studio-color-danger;
+        color: $o-tele-studio-color-danger;
       }
     }
 
     .o_tele_studio_app_creator_right {
-      background-color: $o-web-studio-bg-dark;
+      background-color: $o-tele-studio-bg-dark;
 
       .o_tele_studio_welcome_image {
         width: 183px;
@@ -77,9 +77,9 @@
     .o_tele_studio_app_creator_next,
     .o_tele_studio_app_creator_previous {
       background-color: white;
-      border: 1px solid $o-web-studio-text-inactive;
+      border: 1px solid $o-tele-studio-text-inactive;
       border-radius: 2px;
-      color: $o-web-studio-text-inactive;
+      color: $o-tele-studio-text-inactive;
       font-size: 11px;
       font-weight: 500;
       opacity: 0.5;
@@ -92,8 +92,8 @@
 
       &:hover,
       &:focus {
-        border-color: $o-web-studio-text-inactive;
-        color: $o-web-studio-text-inactive;
+        border-color: $o-tele-studio-text-inactive;
+        color: $o-tele-studio-text-inactive;
       }
     }
 

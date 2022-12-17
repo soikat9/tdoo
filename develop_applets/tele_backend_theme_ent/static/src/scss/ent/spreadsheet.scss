@@ -1,0 +1,38 @@
+@mixin spreadsheet-view() {
+    .o_action_manager {
+        .o_spreadsheet_action {
+            .o-sidePanelButton {
+                background-color: var(--brand-secondary);
+                border-radius: 2px;
+                font-size: $font-size-1;
+                border: 1px solid var(--brand-secondary);
+                outline: none;
+                box-shadow: none;
+                padding: 4px 8px;
+                color: $white;
+
+                &:hover {
+                    background-color: darken($brand-secondary, 7%);
+                }
+            }
+
+            .o_control_panel {
+                min-height: var(--control-panel-h);
+                border-bottom: 1px solid var(--border);
+                padding: 0 8px 0 30px;
+                z-index: 7;
+
+                .o_cp_top {
+                    height: 100%;
+                    align-items: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+body.o_web_client {
+    @include spreadsheet-view();
+}
