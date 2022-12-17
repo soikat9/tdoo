@@ -77,7 +77,7 @@ class IrWebTheme(models.Model):
         ('base_icon','Base'),
         ('3d_icon','3d'),
         ('2d_icon','2d'),
-        ], default='3d_icon')
+        ], default='base_icon')
 
     @api.model
     def get_current_theme(self):

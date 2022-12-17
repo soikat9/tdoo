@@ -32,7 +32,7 @@ patch(HomeMenu.prototype, '@tele_backend_theme_ent/webclient/navbar/navbar.js', 
             var favoriteMenuId = this.state.favoriteMenuById[payload.id]
             self.bindToRemoveOnUnFavorited(payload, favoriteMenuId);
         } else {
-            self._makeFavourited(payload.label, {
+            self._makeFavorited(payload.label, {
                 favorite_menu_id: payload.id,
                 favorite_menu_xml_id: payload.xmlid,
                 favorite_menu_action_id: payload.actionID,
@@ -40,7 +40,7 @@ patch(HomeMenu.prototype, '@tele_backend_theme_ent/webclient/navbar/navbar.js', 
             });
         }
     },
-    async _makeFavourited(name, values) {
+    async _makeFavorited(name, values) {
         const value = await this.env.services.orm.call("ir.favorite.menu", "create", [values]);
         this.state.favoriteMenuById[values.favorite_menu_id] = value;
         core.bus.trigger('click_favorite_menu');

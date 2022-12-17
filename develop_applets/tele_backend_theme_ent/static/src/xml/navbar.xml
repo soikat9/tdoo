@@ -3,7 +3,7 @@
     <t t-name="web.NavBar.favoriteMenu" owl="1">
         <div class="o_main_navbar oe_favorite_view d-flex">
             <ul id="av_full_view" t-on-click='onFullViewClicked'>
-                <i class="fa fa-bars" />
+              
             </ul>
             <ul class="oe_full_button" t-on-click='onFullScreen'>
                 <li class="oe_full"><i class="fa fa-expand" /></li>
