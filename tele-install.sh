@@ -22,5 +22,3 @@ python -m pip install --upgrade pip
 
 pip3 install wheel
 pip3 install -U -r tele/requirements.txt
-
-sudo chmod 777 -R tele*
